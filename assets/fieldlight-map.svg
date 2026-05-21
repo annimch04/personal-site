@@ -14,47 +14,50 @@
     </marker>
   </defs>
 
+  <g font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="800" fill="#6f7f8f" letter-spacing="0.08em">
+    <text x="72" y="178">PRIVATE SOURCE</text>
+    <text x="302" y="178">CONTROLLED EXCHANGE</text>
+    <text x="510" y="178">PUBLIC ARTIFACTS</text>
+  </g>
+
   <g fill="none" stroke="#b8c6d3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M252 246 C306 214 374 214 428 246"/>
-    <path d="M252 374 C306 406 374 406 428 374"/>
-    <path d="M186 268 L186 352"/>
-    <path d="M574 268 L574 352"/>
-    <path d="M252 310 L308 310" marker-end="url(#arrow)"/>
-    <path d="M452 310 L508 310" marker-end="url(#arrow)"/>
+    <path d="M288 245 L314 288" marker-end="url(#arrow)"/>
+    <path d="M288 375 L314 332" marker-end="url(#arrow)"/>
+    <path d="M470 288 L508 245" marker-end="url(#arrow)"/>
+    <path d="M470 332 L508 375" marker-end="url(#arrow)"/>
   </g>
 
   <g font-family="Inter, Arial, sans-serif">
     <g>
-      <rect x="72" y="204" width="216" height="82" rx="4" fill="#102131"/>
-      <text x="98" y="237" fill="#ffffff" font-size="16" font-weight="800">Source Truth</text>
-      <text x="98" y="263" fill="#cdd8e3" font-size="12.5">private memory · canon · identity</text>
+      <rect x="72" y="200" width="216" height="92" rx="4" fill="#102131"/>
+      <text x="96" y="234" fill="#ffffff" font-size="16" font-weight="800">Source Truth</text>
+      <text x="96" y="260" fill="#cdd8e3" font-size="12.5">private memory · canon</text>
+      <text x="96" y="278" fill="#cdd8e3" font-size="12.5">identity · source records</text>
     </g>
     <g>
-      <rect x="72" y="334" width="216" height="82" rx="4" fill="#2f6f5e"/>
-      <text x="98" y="367" fill="#ffffff" font-size="16" font-weight="800">Governance</text>
-      <text x="98" y="393" fill="#d8eee8" font-size="12.5">consent · authorship · policy</text>
+      <rect x="72" y="328" width="216" height="92" rx="4" fill="#2f6f5e"/>
+      <text x="96" y="362" fill="#ffffff" font-size="16" font-weight="800">Governance</text>
+      <text x="96" y="388" fill="#d8eee8" font-size="12.5">consent · authorship</text>
+      <text x="96" y="406" fill="#d8eee8" font-size="12.5">policy · boundaries</text>
     </g>
     <g>
-      <rect x="308" y="267" width="144" height="86" rx="4" fill="#245c82"/>
-      <text x="340" y="302" fill="#ffffff" font-size="16" font-weight="800">Runtime</text>
-      <text x="335" y="328" fill="#dbe9f2" font-size="12.5">routing · trust · traces</text>
+      <rect x="314" y="262" width="156" height="96" rx="4" fill="#245c82"/>
+      <text x="360" y="298" fill="#ffffff" font-size="16" font-weight="800">Runtime</text>
+      <text x="342" y="324" fill="#dbe9f2" font-size="12.5">routing · trust levels</text>
+      <text x="342" y="342" fill="#dbe9f2" font-size="12.5">fallbacks · audit traces</text>
     </g>
     <g>
-      <rect x="508" y="204" width="210" height="82" rx="4" fill="#a83f3f"/>
-      <text x="532" y="237" fill="#ffffff" font-size="16" font-weight="800">Publication Boundary</text>
-      <text x="532" y="263" fill="#f7dcdc" font-size="12.5">draft · export · release</text>
+      <rect x="508" y="200" width="210" height="92" rx="4" fill="#a83f3f"/>
+      <text x="532" y="234" fill="#ffffff" font-size="16" font-weight="800">Publication Boundary</text>
+      <text x="532" y="260" fill="#f7dcdc" font-size="12.5">draft · export · release</text>
+      <text x="532" y="278" fill="#f7dcdc" font-size="12.5">public/private separation</text>
     </g>
     <g>
-      <rect x="508" y="334" width="210" height="82" rx="4" fill="#a07422"/>
-      <text x="532" y="367" fill="#ffffff" font-size="16" font-weight="800">Public Analysis</text>
-      <text x="532" y="393" fill="#f2e3c4" font-size="12.5">essays · protocols · demos</text>
+      <rect x="508" y="328" width="210" height="92" rx="4" fill="#a07422"/>
+      <text x="532" y="362" fill="#ffffff" font-size="16" font-weight="800">Public Analysis</text>
+      <text x="532" y="388" fill="#f2e3c4" font-size="12.5">essays · protocols</text>
+      <text x="532" y="406" fill="#f2e3c4" font-size="12.5">repos · demos</text>
     </g>
-  </g>
-
-  <g font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#6f7f8f">
-    <text x="150" y="315">private</text>
-    <text x="349" y="382">exchange</text>
-    <text x="573" y="315">public</text>
   </g>
 
   <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6875">
