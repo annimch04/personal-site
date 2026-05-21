@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+  <title id="title">Fieldlight system map</title>
+  <desc id="desc">A layered map connecting private source truth, memory governance, consent exchange, runtime transport, publication boundaries, and public analysis.</desc>
+  <rect width="760" height="620" fill="#f5f7fa"/>
+  <rect x="42" y="42" width="676" height="536" fill="#ffffff" stroke="#d9e0e7" stroke-width="2"/>
+  <g font-family="Inter, Arial, sans-serif" letter-spacing="0">
+    <text x="70" y="91" fill="#102131" font-size="27" font-weight="800">Fieldlight System Map</text>
+    <text x="70" y="120" fill="#5b6875" font-size="15">Human-owned AI collaboration infrastructure</text>
+  </g>
+  <g fill="none" stroke="#b8c6d3" stroke-width="2">
+    <path d="M190 236 C275 180 388 180 476 236"/>
+    <path d="M190 384 C275 440 388 440 476 384"/>
+    <path d="M178 260 L178 360"/>
+    <path d="M488 260 L488 360"/>
+    <path d="M333 258 L333 360"/>
+    <path d="M333 360 L601 360"/>
+    <path d="M333 258 L601 258"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <g>
+      <rect x="91" y="196" width="198" height="84" rx="4" fill="#102131"/>
+      <text x="118" y="229" fill="#ffffff" font-size="16" font-weight="800">Source Truth</text>
+      <text x="118" y="255" fill="#cdd8e3" font-size="13">private memory · canon · identity</text>
+    </g>
+    <g>
+      <rect x="91" y="340" width="198" height="84" rx="4" fill="#2f6f5e"/>
+      <text x="118" y="373" fill="#ffffff" font-size="16" font-weight="800">Governance</text>
+      <text x="118" y="399" fill="#d8eee8" font-size="13">consent · authorship · policy</text>
+    </g>
+    <g>
+      <rect x="260" y="268" width="148" height="84" rx="4" fill="#245c82"/>
+      <text x="288" y="301" fill="#ffffff" font-size="16" font-weight="800">Runtime</text>
+      <text x="288" y="327" fill="#dbe9f2" font-size="13">routing · trust · traces</text>
+    </g>
+    <g>
+      <rect x="458" y="196" width="208" height="84" rx="4" fill="#a83f3f"/>
+      <text x="485" y="229" fill="#ffffff" font-size="16" font-weight="800">Publication Boundary</text>
+      <text x="485" y="255" fill="#f7dcdc" font-size="13">draft · export · release</text>
+    </g>
+    <g>
+      <rect x="458" y="340" width="208" height="84" rx="4" fill="#a07422"/>
+      <text x="485" y="373" fill="#ffffff" font-size="16" font-weight="800">Public Analysis</text>
+      <text x="485" y="399" fill="#f2e3c4" font-size="13">essays · protocols · demos</text>
+    </g>
+  </g>
+  <g fill="#ffffff" stroke="#102131" stroke-width="2">
+    <circle cx="333" cy="310" r="9"/>
+    <circle cx="178" cy="310" r="9"/>
+    <circle cx="488" cy="310" r="9"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6875">
+    <text x="70" y="500">Design principle: separate private source truth from public artifacts</text>
+    <text x="70" y="522">while keeping consent, provenance, and auditability traceable.</text>
+    <text x="70" y="551">The goal is inspectable system behavior, not just better language about ethics.</text>
+  </g>
+</svg>
