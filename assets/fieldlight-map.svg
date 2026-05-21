@@ -7,47 +7,56 @@
     <text x="70" y="91" fill="#102131" font-size="27" font-weight="800">Fieldlight System Map</text>
     <text x="70" y="120" fill="#5b6875" font-size="15">Human-owned AI collaboration infrastructure</text>
   </g>
-  <g fill="none" stroke="#b8c6d3" stroke-width="2">
-    <path d="M190 236 C275 180 388 180 476 236"/>
-    <path d="M190 384 C275 440 388 440 476 384"/>
-    <path d="M178 260 L178 360"/>
-    <path d="M488 260 L488 360"/>
-    <path d="M333 258 L333 360"/>
-    <path d="M333 360 L601 360"/>
-    <path d="M333 258 L601 258"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#9fb0c1"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="#b8c6d3" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M252 246 C306 214 374 214 428 246"/>
+    <path d="M252 374 C306 406 374 406 428 374"/>
+    <path d="M186 268 L186 352"/>
+    <path d="M574 268 L574 352"/>
+    <path d="M252 310 L308 310" marker-end="url(#arrow)"/>
+    <path d="M452 310 L508 310" marker-end="url(#arrow)"/>
   </g>
+
   <g font-family="Inter, Arial, sans-serif">
     <g>
-      <rect x="91" y="196" width="198" height="84" rx="4" fill="#102131"/>
-      <text x="118" y="229" fill="#ffffff" font-size="16" font-weight="800">Source Truth</text>
-      <text x="118" y="255" fill="#cdd8e3" font-size="13">private memory · canon · identity</text>
+      <rect x="72" y="204" width="216" height="82" rx="4" fill="#102131"/>
+      <text x="98" y="237" fill="#ffffff" font-size="16" font-weight="800">Source Truth</text>
+      <text x="98" y="263" fill="#cdd8e3" font-size="12.5">private memory · canon · identity</text>
     </g>
     <g>
-      <rect x="91" y="340" width="198" height="84" rx="4" fill="#2f6f5e"/>
-      <text x="118" y="373" fill="#ffffff" font-size="16" font-weight="800">Governance</text>
-      <text x="118" y="399" fill="#d8eee8" font-size="13">consent · authorship · policy</text>
+      <rect x="72" y="334" width="216" height="82" rx="4" fill="#2f6f5e"/>
+      <text x="98" y="367" fill="#ffffff" font-size="16" font-weight="800">Governance</text>
+      <text x="98" y="393" fill="#d8eee8" font-size="12.5">consent · authorship · policy</text>
     </g>
     <g>
-      <rect x="260" y="268" width="148" height="84" rx="4" fill="#245c82"/>
-      <text x="288" y="301" fill="#ffffff" font-size="16" font-weight="800">Runtime</text>
-      <text x="288" y="327" fill="#dbe9f2" font-size="13">routing · trust · traces</text>
+      <rect x="308" y="267" width="144" height="86" rx="4" fill="#245c82"/>
+      <text x="340" y="302" fill="#ffffff" font-size="16" font-weight="800">Runtime</text>
+      <text x="335" y="328" fill="#dbe9f2" font-size="12.5">routing · trust · traces</text>
     </g>
     <g>
-      <rect x="458" y="196" width="208" height="84" rx="4" fill="#a83f3f"/>
-      <text x="485" y="229" fill="#ffffff" font-size="16" font-weight="800">Publication Boundary</text>
-      <text x="485" y="255" fill="#f7dcdc" font-size="13">draft · export · release</text>
+      <rect x="508" y="204" width="210" height="82" rx="4" fill="#a83f3f"/>
+      <text x="532" y="237" fill="#ffffff" font-size="16" font-weight="800">Publication Boundary</text>
+      <text x="532" y="263" fill="#f7dcdc" font-size="12.5">draft · export · release</text>
     </g>
     <g>
-      <rect x="458" y="340" width="208" height="84" rx="4" fill="#a07422"/>
-      <text x="485" y="373" fill="#ffffff" font-size="16" font-weight="800">Public Analysis</text>
-      <text x="485" y="399" fill="#f2e3c4" font-size="13">essays · protocols · demos</text>
+      <rect x="508" y="334" width="210" height="82" rx="4" fill="#a07422"/>
+      <text x="532" y="367" fill="#ffffff" font-size="16" font-weight="800">Public Analysis</text>
+      <text x="532" y="393" fill="#f2e3c4" font-size="12.5">essays · protocols · demos</text>
     </g>
   </g>
-  <g fill="#ffffff" stroke="#102131" stroke-width="2">
-    <circle cx="333" cy="310" r="9"/>
-    <circle cx="178" cy="310" r="9"/>
-    <circle cx="488" cy="310" r="9"/>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#6f7f8f">
+    <text x="150" y="315">private</text>
+    <text x="349" y="382">exchange</text>
+    <text x="573" y="315">public</text>
   </g>
+
   <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#5b6875">
     <text x="70" y="500">Design principle: separate private source truth from public artifacts</text>
     <text x="70" y="522">while keeping consent, provenance, and auditability traceable.</text>
