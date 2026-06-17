@@ -572,6 +572,10 @@ h3 {
   padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 72px) 34px;
 }
 
+.article-hero-contained {
+  border-bottom: 1px solid var(--line);
+}
+
 .article-kicker,
 .article-meta {
   display: flex;
