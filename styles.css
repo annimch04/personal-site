@@ -736,6 +736,215 @@ h3 {
   line-height: 1.25;
 }
 
+
+.self-wire-body {
+  --wire-blue: #073d4b;
+  --wire-red: #d64f3e;
+  --wire-soft: #f2f7f7;
+}
+
+.self-wire-body .wire-opening,
+.self-wire-body .wire-closing {
+  position: relative;
+  margin: 0 0 42px;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid rgba(7, 61, 75, 0.16);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(214, 79, 62, 0.3), transparent 30%),
+    linear-gradient(135deg, rgba(7, 61, 75, 0.96), rgba(5, 47, 58, 0.9));
+  color: #fffaf1;
+  box-shadow: 0 22px 55px rgba(7, 61, 75, 0.18);
+}
+
+.self-wire-body .wire-opening::before,
+.self-wire-body .wire-closing::before {
+  content: "";
+  position: absolute;
+  inset: 18px auto 18px 0;
+  width: 5px;
+  background: var(--wire-red);
+}
+
+.self-wire-body .wire-opening p,
+.self-wire-body .wire-closing p {
+  color: inherit;
+}
+
+.self-wire-body .wire-opening > p:first-child,
+.self-wire-body .wire-closing > p:first-child {
+  margin-bottom: 18px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(30px, 5vw, 56px);
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.self-wire-body .wire-stack,
+.self-wire-body .wire-grid,
+.self-wire-body .wire-contrast,
+.self-wire-body .wire-questions {
+  margin: 30px 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.self-wire-body .wire-stack {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+  border-left: 5px solid var(--wire-red);
+  background: linear-gradient(90deg, rgba(214, 79, 62, 0.1), rgba(238, 245, 243, 0.72));
+}
+
+.self-wire-body .wire-stack.tight {
+  gap: 4px;
+}
+
+.self-wire-body .wire-opening .wire-stack,
+.self-wire-body .wire-closing .wire-stack {
+  border-left-color: var(--wire-red);
+  background: rgba(255, 250, 241, 0.1);
+}
+
+.self-wire-body .wire-opening .wire-stack p,
+.self-wire-body .wire-closing .wire-stack p {
+  color: #fffaf1;
+}
+
+.self-wire-body .wire-stack p,
+.self-wire-body .wire-grid p,
+.self-wire-body .wire-contrast p,
+.self-wire-body .wire-questions p {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.self-wire-body .wire-stack p {
+  color: var(--ink);
+  font-size: clamp(19px, 2.2vw, 25px);
+  font-weight: 800;
+}
+
+.self-wire-body .wire-stack.personal-stack p,
+.self-wire-body .wire-stack.want-stack p {
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 750;
+}
+
+.self-wire-body .wire-stack.numbered {
+  counter-reset: wire-count;
+  border-left-color: var(--wire-blue);
+  background: var(--wire-soft);
+}
+
+.self-wire-body .wire-stack.numbered p {
+  display: grid;
+  grid-template-columns: 2.5ch minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+
+.self-wire-body .wire-stack.numbered p::before {
+  counter-increment: wire-count;
+  content: "0" counter(wire-count);
+  color: var(--wire-red);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.self-wire-body .wire-contrast {
+  display: grid;
+  gap: 12px;
+  padding: 22px;
+  border: 1px solid rgba(7, 61, 75, 0.14);
+  background: #fffaf1;
+  box-shadow: 0 12px 34px rgba(16, 33, 49, 0.06);
+}
+
+.self-wire-body .wire-contrast.compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.self-wire-body .wire-contrast span {
+  color: var(--wire-blue);
+  font-weight: 900;
+}
+
+.self-wire-body .wire-contrast.compact p {
+  padding: 9px 12px;
+  background: var(--wire-blue);
+  color: #fffaf1;
+}
+
+.self-wire-body .wire-contrast.compact span {
+  color: inherit;
+}
+
+.self-wire-body .wire-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.self-wire-body .wire-grid p {
+  min-height: 58px;
+  padding: 14px;
+  border: 1px solid rgba(7, 61, 75, 0.14);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.self-wire-body .wire-grid.compact-grid p {
+  min-height: 0;
+}
+
+.self-wire-body .wire-grid.enough-grid {
+  grid-template-columns: 1fr;
+}
+
+.self-wire-body .wire-questions {
+  display: grid;
+  gap: 1px;
+  border-top: 1px solid rgba(7, 61, 75, 0.18);
+  border-bottom: 1px solid rgba(7, 61, 75, 0.18);
+}
+
+.self-wire-body .wire-questions p {
+  padding: 14px 0 14px 24px;
+  border-left: 4px solid var(--wire-red);
+  color: var(--wire-blue);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 850;
+}
+
+.self-wire-body .wire-declaration,
+.self-wire-body .wire-question,
+.self-wire-body .wire-bridge {
+  border-left-color: var(--wire-red);
+  background: var(--wire-blue);
+  color: #fffaf1;
+}
+
+.self-wire-body .wire-bridge {
+  max-width: 520px;
+}
+
+@media (max-width: 720px) {
+  .self-wire-body .wire-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .self-wire-body .wire-contrast.compact {
+    display: grid;
+  }
+}
+
 @media (max-width: 980px) {
   .hero,
   .feature-section,
