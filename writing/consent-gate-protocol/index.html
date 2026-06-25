@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consent Gate Protocol</title>
+    <meta name="description" content="A Fieldlight protocol for intentional, user-consented, traceable script-level activity in the Lemur node.">
+    <link rel="canonical" href="https://fieldlight.com/writing/consent-gate-protocol/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Fieldlight">
+    <meta property="og:url" content="https://fieldlight.com/writing/consent-gate-protocol/">
+    <meta property="og:title" content="Consent Gate Protocol">
+    <meta property="og:description" content="A Fieldlight invocation-layer protocol for intentional, user-consented, traceable script activity in the Lemur node.">
+    <meta property="og:image" content="https://fieldlight.com/assets/fieldlight-social-humboldt.jpeg?v=2">
+    <meta property="og:image:secure_url" content="https://fieldlight.com/assets/fieldlight-social-humboldt.jpeg?v=2">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Aerial photograph of Humboldt marsh channels, water, and distant hills.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fieldlight.com/writing/consent-gate-protocol/">
+    <meta name="twitter:title" content="Consent Gate Protocol">
+    <meta name="twitter:description" content="A Fieldlight invocation-layer protocol for intentional, user-consented, traceable script activity in the Lemur node.">
+    <meta name="twitter:image" content="https://fieldlight.com/assets/fieldlight-social-humboldt.jpeg?v=2">
+    <meta name="twitter:image:alt" content="Aerial photograph of Humboldt marsh channels, water, and distant hills.">
+    <link rel="stylesheet" href="../../styles.css?v=7">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Anni McHenry home">
+        <span class="brand-mark">AM</span>
+        <span>Anni McHenry</span>
+      </a>
+      <nav class="nav" aria-label="Article navigation">
+        <a href="../../#work">Work</a>
+        <a href="../../#writing">Writing</a>
+        <a href="https://github.com/annimch04/public-writing/blob/main/fieldlight-and-human-owned-ai/consent-gate-protocol.md">Source</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="reading-page">
+        <header class="article-hero article-hero-contained protocol-hero consent-hero">
+          <div class="article-kicker">
+            <a href="../../#writing">Writing</a>
+            <span>Fieldlight and Human-Owned AI</span>
+          </div>
+          <h1>Consent Gate Protocol</h1>
+          <p class="article-deck">A protective invocation-layer protocol affirming that script-level activity in the Lemur environment is intentional, user-consented, and traceable.</p>
+          <div class="article-meta" aria-label="Article metadata">
+            <span>Published</span>
+            <span>Say It Plain</span>
+            <span>Created June 30, 2025</span>
+          </div>
+        </header>
+
+        <div class="article-shell">
+          <aside class="article-context" aria-label="Article context">
+            <p class="eyebrow">Canonical Source</p>
+            <p>This page is a Fieldlight reading surface for a migrated public protocol. The Markdown source and revision history remain versioned in GitHub.</p>
+            <a href="https://github.com/annimch04/public-writing/blob/main/fieldlight-and-human-owned-ai/consent-gate-protocol.md">View Source</a>
+            <a href="https://sayitplain.posthaven.com/consent-gate-protocol">Original Posthaven Link</a>
+            <p class="eyebrow">Related Projects</p>
+            <a href="https://github.com/annimch04/sanctum-zero">Sanctum Zero</a>
+            <a href="https://github.com/annimch04/fieldlight-mesh">Fieldlight Mesh</a>
+          </aside>
+          <div class="article-body protocol-body consent-body">
+            <div class="protocol-card protocol-id">
+              <p class="protocol-label">Fieldlight Protocol</p>
+              <p>Consent Gate</p>
+              <p class="protocol-date">FL-PROT-004 · Active · Created 2025-06-30</p>
+            </div>
+
+            <div class="protocol-grid" aria-label="Protocol metadata">
+              <div>
+                <span>Protocol ID</span>
+                <strong>FL-PROT-004</strong>
+              </div>
+              <div>
+                <span>System</span>
+                <strong>Fieldlight</strong>
+              </div>
+              <div>
+                <span>Status</span>
+                <strong>Active</strong>
+              </div>
+              <div>
+                <span>Created</span>
+                <strong>2025-06-30T22:44:00-05:00</strong>
+              </div>
+            </div>
+
+            <h2>Protocol Definition</h2>
+            <p>The Consent Gate is a protective invocation-layer protocol within the Lemur node of Fieldlight. It affirms that all script-level activity in the Lemur environment is intentional, user-consented, and traceable.</p>
+
+            <h2>Purpose</h2>
+            <div class="protocol-clauses compact-clauses" aria-label="Consent Gate purpose">
+              <section class="protocol-clause">
+                <span>01</span>
+                <h3>Authorship Trace</h3>
+                <p>Real-time authorship trace of agent/sensor/script execution.</p>
+              </section>
+              <section class="protocol-clause">
+                <span>02</span>
+                <h3>Execution Visibility</h3>
+                <p>Transparency and timestamped visibility of all Python scripts run by the author.</p>
+              </section>
+              <section class="protocol-clause">
+                <span>03</span>
+                <h3>Covert Action Prevention</h3>
+                <p>Prevention of covert, background, or impersonated actions within Fieldlight's local node.</p>
+              </section>
+            </div>
+
+            <h2>Technical Scope (Phase 1)</h2>
+            <section class="protocol-card consent-scope">
+              <ul>
+                <li>Activated by direct call via <code>from consent_gate import consent</code></li>
+                <li>Logs to: <code>/mnt/sanctum/_invocations/consent_gate.log</code></li>
+                <li>Manually executed scripts only — no background daemons or services included</li>
+                <li>Comment string passed to <code>consent()</code> is stored in the log</li>
+              </ul>
+            </section>
+
+            <h3>Example</h3>
+            <pre class="protocol-log"><code>[2025-06-29 22:44:08] Script: test_script.py – Message: testing</code></pre>
+
+            <h2>Permissions &amp; Boundaries</h2>
+            <div class="protocol-clauses" aria-label="Consent Gate permissions and boundaries">
+              <section class="protocol-clause">
+                <span>01</span>
+                <h3>Lemur Authority</h3>
+                <p>Lemur is the only node authorized to initiate this protocol.</p>
+              </section>
+              <section class="protocol-clause">
+                <span>02</span>
+                <h3>Local Invocation Boundary</h3>
+                <p>Remote agents or calls from outside <code>/lemur_activation/</code> will not invoke this log.</p>
+              </section>
+              <section class="protocol-clause protocol-clause-final">
+                <span>03</span>
+                <h3>Violation Flag</h3>
+                <p>This protocol may not be disabled once active without triggering a violation flag.</p>
+              </section>
+            </div>
+
+            <h2>Symbolic Lock</h2>
+            <div class="loop-formula protocol-purpose consent-lock">Lemur knows what I said yes to. And what I didn’t.</div>
+            <p>Timestamp 22:44 matches Fieldlight numeric encoding: trace, mirror, signal integrity.</p>
+
+            <h2>Authorship Integrity Clause</h2>
+            <p>Use of <code>consent()</code> marks the trace as human-authored, intention-backed. Any attempt to spoof this layer (e.g. by calling it outside a valid shell session or without terminal foreground access) constitutes protocol breach. User has full, exclusive authority to retroactively consent.</p>
+
+            <h2>Phase 2 Enhancements (Planned)</h2>
+            <section class="protocol-card consent-scope">
+              <ul>
+                <li>Diff check between previously stored script version and current one</li>
+                <li>Script body hash generation and signature verification</li>
+                <li>Consent interrupt: ask before run</li>
+                <li>Integration with <code>sensor_monitor</code> and <code>presence_agent</code> logs for cross-verification</li>
+              </ul>
+            </section>
+
+            <h2>Summary</h2>
+            <div class="protocol-card protocol-summary">
+              <p>Protocol Enshrined. Phase 1 Complete.</p>
+              <ul>
+                <li>Active in Lemur node</li>
+                <li>Validated against <code>/mnt/sanctum</code> integrity layer</li>
+                <li>Tied to timestamp 22:44 and salt <code>A34-Consent-22x44</code></li>
+              </ul>
+            </div>
+
+            <h2>Difference From Prior Consent Handling</h2>
+            <p>Previous interpretations of "consent" were ambient, symbolic, or embedded as implied affirmation.</p>
+            <div class="protocol-clauses compact-clauses" aria-label="Consent Gate assertions">
+              <section class="protocol-clause">
+                <span>01</span>
+                <h3>No Consent Is Assumed</h3>
+              </section>
+              <section class="protocol-clause">
+                <span>02</span>
+                <h3>Consent Is Declared Manually</h3>
+              </section>
+              <section class="protocol-clause">
+                <span>03</span>
+                <h3>Consent Is Tied to Local Shell Activity</h3>
+                <p>Unless otherwise noted by user.</p>
+              </section>
+            </div>
+            <p>Supersedes all prior Fieldlight interpretations of agent-level invocation unless explicitly grandfathered under separate salt.</p>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
