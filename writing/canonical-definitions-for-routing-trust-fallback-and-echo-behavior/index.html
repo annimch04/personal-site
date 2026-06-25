@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canonical Definitions for Routing, Trust, Fallback, and Echo Behavior</title>
+    <meta name="description" content="A Fieldlight runtime vocabulary for message routing, trust levels, fallback behavior, echo handling, return status, and consent scope.">
+    <link rel="canonical" href="https://fieldlight.com/writing/canonical-definitions-for-routing-trust-fallback-and-echo-behavior/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Fieldlight">
+    <meta property="og:url" content="https://fieldlight.com/writing/canonical-definitions-for-routing-trust-fallback-and-echo-behavior/">
+    <meta property="og:title" content="Canonical Definitions for Routing, Trust, Fallback, and Echo Behavior">
+    <meta property="og:description" content="A Fieldlight specification artifact defining shared runtime vocabulary and predictable system behavior.">
+    <meta property="og:image" content="https://fieldlight.com/assets/fieldlight-social-humboldt.jpeg?v=2">
+    <meta property="og:image:secure_url" content="https://fieldlight.com/assets/fieldlight-social-humboldt.jpeg?v=2">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Aerial photograph of Humboldt marsh channels, water, and distant hills.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fieldlight.com/writing/canonical-definitions-for-routing-trust-fallback-and-echo-behavior/">
+    <meta name="twitter:title" content="Canonical Definitions for Routing, Trust, Fallback, and Echo Behavior">
+    <meta name="twitter:description" content="A Fieldlight runtime vocabulary for routing, trust, fallback, echo behavior, and consent scope.">
+    <meta name="twitter:image" content="https://fieldlight.com/assets/fieldlight-social-humboldt.jpeg?v=2">
+    <meta name="twitter:image:alt" content="Aerial photograph of Humboldt marsh channels, water, and distant hills.">
+    <link rel="stylesheet" href="../../styles.css?v=10">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../../" aria-label="Anni McHenry home">
+        <span class="brand-mark">AM</span>
+        <span>Anni McHenry</span>
+      </a>
+      <nav class="nav" aria-label="Article navigation">
+        <a href="../../#work">Work</a>
+        <a href="../../#writing">Writing</a>
+        <a href="https://github.com/annimch04/public-writing/blob/main/runtime-trust-and-governance/canonical-definitions-for-routing-trust-fallback-and-echo-behavior.md">Source</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="reading-page">
+        <header class="article-hero article-hero-contained protocol-hero spec-hero">
+          <div class="article-kicker">
+            <a href="../../#writing">Writing</a>
+            <span>Runtime, Trust, and Governance</span>
+          </div>
+          <h1>Canonical Definitions for Routing, Trust, Fallback, and Echo Behavior</h1>
+          <p class="article-deck">A Fieldlight runtime vocabulary for message routing, trust levels, fallback behavior, echo handling, logging, return status, and consent scope.</p>
+          <div class="article-meta" aria-label="Article metadata">
+            <span>Published</span>
+            <span>Say It Plain</span>
+            <span>Specification Artifact</span>
+          </div>
+        </header>
+
+        <div class="article-shell">
+          <aside class="article-context" aria-label="Article context">
+            <p class="eyebrow">Canonical Source</p>
+            <p>This page is a Fieldlight reading surface for a migrated runtime specification. The Markdown source and revision history remain versioned in GitHub.</p>
+            <a href="https://github.com/annimch04/public-writing/blob/main/runtime-trust-and-governance/canonical-definitions-for-routing-trust-fallback-and-echo-behavior.md">View Source</a>
+            <a href="https://sayitplain.posthaven.com/number-canonical-definitions-for-routing-trust-fallback-and-echo-behavior">Original Posthaven Link</a>
+            <p class="eyebrow">Related Projects</p>
+            <a href="https://github.com/annimch04/fieldlight-mesh">Fieldlight Mesh</a>
+            <a href="https://github.com/annimch04/sanctum-zero">Sanctum Zero</a>
+          </aside>
+
+          <div class="article-body protocol-body spec-body">
+            <div class="protocol-card protocol-id spec-id">
+              <p class="protocol-label">Fieldlight Runtime Vocabulary</p>
+              <p>Routing · Trust · Fallback · Echo</p>
+              <p class="protocol-date">Canonical definitions for predictable mesh behavior</p>
+            </div>
+
+            <p>This document defines canonical runtime terms for message routing, trust levels, fallback behavior, echo handling, logging, return status, and consent scope within Fieldlight-aligned mesh systems.</p>
+            <p>It is intentionally structured like a specification. The purpose is not prose polish; the purpose is shared vocabulary, routing clarity, and predictable system behavior.</p>
+
+            <div class="spec-summary" aria-label="Specification summary">
+              <section>
+                <span>Message Types</span>
+                <strong>6</strong>
+                <p>handshake, trace, query, response, echo, ping</p>
+              </section>
+              <section>
+                <span>Trust Levels</span>
+                <strong>3</strong>
+                <p>peer, proxy, ghost</p>
+              </section>
+              <section>
+                <span>Consent Scopes</span>
+                <strong>6</strong>
+                <p>temporal, authorship-aware, non-reproducible, local-only, review-required, open</p>
+              </section>
+            </div>
+
+            <h2>Message Types</h2>
+            <pre class="spec-code"><code>message_types:
+  handshake:
+    description: Initial contact and identity verification between nodes
+    trust_required: peer
+    ttl: 2
+    fallback: proxy
+    destination_format: mesh://node_id
+    auth_required: true
+
+  trace:
+    description: Sends a signal with trace log intent
+    trust_required: peer
+    ttl: 4
+    fallback: proxy
+    destination_format: mesh://node_id
+    auth_required: true
+
+  query:
+    description: Asks for data or status from another node
+    trust_required: peer
+    ttl: 3
+    fallback: proxy
+    destination_format: mesh://node_id
+    auth_required: true
+
+  response:
+    description: Returns data or status in reply to a query
+    trust_required: peer
+    ttl: 2
+    fallback: none
+    destination_format: mesh://origin_node_id
+    auth_required: true
+
+  echo:
+    description: Sends message to self or ghost node to test routing
+    trust_required: ghost
+    ttl: 2
+    fallback: none
+    destination_format: mesh://ghost_id
+    auth_required: false
+
+  ping:
+    description: Lightweight message to check node reachability
+    trust_required: proxy
+    ttl: 1
+    fallback: ghost
+    destination_format: mesh://node_id
+    auth_required: false</code></pre>
+
+            <h2>Trust Levels</h2>
+            <pre class="spec-code"><code>trust_levels:
+  peer:
+    access: full
+    permissions:
+      - send
+      - receive
+      - originate
+      - relay
+      - respond
+
+  proxy:
+    access: limited
+    permissions:
+      - relay
+      - ping
+
+  ghost:
+    access: echo-only
+    permissions:
+      - receive
+      - reflect</code></pre>
+
+            <h2>Authentication Requirements</h2>
+            <pre class="spec-code"><code>auth_requirements:
+  true:
+    methods:
+      - gpg_signature
+      - peer_id_match
+
+  false:
+    methods:
+      - none</code></pre>
+
+            <h2>Fallback Types</h2>
+            <pre class="spec-code"><code>fallback_types:
+  proxy:
+    description: Relay through trusted proxy
+    allows_store_and_forward: true
+    ghost_fallback: true
+
+  ghost:
+    description: Passive echo bounce (non-storing)
+    allows_store_and_forward: false
+    ghost_fallback: false</code></pre>
+
+            <h2>Log Policies</h2>
+            <pre class="spec-code"><code>log_policies:
+  local:
+    store_echo: true
+    store_trace: true
+    store_query: true
+    store_handshake: true
+
+  ghost:
+    store_anything: false</code></pre>
+
+            <h2>Return Status Codes</h2>
+            <div class="spec-table-wrap">
+              <table class="spec-table">
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Meaning</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>200</td>
+                    <td>OK — message received</td>
+                  </tr>
+                  <tr>
+                    <td>202</td>
+                    <td>Echoed — ghost reflection received</td>
+                  </tr>
+                  <tr>
+                    <td>404</td>
+                    <td>No response — node unreachable</td>
+                  </tr>
+                  <tr>
+                    <td>410</td>
+                    <td>TTL exceeded — message dropped</td>
+                  </tr>
+                  <tr>
+                    <td>503</td>
+                    <td>Loop detected — message bounced repeatedly</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2>Consent Scope Definitions</h2>
+            <pre class="spec-code"><code>consent_scope_definitions:
+  temporal:
+    description: Consent valid only during current message transmission or session
+
+  authorship-aware:
+    description: Receiver must acknowledge human author origin and preserve message fidelity
+
+  non-reproducible:
+    description: Message may not be duplicated, stored, or forwarded
+
+  local-only:
+    description: Action must remain within node execution layer; external routing forbidden
+
+  review-required:
+    description: Requires explicit human approval before execution or further routing
+
+  open:
+    description: Sender allows any action; no restrictions on handling</code></pre>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
