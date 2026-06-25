@@ -1339,8 +1339,26 @@ h3 {
   background: rgba(255, 250, 241, 0.86);
 }
 
+.terms-clauses .protocol-clause {
+  padding: 58px 28px 26px;
+}
+
 .terms-clauses .protocol-clause > span {
+  left: 28px;
+  top: 22px;
+  display: inline-flex;
+  padding: 5px 9px;
+  background: rgba(214, 79, 62, 0.1);
   font-size: 11px;
+  line-height: 1;
+}
+
+.terms-clauses .protocol-clause-final > span {
+  background: rgba(255, 250, 241, 0.16);
+}
+
+.terms-clauses .protocol-clause h3 {
+  margin-top: 0;
 }
 
 .terms-exclusions {
