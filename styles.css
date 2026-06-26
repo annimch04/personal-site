@@ -1643,3 +1643,202 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+.future-page {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(214, 79, 62, 0.08), transparent 28%),
+    linear-gradient(180deg, #fffaf1 0%, #ffffff 34%, #f7fbfa 100%);
+}
+
+.future-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(214, 79, 62, 0.2), transparent 28%),
+    linear-gradient(135deg, rgba(7, 61, 75, 0.96), rgba(16, 33, 49, 0.92));
+  color: #fffaf1;
+}
+
+.future-hero .article-kicker a,
+.future-hero .article-kicker span,
+.future-hero h1,
+.future-hero .article-deck,
+.future-hero .article-meta span {
+  color: inherit;
+}
+
+.future-hero .article-meta span {
+  border-color: rgba(255, 250, 241, 0.24);
+  background: rgba(255, 250, 241, 0.08);
+}
+
+.future-body {
+  --future-ink: #102131;
+  --future-teal: #073d4b;
+  --future-red: #d64f3e;
+  --future-paper: #fffaf1;
+}
+
+.future-opening {
+  margin: 0 0 36px;
+  padding: clamp(28px, 6vw, 56px);
+  border-left: 6px solid var(--future-red);
+  background: var(--future-ink);
+  color: var(--future-paper);
+  box-shadow: 0 24px 54px rgba(16, 33, 49, 0.16);
+}
+
+.future-opening p {
+  margin: 0 0 18px;
+  color: inherit;
+  font-size: clamp(34px, 6vw, 66px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.future-opening p:last-child {
+  margin-bottom: 0;
+  color: rgba(255, 250, 241, 0.82);
+  font-style: italic;
+}
+
+.future-thesis {
+  margin: 0 0 42px !important;
+  color: var(--future-teal);
+  font-size: clamp(27px, 4vw, 46px) !important;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.08 !important;
+}
+
+.future-litany {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 38px;
+}
+
+.future-litany p {
+  margin: 0;
+  padding: 18px 0 18px 24px;
+  border-left: 4px solid rgba(214, 79, 62, 0.38);
+  color: #263444;
+  font-size: clamp(20px, 2.6vw, 30px);
+  line-height: 1.32;
+}
+
+.future-litany p:nth-child(4n + 1) {
+  border-left-color: var(--future-red);
+}
+
+.future-vignette {
+  display: grid;
+  gap: 10px;
+  margin: 46px 0;
+  padding: clamp(26px, 5vw, 48px);
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.98), rgba(255, 255, 255, 0.92)),
+    radial-gradient(circle at 88% 18%, rgba(214, 79, 62, 0.18), transparent 28%);
+  border: 1px solid rgba(7, 61, 75, 0.14);
+  border-top: 6px solid var(--future-red);
+  box-shadow: 0 18px 44px rgba(16, 33, 49, 0.08);
+}
+
+.future-vignette p {
+  margin: 0;
+  color: var(--future-teal);
+  font-size: clamp(32px, 6vw, 70px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.96;
+}
+
+.future-vignette p:nth-child(n + 2) {
+  color: var(--future-red);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.future-premise {
+  margin: 50px 0 38px;
+  padding: clamp(28px, 5vw, 52px);
+  background: linear-gradient(135deg, rgba(7, 61, 75, 0.96), rgba(5, 47, 58, 0.9));
+  color: var(--future-paper);
+}
+
+.future-premise p {
+  margin: 0 0 20px;
+  color: rgba(255, 250, 241, 0.78);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.future-premise blockquote {
+  margin: 0;
+  color: inherit;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.future-closing {
+  margin: 0 0 24px;
+}
+
+.future-closing p {
+  margin: 0 0 16px;
+  color: var(--future-ink);
+  font-size: clamp(30px, 5vw, 62px);
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.future-closing p:last-child {
+  color: var(--future-red);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .future-litany p {
+    padding-left: 18px;
+  }
+}
+
+.future-cover {
+  width: min(1120px, calc(100% - 40px));
+  margin: -38px auto 56px;
+  position: relative;
+  z-index: 2;
+}
+
+.future-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 1px solid rgba(16, 33, 49, 0.14);
+  box-shadow: 0 26px 70px rgba(16, 33, 49, 0.18);
+}
+
+.future-cover figcaption {
+  margin-top: 10px;
+  color: #657483;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 720px) {
+  .future-cover {
+    width: calc(100% - 28px);
+    margin-top: -24px;
+    margin-bottom: 42px;
+  }
+}
