@@ -2086,3 +2086,262 @@ h3 {
     min-height: 210px;
   }
 }
+
+.mesh-page {
+  background:
+    radial-gradient(circle at 8% 22%, rgba(47, 111, 94, 0.1), transparent 28%),
+    linear-gradient(180deg, #f7fbfa 0%, #ffffff 42%, #f5f7fa 100%);
+}
+
+.mesh-hero {
+  background:
+    linear-gradient(135deg, rgba(7, 61, 75, 0.98), rgba(16, 33, 49, 0.94)),
+    radial-gradient(circle at 78% 18%, rgba(160, 116, 34, 0.24), transparent 32%);
+  color: #fffaf1;
+}
+
+.mesh-hero .article-kicker a,
+.mesh-hero .article-kicker span,
+.mesh-hero h1,
+.mesh-hero .article-deck,
+.mesh-hero .article-meta span {
+  color: inherit;
+}
+
+.mesh-hero .article-meta span {
+  border-color: rgba(255, 250, 241, 0.24);
+  background: rgba(255, 250, 241, 0.08);
+}
+
+.mesh-topology {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(300px, 0.58fr);
+  gap: clamp(24px, 5vw, 58px);
+  align-items: center;
+  width: min(1120px, calc(100% - 40px));
+  margin: 42px auto 60px;
+  padding: clamp(28px, 5vw, 58px);
+  border: 1px solid rgba(16, 33, 49, 0.14);
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.96), rgba(255, 255, 255, 0.92)),
+    radial-gradient(circle at 82% 28%, rgba(47, 111, 94, 0.22), transparent 34%);
+  box-shadow: 0 22px 60px rgba(16, 33, 49, 0.12);
+}
+
+.mesh-topology h2 {
+  max-width: 780px;
+  margin: 0;
+  color: #073d4b;
+  font-size: clamp(34px, 5.8vw, 70px);
+  line-height: 0.99;
+  letter-spacing: -0.055em;
+}
+
+.mesh-topology-copy p:not(.eyebrow) {
+  max-width: 680px;
+  margin: 20px 0 0;
+  color: #263444;
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-weight: 700;
+  line-height: 1.28;
+}
+
+.mesh-diagram {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  border: 1px solid rgba(7, 61, 75, 0.16);
+  background:
+    linear-gradient(rgba(255, 250, 241, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 250, 241, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, #102131, #073d4b);
+  background-size: 26px 26px, 26px 26px, auto;
+}
+
+.mesh-diagram::before,
+.mesh-diagram::after {
+  content: "";
+  position: absolute;
+  border: 2px solid rgba(255, 250, 241, 0.42);
+  transform: rotate(12deg);
+}
+
+.mesh-diagram::before {
+  inset: 68px 54px 72px 54px;
+}
+
+.mesh-diagram::after {
+  inset: 108px 82px 46px 90px;
+  border-color: rgba(160, 116, 34, 0.78);
+  transform: rotate(-10deg);
+}
+
+.mesh-core,
+.mesh-node,
+.mesh-rover {
+  position: absolute;
+  display: block;
+  border: 3px solid #fffaf1;
+  box-shadow: 0 0 0 9px rgba(214, 79, 62, 0.16);
+}
+
+.mesh-core {
+  top: 116px;
+  left: 50%;
+  width: 58px;
+  height: 58px;
+  margin-left: -29px;
+  background: #d64f3e;
+}
+
+.mesh-node {
+  width: 28px;
+  height: 28px;
+  background: #2f6f5e;
+}
+
+.node-one { top: 54px; left: 54px; }
+.node-two { right: 58px; top: 74px; background: #a07422; }
+.node-three { left: 76px; bottom: 58px; }
+
+.mesh-rover {
+  right: 76px;
+  bottom: 64px;
+  width: 38px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fffaf1;
+  box-shadow: 0 0 0 9px rgba(255, 250, 241, 0.12);
+}
+
+.mesh-body {
+  --mesh-ink: #102131;
+  --mesh-teal: #073d4b;
+  --mesh-green: #2f6f5e;
+  --mesh-red: #d64f3e;
+  --mesh-gold: #a07422;
+}
+
+.mesh-principle,
+.mesh-closing {
+  margin: 36px 0;
+  padding: clamp(24px, 5vw, 44px);
+  border-left: 6px solid var(--mesh-gold);
+  background: var(--mesh-ink);
+  color: #fffaf1;
+  box-shadow: 0 18px 44px rgba(16, 33, 49, 0.14);
+}
+
+.mesh-principle {
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.mesh-body blockquote {
+  margin: 34px 0;
+  padding: 0 0 0 24px;
+  border-left: 5px solid var(--mesh-red);
+  color: var(--mesh-teal);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 4vw, 42px);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.mesh-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 36px 0;
+}
+
+.mesh-split article {
+  padding: 24px;
+  border: 1px solid rgba(7, 61, 75, 0.16);
+  background: #fffaf1;
+}
+
+.mesh-split span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--mesh-red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mesh-split h3 {
+  color: var(--mesh-teal);
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.mesh-split p {
+  margin-bottom: 0;
+  color: #263444;
+}
+
+.mesh-benefits {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.mesh-benefits li {
+  position: relative;
+  padding: 16px 18px 16px 50px;
+  border: 1px solid rgba(16, 33, 49, 0.12);
+  background: #ffffff;
+  color: #263444;
+  font-size: clamp(18px, 2.4vw, 25px);
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.mesh-benefits li::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--mesh-teal);
+  background: var(--mesh-green);
+}
+
+.mesh-closing {
+  border-left-color: var(--mesh-red);
+  background: linear-gradient(135deg, rgba(7, 61, 75, 0.98), rgba(16, 33, 49, 0.94));
+}
+
+.mesh-closing p {
+  margin: 0 0 16px;
+  color: inherit;
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.mesh-closing p:last-child {
+  margin-bottom: 0;
+  color: rgba(255, 250, 241, 0.82);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media (max-width: 820px) {
+  .mesh-topology,
+  .mesh-split {
+    grid-template-columns: 1fr;
+  }
+
+  .mesh-diagram {
+    min-height: 230px;
+  }
+}
