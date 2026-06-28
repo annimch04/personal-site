@@ -3059,7 +3059,7 @@ h3 {
   gap: clamp(24px, 5vw, 56px);
   align-items: stretch;
   width: min(1180px, calc(100% - 40px));
-  margin: clamp(-58px, -5vw, -30px) auto 64px;
+  margin: clamp(34px, 5vw, 72px) auto 64px;
   padding: clamp(28px, 5vw, 54px);
   border: 1px solid rgba(8, 45, 51, 0.16);
   background: rgba(255, 250, 241, 0.95);
@@ -3266,7 +3266,7 @@ h3 {
   }
 
   .seeker-orientation {
-    margin-top: -28px;
+    margin-top: 32px;
   }
 }
 
