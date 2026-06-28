@@ -2864,7 +2864,7 @@ h3 {
 }
 
 .aerial-response-grid h3 {
-  font-size: clamp(19px, 2vw, 25px);
+  font-size: clamp(18px, 1.8vw, 23px);
   line-height: 1.05;
   letter-spacing: -0.035em;
   overflow-wrap: normal;
@@ -2995,4 +2995,282 @@ h3 {
   .aerial-scan-field {
     min-height: 240px;
   }
+}
+
+/* A Seeker's Field Guide */
+.seeker-page {
+  --seeker-ink: #14202a;
+  --seeker-deep: #082d33;
+  --seeker-green: #2f6f5e;
+  --seeker-gold: #b88937;
+  --seeker-red: #d94f3d;
+  --seeker-paper: #fff9ed;
+  background:
+    radial-gradient(circle at 8% 4%, rgba(184, 137, 55, 0.2), transparent 28%),
+    linear-gradient(180deg, #f8fbfb 0%, #fffaf1 44%, #f5f8f7 100%);
+}
+
+.seeker-hero {
+  background:
+    radial-gradient(circle at 78% 18%, rgba(184, 137, 55, 0.38), transparent 20%),
+    radial-gradient(circle at 30% 62%, rgba(217, 79, 61, 0.18), transparent 26%),
+    linear-gradient(135deg, #071c23 0%, var(--seeker-deep) 55%, #1a2b34 100%);
+  color: #fffaf1;
+  overflow: hidden;
+}
+
+.seeker-hero::before {
+  content: "";
+  position: absolute;
+  inset: 22px;
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  pointer-events: none;
+}
+
+.seeker-hero::after {
+  content: "";
+  position: absolute;
+  right: clamp(22px, 8vw, 120px);
+  bottom: clamp(24px, 8vw, 110px);
+  width: clamp(120px, 20vw, 260px);
+  aspect-ratio: 1;
+  border: 2px solid rgba(255, 250, 241, 0.18);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 28px rgba(255, 250, 241, 0.035),
+    0 0 0 78px rgba(184, 137, 55, 0.06);
+  pointer-events: none;
+}
+
+.seeker-hero .article-kicker a,
+.seeker-hero .article-kicker span,
+.seeker-hero .article-meta span {
+  color: rgba(255, 250, 241, 0.72);
+}
+
+.seeker-hero .article-deck {
+  max-width: 850px;
+  color: rgba(255, 250, 241, 0.88);
+}
+
+.seeker-orientation {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: clamp(24px, 5vw, 56px);
+  align-items: stretch;
+  width: min(1180px, calc(100% - 40px));
+  margin: clamp(-58px, -5vw, -30px) auto 64px;
+  padding: clamp(28px, 5vw, 54px);
+  border: 1px solid rgba(8, 45, 51, 0.16);
+  background: rgba(255, 250, 241, 0.95);
+  box-shadow: 0 30px 80px rgba(8, 45, 51, 0.14);
+  position: relative;
+  z-index: 2;
+}
+
+.seeker-orientation h2 {
+  margin: 0 0 18px;
+  color: var(--seeker-ink);
+  font-size: clamp(34px, 5vw, 66px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.seeker-orientation p:not(.eyebrow) {
+  max-width: 680px;
+  color: #34444f;
+  font-size: clamp(18px, 2.2vw, 25px);
+  font-weight: 650;
+  line-height: 1.38;
+}
+
+.seeker-map {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.seeker-map li {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+  border: 1px solid rgba(8, 45, 51, 0.12);
+  background: #ffffff;
+  color: var(--seeker-ink);
+  font-size: clamp(16px, 2vw, 21px);
+  font-weight: 850;
+  letter-spacing: -0.02em;
+}
+
+.seeker-map span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--seeker-deep);
+  color: #fffaf1;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.seeker-body {
+  --article-accent: var(--seeker-red);
+}
+
+.seeker-body h2 {
+  padding-top: 18px;
+  border-top: 1px solid rgba(8, 45, 51, 0.14);
+}
+
+.seeker-body h3 {
+  color: var(--seeker-deep);
+  font-size: clamp(25px, 3vw, 38px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.seeker-body blockquote {
+  margin: 34px 0;
+  padding: clamp(26px, 5vw, 46px);
+  border-left: 6px solid var(--seeker-red);
+  background: var(--seeker-deep);
+  color: #fffaf1;
+  font-size: clamp(34px, 6vw, 72px);
+  font-weight: 900;
+  line-height: 0.94;
+  letter-spacing: -0.06em;
+}
+
+.seeker-tree {
+  margin: 28px 0 42px;
+  padding: clamp(22px, 4vw, 34px);
+  overflow-x: auto;
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  background:
+    linear-gradient(90deg, rgba(217, 79, 61, 0.16), transparent 44%),
+    #071c23;
+  color: #fffaf1;
+  font-size: clamp(14px, 1.6vw, 18px);
+  line-height: 1.7;
+}
+
+.seeker-hybrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 38px 0;
+}
+
+.seeker-hybrid article,
+.seeker-principles article {
+  border: 1px solid rgba(8, 45, 51, 0.14);
+  background: #ffffff;
+  box-shadow: 0 16px 40px rgba(8, 45, 51, 0.06);
+}
+
+.seeker-hybrid article {
+  padding: 24px;
+}
+
+.seeker-hybrid span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--seeker-red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.seeker-hybrid h3 {
+  margin-top: 0;
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.seeker-hybrid p,
+.seeker-principles p {
+  color: #34444f;
+}
+
+.seeker-principles {
+  display: grid;
+  gap: 18px;
+  margin: 38px 0;
+}
+
+.seeker-principles article {
+  padding: clamp(24px, 4vw, 40px);
+  border-left: 6px solid var(--seeker-gold);
+}
+
+.seeker-principles article:nth-child(even) {
+  border-left-color: var(--seeker-red);
+  background: linear-gradient(180deg, #ffffff, var(--seeker-paper));
+}
+
+.seeker-marker,
+.seeker-threshold {
+  margin: 42px 0;
+  padding: clamp(28px, 5vw, 54px);
+  background:
+    radial-gradient(circle at 80% 18%, rgba(217, 79, 61, 0.28), transparent 24%),
+    linear-gradient(135deg, #071c23, var(--seeker-deep));
+  color: #fffaf1;
+  box-shadow: 0 24px 60px rgba(8, 45, 51, 0.12);
+}
+
+.seeker-marker {
+  font-size: clamp(31px, 5vw, 62px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.seeker-threshold p:first-child {
+  margin: 0 0 18px;
+  color: var(--seeker-gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.seeker-threshold h2 {
+  margin: 0 0 22px;
+  padding-top: 0;
+  border: 0;
+  color: #fffaf1;
+  font-size: clamp(38px, 7vw, 88px);
+  line-height: 0.9;
+}
+
+.seeker-threshold p:last-child {
+  margin: 0;
+  color: rgba(255, 250, 241, 0.9);
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.12;
+}
+
+@media (max-width: 900px) {
+  .seeker-orientation,
+  .seeker-hybrid {
+    grid-template-columns: 1fr;
+  }
+
+  .seeker-orientation {
+    margin-top: -28px;
+  }
+}
+
+.seeker-hero h1 {
+  color: #fffaf1;
+  text-shadow: 0 10px 36px rgba(0, 0, 0, 0.22);
 }
