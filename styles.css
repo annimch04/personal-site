@@ -2857,7 +2857,18 @@ h3 {
 .aerial-capabilities h3,
 .aerial-response-grid h3 {
   color: var(--aerial-teal);
+}
+
+.aerial-capabilities h3 {
   font-size: clamp(22px, 2.7vw, 32px);
+}
+
+.aerial-response-grid h3 {
+  font-size: clamp(19px, 2vw, 25px);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  overflow-wrap: normal;
+  word-break: keep-all;
 }
 
 .aerial-capabilities p,
