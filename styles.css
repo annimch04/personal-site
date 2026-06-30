@@ -3457,3 +3457,174 @@ h3 {
     inset: 10px;
   }
 }
+
+/* Resonance Field Manual */
+.resonance-page {
+  --resonance-ink: #151922;
+  --resonance-deep: #071b1f;
+  --resonance-blue: #0b3b42;
+  --resonance-gold: #b88a46;
+  --resonance-red: #b65043;
+  --resonance-paper: #fbf5ea;
+  background:
+    radial-gradient(circle at 86% 10%, rgba(184, 138, 70, 0.18), transparent 30%),
+    radial-gradient(circle at 8% 38%, rgba(11, 59, 66, 0.12), transparent 28%),
+    linear-gradient(180deg, #f9f2e6 0%, #fffaf1 42%, #f4ecdf 100%);
+}
+
+.resonance-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 22%, rgba(184, 138, 70, 0.25), transparent 26%),
+    radial-gradient(circle at 18% 72%, rgba(182, 80, 67, 0.18), transparent 25%),
+    linear-gradient(135deg, #06171c 0%, #0b3b42 52%, #17202a 100%);
+  color: #fffaf1;
+}
+
+.resonance-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -6% -32% 46%;
+  height: 62%;
+  border: 1px solid rgba(255, 250, 241, 0.14);
+  border-radius: 999px 999px 0 0;
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+
+.resonance-hero .article-kicker a,
+.resonance-hero .article-kicker span,
+.resonance-hero .article-meta span {
+  color: rgba(255, 250, 241, 0.72);
+}
+
+.resonance-hero h1 {
+  max-width: 980px;
+  color: #fffaf1;
+  text-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
+}
+
+.resonance-hero .article-deck {
+  color: rgba(255, 250, 241, 0.86);
+}
+
+.resonance-threshold {
+  width: min(1120px, calc(100% - 48px));
+  margin: clamp(34px, 6vw, 78px) auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: end;
+  padding: clamp(28px, 5vw, 58px);
+  border: 1px solid rgba(21, 25, 34, 0.16);
+  border-left: 6px solid var(--resonance-gold);
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.94), rgba(255, 255, 255, 0.78));
+  box-shadow: 0 28px 70px rgba(21, 25, 34, 0.08);
+}
+
+.resonance-threshold h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--resonance-ink);
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.resonance-threshold p:last-child {
+  margin: 0;
+  color: #3b4852;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 680;
+  line-height: 1.34;
+}
+
+.resonance-body {
+  --article-accent: var(--resonance-gold);
+}
+
+.resonance-body > p:first-child {
+  color: var(--resonance-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(26px, 4vw, 44px);
+  font-weight: 720;
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+}
+
+.resonance-body h2 {
+  margin-top: clamp(54px, 8vw, 96px);
+  color: var(--resonance-deep);
+  border-top: 1px solid rgba(21, 25, 34, 0.16);
+}
+
+.resonance-body h3 {
+  margin-top: 38px;
+  color: var(--resonance-blue);
+  font-size: clamp(25px, 3.2vw, 38px);
+  line-height: 1.04;
+}
+
+.resonance-body h4 {
+  margin: 28px 0 8px;
+  color: var(--resonance-red);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.resonance-body p {
+  color: #25323c;
+}
+
+.resonance-glyph {
+  margin: 36px 0;
+  color: var(--resonance-gold);
+  font-size: 22px;
+  letter-spacing: 0.22em;
+  text-align: center;
+}
+
+.resonance-break {
+  width: 120px;
+  margin: 42px auto;
+  border: 0;
+  border-top: 1px solid rgba(21, 25, 34, 0.18);
+}
+
+.resonance-tool {
+  display: inline-block;
+  margin: 8px 8px 8px 0;
+  padding: 8px 12px;
+  border: 1px solid rgba(11, 59, 66, 0.16);
+  background: rgba(11, 59, 66, 0.06);
+  color: var(--resonance-blue);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.resonance-mark {
+  padding: 14px 18px;
+  border-left: 4px solid var(--resonance-red);
+  background: rgba(182, 80, 67, 0.07);
+  color: #4a2a25;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 850px) {
+  .resonance-threshold {
+    grid-template-columns: 1fr;
+    width: min(100% - 32px, 1120px);
+  }
+}
