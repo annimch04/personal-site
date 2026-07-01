@@ -3672,7 +3672,7 @@ h3 {
   gap: clamp(22px, 4vw, 48px);
   align-items: stretch;
   max-width: 1180px;
-  margin: -92px auto 0;
+  margin: clamp(34px, 5vw, 64px) auto 0;
   padding: clamp(22px, 4vw, 38px);
   border: 1px solid rgba(255, 247, 234, 0.6);
   background:
@@ -3803,7 +3803,7 @@ h3 {
   }
 
   .lacuna-threshold {
-    margin: -58px 20px 0;
+    margin: 32px 20px 0;
   }
 
   .lacuna-sigils {
