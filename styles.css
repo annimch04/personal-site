@@ -3919,13 +3919,25 @@ h3 {
 
 .mycelial-shell {
   grid-template-columns: minmax(220px, 0.32fr) minmax(0, 860px);
-  padding-top: 76px;
+  margin-top: 76px;
+  padding-top: clamp(42px, 6vw, 72px);
+  padding-bottom: clamp(54px, 8vw, 96px);
+  background:
+    radial-gradient(circle at 88% 8%, rgba(184, 81, 69, 0.08), transparent 24rem),
+    linear-gradient(180deg, rgba(255, 250, 242, 0.98), rgba(245, 239, 227, 0.96));
+  border-top: 1px solid rgba(8, 54, 58, 0.16);
+  border-bottom: 1px solid rgba(8, 54, 58, 0.12);
 }
 
 .mycelial-body {
-  color: #17232e;
+  color: #20313a;
   font-size: clamp(18px, 1.7vw, 21px);
   line-height: 1.86;
+}
+
+.mycelial-body p,
+.mycelial-body li {
+  color: #20313a;
 }
 
 .mycelial-body p {
