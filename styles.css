@@ -4301,11 +4301,46 @@ h3 {
 }
 
 .artifact-stack {
+  grid-template-columns: 1fr;
+}
+
+.pythia-artifact-panel {
+  gap: 1rem;
+}
+
+.artifact-minis {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.artifact-label {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  color: #2d7d68;
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .pythia-music-card {
-  grid-column: span 2;
+  position: relative;
+  overflow: hidden;
+  color: #fff8ea;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(225, 76, 61, 0.38), transparent 15rem),
+    radial-gradient(circle at 92% 90%, rgba(232, 174, 81, 0.22), transparent 18rem),
+    linear-gradient(135deg, #08282e, #101827 72%);
+}
+
+.pythia-music-card h3,
+.pythia-music-card p {
+  color: #fff8ea;
+}
+
+.pythia-music-card .artifact-label {
+  color: #e8ae51;
 }
 
 .music-preview-list {
@@ -4316,12 +4351,12 @@ h3 {
 
 .music-preview {
   display: grid;
-  grid-template-columns: minmax(12rem, 1fr) minmax(16rem, 1.25fr) auto;
+  grid-template-columns: minmax(12rem, 0.8fr) minmax(15rem, 1fr) auto;
   gap: 0.9rem;
   align-items: center;
   padding: 1rem;
-  border: 1px solid rgba(7, 52, 58, 0.14);
-  background: rgba(255, 252, 245, 0.72);
+  border: 1px solid rgba(255, 248, 234, 0.18);
+  background: rgba(255, 248, 234, 0.08);
 }
 
 .music-preview strong,
@@ -4330,13 +4365,13 @@ h3 {
 }
 
 .music-preview strong {
-  color: #0b4247;
+  color: #fff8ea;
   font-size: 1rem;
 }
 
 .music-preview span,
 .music-preview a {
-  color: #5b6870;
+  color: rgba(255, 248, 234, 0.72);
   font-size: 0.86rem;
 }
 
@@ -4346,8 +4381,12 @@ h3 {
 }
 
 .music-preview a {
+  justify-self: end;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(255, 248, 234, 0.24);
+  color: #fff8ea;
   font-weight: 900;
-  text-decoration-color: rgba(225, 76, 61, 0.5);
+  text-decoration: none;
 }
 
 .pythia-echoes {
@@ -4361,17 +4400,41 @@ h3 {
 
 .echo-link-grid a {
   display: flex;
-  min-height: 7rem;
-  align-items: end;
+  min-height: 12rem;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 1.4rem;
   color: #142231;
   font-weight: 900;
   text-decoration: none;
 }
 
+.echo-link-grid a span {
+  color: #b85145;
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+}
+
+.echo-link-grid a strong {
+  display: block;
+  margin: 2.2rem 0 0.8rem;
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  line-height: 1.02;
+}
+
+.echo-link-grid a em {
+  display: block;
+  color: #5b6870;
+  font-size: 0.92rem;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
 .echo-link-grid a:hover {
   color: #0b4247;
   border-color: rgba(225, 76, 61, 0.5);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 920px) {
@@ -4389,11 +4452,12 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .pythia-music-card {
-    grid-column: auto;
-  }
-
+  .artifact-minis,
   .music-preview {
     grid-template-columns: 1fr;
+  }
+
+  .music-preview a {
+    justify-self: start;
   }
 }
