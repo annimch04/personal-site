@@ -5403,3 +5403,224 @@ h3 {
   color: #132232;
   -webkit-text-fill-color: #132232;
 }
+
+
+/* Pythia correction pass: mobile density, manuscript path, and dark source rail */
+.world-dossier-card.pythia-card h2,
+.world-dossier-card.mycelial-card h2 {
+  color: rgba(255, 244, 223, 0.94);
+  -webkit-text-fill-color: rgba(255, 244, 223, 0.94);
+  text-shadow: 0 12px 42px rgba(0, 0, 0, 0.42);
+}
+
+.world-dossier-card.pythia-card .eyebrow,
+.world-dossier-card.mycelial-card .eyebrow {
+  color: rgba(232, 174, 81, 0.92);
+}
+
+.pythia-cosmos-title {
+  letter-spacing: -0.082em;
+}
+
+.pythia-reader-copy h1 {
+  letter-spacing: -0.062em;
+  word-spacing: 0.035em;
+}
+
+.pythia-manuscript-gate {
+  margin-top: clamp(3.8rem, 8vw, 6rem);
+  border-color: rgba(255, 244, 223, 0.16);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(230, 75, 59, 0.14), transparent 18rem),
+    radial-gradient(circle at 90% 22%, rgba(0, 83, 84, 0.2), transparent 20rem),
+    linear-gradient(135deg, rgba(255, 244, 223, 0.07), rgba(255, 244, 223, 0.025));
+}
+
+.manuscript-current h2 {
+  letter-spacing: -0.058em;
+}
+
+.pythia-source-panel {
+  background:
+    linear-gradient(180deg, rgba(255, 244, 223, 0.07), rgba(255, 244, 223, 0.025));
+  color: rgba(255, 244, 223, 0.72);
+  border: 1px solid rgba(255, 244, 223, 0.14);
+  border-left: 3px solid rgba(230, 75, 59, 0.74);
+  box-shadow: none;
+}
+
+.pythia-source-panel .eyebrow {
+  color: rgba(232, 174, 81, 0.92);
+}
+
+.pythia-source-panel p {
+  color: rgba(255, 244, 223, 0.64);
+}
+
+.pythia-source-panel a {
+  display: block;
+  width: fit-content;
+  margin: 0.65rem 0;
+  color: rgba(255, 244, 223, 0.9);
+  border-bottom-color: rgba(230, 75, 59, 0.56);
+}
+
+.pythia-source-panel a + a {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 760px) {
+  .pythia-cosmos {
+    padding-top: 3.25rem;
+  }
+
+  .pythia-cosmos-title {
+    font-size: clamp(5.3rem, 27vw, 7.6rem);
+    letter-spacing: -0.065em;
+  }
+
+  .pythia-live-map .pythia-incantation p {
+    font-size: clamp(1.85rem, 10vw, 3.25rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+  }
+
+  .pythia-gravity-card {
+    padding: 1.35rem;
+    min-height: 0;
+  }
+
+  .pythia-axis-card {
+    min-height: 0;
+    justify-content: flex-start;
+  }
+
+  .pythia-gravity-card p {
+    font-size: 0.98rem;
+    line-height: 1.32;
+  }
+
+  .pythia-gravity-card strong {
+    font-size: clamp(4.1rem, 22vw, 5.8rem);
+    line-height: 0.78;
+  }
+
+  .pythia-axis,
+  .pythia-flow,
+  .pythia-constellation,
+  .pythia-locations,
+  .pythia-engine {
+    margin-top: 3.8rem;
+  }
+
+  .pythia-axis h2,
+  .pythia-flow-heading h2,
+  .pythia-constellation h2,
+  .pythia-locations h2,
+  .pythia-engine h2,
+  .manuscript-current h2 {
+    font-size: clamp(2.1rem, 12vw, 3.4rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    word-spacing: 0.04em;
+  }
+
+  .pythia-character-grid article,
+  .pythia-character-grid article:nth-child(1) {
+    min-height: 0;
+    padding: 1.05rem;
+  }
+
+  .pythia-character-grid h3 {
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+  }
+
+  .pythia-character-grid p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+
+  .pythia-manuscript-gate {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    margin-top: 3.2rem;
+    padding: 1.25rem;
+  }
+
+  .pythia-manuscript-gate::before {
+    left: 1.25rem;
+    width: 4.5rem;
+  }
+
+  .manuscript-route {
+    gap: 0.25rem;
+  }
+
+  .manuscript-route span {
+    padding: 0.62rem 0 0.62rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .pythia-reader-copy h1 {
+    font-size: clamp(4rem, 21vw, 6.6rem);
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+    word-spacing: 0.06em;
+  }
+
+  .pythia-reader-shell {
+    width: min(100% - 1.2rem, 86rem);
+  }
+
+  .pythia-source-panel {
+    padding: 1.05rem;
+  }
+}
+
+/* Pythia correction pass: manuscript route compression */
+@media (max-width: 760px) {
+  .manuscript-route {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    gap: 0.45rem;
+    padding-top: 0.2rem;
+  }
+
+  .manuscript-route span {
+    display: inline-flex;
+    align-items: center;
+    width: auto;
+    padding: 0.42rem 0.68rem;
+    border: 1px solid rgba(255, 244, 223, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 244, 223, 0.035);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .manuscript-route span::before {
+    display: none;
+  }
+
+  .manuscript-current p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+}
+
+/* Pythia correction pass: manuscript heading readability */
+.pythia-manuscript-body h2 {
+  letter-spacing: -0.052em;
+}
+
+@media (max-width: 760px) {
+  .pythia-manuscript-body h2 {
+    font-size: clamp(3rem, 18vw, 4.7rem);
+    line-height: 0.96;
+    letter-spacing: -0.038em;
+    word-spacing: 0.05em;
+  }
+}
