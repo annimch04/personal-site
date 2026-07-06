@@ -4797,3 +4797,261 @@ h3 {
     opacity: 0.18;
   }
 }
+
+/* Pythia framework-fed surface */
+.pythia-live-map .pythia-cosmos-title {
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+
+.pythia-live-map .pythia-incantation {
+  max-width: min(70rem, 70vw);
+}
+
+.pythia-live-map .pythia-incantation p {
+  max-width: 13ch;
+}
+
+.pythia-axis-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 30rem;
+}
+
+.pythia-axis,
+.pythia-flow,
+.pythia-constellation,
+.pythia-locations,
+.pythia-engine {
+  position: relative;
+  z-index: 3;
+  width: min(82rem, 100%);
+}
+
+.pythia-axis {
+  max-width: 58rem;
+  margin-top: clamp(5rem, 10vw, 8rem);
+  padding-left: clamp(1rem, 3vw, 2rem);
+  border-left: 3px solid rgba(230, 75, 59, 0.72);
+}
+
+.pythia-axis h2,
+.pythia-flow-heading h2,
+.pythia-constellation h2,
+.pythia-locations h2,
+.pythia-engine h2 {
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(2.4rem, 6vw, 6.4rem);
+  line-height: 0.91;
+  letter-spacing: -0.075em;
+}
+
+.pythia-axis p:not(.eyebrow),
+.pythia-engine p:not(.eyebrow) {
+  max-width: 50rem;
+  margin: 1.4rem 0 0;
+  color: rgba(255, 244, 223, 0.72);
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  line-height: 1.45;
+}
+
+.pythia-flow,
+.pythia-constellation,
+.pythia-locations,
+.pythia-engine {
+  margin-top: clamp(5rem, 11vw, 9rem);
+}
+
+.pythia-flow-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(16rem, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.pythia-flow-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 1px solid rgba(255, 244, 223, 0.22);
+  border-bottom: 1px solid rgba(255, 244, 223, 0.22);
+}
+
+.pythia-flow-track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3.1rem;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(230, 75, 59, 0.9), rgba(196, 139, 55, 0.55), rgba(255, 244, 223, 0.13));
+}
+
+.pythia-flow-track article {
+  position: relative;
+  min-height: 21rem;
+  padding: 1.4rem clamp(1rem, 2vw, 1.7rem) 1.8rem;
+  border-right: 1px solid rgba(255, 244, 223, 0.12);
+  background: linear-gradient(180deg, rgba(255, 244, 223, 0.045), rgba(255, 244, 223, 0.015));
+}
+
+.pythia-flow-track article:last-child {
+  border-right: 0;
+}
+
+.pythia-flow-track article span {
+  display: inline-grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-bottom: clamp(2.2rem, 5vw, 4rem);
+  border-radius: 999px;
+  color: var(--cream);
+  background: rgba(230, 75, 59, 0.82);
+  box-shadow: 0 0 34px rgba(230, 75, 59, 0.34);
+  font-weight: 950;
+  letter-spacing: 0.08em;
+}
+
+.pythia-flow-track h3,
+.pythia-character-grid h3 {
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(1.35rem, 2.6vw, 2.25rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.pythia-flow-track p,
+.pythia-character-grid p,
+.pythia-location-list p {
+  color: rgba(255, 244, 223, 0.7);
+  font-size: clamp(0.98rem, 1.45vw, 1.2rem);
+  line-height: 1.45;
+}
+
+.pythia-constellation {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.55fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.pythia-character-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.pythia-character-grid article {
+  position: relative;
+  min-height: 15rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 244, 223, 0.16);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(230, 75, 59, 0.11), transparent 10rem),
+    rgba(255, 244, 223, 0.045);
+}
+
+.pythia-character-grid article:nth-child(1) {
+  grid-column: span 2;
+  min-height: 21rem;
+  border-color: rgba(230, 75, 59, 0.44);
+  background:
+    radial-gradient(circle at 80% 14%, rgba(230, 75, 59, 0.24), transparent 14rem),
+    linear-gradient(145deg, rgba(255, 244, 223, 0.08), rgba(255, 244, 223, 0.025));
+}
+
+.pythia-character-grid article:not(:first-child) {
+  grid-column: span 2;
+}
+
+.node-role {
+  margin: 0 0 1rem;
+  color: rgba(196, 139, 55, 0.94) !important;
+  font-size: 0.72rem !important;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pythia-locations {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.64fr) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+
+.pythia-location-list {
+  display: grid;
+  gap: 0.85rem;
+  padding-top: 0.35rem;
+}
+
+.pythia-location-list p {
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 244, 223, 0.16);
+}
+
+.pythia-location-list strong {
+  color: var(--cream);
+}
+
+.pythia-engine {
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(1rem, 4vw, 2rem);
+  border-top: 3px solid rgba(230, 75, 59, 0.72);
+}
+
+.pythia-engine .button.primary {
+  margin-top: 2rem;
+  color: #fff4df;
+  border-color: rgba(230, 75, 59, 0.82);
+  background: rgba(230, 75, 59, 0.22);
+}
+
+.world-dossier-card.pythia-card p:not(.eyebrow) {
+  color: rgba(255, 248, 234, 0.83);
+}
+
+@media (max-width: 1100px) {
+  .pythia-live-map .pythia-incantation {
+    max-width: 100%;
+  }
+
+  .pythia-live-map .pythia-incantation p {
+    max-width: none;
+  }
+
+  .pythia-flow-heading,
+  .pythia-constellation,
+  .pythia-locations {
+    grid-template-columns: 1fr;
+  }
+
+  .pythia-flow-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pythia-character-grid article:nth-child(n) {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 760px) {
+  .pythia-flow-track,
+  .pythia-character-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pythia-character-grid article:nth-child(n) {
+    grid-column: auto;
+  }
+
+  .pythia-flow-track article {
+    min-height: 0;
+  }
+}
