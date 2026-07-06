@@ -5055,3 +5055,351 @@ h3 {
     min-height: 0;
   }
 }
+
+/* Pythia manuscript entry + reading surface */
+.pythia-manuscript-gate {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.72fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  width: min(82rem, 100%);
+  margin-top: clamp(6rem, 12vw, 10rem);
+  padding: clamp(2rem, 5vw, 4.5rem);
+  border: 1px solid rgba(255, 244, 223, 0.2);
+  background:
+    radial-gradient(circle at 20% 15%, rgba(230, 75, 59, 0.16), transparent 20rem),
+    linear-gradient(135deg, rgba(255, 244, 223, 0.08), rgba(255, 244, 223, 0.025));
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.22);
+}
+
+.pythia-manuscript-gate::before {
+  content: "";
+  position: absolute;
+  left: clamp(2rem, 5vw, 4.5rem);
+  top: -2.2rem;
+  width: 9rem;
+  height: 3px;
+  background: rgba(230, 75, 59, 0.86);
+  box-shadow: 0 0 28px rgba(230, 75, 59, 0.4);
+}
+
+.manuscript-current h2 {
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(2.4rem, 6vw, 6.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.075em;
+}
+
+.manuscript-current p:not(.eyebrow) {
+  max-width: 50rem;
+  color: rgba(255, 244, 223, 0.72);
+  font-size: clamp(1.05rem, 1.75vw, 1.34rem);
+  line-height: 1.55;
+}
+
+.manuscript-route {
+  display: grid;
+  gap: 0.75rem;
+  align-content: center;
+}
+
+.manuscript-route span {
+  position: relative;
+  display: block;
+  padding: 0.9rem 0 0.9rem 1.8rem;
+  border-top: 1px solid rgba(255, 244, 223, 0.18);
+  color: rgba(255, 244, 223, 0.78);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.manuscript-route span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.3rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: rgba(230, 75, 59, 0.88);
+}
+
+.pythia-reading-page {
+  color: var(--cream);
+  background:
+    radial-gradient(circle at 82% 8%, rgba(230, 75, 59, 0.18), transparent 31rem),
+    radial-gradient(circle at 8% 16%, rgba(0, 83, 84, 0.55), transparent 33rem),
+    linear-gradient(135deg, #06151b 0%, #111824 48%, #241922 100%);
+}
+
+.pythia-reading-page .site-header {
+  background: rgba(255, 252, 245, 0.96);
+}
+
+.pythia-reader-hero {
+  position: relative;
+  min-height: min(78vh, 54rem);
+  overflow: hidden;
+  padding: clamp(6rem, 12vw, 11rem) clamp(1.4rem, 6vw, 6rem) clamp(4rem, 8vw, 7rem);
+  background:
+    linear-gradient(90deg, rgba(4, 23, 30, 0.96), rgba(12, 27, 38, 0.8) 52%, rgba(42, 25, 33, 0.9)),
+    radial-gradient(circle at 70% 35%, rgba(230, 75, 59, 0.18), transparent 26rem);
+}
+
+.reader-orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 244, 223, 0.12);
+  border-radius: 999px;
+  transform: rotate(-18deg);
+  pointer-events: none;
+}
+
+.reader-orbit-one {
+  right: -12rem;
+  bottom: -22rem;
+  width: 46rem;
+  height: 46rem;
+}
+
+.reader-orbit-two {
+  right: 12vw;
+  top: 18vh;
+  width: 16rem;
+  height: 16rem;
+  border-color: rgba(230, 75, 59, 0.24);
+}
+
+.reader-red-thread {
+  position: absolute;
+  left: 7vw;
+  right: 12vw;
+  bottom: 10vh;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(230, 75, 59, 0.9), rgba(255, 244, 223, 0.14), transparent);
+  opacity: 0.85;
+}
+
+.pythia-reader-copy {
+  position: relative;
+  z-index: 2;
+  max-width: 78rem;
+}
+
+.pythia-reader-copy h1 {
+  margin: 1.2rem 0 1.5rem;
+  color: var(--cream);
+  font-size: clamp(4rem, 13vw, 12rem);
+  line-height: 0.82;
+  letter-spacing: -0.095em;
+}
+
+.reader-deck {
+  max-width: 48rem;
+  color: rgba(255, 244, 223, 0.74);
+  font-size: clamp(1.25rem, 3vw, 2.35rem);
+  line-height: 1.18;
+}
+
+.reader-route {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  max-width: 60rem;
+  margin-top: clamp(2rem, 5vw, 4rem);
+}
+
+.reader-route span {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid rgba(255, 244, 223, 0.22);
+  border-radius: 999px;
+  color: rgba(255, 244, 223, 0.78);
+  font-size: 0.82rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pythia-threshold {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.42fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  width: min(76rem, calc(100% - 2rem));
+  margin: clamp(-4rem, -6vw, -2rem) auto clamp(4rem, 8vw, 7rem);
+  padding: clamp(1.6rem, 4vw, 3.5rem);
+  border: 1px solid rgba(255, 244, 223, 0.2);
+  background: rgba(255, 244, 223, 0.94);
+  color: var(--ink);
+  box-shadow: 0 32px 110px rgba(0, 0, 0, 0.3);
+}
+
+.pythia-threshold .eyebrow {
+  color: #2f806e;
+}
+
+.threshold-line {
+  margin: 0 0 1.2rem;
+  font-family: Georgia, serif;
+  font-size: clamp(2rem, 5vw, 4.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+
+.pythia-threshold p:not(.eyebrow):not(.threshold-line) {
+  color: rgba(12, 28, 40, 0.78);
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
+  line-height: 1.55;
+}
+
+.pythia-threshold aside {
+  align-self: stretch;
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  padding-left: clamp(1rem, 3vw, 2rem);
+  border-left: 3px solid rgba(230, 75, 59, 0.82);
+  font-weight: 950;
+  font-size: clamp(1.1rem, 2.4vw, 2rem);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.pythia-reader-shell {
+  display: grid;
+  grid-template-columns: minmax(14rem, 18rem) minmax(0, 54rem);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  width: min(86rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding-bottom: clamp(5rem, 9vw, 8rem);
+}
+
+.pythia-source-panel {
+  position: sticky;
+  top: 2rem;
+  background: rgba(255, 244, 223, 0.92);
+  color: var(--ink);
+}
+
+.pythia-manuscript-body {
+  color: rgba(255, 244, 223, 0.82);
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 1.7vw, 1.38rem);
+  line-height: 1.78;
+}
+
+.pythia-manuscript-body h2,
+.pythia-manuscript-body h3,
+.pythia-manuscript-body h4 {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  color: var(--cream);
+  line-height: 0.95;
+}
+
+.pythia-manuscript-body h2 {
+  margin: 5rem 0 1.4rem;
+  font-size: clamp(2.8rem, 7vw, 6.8rem);
+  letter-spacing: -0.08em;
+}
+
+.pythia-manuscript-body h3 {
+  margin: 2.8rem 0 1rem;
+  color: rgba(230, 75, 59, 0.95);
+  font-size: clamp(1.1rem, 2.5vw, 2rem);
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.pythia-manuscript-body h4 {
+  margin: 0.5rem 0 2rem;
+  color: rgba(255, 244, 223, 0.56);
+  font-size: 0.92rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pythia-manuscript-body p {
+  margin: 0 0 1.35rem;
+}
+
+.pythia-manuscript-body p:first-of-type {
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  line-height: 1.2;
+  color: var(--cream);
+}
+
+.memory-marker {
+  margin-top: 3rem !important;
+  color: rgba(196, 139, 55, 0.95) !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.08em;
+}
+
+.pythia-poem {
+  margin: 2rem 0 4rem;
+  padding: 1.6rem 2rem;
+  border-left: 3px solid rgba(230, 75, 59, 0.78);
+  color: rgba(255, 244, 223, 0.78);
+  background: rgba(255, 244, 223, 0.045);
+  font-family: Georgia, serif;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+.pythia-section-break {
+  position: relative;
+  height: 6rem;
+}
+
+.pythia-section-break::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(230, 75, 59, 0.76), rgba(255, 244, 223, 0.16), transparent);
+}
+
+@media (max-width: 900px) {
+  .pythia-manuscript-gate,
+  .pythia-threshold,
+  .pythia-reader-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .pythia-source-panel {
+    position: static;
+  }
+}
+
+/* Pythia reading contrast corrections */
+.pythia-reading-page .pythia-reader-copy h1 {
+  color: rgba(255, 244, 223, 0.94);
+  -webkit-text-fill-color: rgba(255, 244, 223, 0.94);
+  text-shadow: 0 18px 60px rgba(0, 0, 0, 0.46);
+}
+
+.pythia-reading-page .pythia-threshold,
+.pythia-reading-page .pythia-threshold p,
+.pythia-reading-page .pythia-threshold aside {
+  -webkit-text-fill-color: currentColor;
+}
+
+.pythia-reading-page .threshold-line {
+  color: #10202c;
+  -webkit-text-fill-color: #10202c;
+}
+
+.pythia-reading-page .pythia-threshold p:not(.eyebrow):not(.threshold-line) {
+  color: rgba(12, 28, 40, 0.8);
+  -webkit-text-fill-color: rgba(12, 28, 40, 0.8);
+}
+
+.pythia-reading-page .pythia-threshold aside {
+  color: #132232;
+  -webkit-text-fill-color: #132232;
+}
