@@ -4475,3 +4475,325 @@ h3 {
     justify-self: start;
   }
 }
+
+/* Pythia cosmology surface */
+.pythia-cosmology-page {
+  background: #02070b;
+  color: #fff4df;
+}
+
+.pythia-cosmology-page .site-header {
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 252, 245, 0.96);
+}
+
+.pythia-cosmology {
+  min-height: 100vh;
+  background: #02070b;
+}
+
+.pythia-cosmos {
+  --cream: #fff4df;
+  --cream-soft: rgba(255, 244, 223, 0.77);
+  --red: #e64b3b;
+  --gold: #c48b37;
+  --teal: #0f6b68;
+  position: relative;
+  min-height: calc(100vh - 5.5rem);
+  overflow: hidden;
+  padding: clamp(5rem, 9vw, 8rem) clamp(1.4rem, 5vw, 6rem) clamp(4rem, 7vw, 6rem);
+  color: var(--cream);
+  background:
+    radial-gradient(circle at 80% 18%, rgba(189, 64, 73, 0.24), transparent 28rem),
+    radial-gradient(circle at 11% 78%, rgba(15, 107, 104, 0.54), transparent 33rem),
+    linear-gradient(102deg, #02070b 0%, #06252b 33%, #101829 68%, #2b1624 100%);
+  isolation: isolate;
+}
+
+.pythia-cosmos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background:
+    radial-gradient(circle at 18% 50%, rgba(0, 168, 157, 0.18), transparent 18rem),
+    radial-gradient(circle at 60% 46%, rgba(255, 244, 223, 0.07), transparent 22rem),
+    linear-gradient(90deg, rgba(2, 7, 11, 0.05), rgba(255, 255, 255, 0.04), rgba(2, 7, 11, 0.18));
+}
+
+.pythia-cosmos::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(255, 244, 223, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 244, 223, 0.018) 1px, transparent 1px);
+  background-size: 92px 92px;
+  mask-image: radial-gradient(circle at 47% 50%, black 0%, transparent 74%);
+}
+
+.pythia-cosmos-veil {
+  position: absolute;
+  inset: auto -10rem -20rem 40%;
+  z-index: -1;
+  width: 60rem;
+  height: 60rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(230, 75, 59, 0.14), transparent 58%);
+  filter: blur(7px);
+}
+
+.pythia-orbit {
+  position: absolute;
+  z-index: 0;
+  border: 1px solid rgba(255, 244, 223, 0.15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.pythia-orbit-one {
+  right: -16rem;
+  bottom: -18rem;
+  width: min(70vw, 48rem);
+  height: min(70vw, 48rem);
+}
+
+.pythia-orbit-two {
+  right: 6rem;
+  top: 7rem;
+  width: 30rem;
+  height: 30rem;
+  transform: rotate(-18deg) scaleX(1.55);
+  opacity: 0.42;
+}
+
+.pythia-orbit-three {
+  left: -14rem;
+  top: 16rem;
+  width: 42rem;
+  height: 42rem;
+  transform: rotate(18deg) scaleY(0.58);
+  opacity: 0.34;
+}
+
+.pythia-red-thread {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.88;
+  pointer-events: none;
+}
+
+.pythia-red-thread path {
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-dasharray: 1 14;
+  opacity: 0.66;
+}
+
+.pythia-signal-dot {
+  position: absolute;
+  z-index: 2;
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 999px;
+  background: var(--cream);
+  box-shadow: 0 0 22px rgba(255, 244, 223, 0.7);
+  opacity: 0.82;
+}
+
+.pythia-signal-dot.dot-one { left: 23%; top: 31%; }
+.pythia-signal-dot.dot-two { right: 25%; top: 22%; background: var(--red); box-shadow: 0 0 28px rgba(230, 75, 59, 0.8); }
+.pythia-signal-dot.dot-three { right: 17%; bottom: 31%; }
+
+.pythia-cosmos-copy,
+.pythia-gravity-card,
+.pythia-realm-order,
+.pythia-threshold {
+  position: relative;
+  z-index: 3;
+}
+
+.pythia-cosmos-copy {
+  max-width: 62rem;
+}
+
+.pythia-cosmos-kicker {
+  color: rgba(111, 174, 145, 0.88);
+}
+
+.pythia-cosmos-title {
+  margin: 0.5rem 0 2rem;
+  color: #123249;
+  font-size: clamp(6rem, 18vw, 16rem);
+  line-height: 0.76;
+  letter-spacing: -0.105em;
+  opacity: 0.96;
+  text-shadow:
+    0 0 1px rgba(255, 244, 223, 0.14),
+    0 18px 80px rgba(0, 0, 0, 0.2);
+}
+
+.pythia-incantation {
+  display: grid;
+  gap: 0.24rem;
+  max-width: 62rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.pythia-incantation p {
+  margin: 0;
+  color: rgba(255, 244, 223, 0.86);
+  font-size: clamp(2rem, 4.6vw, 5.25rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+}
+
+.pythia-gravity-card {
+  position: absolute;
+  right: clamp(1.4rem, 5vw, 5rem);
+  top: clamp(6rem, 14vw, 11rem);
+  width: min(25rem, 31vw);
+  min-height: 24rem;
+  padding: clamp(1.7rem, 3vw, 2.6rem);
+  border: 1px solid rgba(255, 244, 223, 0.22);
+  background: rgba(255, 244, 223, 0.07);
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(14px);
+}
+
+.pythia-gravity-card p {
+  margin: 0 0 1.25rem;
+  color: rgba(255, 244, 223, 0.72);
+  font-size: clamp(1rem, 1.8vw, 1.45rem);
+  line-height: 1.35;
+}
+
+.pythia-gravity-card strong {
+  display: block;
+  color: var(--red);
+  font-size: clamp(5rem, 11vw, 9rem);
+  line-height: 0.74;
+  letter-spacing: -0.09em;
+}
+
+.pythia-realm-order {
+  width: min(76rem, 100%);
+  margin-top: clamp(5rem, 14vw, 10rem);
+}
+
+.pythia-realm-order > .eyebrow {
+  color: var(--gold);
+}
+
+.realm-row {
+  display: grid;
+  grid-template-columns: 4rem minmax(10rem, 0.4fr) minmax(16rem, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: baseline;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(255, 244, 223, 0.2);
+}
+
+.realm-row:last-child {
+  border-bottom: 1px solid rgba(255, 244, 223, 0.2);
+}
+
+.realm-row span {
+  display: inline-grid;
+  width: 2.2rem;
+  height: 2.2rem;
+  place-items: center;
+  border: 1px solid rgba(230, 75, 59, 0.42);
+  border-radius: 999px;
+  color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.realm-row h2 {
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(1.25rem, 2.4vw, 2.35rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.realm-row p {
+  margin: 0;
+  max-width: 40rem;
+  color: rgba(255, 244, 223, 0.72);
+  font-size: clamp(1rem, 1.7vw, 1.35rem);
+  line-height: 1.45;
+}
+
+.pythia-threshold {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+  width: min(76rem, 100%);
+  margin-top: clamp(3rem, 7vw, 5rem);
+  padding-top: 1.6rem;
+  border-top: 3px solid rgba(230, 75, 59, 0.68);
+}
+
+.pythia-threshold p {
+  margin: 0;
+  max-width: 38rem;
+  color: rgba(255, 244, 223, 0.74);
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  line-height: 1.35;
+}
+
+.pythia-threshold .button.primary {
+  color: #fff4df;
+  border-color: rgba(230, 75, 59, 0.82);
+  background: rgba(230, 75, 59, 0.22);
+}
+
+.pythia-threshold .button.primary:hover {
+  background: rgba(230, 75, 59, 0.34);
+}
+
+@media (max-width: 1100px) {
+  .pythia-gravity-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: min(34rem, 100%);
+    min-height: 0;
+    margin-top: clamp(3rem, 7vw, 5rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .pythia-cosmos {
+    padding-top: 4rem;
+  }
+
+  .pythia-cosmos-title {
+    font-size: clamp(5.5rem, 29vw, 8rem);
+  }
+
+  .realm-row {
+    grid-template-columns: 3rem 1fr;
+  }
+
+  .realm-row p {
+    grid-column: 2;
+  }
+
+  .pythia-orbit-two,
+  .pythia-orbit-three {
+    opacity: 0.18;
+  }
+}
