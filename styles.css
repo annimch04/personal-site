@@ -5923,3 +5923,264 @@ h3 {
     grid-column: auto;
   }
 }
+
+/* The Symbolism of Nameless Women and Divine Feminine Energy */
+.nameless-page {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(191, 137, 45, 0.16), transparent 32%),
+    radial-gradient(circle at 86% 14%, rgba(129, 62, 52, 0.12), transparent 34%),
+    linear-gradient(180deg, #fbf3e3 0%, #fffaf1 42%, #f7f1e4 100%);
+}
+
+.nameless-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 20%, rgba(191, 137, 45, 0.18), transparent 30%),
+    radial-gradient(circle at 14% 76%, rgba(129, 62, 52, 0.22), transparent 30%),
+    linear-gradient(135deg, #101928 0%, #183331 52%, #6d3d35 100%);
+  color: #fffaf1;
+}
+
+.nameless-hero::before {
+  content: "";
+  position: absolute;
+  right: clamp(24px, 8vw, 116px);
+  bottom: clamp(-86px, -5vw, -40px);
+  width: clamp(190px, 24vw, 340px);
+  height: clamp(220px, 29vw, 410px);
+  border: 1px solid rgba(255, 250, 241, 0.2);
+  border-radius: 48% 48% 42% 42% / 34% 34% 66% 66%;
+  box-shadow: inset 0 -38px 88px rgba(255, 250, 241, 0.06);
+  opacity: 0.9;
+}
+
+.nameless-hero::after {
+  content: "";
+  position: absolute;
+  right: clamp(90px, 16vw, 240px);
+  bottom: clamp(48px, 8vw, 126px);
+  width: clamp(56px, 8vw, 112px);
+  height: clamp(92px, 12vw, 150px);
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  border-left: 0;
+  border-radius: 0 90px 90px 0;
+}
+
+.nameless-hero .article-kicker,
+.nameless-hero h1,
+.nameless-hero .article-deck,
+.nameless-hero .article-meta {
+  position: relative;
+  z-index: 1;
+}
+
+.nameless-hero .article-kicker a,
+.nameless-hero .article-kicker span,
+.nameless-hero h1,
+.nameless-hero .article-deck,
+.nameless-hero .article-meta span {
+  color: inherit;
+}
+
+.nameless-hero .article-meta span {
+  border-color: rgba(255, 250, 241, 0.22);
+  background: rgba(255, 250, 241, 0.08);
+}
+
+.nameless-threshold {
+  width: min(980px, calc(100% - 40px));
+  margin: -34px auto 64px;
+  padding: clamp(28px, 5vw, 54px);
+  border: 1px solid rgba(16, 33, 49, 0.14);
+  border-top: 5px solid #bb8332;
+  background:
+    radial-gradient(circle at 86% 24%, rgba(129, 62, 52, 0.13), transparent 34%),
+    linear-gradient(135deg, rgba(255, 250, 241, 0.98), rgba(255, 255, 255, 0.94));
+  box-shadow: 0 24px 58px rgba(16, 33, 49, 0.1);
+}
+
+.nameless-threshold p {
+  margin: 0;
+  color: #102131;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(34px, 5.3vw, 72px);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.nameless-threshold p + p {
+  margin-top: 12px;
+  color: #a65343;
+  font-style: italic;
+}
+
+.nameless-body {
+  --nameless-ink: #102131;
+  --nameless-muted: #65727e;
+  --nameless-gold: #bb8332;
+  --nameless-red: #a65343;
+}
+
+.nameless-opening {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1fr);
+  gap: clamp(22px, 4vw, 46px);
+  margin: 0 0 42px;
+  padding: clamp(26px, 4vw, 44px);
+  border: 1px solid rgba(16, 33, 49, 0.13);
+  background: rgba(255, 250, 241, 0.78);
+}
+
+.nameless-opening h2 {
+  margin: 0;
+  color: var(--nameless-ink);
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 0.97;
+  letter-spacing: -0.055em;
+}
+
+.nameless-opening p {
+  margin-top: 0;
+}
+
+.nameless-triptych {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 42px 0;
+  border: 1px solid rgba(16, 33, 49, 0.13);
+  background: rgba(16, 33, 49, 0.13);
+}
+
+.nameless-triptych article {
+  min-height: 280px;
+  padding: clamp(22px, 3vw, 32px);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 241, 0.98), rgba(255, 255, 255, 0.94));
+}
+
+.nameless-triptych span {
+  display: block;
+  margin-bottom: 30px;
+  color: var(--nameless-gold);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.nameless-triptych h2 {
+  margin: 0 0 16px;
+  color: var(--nameless-ink);
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.nameless-triptych p {
+  margin: 0;
+  color: var(--nameless-muted);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.nameless-presentation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: end;
+  margin: 48px 0;
+  padding: clamp(28px, 5vw, 52px);
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  background:
+    radial-gradient(circle at 94% 16%, rgba(191, 137, 45, 0.18), transparent 32%),
+    linear-gradient(135deg, #183331, #101928 70%);
+  color: #fffaf1;
+  box-shadow: 0 24px 58px rgba(16, 33, 49, 0.13);
+}
+
+.nameless-presentation .eyebrow {
+  color: rgba(255, 250, 241, 0.72);
+}
+
+.nameless-presentation h2 {
+  margin: 0 0 18px;
+  color: inherit;
+  font-size: clamp(38px, 6vw, 78px);
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.nameless-presentation p:not(.eyebrow) {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(255, 250, 241, 0.78);
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.45;
+}
+
+.nameless-presentation .button-link {
+  white-space: nowrap;
+  border-color: rgba(255, 250, 241, 0.35);
+  color: #fffaf1;
+  background: rgba(255, 250, 241, 0.08);
+}
+
+.nameless-closing {
+  margin: 50px 0;
+  padding: clamp(28px, 5vw, 52px);
+  border-left: 6px solid var(--nameless-red);
+  background:
+    radial-gradient(circle at 92% 22%, rgba(187, 131, 50, 0.16), transparent 32%),
+    rgba(255, 250, 241, 0.78);
+}
+
+.nameless-closing p {
+  margin: 0 0 16px;
+  color: var(--nameless-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4.4vw, 58px);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+
+.nameless-closing p:last-child {
+  margin-bottom: 0;
+  color: var(--nameless-red);
+  font-style: italic;
+}
+
+@media (max-width: 980px) {
+  .nameless-opening,
+  .nameless-presentation {
+    grid-template-columns: 1fr;
+  }
+
+  .nameless-triptych {
+    grid-template-columns: 1fr;
+  }
+
+  .nameless-triptych article {
+    min-height: 0;
+  }
+
+  .nameless-presentation .button-link {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 720px) {
+  .nameless-threshold {
+    width: calc(100% - 28px);
+    margin-top: -22px;
+    margin-bottom: 42px;
+  }
+
+  .nameless-hero::before,
+  .nameless-hero::after {
+    opacity: 0.32;
+  }
+}
