@@ -6115,9 +6115,9 @@ h3 {
 
 .nameless-presentation {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.52fr);
-  gap: clamp(24px, 5vw, 58px);
-  align-items: stretch;
+  grid-template-columns: 1fr;
+  gap: clamp(24px, 4vw, 38px);
+  align-items: start;
   margin: 48px 0;
   padding: clamp(26px, 5vw, 54px);
   border: 1px solid rgba(255, 250, 241, 0.18);
@@ -6159,8 +6159,8 @@ h3 {
 
 .nameless-presentation-notes {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1px;
-  align-self: stretch;
   border: 1px solid rgba(255, 250, 241, 0.18);
   background: rgba(255, 250, 241, 0.14);
 }
@@ -6168,15 +6168,19 @@ h3 {
 .nameless-presentation-notes p {
   display: flex;
   align-items: center;
-  min-height: 72px;
+  min-height: 78px;
   margin: 0;
   padding: 18px 20px;
   background: rgba(16, 33, 49, 0.2);
   color: rgba(255, 250, 241, 0.82);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
+  line-height: 1.25;
   text-transform: uppercase;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .nameless-closing {
@@ -6208,6 +6212,14 @@ h3 {
   .nameless-opening-grid,
   .nameless-presentation {
     grid-template-columns: 1fr;
+  }
+
+  .nameless-presentation-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .nameless-presentation-notes p {
+    min-height: 0;
   }
 
   .nameless-lineage article {
