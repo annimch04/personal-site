@@ -6114,18 +6114,40 @@ h3 {
 }
 
 .nameless-presentation {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: clamp(24px, 4vw, 38px);
-  align-items: start;
+  position: relative;
   margin: 48px 0;
-  padding: clamp(26px, 5vw, 54px);
+  padding: clamp(28px, 5vw, 58px);
   border: 1px solid rgba(255, 250, 241, 0.18);
+  border-left: 6px solid var(--nameless-gold);
   background:
-    radial-gradient(circle at 88% 18%, rgba(187, 131, 50, 0.2), transparent 30%),
+    linear-gradient(90deg, rgba(255, 250, 241, 0.08), transparent 24%),
+    radial-gradient(circle at 90% 20%, rgba(187, 131, 50, 0.18), transparent 30%),
     linear-gradient(135deg, #183331 0%, #101928 62%, #271d24 100%);
   color: #fffaf1;
   box-shadow: 0 24px 58px rgba(16, 33, 49, 0.13);
+  overflow: hidden;
+}
+
+.nameless-presentation::after {
+  content: "";
+  position: absolute;
+  right: clamp(24px, 5vw, 74px);
+  top: clamp(22px, 5vw, 60px);
+  width: clamp(90px, 16vw, 210px);
+  aspect-ratio: 0.72;
+  border: 1px solid rgba(255, 250, 241, 0.16);
+  background:
+    linear-gradient(rgba(255, 250, 241, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 250, 241, 0.12) 1px, transparent 1px);
+  background-size: 100% 33%, 33% 100%;
+  opacity: 0.28;
+  pointer-events: none;
+}
+
+.nameless-presentation-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 840px;
 }
 
 .nameless-presentation .eyebrow {
@@ -6133,6 +6155,7 @@ h3 {
 }
 
 .nameless-presentation h2 {
+  max-width: 760px;
   margin: 0 0 18px;
   color: inherit;
   font-size: clamp(32px, 4.6vw, 62px);
@@ -6141,46 +6164,49 @@ h3 {
 }
 
 .nameless-presentation p:not(.eyebrow) {
-  max-width: 720px;
+  max-width: 760px;
   margin: 0;
   color: rgba(255, 250, 241, 0.78);
   font-size: clamp(18px, 2vw, 24px);
   line-height: 1.45;
 }
 
-.nameless-presentation .button-link {
+.nameless-presentation-action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 22px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: clamp(26px, 4vw, 42px);
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 250, 241, 0.22);
+}
+
+.nameless-presentation-action span {
+  color: rgba(255, 250, 241, 0.64);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nameless-presentation-action a {
   display: inline-flex;
-  margin-top: 24px;
-  white-space: nowrap;
-  border-color: rgba(255, 250, 241, 0.35);
+  align-items: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid rgba(255, 250, 241, 0.32);
   color: #fffaf1;
   background: rgba(255, 250, 241, 0.08);
+  font-size: 16px;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: none;
 }
 
-.nameless-presentation-notes {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  border: 1px solid rgba(255, 250, 241, 0.18);
-  background: rgba(255, 250, 241, 0.14);
-}
-
-.nameless-presentation-notes p {
-  display: flex;
-  align-items: center;
-  min-height: 78px;
-  margin: 0;
-  padding: 18px 20px;
-  background: rgba(16, 33, 49, 0.2);
-  color: rgba(255, 250, 241, 0.82);
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  line-height: 1.25;
-  text-transform: uppercase;
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
+.nameless-presentation-action a:hover,
+.nameless-presentation-action a:focus {
+  background: rgba(255, 250, 241, 0.16);
 }
 
 .nameless-closing {
@@ -6214,20 +6240,9 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .nameless-presentation-notes {
-    grid-template-columns: 1fr;
-  }
-
-  .nameless-presentation-notes p {
-    min-height: 0;
-  }
 
   .nameless-lineage article {
     grid-template-columns: 1fr;
-  }
-
-  .nameless-presentation .button-link {
-    width: fit-content;
   }
 }
 
