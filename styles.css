@@ -5729,7 +5729,7 @@ h3 {
 
 .layered-thesis {
   width: min(980px, calc(100% - 40px));
-  margin: -34px auto 64px;
+  margin: 40px auto 64px;
   padding: clamp(26px, 4vw, 44px);
   border: 1px solid rgba(16, 33, 49, 0.14);
   border-left: 6px solid var(--gold);
@@ -5785,18 +5785,29 @@ h3 {
 
 .layer-map {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 1px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
   margin: 34px 0 52px;
-  border: 1px solid rgba(16, 33, 49, 0.12);
-  background: rgba(16, 33, 49, 0.12);
+  border: 0;
+  background: transparent;
 }
 
 .layer-map article {
-  min-height: 250px;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 18px;
+  row-gap: 8px;
+  min-height: 0;
+  padding: clamp(22px, 3vw, 30px);
+  border: 1px solid rgba(16, 33, 49, 0.13);
   background:
+    radial-gradient(circle at 92% 18%, rgba(47, 111, 94, 0.09), transparent 34%),
     linear-gradient(180deg, rgba(255, 250, 241, 0.98), rgba(255, 255, 255, 0.94));
+  box-shadow: 0 18px 38px rgba(16, 33, 49, 0.055);
+}
+
+.layer-map article:last-child {
+  grid-column: 1 / -1;
 }
 
 .layer-map span {
@@ -5805,7 +5816,8 @@ h3 {
   justify-content: center;
   width: 38px;
   height: 38px;
-  margin-bottom: 20px;
+  grid-row: 1 / span 2;
+  margin: 0;
   border: 1px solid rgba(47, 111, 94, 0.3);
   border-radius: 50%;
   color: var(--faith-green);
@@ -5817,15 +5829,18 @@ h3 {
 .layer-map h2 {
   margin: 0 0 14px;
   color: var(--faith-ink);
-  font-size: clamp(21px, 2.2vw, 28px);
-  line-height: 1.06;
-  letter-spacing: -0.04em;
+  font-size: clamp(26px, 3.4vw, 42px);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .layer-map p {
   margin: 0;
   color: #5b6875;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -5909,7 +5924,7 @@ h3 {
 @media (max-width: 720px) {
   .layered-thesis {
     width: calc(100% - 28px);
-    margin-top: -20px;
+    margin-top: 28px;
     margin-bottom: 42px;
   }
 
@@ -6024,13 +6039,19 @@ h3 {
 }
 
 .nameless-opening {
-  display: grid;
-  grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1fr);
-  gap: clamp(22px, 4vw, 46px);
   margin: 0 0 42px;
-  padding: clamp(26px, 4vw, 44px);
+  padding: clamp(24px, 4vw, 38px);
   border: 1px solid rgba(16, 33, 49, 0.13);
-  background: rgba(255, 250, 241, 0.78);
+  border-left: 5px solid var(--nameless-gold);
+  background:
+    linear-gradient(135deg, rgba(255, 250, 241, 0.9), rgba(255, 255, 255, 0.84));
+}
+
+.nameless-opening-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1fr);
+  gap: clamp(22px, 4vw, 48px);
+  align-items: start;
 }
 
 .nameless-opening h2 {
@@ -6045,25 +6066,31 @@ h3 {
   margin-top: 0;
 }
 
-.nameless-triptych {
+.nameless-lineage {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
+  gap: 16px;
   margin: 42px 0;
-  border: 1px solid rgba(16, 33, 49, 0.13);
-  background: rgba(16, 33, 49, 0.13);
 }
 
-.nameless-triptych article {
-  min-height: 280px;
-  padding: clamp(22px, 3vw, 32px);
+.nameless-lineage > .eyebrow {
+  margin-bottom: 0;
+}
+
+.nameless-lineage article {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(120px, 0.34fr) minmax(0, 0.78fr) minmax(0, 1fr);
+  gap: clamp(16px, 3vw, 34px);
+  align-items: start;
+  padding: clamp(20px, 3vw, 30px) 0;
+  border-top: 1px solid rgba(16, 33, 49, 0.12);
   background:
-    linear-gradient(180deg, rgba(255, 250, 241, 0.98), rgba(255, 255, 255, 0.94));
+    linear-gradient(90deg, rgba(187, 131, 50, 0.08), transparent 26%);
 }
 
-.nameless-triptych span {
+.nameless-lineage span {
   display: block;
-  margin-bottom: 30px;
+  margin: 0;
   color: var(--nameless-gold);
   font-size: 12px;
   font-weight: 900;
@@ -6071,15 +6098,15 @@ h3 {
   text-transform: uppercase;
 }
 
-.nameless-triptych h2 {
-  margin: 0 0 16px;
+.nameless-lineage h2 {
+  margin: 0;
   color: var(--nameless-ink);
-  font-size: clamp(28px, 3.2vw, 42px);
-  line-height: 0.98;
-  letter-spacing: -0.055em;
+  font-size: clamp(25px, 3.1vw, 40px);
+  line-height: 1;
+  letter-spacing: -0.045em;
 }
 
-.nameless-triptych p {
+.nameless-lineage p {
   margin: 0;
   color: var(--nameless-muted);
   font-size: 17px;
@@ -6088,15 +6115,15 @@ h3 {
 
 .nameless-presentation {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 28px;
-  align-items: end;
+  grid-template-columns: minmax(0, 1.1fr) minmax(220px, 0.52fr);
+  gap: clamp(24px, 5vw, 58px);
+  align-items: stretch;
   margin: 48px 0;
-  padding: clamp(28px, 5vw, 52px);
+  padding: clamp(26px, 5vw, 54px);
   border: 1px solid rgba(255, 250, 241, 0.18);
   background:
-    radial-gradient(circle at 94% 16%, rgba(191, 137, 45, 0.18), transparent 32%),
-    linear-gradient(135deg, #183331, #101928 70%);
+    radial-gradient(circle at 88% 18%, rgba(187, 131, 50, 0.2), transparent 30%),
+    linear-gradient(135deg, #183331 0%, #101928 62%, #271d24 100%);
   color: #fffaf1;
   box-shadow: 0 24px 58px rgba(16, 33, 49, 0.13);
 }
@@ -6108,9 +6135,9 @@ h3 {
 .nameless-presentation h2 {
   margin: 0 0 18px;
   color: inherit;
-  font-size: clamp(38px, 6vw, 78px);
-  line-height: 0.95;
-  letter-spacing: -0.055em;
+  font-size: clamp(32px, 4.6vw, 62px);
+  line-height: 1;
+  letter-spacing: -0.045em;
 }
 
 .nameless-presentation p:not(.eyebrow) {
@@ -6122,10 +6149,34 @@ h3 {
 }
 
 .nameless-presentation .button-link {
+  display: inline-flex;
+  margin-top: 24px;
   white-space: nowrap;
   border-color: rgba(255, 250, 241, 0.35);
   color: #fffaf1;
   background: rgba(255, 250, 241, 0.08);
+}
+
+.nameless-presentation-notes {
+  display: grid;
+  gap: 1px;
+  align-self: stretch;
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  background: rgba(255, 250, 241, 0.14);
+}
+
+.nameless-presentation-notes p {
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+  margin: 0;
+  padding: 18px 20px;
+  background: rgba(16, 33, 49, 0.2);
+  color: rgba(255, 250, 241, 0.82);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .nameless-closing {
@@ -6154,17 +6205,13 @@ h3 {
 }
 
 @media (max-width: 980px) {
-  .nameless-opening,
+  .nameless-opening-grid,
   .nameless-presentation {
     grid-template-columns: 1fr;
   }
 
-  .nameless-triptych {
+  .nameless-lineage article {
     grid-template-columns: 1fr;
-  }
-
-  .nameless-triptych article {
-    min-height: 0;
   }
 
   .nameless-presentation .button-link {
