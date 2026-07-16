@@ -6461,3 +6461,281 @@ h3 {
     opacity: 0.38;
   }
 }
+
+.door-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(187, 131, 50, 0.14), transparent 24%),
+    radial-gradient(circle at 82% 86%, rgba(166, 83, 67, 0.16), transparent 30%),
+    linear-gradient(180deg, #fffaf1 0%, #efe6d8 100%);
+}
+
+.door-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(58px, 10vw, 132px) clamp(28px, 8vw, 110px) clamp(42px, 8vw, 88px);
+  background:
+    radial-gradient(circle at 76% 30%, rgba(166, 83, 67, 0.24), transparent 34%),
+    radial-gradient(circle at 18% 78%, rgba(187, 131, 50, 0.18), transparent 30%),
+    linear-gradient(135deg, #071820 0%, #123434 52%, #251c25 100%);
+  color: #fffaf1;
+}
+
+.door-hero::before {
+  content: "";
+  position: absolute;
+  right: clamp(24px, 10vw, 160px);
+  top: clamp(58px, 10vw, 130px);
+  width: clamp(120px, 21vw, 270px);
+  height: clamp(250px, 38vw, 520px);
+  border: 1px solid rgba(255, 250, 241, 0.24);
+  border-radius: 999px 999px 0 0;
+  box-shadow: inset 0 0 0 18px rgba(255, 250, 241, 0.025);
+  opacity: 0.76;
+}
+
+.door-kicker {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: clamp(34px, 6vw, 72px);
+  color: rgba(255, 250, 241, 0.68);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.door-kicker a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.door-kicker a::after {
+  content: "/";
+  margin-left: 10px;
+  color: #bb8332;
+}
+
+.door-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 0.28fr);
+  gap: clamp(24px, 6vw, 80px);
+  align-items: end;
+}
+
+.door-hero h1 {
+  max-width: 900px;
+  margin: 0;
+  color: inherit;
+  font-size: clamp(58px, 13vw, 184px);
+  line-height: 0.88;
+  letter-spacing: -0.08em;
+}
+
+.door-hero-grid p {
+  max-width: 760px;
+  margin: clamp(24px, 4vw, 44px) 0 0;
+  color: rgba(255, 250, 241, 0.82);
+  font-size: clamp(24px, 3.2vw, 42px);
+  line-height: 1.18;
+}
+
+.door-mark {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.door-mark span {
+  display: block;
+  width: 1px;
+  height: clamp(160px, 26vw, 320px);
+  background: linear-gradient(180deg, transparent, #bb8332 22%, #a65343 74%, transparent);
+  box-shadow: 0 0 34px rgba(187, 131, 50, 0.34);
+}
+
+.door-hero .article-meta {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(32px, 5vw, 62px);
+}
+
+.door-hero .article-meta span {
+  border-color: rgba(255, 250, 241, 0.2);
+  background: rgba(255, 250, 241, 0.08);
+}
+
+.door-shell {
+  display: grid;
+  grid-template-columns: minmax(210px, 280px) minmax(0, 880px);
+  gap: clamp(28px, 5vw, 72px);
+  width: min(1180px, calc(100% - 40px));
+  margin: clamp(40px, 7vw, 90px) auto;
+  align-items: start;
+}
+
+.door-context {
+  margin-top: 12px;
+}
+
+.door-body {
+  color: #102131;
+}
+
+.door-body section {
+  margin: 0 0 clamp(34px, 6vw, 70px);
+}
+
+.door-opening {
+  padding: clamp(28px, 4vw, 46px) 0 clamp(22px, 4vw, 42px);
+  border-top: 1px solid rgba(16, 33, 49, 0.16);
+  border-bottom: 1px solid rgba(16, 33, 49, 0.16);
+}
+
+.door-opening p:first-child,
+.door-invitation > p,
+.door-threshold h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(44px, 7vw, 92px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.98;
+}
+
+.door-opening p:last-child {
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: #566470;
+  font-size: clamp(20px, 2.4vw, 30px);
+  line-height: 1.42;
+}
+
+.door-invitation div {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 26px;
+  border-top: 1px solid rgba(16, 33, 49, 0.14);
+  border-bottom: 1px solid rgba(16, 33, 49, 0.14);
+}
+
+.door-invitation span {
+  padding: 20px 18px;
+  color: #a65343;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.door-invitation span + span {
+  border-left: 1px solid rgba(16, 33, 49, 0.14);
+}
+
+.door-calls p,
+.door-declaration p,
+.door-closing p {
+  max-width: 820px;
+  margin: 0 0 18px;
+  color: #102131;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(26px, 3.6vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.13;
+}
+
+.door-calls p:nth-child(2) {
+  margin-left: clamp(0px, 5vw, 68px);
+}
+
+.door-calls p:nth-child(3) {
+  margin-left: clamp(0px, 10vw, 136px);
+  color: #5c6670;
+}
+
+.door-declaration {
+  padding: clamp(30px, 5vw, 58px);
+  border-left: 6px solid #a65343;
+  background: rgba(255, 250, 241, 0.72);
+}
+
+.door-declaration p {
+  margin-bottom: 10px;
+}
+
+.door-threshold {
+  padding: clamp(34px, 6vw, 70px);
+  background:
+    radial-gradient(circle at 82% 20%, rgba(187, 131, 50, 0.2), transparent 30%),
+    linear-gradient(135deg, #143534 0%, #111a28 60%, #2b1d24 100%);
+  color: #fffaf1;
+}
+
+.door-threshold p {
+  margin: 0 0 10px;
+  color: rgba(255, 250, 241, 0.76);
+  font-size: clamp(20px, 2.5vw, 30px);
+  line-height: 1.35;
+}
+
+.door-threshold h2 {
+  margin-top: 26px;
+  color: #fffaf1;
+}
+
+.door-closing {
+  padding-bottom: clamp(32px, 5vw, 60px);
+}
+
+.door-closing p:last-child {
+  color: #a65343;
+  font-style: italic;
+}
+
+@media (max-width: 860px) {
+  .door-hero-grid,
+  .door-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .door-mark {
+    display: none;
+  }
+
+  .door-invitation div {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .door-invitation span:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid rgba(16, 33, 49, 0.14);
+  }
+
+  .door-invitation span:nth-child(4) {
+    border-top: 1px solid rgba(16, 33, 49, 0.14);
+  }
+}
+
+@media (max-width: 560px) {
+  .door-shell {
+    width: calc(100% - 28px);
+  }
+
+  .door-invitation div {
+    grid-template-columns: 1fr;
+  }
+
+  .door-invitation span + span,
+  .door-invitation span:nth-child(3),
+  .door-invitation span:nth-child(4) {
+    border-left: 0;
+    border-top: 1px solid rgba(16, 33, 49, 0.14);
+  }
+}
