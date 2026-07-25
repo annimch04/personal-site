@@ -191,14 +191,170 @@ h3 {
   margin: 0;
 }
 
-.system-visual img {
-  display: block;
-  width: 100%;
-  min-height: 360px;
-  object-fit: contain;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
+.architecture-plate {
+  position: relative;
+  isolation: isolate;
+  min-height: 470px;
+  overflow: hidden;
+  padding: clamp(26px, 3.2vw, 42px);
+  color: #f7f0e4;
+  background:
+    radial-gradient(circle at 88% 13%, rgba(168, 63, 63, 0.25), transparent 31%),
+    radial-gradient(circle at 8% 88%, rgba(47, 111, 94, 0.28), transparent 38%),
+    linear-gradient(140deg, #061b22 0%, #102131 57%, #281d24 100%);
+  border: 1px solid rgba(16, 33, 49, 0.28);
+  box-shadow: 0 24px 65px rgba(16, 33, 49, 0.18);
+}
+
+.architecture-plate::before {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  content: "";
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent calc(14.285% - 1px),
+    rgba(232, 196, 147, 0.08) calc(14.285% - 1px),
+    rgba(232, 196, 147, 0.08) 14.285%
+  );
+  mask-image: linear-gradient(to bottom, transparent, black 12%, black 88%, transparent);
+}
+
+.architecture-plate::after {
+  position: absolute;
+  z-index: -1;
+  top: -120px;
+  right: -94px;
+  width: 310px;
+  height: 310px;
+  content: "";
+  border: 1px solid rgba(229, 77, 62, 0.33);
+  border-radius: 50%;
+  box-shadow: 0 0 0 52px rgba(229, 77, 62, 0.035);
+}
+
+.architecture-heading {
+  position: relative;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(247, 240, 228, 0.22);
+}
+
+.architecture-kicker {
+  margin: 0;
+  color: #f7f0e4;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 2.5vw, 34px);
+  line-height: 1;
+}
+
+.architecture-subtitle {
+  margin: 8px 0 0;
+  color: rgba(247, 240, 228, 0.64);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.architecture-stack {
+  position: relative;
+  margin-top: 10px;
+}
+
+.architecture-stack::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 1px;
+  content: "";
+  background: linear-gradient(
+    to bottom,
+    rgba(247, 240, 228, 0.18),
+    rgba(47, 111, 94, 0.9) 30%,
+    rgba(36, 92, 130, 0.9) 58%,
+    rgba(229, 77, 62, 0.9) 78%,
+    rgba(160, 116, 34, 0.9)
+  );
+}
+
+.architecture-layer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  gap: 13px;
+  align-items: center;
+  min-height: 70px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(247, 240, 228, 0.11);
+}
+
+.architecture-layer:last-child {
+  border-bottom: 0;
+}
+
+.architecture-index {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  color: #f7f0e4;
+  background: #102131;
+  border: 1px solid rgba(247, 240, 228, 0.3);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.architecture-copy h2 {
+  margin: 0;
+  color: #f7f0e4;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.architecture-copy p {
+  max-width: 420px;
+  margin: 5px 0 0;
+  color: rgba(247, 240, 228, 0.66);
+  font-size: 11px;
+  line-height: 1.42;
+}
+
+.architecture-state {
+  color: rgba(247, 240, 228, 0.62);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.architecture-boundary {
+  margin-top: 5px;
+  border-top: 1px solid rgba(229, 77, 62, 0.75);
+  border-bottom-color: rgba(229, 77, 62, 0.34);
+}
+
+.architecture-boundary::before {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 38%;
+  height: 7px;
+  content: "";
+  background: rgba(229, 77, 62, 0.1);
+}
+
+.architecture-boundary .architecture-index {
+  color: #fff7ea;
+  background: #a83f3f;
+  border-color: rgba(255, 247, 234, 0.5);
 }
 
 .system-visual figcaption {
@@ -1048,8 +1204,19 @@ h3 {
     min-height: 300px;
   }
 
-  .system-visual img {
-    min-height: 260px;
+  .architecture-plate {
+    min-height: 0;
+    padding: 26px 20px;
+  }
+
+  .architecture-layer {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .architecture-state {
+    grid-column: 2;
+    margin-top: -8px;
   }
 
   .focus-grid {
