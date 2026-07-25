@@ -9479,6 +9479,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   padding: clamp(64px, 8vw, 138px) clamp(34px, 6vw, 110px);
+  container-type: inline-size;
 }
 
 .institute-entry-copy .eyebrow {
@@ -9489,7 +9490,7 @@ h3 {
   max-width: 690px;
   margin: 20px 0 30px;
   color: #f7f0e3;
-  font-size: clamp(58px, 7.2vw, 112px);
+  font-size: clamp(58px, 18cqw, 92px);
   line-height: 0.84;
   letter-spacing: -0.07em;
   overflow-wrap: normal;
