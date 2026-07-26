@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Fieldlight: Human-Owned AI Infrastructure</title>
+  <desc id="desc">AI systems should know what they are allowed to know. A five-layer Fieldlight architecture moves from private source truth through governance and runtime exchange to public work.</desc>
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061b22"/>
+      <stop offset=".48" stop-color="#0b2029"/>
+      <stop offset=".7" stop-color="#102131"/>
+      <stop offset="1" stop-color="#281d24"/>
+    </linearGradient>
+    <radialGradient id="greenGlow" cx="0" cy="1" r="1">
+      <stop offset="0" stop-color="#2f6f5e" stop-opacity=".34"/>
+      <stop offset=".72" stop-color="#2f6f5e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="1" cy="0" r=".8">
+      <stop offset="0" stop-color="#a83f3f" stop-opacity=".3"/>
+      <stop offset=".72" stop-color="#a83f3f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="86" height="630" patternUnits="userSpaceOnUse">
+      <path d="M 85 0 V 630" fill="none" stroke="#e8c493" stroke-opacity=".06"/>
+    </pattern>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
+      .serif { font-family: Georgia, "Times New Roman", serif; }
+      .eyebrow { fill: #d9a846; font-size: 15px; font-weight: 700; letter-spacing: 2.2px; }
+      .headline { fill: #f7f0e4; font-size: 68px; font-weight: 750; letter-spacing: -2px; }
+      .support { fill: #f7f0e4; fill-opacity: .68; font-size: 22px; }
+      .plate-title { fill: #f7f0e4; font-size: 29px; font-weight: 700; }
+      .plate-subtitle { fill: #d9a846; font-size: 11px; font-weight: 700; letter-spacing: 1.7px; }
+      .index { fill: #f7f0e4; font-size: 11px; font-weight: 700; }
+      .layer { fill: #f7f0e4; font-size: 18px; font-weight: 700; }
+      .detail { fill: #f7f0e4; fill-opacity: .57; font-size: 11px; }
+      .state { fill: #f7f0e4; fill-opacity: .6; font-size: 9px; font-weight: 700; letter-spacing: 1.5px; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#field)"/>
+  <rect width="1200" height="630" fill="url(#greenGlow)"/>
+  <rect width="1200" height="630" fill="url(#redGlow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1125" cy="5" r="260" fill="none" stroke="#e54d3e" stroke-opacity=".28"/>
+  <circle cx="1125" cy="5" r="335" fill="none" stroke="#e54d3e" stroke-opacity=".035" stroke-width="80"/>
+
+  <g class="sans">
+    <text x="64" y="70" class="eyebrow">ANNI MCHENRY / FIELDLIGHT</text>
+    <text x="64" y="162" class="headline">AI systems should</text>
+    <text x="64" y="236" class="headline">know what they are</text>
+    <text x="64" y="310" class="headline">allowed to know.</text>
+    <line x1="64" y1="418" x2="600" y2="418" stroke="#d9a846" stroke-opacity=".75"/>
+    <text x="64" y="466" class="support">Human-owned AI infrastructure.</text>
+    <text x="64" y="499" class="support">Local authority. Traceable exchange.</text>
+    <text x="64" y="586" fill="#f7f0e4" fill-opacity=".46" font-size="13" font-weight="700" letter-spacing="1.8">FIELDLIGHT.COM</text>
+  </g>
+
+  <g transform="translate(658 58)">
+    <rect x="0" y="0" width="478" height="514" fill="#06171f" fill-opacity=".52" stroke="#f7f0e4" stroke-opacity=".2"/>
+    <text x="34" y="54" class="serif plate-title">Fieldlight Architecture</text>
+    <text x="34" y="82" class="sans plate-subtitle">A LAYERED SYSTEM FOR HUMAN-OWNED AI COLLABORATION</text>
+    <line x1="34" y1="111" x2="444" y2="111" stroke="#f7f0e4" stroke-opacity=".22"/>
+    <line x1="55" y1="132" x2="55" y2="472" stroke="#2f6f5e" stroke-opacity=".8"/>
+
+    <g transform="translate(0 126)">
+      <circle cx="55" cy="28" r="17" fill="#102131" stroke="#f7f0e4" stroke-opacity=".3"/>
+      <text x="55" y="32" text-anchor="middle" class="sans index">01</text>
+      <text x="88" y="24" class="serif layer">Source Truth</text>
+      <text x="88" y="44" class="sans detail">Private memory, identity, and author-controlled context.</text>
+      <text x="421" y="31" text-anchor="end" class="sans state">PRIVATE</text>
+      <line x1="34" y1="67" x2="444" y2="67" stroke="#f7f0e4" stroke-opacity=".13"/>
+    </g>
+
+    <g transform="translate(0 205)">
+      <circle cx="55" cy="28" r="17" fill="#102131" stroke="#f7f0e4" stroke-opacity=".3"/>
+      <text x="55" y="32" text-anchor="middle" class="sans index">02</text>
+      <text x="88" y="24" class="serif layer">Governance</text>
+      <text x="88" y="44" class="sans detail">Consent, boundaries, policy, and traceable permission.</text>
+      <text x="421" y="31" text-anchor="end" class="sans state">CONTROL</text>
+      <line x1="34" y1="67" x2="444" y2="67" stroke="#f7f0e4" stroke-opacity=".13"/>
+    </g>
+
+    <g transform="translate(0 284)">
+      <circle cx="55" cy="28" r="17" fill="#102131" stroke="#f7f0e4" stroke-opacity=".3"/>
+      <text x="55" y="32" text-anchor="middle" class="sans index">03</text>
+      <text x="88" y="24" class="serif layer">Runtime Exchange</text>
+      <text x="88" y="44" class="sans detail">Routing, message contracts, validation, and audit traces.</text>
+      <text x="421" y="31" text-anchor="end" class="sans state">RUNTIME</text>
+      <line x1="34" y1="67" x2="444" y2="67" stroke="#f7f0e4" stroke-opacity=".13"/>
+    </g>
+
+    <g transform="translate(0 363)">
+      <line x1="34" y1="-6" x2="444" y2="-6" stroke="#e54d3e" stroke-opacity=".82" stroke-width="2"/>
+      <circle cx="55" cy="28" r="17" fill="#a83f3f" stroke="#f7f0e4" stroke-opacity=".42"/>
+      <text x="55" y="32" text-anchor="middle" class="sans index">04</text>
+      <text x="88" y="24" class="serif layer">Publication Boundary</text>
+      <text x="88" y="44" class="sans detail">Reviewed release separated from private source truth.</text>
+      <text x="421" y="31" text-anchor="end" class="sans state">RELEASE</text>
+      <line x1="34" y1="67" x2="444" y2="67" stroke="#e54d3e" stroke-opacity=".28"/>
+    </g>
+
+    <g transform="translate(0 442)">
+      <circle cx="55" cy="28" r="17" fill="#102131" stroke="#f7f0e4" stroke-opacity=".3"/>
+      <text x="55" y="32" text-anchor="middle" class="sans index">05</text>
+      <text x="88" y="24" class="serif layer">Public Work</text>
+      <text x="88" y="44" class="sans detail">Writing, protocols, repositories, demos, and analysis.</text>
+      <text x="421" y="31" text-anchor="end" class="sans state">PUBLIC</text>
+    </g>
+  </g>
+</svg>
