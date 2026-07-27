@@ -10536,7 +10536,7 @@ h3 {
 
 .institute-methodology-register {
   display: grid;
-  grid-template-columns: minmax(320px, 0.76fr) minmax(0, 1.24fr);
+  grid-template-columns: minmax(390px, 0.86fr) minmax(0, 1.14fr);
   color: var(--institute-cream);
   background:
     radial-gradient(circle at 88% 18%, rgba(217, 165, 61, 0.12), transparent 30%),
@@ -10551,12 +10551,13 @@ h3 {
 .institute-methodology-identity {
   display: flex;
   flex-direction: column;
-  min-height: 610px;
+  justify-content: center;
+  min-height: 560px;
   border-right: 1px solid rgba(255, 248, 235, 0.2);
 }
 
 .institute-methodology-number {
-  margin: 0 0 auto;
+  margin: 0 0 clamp(54px, 4vw, 78px);
   color: var(--institute-gold);
   font-size: 11px;
   font-weight: 900;
@@ -10564,12 +10565,16 @@ h3 {
   text-transform: uppercase;
 }
 
+.institute-methodology-identity .institute-axis-label {
+  margin-top: 0;
+}
+
 .institute-methodology-identity h3 {
-  max-width: 580px;
+  max-width: 100%;
   margin: 22px 0 0;
   color: var(--institute-cream);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(48px, 5.4vw, 84px);
+  font-size: clamp(46px, 3.4vw, 64px);
   font-weight: 400;
   line-height: 0.97;
   letter-spacing: -0.05em;
@@ -10586,7 +10591,7 @@ h3 {
   margin: 0 0 44px;
   color: var(--institute-coral);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(30px, 3.4vw, 52px);
+  font-size: clamp(30px, 2.8vw, 48px);
   line-height: 1.13;
 }
 
