@@ -12,6 +12,251 @@
   --shadow: 0 18px 50px rgba(16, 33, 49, 0.09);
 }
 
+/* Fieldlight Institute methodology reading surface */
+.institute-method-page {
+  --institute-night: #071b22;
+  --institute-navy: #102131;
+  --institute-paper: #f4efe4;
+  --institute-cream: #fff8eb;
+  --institute-coral: #e75243;
+  --institute-sea: #347765;
+  --institute-gold: #d9a53d;
+  color: var(--institute-navy);
+  background: var(--institute-paper);
+}
+
+.institute-methodology-reading {
+  background:
+    radial-gradient(circle at 84% 12%, rgba(217, 165, 61, 0.1), transparent 28%),
+    linear-gradient(180deg, var(--institute-paper), #ffffff 42%, #f5f1e8);
+}
+
+.institute-methodology-hero {
+  position: relative;
+  padding: clamp(72px, 9vw, 150px) clamp(24px, 7vw, 136px) clamp(64px, 8vw, 124px);
+  overflow: hidden;
+  color: var(--institute-cream);
+  background:
+    radial-gradient(circle at 78% 28%, rgba(52, 119, 101, 0.34), transparent 30%),
+    linear-gradient(118deg, var(--institute-night), var(--institute-navy) 64%, #2a1e27);
+}
+
+.institute-methodology-hero::after {
+  position: absolute;
+  top: -280px;
+  right: -120px;
+  width: 780px;
+  height: 780px;
+  content: "";
+  border: 1px solid rgba(231, 82, 67, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.institute-methodology-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.institute-methodology-hero .article-kicker {
+  color: var(--institute-gold);
+}
+
+.institute-methodology-hero h1 {
+  max-width: 1300px;
+  margin: 36px 0 30px;
+  color: var(--institute-cream);
+  font-size: clamp(54px, 8.4vw, 138px);
+  line-height: 0.87;
+  letter-spacing: -0.068em;
+}
+
+.institute-methodology-hero .article-deck {
+  max-width: 900px;
+  color: rgba(255, 248, 235, 0.74);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 2.6vw, 36px);
+}
+
+.institute-methodology-hero .article-meta {
+  color: rgba(255, 248, 235, 0.58);
+}
+
+.institute-methodology-declaration {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1.65fr);
+  gap: clamp(30px, 6vw, 100px);
+  align-items: start;
+  padding: clamp(48px, 6vw, 88px) clamp(24px, 7vw, 136px);
+  color: var(--institute-cream);
+  background: var(--institute-sea);
+}
+
+.institute-methodology-declaration span {
+  padding-top: 10px;
+  color: var(--institute-gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.institute-methodology-declaration p {
+  max-width: 1200px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(31px, 4.1vw, 66px);
+  line-height: 1.08;
+}
+
+.institute-methodology-shell {
+  grid-template-columns: minmax(230px, 0.34fr) minmax(0, 820px);
+  justify-content: center;
+  padding-top: clamp(72px, 9vw, 130px);
+}
+
+.institute-methodology-shell .article-context {
+  border-color: rgba(16, 33, 49, 0.16);
+  background: rgba(244, 239, 228, 0.9);
+}
+
+.institute-methodology-shell .article-context .eyebrow {
+  margin-top: 18px;
+  color: var(--institute-coral);
+}
+
+.institute-methodology-shell .article-context .eyebrow:first-child {
+  margin-top: 0;
+}
+
+.institute-methodology-body {
+  color: #24313b;
+}
+
+.institute-methodology-body h2,
+.institute-methodology-body h3 {
+  scroll-margin-top: 110px;
+}
+
+.institute-methodology-body h2 {
+  color: var(--institute-navy);
+}
+
+.institute-methodology-body h3 {
+  color: var(--institute-sea);
+}
+
+.institute-methodology-body blockquote {
+  margin: 36px 0;
+  padding: 24px 28px;
+  color: var(--institute-navy);
+  border-left: 5px solid var(--institute-coral);
+  background: #e8eee8;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.institute-methodology-body blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.institute-methodology-body h2[id^="0"] {
+  margin-top: 74px;
+  padding: 26px 28px;
+  color: var(--institute-cream);
+  border: 0;
+  background:
+    linear-gradient(90deg, var(--institute-coral) 0 8px, transparent 8px),
+    var(--institute-navy);
+  font-size: clamp(28px, 3.4vw, 42px);
+}
+
+.institute-methodology-body h2[id^="0"] strong {
+  color: inherit;
+}
+
+.institute-methodology-body table {
+  display: table;
+  width: 100%;
+  margin: 34px 0 46px;
+  overflow: hidden;
+  border-collapse: collapse;
+  border: 1px solid rgba(16, 33, 49, 0.22);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.institute-methodology-body th,
+.institute-methodology-body td {
+  padding: 15px 17px;
+  vertical-align: top;
+  border-right: 1px solid rgba(16, 33, 49, 0.18);
+  border-bottom: 1px solid rgba(16, 33, 49, 0.18);
+  text-align: left;
+}
+
+.institute-methodology-body th {
+  color: var(--institute-cream);
+  background: var(--institute-sea);
+}
+
+.institute-methodology-body tr:nth-child(even) td {
+  background: rgba(232, 238, 232, 0.68);
+}
+
+.institute-methodology-body li > p {
+  margin: 0;
+}
+
+@media (max-width: 780px) {
+  .institute-methodology-hero h1 br {
+    display: none;
+  }
+
+  .institute-methodology-hero h1 {
+    font-size: clamp(42px, 12vw, 50px);
+    line-height: 0.92;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
+  }
+
+  .institute-methodology-declaration {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .institute-methodology-shell {
+    grid-template-columns: 1fr;
+    padding: 62px 20px 80px;
+  }
+
+  .institute-methodology-shell .article-context {
+    position: static;
+  }
+
+  .institute-methodology-body {
+    min-width: 0;
+    font-size: 18px;
+  }
+
+  .institute-methodology-body h2[id^="0"] {
+    padding: 22px 20px;
+  }
+
+  .institute-methodology-body table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .institute-methodology-body th,
+  .institute-methodology-body td {
+    min-width: 230px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -1225,6 +1470,12 @@ h3 {
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 12px;
+  }
+
+  .institute-site-header .nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px 18px;
   }
 
   .nav-label-full,
@@ -10011,6 +10262,7 @@ h3 {
 
 .institute-premise,
 .institute-programs,
+.institute-methodologies,
 .institute-publications,
 .institute-operating-layer,
 .institute-commitments {
@@ -10032,6 +10284,7 @@ h3 {
 
 .institute-premise h2,
 .institute-programs h2,
+.institute-methodologies h2,
 .institute-publication-intro h2,
 .institute-operating-layer h2,
 .institute-commitments h2 {
@@ -10249,6 +10502,132 @@ h3 {
   color: rgba(255, 248, 235, 0.55);
   font-size: 13px;
   letter-spacing: 0.05em;
+}
+
+.institute-methodologies {
+  background:
+    radial-gradient(circle at 8% 82%, rgba(52, 119, 101, 0.14), transparent 30%),
+    var(--institute-paper);
+}
+
+.institute-methodologies-heading {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.92fr) minmax(420px, 1.08fr);
+  gap: clamp(50px, 8vw, 140px);
+  align-items: end;
+  margin: 38px 0 72px;
+}
+
+.institute-methodologies-heading > div {
+  max-width: 700px;
+  color: #52606b;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.58;
+}
+
+.institute-methodologies-heading > div p {
+  margin: 0;
+}
+
+.institute-methodologies-heading > div p + p {
+  margin-top: 20px;
+}
+
+.institute-methodology-register {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.76fr) minmax(0, 1.24fr);
+  color: var(--institute-cream);
+  background:
+    radial-gradient(circle at 88% 18%, rgba(217, 165, 61, 0.12), transparent 30%),
+    linear-gradient(125deg, var(--institute-night), #142937 66%, #20362f);
+}
+
+.institute-methodology-identity,
+.institute-methodology-detail {
+  padding: clamp(42px, 5vw, 78px);
+}
+
+.institute-methodology-identity {
+  display: flex;
+  flex-direction: column;
+  min-height: 610px;
+  border-right: 1px solid rgba(255, 248, 235, 0.2);
+}
+
+.institute-methodology-number {
+  margin: 0 0 auto;
+  color: var(--institute-gold);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.institute-methodology-identity h3 {
+  max-width: 580px;
+  margin: 22px 0 0;
+  color: var(--institute-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 5.4vw, 84px);
+  font-weight: 400;
+  line-height: 0.97;
+  letter-spacing: -0.05em;
+}
+
+.institute-methodology-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.institute-methodology-thesis {
+  max-width: 840px;
+  margin: 0 0 44px;
+  color: var(--institute-coral);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3.4vw, 52px);
+  line-height: 1.13;
+}
+
+.institute-methodology-detail ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 42px;
+  padding: 0;
+  border-top: 1px solid rgba(255, 248, 235, 0.22);
+  list-style: none;
+}
+
+.institute-methodology-detail li {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  gap: 10px;
+  padding: 16px 16px 16px 0;
+  color: rgba(255, 248, 235, 0.76);
+  border-bottom: 1px solid rgba(255, 248, 235, 0.22);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.institute-methodology-detail li:nth-child(odd) {
+  border-right: 1px solid rgba(255, 248, 235, 0.22);
+}
+
+.institute-methodology-detail li:nth-child(even) {
+  padding-left: 16px;
+}
+
+.institute-methodology-detail li span {
+  color: var(--institute-gold);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.institute-methodology-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 26px;
+  align-items: center;
 }
 
 .institute-publications {
@@ -10554,6 +10933,7 @@ h3 {
 
   .institute-premise-grid,
   .institute-programs-heading,
+  .institute-methodologies-heading,
   .institute-publication-intro,
   .institute-operating-grid {
     grid-template-columns: 1fr;
@@ -10570,6 +10950,16 @@ h3 {
 
   .institute-program-register article {
     grid-template-columns: 72px 0.72fr 1.28fr;
+  }
+
+  .institute-methodology-register {
+    grid-template-columns: 1fr;
+  }
+
+  .institute-methodology-identity {
+    min-height: 420px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 248, 235, 0.2);
   }
 
   .institute-publication-register {
@@ -10643,6 +11033,7 @@ h3 {
 
   .institute-premise,
   .institute-programs,
+  .institute-methodologies,
   .institute-publications,
   .institute-operating-layer,
   .institute-commitments {
@@ -10651,6 +11042,7 @@ h3 {
 
   .institute-premise h2,
   .institute-programs h2,
+  .institute-methodologies h2,
   .institute-publication-intro h2,
   .institute-operating-layer h2,
   .institute-commitments h2 {
@@ -10680,6 +11072,7 @@ h3 {
   }
 
   .institute-programs-heading,
+  .institute-methodologies-heading,
   .institute-publication-intro {
     gap: 28px;
     margin-bottom: 48px;
@@ -10722,6 +11115,27 @@ h3 {
 
   .institute-program-register h3 {
     font-size: 38px;
+  }
+
+  .institute-methodology-identity,
+  .institute-methodology-detail {
+    padding: 42px 24px;
+  }
+
+  .institute-methodology-identity {
+    min-height: 380px;
+  }
+
+  .institute-methodology-detail ol {
+    grid-template-columns: 1fr;
+  }
+
+  .institute-methodology-detail li:nth-child(odd) {
+    border-right: 0;
+  }
+
+  .institute-methodology-detail li:nth-child(even) {
+    padding-left: 0;
   }
 
   .institute-publication-register {
