@@ -10792,7 +10792,7 @@ h3 {
 
 .institute-operating-grid li {
   display: grid;
-  grid-template-columns: 66px 150px 1fr;
+  grid-template-columns: 66px 1fr;
   gap: 20px;
   padding: 25px 0;
   color: rgba(255, 248, 235, 0.68);
@@ -10807,7 +10807,13 @@ h3 {
   font-family: Georgia, "Times New Roman", serif;
 }
 
-.institute-operating-grid li span {
+.institute-operating-step {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+}
+
+.institute-operating-step strong {
   color: var(--institute-cream);
   font-weight: 800;
 }
@@ -11184,15 +11190,16 @@ h3 {
   }
 
   .institute-operating-grid li {
-    grid-template-columns: 46px 1fr;
-  }
-
-  .institute-operating-grid li span {
-    grid-column: 2;
-  }
-
-  .institute-operating-grid li {
+    grid-template-columns: 36px 1fr;
+    gap: 12px;
+    padding: 16px 0;
     font-size: 14px;
+  }
+
+  .institute-operating-step {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.35em;
   }
 
   .institute-commitment-list {
