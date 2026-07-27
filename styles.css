@@ -10658,7 +10658,7 @@ h3 {
 
 .institute-publication-register {
   display: grid;
-  grid-template-columns: 160px minmax(0, 0.85fr) minmax(360px, 1.15fr);
+  grid-template-columns: 160px minmax(0, 0.92fr) minmax(360px, 1.08fr);
   min-height: 610px;
   color: var(--institute-cream);
   background:
@@ -10678,8 +10678,9 @@ h3 {
 .institute-publication-deck {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 48px clamp(30px, 4vw, 76px);
+  justify-content: center;
+  gap: clamp(58px, 5vw, 88px);
+  padding: 54px clamp(42px, 5vw, 90px);
   border-right: 1px solid rgba(255, 248, 235, 0.2);
 }
 
@@ -10692,10 +10693,10 @@ h3 {
 }
 
 .institute-publication-deck strong {
-  max-width: 540px;
+  max-width: 100%;
   color: var(--institute-cream);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(46px, 5.3vw, 84px);
+  font-size: clamp(46px, 3.7vw, 68px);
   font-weight: 400;
   line-height: 0.98;
 }
