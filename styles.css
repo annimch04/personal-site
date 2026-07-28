@@ -9468,6 +9468,52 @@ h3 {
   font-weight: 700;
 }
 
+.local-intelligence-map {
+  margin: 0;
+  padding: clamp(28px, 4vw, 64px) clamp(18px, 3vw, 52px) clamp(24px, 3vw, 48px);
+  border-top: 1px solid rgba(255, 249, 237, 0.1);
+  background: #0e1c29;
+  color: var(--local-cream);
+}
+
+.local-intelligence-map picture,
+.local-intelligence-map img {
+  display: block;
+  width: 100%;
+}
+
+.local-intelligence-map picture {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.local-intelligence-map img {
+  height: auto;
+}
+
+.local-intelligence-map figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1600px;
+  margin: 20px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 249, 237, 0.16);
+  color: rgba(255, 249, 237, 0.68);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.local-intelligence-map figcaption strong {
+  color: var(--local-cream);
+  font-weight: 850;
+}
+
+.local-intelligence-map figcaption span {
+  max-width: 620px;
+  text-align: right;
+}
+
 .local-intelligence-utility {
   padding: clamp(70px, 9vw, 132px) clamp(24px, 7vw, 128px);
   background:
@@ -9938,6 +9984,22 @@ h3 {
   .local-intelligence-building-register,
   .local-intelligence-onramps {
     grid-template-columns: 1fr;
+  }
+
+  .local-intelligence-map {
+    padding: 20px 12px 24px;
+  }
+
+  .local-intelligence-map figcaption {
+    display: grid;
+    gap: 7px;
+    margin-top: 14px;
+    padding: 14px 8px 0;
+  }
+
+  .local-intelligence-map figcaption span {
+    max-width: none;
+    text-align: left;
   }
 
   .local-intelligence-building-register span,
@@ -10760,6 +10822,47 @@ h3 {
   text-transform: uppercase;
 }
 
+.institute-infrastructure-map {
+  margin: clamp(44px, 6vw, 82px) 0 0;
+  padding: clamp(18px, 2.5vw, 38px);
+  background: #0e1c29;
+  color: var(--institute-cream);
+}
+
+.institute-infrastructure-map picture,
+.institute-infrastructure-map img {
+  display: block;
+  width: 100%;
+}
+
+.institute-infrastructure-map img {
+  height: auto;
+}
+
+.institute-infrastructure-map figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 248, 235, 0.17);
+  color: rgba(255, 248, 235, 0.64);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.institute-infrastructure-map figcaption strong {
+  color: var(--institute-cream);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.institute-infrastructure-map figcaption span {
+  max-width: 620px;
+  text-align: right;
+}
+
 .institute-operating-layer {
   color: var(--institute-cream);
   background:
@@ -11183,6 +11286,24 @@ h3 {
   .institute-register-footer {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .institute-infrastructure-map {
+    margin-right: -12px;
+    margin-left: -12px;
+    padding: 12px 12px 18px;
+  }
+
+  .institute-infrastructure-map figcaption {
+    display: grid;
+    gap: 7px;
+    margin-top: 14px;
+    padding: 14px 8px 0;
+  }
+
+  .institute-infrastructure-map figcaption span {
+    max-width: none;
+    text-align: left;
   }
 
   .institute-operating-grid {
