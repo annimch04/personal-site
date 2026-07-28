@@ -11,7 +11,6 @@
   --gold: #a07422;
   --shadow: 0 18px 50px rgba(16, 33, 49, 0.09);
 }
-
 /* Fieldlight Institute methodology reading surface */
 .institute-method-page {
   --institute-night: #071b22;
@@ -11336,5 +11335,750 @@ h3 {
   .institute-footer {
     grid-template-columns: 1fr;
     padding: 56px 24px;
+  }
+}
+/* Fieldlight Mesh implementation review */
+
+.mesh-review-page {
+  --mesh-review-ink: #0c1b28;
+  --mesh-review-paper: #f3efe5;
+  --mesh-review-cream: #fff8e9;
+  --mesh-review-violet: #7157d9;
+  --mesh-review-cyan: #42d5cb;
+  --mesh-review-coral: #f25d4b;
+  --mesh-review-gold: #e2b54c;
+  background: var(--mesh-review-paper);
+}
+
+.mesh-review-site-header {
+  border-bottom-color: rgba(12, 27, 40, 0.14);
+}
+
+.mesh-review-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  min-height: min(780px, calc(100vh - 92px));
+  color: var(--mesh-review-cream);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 76% 24%, rgba(113, 87, 217, 0.3), transparent 28%),
+    linear-gradient(135deg, #091b29, #102635 58%, #201d32);
+  background-size: 64px 64px, 64px 64px, auto, auto;
+}
+
+.mesh-review-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+  padding: clamp(64px, 8vw, 118px) clamp(24px, 6vw, 92px);
+}
+
+.mesh-review-hero .article-kicker {
+  color: var(--mesh-review-gold);
+}
+
+.mesh-review-hero .article-kicker span::before {
+  color: var(--mesh-review-coral);
+}
+
+.mesh-review-hero h1 {
+  display: grid;
+  max-width: 960px;
+  margin: 34px 0 0;
+  color: var(--mesh-review-cream);
+  font-size: clamp(58px, 8vw, 122px);
+  line-height: 0.82;
+  letter-spacing: -0.075em;
+}
+
+.mesh-review-hero h1 span:nth-child(2) {
+  color: var(--mesh-review-coral);
+}
+
+.mesh-review-hero h1 span:nth-child(3) {
+  color: var(--mesh-review-cyan);
+}
+
+.mesh-review-hero .article-deck {
+  max-width: 700px;
+  margin-top: 42px;
+  color: rgba(255, 248, 233, 0.72);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(21px, 2vw, 31px);
+  line-height: 1.32;
+}
+
+.mesh-review-hero-signal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(48px, 6vw, 92px) clamp(24px, 4vw, 62px);
+  border-left: 1px solid rgba(255, 248, 233, 0.16);
+  background: rgba(5, 18, 28, 0.42);
+}
+
+.mesh-review-hero-signal > div {
+  display: grid;
+  gap: 4px;
+  color: rgba(255, 248, 233, 0.72);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mesh-review-signal-no {
+  color: var(--mesh-review-gold);
+  font-size: clamp(96px, 12vw, 180px);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.09em;
+}
+
+.mesh-review-hero-signal p {
+  margin: 0;
+  color: var(--mesh-review-cream);
+  font-size: clamp(24px, 3vw, 41px);
+  font-weight: 850;
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.mesh-review-hero-signal strong {
+  color: var(--mesh-review-coral);
+}
+
+.mesh-review-constitution {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 20px 60px;
+  padding: clamp(54px, 8vw, 108px) clamp(24px, 7vw, 108px);
+  color: var(--mesh-review-ink);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(113, 87, 217, 0.11), transparent 26%),
+    var(--mesh-review-cream);
+}
+
+.mesh-review-constitution > p,
+.mesh-review-constitution > strong {
+  margin: 0;
+  font-size: clamp(36px, 5vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.mesh-review-constitution > p {
+  color: rgba(12, 27, 40, 0.45);
+}
+
+.mesh-review-constitution > strong {
+  color: var(--mesh-review-violet);
+}
+
+.mesh-review-constitution > div {
+  grid-column: 2;
+  display: grid;
+  gap: 0;
+  margin-top: 24px;
+  border-top: 1px solid rgba(12, 27, 40, 0.2);
+}
+
+.mesh-review-constitution > div span {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(12, 27, 40, 0.2);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.mesh-review-status {
+  padding: clamp(58px, 8vw, 110px) clamp(24px, 7vw, 108px);
+  color: var(--mesh-review-cream);
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    var(--mesh-review-ink);
+  background-size: 64px 64px;
+}
+
+.mesh-review-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr);
+  gap: 18px 48px;
+  align-items: end;
+  margin-bottom: 52px;
+}
+
+.mesh-review-section-heading .eyebrow {
+  align-self: start;
+  color: var(--mesh-review-gold);
+}
+
+.mesh-review-section-heading h2 {
+  max-width: 950px;
+  margin: 0;
+  color: var(--mesh-review-cream);
+  font-size: clamp(44px, 6vw, 86px);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.mesh-review-section-heading > p:last-child {
+  grid-column: 2;
+  margin: 0;
+  color: rgba(255, 248, 233, 0.58);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+.mesh-review-status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 248, 233, 0.2);
+  border-left: 1px solid rgba(255, 248, 233, 0.2);
+}
+
+.mesh-review-status-grid article {
+  display: grid;
+  grid-template-columns: minmax(86px, 0.22fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: baseline;
+  min-height: 98px;
+  padding: 24px;
+  border-right: 1px solid rgba(255, 248, 233, 0.2);
+  border-bottom: 1px solid rgba(255, 248, 233, 0.2);
+}
+
+.mesh-review-status-grid article span {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.mesh-review-status-grid article p {
+  margin: 0;
+  color: var(--mesh-review-cream);
+  font-size: clamp(15px, 1.6vw, 20px);
+  font-weight: 740;
+  line-height: 1.3;
+}
+
+.mesh-review-status-grid .is-working span { color: var(--mesh-review-cyan); }
+.mesh-review-status-grid .is-partial span { color: var(--mesh-review-gold); }
+.mesh-review-status-grid .is-open span { color: var(--mesh-review-coral); }
+
+.mesh-review-status-grid code,
+.mesh-review-body code {
+  padding: 0.08em 0.3em;
+  border-radius: 3px;
+  color: inherit;
+  background: rgba(113, 87, 217, 0.12);
+  font-size: 0.85em;
+}
+
+.mesh-review-shell {
+  grid-template-columns: minmax(210px, 0.3fr) minmax(0, 820px);
+  justify-content: center;
+  padding-top: clamp(64px, 9vw, 126px);
+  background: var(--mesh-review-paper);
+}
+
+.mesh-review-context {
+  border: 1px solid rgba(12, 27, 40, 0.16);
+  background: rgba(255, 248, 233, 0.74);
+  box-shadow: none;
+}
+
+.mesh-review-context .eyebrow {
+  margin-top: 18px;
+  color: var(--mesh-review-violet);
+}
+
+.mesh-review-context .eyebrow:first-child {
+  margin-top: 0;
+}
+
+.mesh-review-body {
+  color: #253440;
+}
+
+.mesh-review-body > section {
+  margin-bottom: 92px;
+}
+
+.mesh-review-body h2 {
+  color: var(--mesh-review-ink);
+  font-size: clamp(34px, 4.5vw, 54px);
+  letter-spacing: -0.045em;
+}
+
+.mesh-review-body h3 {
+  color: var(--mesh-review-ink);
+  font-size: clamp(21px, 2.6vw, 30px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.mesh-review-body blockquote {
+  margin: 38px 0;
+  padding: clamp(26px, 5vw, 46px);
+  border: 0;
+  background: var(--mesh-review-ink);
+  color: var(--mesh-review-cream);
+  font-size: clamp(25px, 3.6vw, 42px);
+  font-weight: 760;
+  line-height: 1.18;
+  letter-spacing: -0.03em;
+}
+
+.mesh-review-opening > p:nth-child(3),
+.mesh-review-opening > p:nth-child(4),
+.mesh-review-opening > p:nth-child(5) {
+  margin-bottom: 8px;
+  color: var(--mesh-review-violet);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(23px, 3vw, 32px);
+  font-weight: 850;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.mesh-review-section-label {
+  margin-bottom: 12px !important;
+  color: var(--mesh-review-violet);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mesh-review-phase {
+  margin-right: calc(clamp(20px, 4vw, 48px) * -1);
+  margin-left: calc(clamp(20px, 4vw, 48px) * -1);
+  padding: 0 clamp(20px, 4vw, 48px) clamp(36px, 6vw, 70px);
+  border: 1px solid rgba(12, 27, 40, 0.16);
+  background: rgba(255, 248, 233, 0.58);
+}
+
+.mesh-review-phase-heading {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 0 18px;
+  margin: 0 calc(clamp(20px, 4vw, 48px) * -1) 54px;
+  padding: 28px clamp(20px, 4vw, 48px) 34px;
+  color: var(--mesh-review-cream);
+  background: var(--mesh-review-ink);
+}
+
+.mesh-review-phase-heading > span {
+  grid-row: 1 / 3;
+  color: var(--mesh-review-gold);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.mesh-review-phase-heading p {
+  margin: 0 0 8px;
+  color: rgba(255, 248, 233, 0.54);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mesh-review-phase-heading h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--mesh-review-cream);
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 0.9;
+}
+
+.mesh-review-phase.is-works .mesh-review-phase-heading {
+  box-shadow: inset 7px 0 var(--mesh-review-cyan);
+}
+
+.mesh-review-phase.is-not-yet .mesh-review-phase-heading {
+  box-shadow: inset 7px 0 var(--mesh-review-coral);
+}
+
+.mesh-review-phase.is-next .mesh-review-phase-heading {
+  box-shadow: inset 7px 0 var(--mesh-review-violet);
+}
+
+.mesh-review-phase > section {
+  padding: 12px 0 36px;
+  border-bottom: 1px solid rgba(12, 27, 40, 0.16);
+}
+
+.mesh-review-phase > section:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.mesh-review-proof {
+  margin: 30px 0;
+  padding: 24px;
+  color: var(--mesh-review-ink);
+  background: rgba(66, 213, 203, 0.18);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.mesh-review-test-count {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  margin: 28px 0 38px;
+  color: var(--mesh-review-ink);
+}
+
+.mesh-review-test-count strong {
+  color: var(--mesh-review-violet);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(92px, 16vw, 152px);
+  font-weight: 900;
+  line-height: 0.7;
+  letter-spacing: -0.09em;
+}
+
+.mesh-review-test-count span {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 850;
+}
+
+.mesh-review-warning {
+  margin: 30px 0;
+  padding: 24px;
+  border-left: 6px solid var(--mesh-review-coral);
+  color: var(--mesh-review-cream);
+  background: var(--mesh-review-ink);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.mesh-review-contrast {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 30px 0;
+  background: rgba(12, 27, 40, 0.18);
+}
+
+.mesh-review-contrast p {
+  display: grid;
+  align-content: start;
+  min-height: 170px;
+  margin: 0;
+  padding: 24px;
+  background: var(--mesh-review-cream);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 850;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+}
+
+.mesh-review-contrast span {
+  margin-bottom: 34px;
+  color: var(--mesh-review-violet);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.mesh-review-roadmap {
+  margin-top: 50px !important;
+  padding: 0 !important;
+  border-top: 1px solid rgba(12, 27, 40, 0.22);
+  list-style: none;
+  counter-reset: none;
+}
+
+.mesh-review-roadmap > li {
+  margin: 0 !important;
+  padding: 38px 0 42px;
+  border-bottom: 1px solid rgba(12, 27, 40, 0.22);
+}
+
+.mesh-review-roadmap > li > span {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--mesh-review-violet);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.mesh-review-roadmap h3 {
+  margin: 0 0 20px;
+  color: var(--mesh-review-ink);
+  font-size: clamp(27px, 4vw, 40px);
+}
+
+.mesh-review-roadmap strong {
+  display: block;
+  margin-top: 26px;
+  padding-left: 20px;
+  border-left: 5px solid var(--mesh-review-gold);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: clamp(19px, 2.4vw, 26px);
+  line-height: 1.3;
+}
+
+.mesh-review-closing {
+  margin-right: calc(clamp(20px, 5vw, 60px) * -1);
+  margin-left: calc(clamp(20px, 5vw, 60px) * -1);
+  padding: clamp(38px, 7vw, 72px);
+  color: var(--mesh-review-cream);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(113, 87, 217, 0.4), transparent 30%),
+    var(--mesh-review-ink);
+}
+
+.mesh-review-closing .mesh-review-section-label {
+  color: var(--mesh-review-gold);
+}
+
+.mesh-review-closing h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border: 0;
+  color: var(--mesh-review-cream);
+  font-size: clamp(44px, 7vw, 76px);
+}
+
+.mesh-review-closing p {
+  color: rgba(255, 248, 233, 0.76);
+}
+
+.mesh-review-closing blockquote {
+  padding: 34px 0;
+  border-top: 1px solid rgba(255, 248, 233, 0.24);
+  border-bottom: 1px solid rgba(255, 248, 233, 0.24);
+  background: transparent;
+  color: var(--mesh-review-cyan);
+}
+
+@media (max-width: 900px) {
+  .mesh-review-hero {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .mesh-review-shell {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mesh-review-hero-copy {
+    min-height: 640px;
+  }
+
+  .mesh-review-hero-signal {
+    display: grid;
+    grid-template-columns: 0.55fr 1fr;
+    gap: 34px;
+    align-items: end;
+    border-top: 1px solid rgba(255, 248, 233, 0.16);
+    border-left: 0;
+  }
+
+  .mesh-review-status-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .mesh-review-hero-copy {
+    justify-content: flex-start;
+    min-height: 0;
+    padding: 58px 22px 52px;
+  }
+
+  .mesh-review-hero h1 {
+    margin-top: 30px;
+    font-size: clamp(54px, 17vw, 78px);
+    line-height: 0.86;
+  }
+
+  .mesh-review-hero .article-deck {
+    margin-top: 32px;
+    font-size: 20px;
+  }
+
+  .mesh-review-hero-signal {
+    grid-template-columns: 0.45fr 1fr;
+    gap: 18px;
+    padding: 34px 22px 38px;
+  }
+
+  .mesh-review-signal-no {
+    font-size: 86px;
+  }
+
+  .mesh-review-hero-signal p {
+    font-size: 22px;
+  }
+
+  .mesh-review-constitution {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 56px 22px;
+  }
+
+  .mesh-review-constitution > p,
+  .mesh-review-constitution > strong {
+    font-size: 42px;
+  }
+
+  .mesh-review-constitution > div {
+    grid-column: 1;
+    margin-top: 24px;
+  }
+
+  .mesh-review-status {
+    padding: 58px 22px;
+  }
+
+  .mesh-review-section-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 38px;
+  }
+
+  .mesh-review-section-heading h2 {
+    font-size: 48px;
+  }
+
+  .mesh-review-section-heading > p:last-child {
+    grid-column: 1;
+  }
+
+  .mesh-review-status-grid article {
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    min-height: 0;
+    padding: 18px 16px;
+  }
+
+  .mesh-review-shell {
+    padding: 48px 22px 72px;
+  }
+
+  .mesh-review-shell .mesh-review-context {
+    margin-bottom: 50px;
+  }
+
+  .mesh-review-body {
+    font-size: 18px;
+    line-height: 1.68;
+  }
+
+  .mesh-review-body > section {
+    margin-bottom: 64px;
+  }
+
+  .mesh-review-body h2 {
+    font-size: 38px;
+  }
+
+  .mesh-review-body h3 {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .mesh-review-body blockquote {
+    margin: 30px 0;
+    padding: 26px 22px;
+    font-size: 27px;
+  }
+
+  .mesh-review-phase {
+    margin-right: -10px;
+    margin-left: -10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .mesh-review-phase-heading {
+    grid-template-columns: 44px 1fr;
+    margin-right: -20px;
+    margin-bottom: 36px;
+    margin-left: -20px;
+    padding: 22px 20px 26px;
+  }
+
+  .mesh-review-phase-heading > span {
+    font-size: 26px;
+  }
+
+  .mesh-review-phase-heading h2 {
+    font-size: 42px;
+  }
+
+  .mesh-review-proof {
+    padding: 20px;
+    font-size: 19px;
+  }
+
+  .mesh-review-test-count {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 14px;
+  }
+
+  .mesh-review-test-count strong {
+    font-size: 78px;
+  }
+
+  .mesh-review-test-count span {
+    min-width: 0;
+  }
+
+  .mesh-review-contrast {
+    grid-template-columns: 1fr;
+  }
+
+  .mesh-review-contrast p {
+    min-height: 0;
+  }
+
+  .mesh-review-contrast span {
+    margin-bottom: 20px;
+  }
+
+  .mesh-review-roadmap > li {
+    padding: 30px 0 34px;
+  }
+
+  .mesh-review-roadmap h3 {
+    font-size: 30px;
+  }
+
+  .mesh-review-closing {
+    margin-right: -10px;
+    margin-left: -10px;
+    padding: 34px 22px;
+  }
+
+  .mesh-review-closing h2 {
+    font-size: 48px;
   }
 }

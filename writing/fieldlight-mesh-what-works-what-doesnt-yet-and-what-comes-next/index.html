@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next</title>
+    <meta name="description" content="A candid implementation review of the local-first network beneath Fieldlight's intelligence infrastructure.">
+    <link rel="canonical" href="https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Fieldlight">
+    <meta property="og:url" content="https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/">
+    <meta property="og:title" content="Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next">
+    <meta property="og:description" content="Fieldlight Mesh has working components. It does not yet have a complete operational network.">
+    <meta property="og:image" content="https://fieldlight.com/assets/articles/fieldlight-mesh-implementation/social-preview.png?v=1">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Fieldlight Mesh implementation review: what works, what does not yet, and what comes next.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next">
+    <meta name="twitter:description" content="A candid implementation review of the local-first network beneath Fieldlight's intelligence infrastructure.">
+    <meta name="twitter:image" content="https://fieldlight.com/assets/articles/fieldlight-mesh-implementation/social-preview.png?v=1">
+    <link rel="stylesheet" href="../../styles.css?v=19">
+  </head>
+  <body>
+    <header class="site-header mesh-review-site-header">
+      <a class="brand" href="../../" aria-label="Anni McHenry home">
+        <span class="brand-mark">AM</span>
+        <span>Anni McHenry</span>
+      </a>
+      <nav class="nav" aria-label="Article navigation">
+        <a href="../../institute/">Institute</a>
+        <a href="../../#writing">Writing</a>
+        <a href="https://github.com/annimch04/public-writing/blob/main/edge-infrastructure-and-safety/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next.md">Source</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="reading-page mesh-review-page">
+        <header class="mesh-review-hero">
+          <div class="mesh-review-hero-copy">
+            <div class="article-kicker">
+              <a href="https://github.com/annimch04/fieldlight-mesh">Fieldlight Mesh</a>
+              <span>Implementation Review / July 2026</span>
+            </div>
+            <h1>
+              <span>What works.</span>
+              <span>What doesn't yet.</span>
+              <span>What comes next.</span>
+            </h1>
+            <p class="article-deck">An implementation review of the local-first network beneath Fieldlight's intelligence infrastructure.</p>
+          </div>
+          <div class="mesh-review-hero-signal" aria-label="Current implementation signal">
+            <div>
+              <span class="mesh-review-signal-no">23</span>
+              <span>Python tests passing</span>
+            </div>
+            <p>Working components.<br><strong>Not yet a complete operational network.</strong></p>
+          </div>
+        </header>
+
+        <section class="mesh-review-constitution" aria-label="Constitutional premise">
+          <p>Capability can move.</p>
+          <strong>Authority should not silently move with it.</strong>
+          <div>
+            <span>Identity begins locally.</span>
+            <span>Memory remains under local custody.</span>
+            <span>External capability receives a bounded grant.</span>
+          </div>
+        </section>
+
+        <section class="mesh-review-status" aria-labelledby="mesh-review-status-title">
+          <div class="mesh-review-section-heading">
+            <p class="eyebrow">The Short Version</p>
+            <h2 id="mesh-review-status-title">The current line between proof and promise.</h2>
+            <p>As of July 2026.</p>
+          </div>
+          <div class="mesh-review-status-grid" role="list">
+            <article class="is-working" role="listitem"><span>Runnable</span><p>Local node state and identity</p></article>
+            <article class="is-working" role="listitem"><span>Runnable</span><p>SIL framing, routing, response, inbox, and audit</p></article>
+            <article class="is-working" role="listitem"><span>Validated</span><p>Same-host discovery → registry → send → <code>pong</code></p></article>
+            <article class="is-working" role="listitem"><span>Tested</span><p>Two-node loopback message exchange</p></article>
+            <article class="is-working" role="listitem"><span>Runnable</span><p>Ed25519-signed public objects and Town Square sync</p></article>
+            <article class="is-partial" role="listitem"><span>Alpha</span><p>Peer-facing Apple Silicon macOS app</p></article>
+            <article class="is-working" role="listitem"><span>Runnable</span><p>Supra Mobile Edge local event store and API</p></article>
+            <article class="is-working" role="listitem"><span>Runnable</span><p>Kestrel Gate preflight, decision record, and export</p></article>
+            <article class="is-partial" role="listitem"><span>Phase 1</span><p>Trusted Bridge authority model and scaffolding</p></article>
+            <article class="is-open" role="listitem"><span>Open</span><p>Encrypted transport and general signed envelopes</p></article>
+            <article class="is-open" role="listitem"><span>Open</span><p>Reliable cross-machine acceptance</p></article>
+            <article class="is-open" role="listitem"><span>Open</span><p>Multi-hop relay and store-and-forward</p></article>
+            <article class="is-open" role="listitem"><span>Open</span><p>Public Town Square service and notarized Mac distribution</p></article>
+            <article class="is-open" role="listitem"><span>Open</span><p>Full vehicle field deployment</p></article>
+          </div>
+        </section>
+
+        <div class="article-shell mesh-review-shell">
+          <aside class="article-context mesh-review-context" aria-label="Article context">
+            <p class="eyebrow">Canonical Source</p>
+            <p>This reading surface presents the public implementation review. The canonical Markdown remains versioned in GitHub.</p>
+            <a href="https://github.com/annimch04/public-writing/blob/main/edge-infrastructure-and-safety/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next.md">View Article Source</a>
+            <p class="eyebrow">Implementation</p>
+            <a href="https://github.com/annimch04/fieldlight-mesh">Fieldlight Mesh Repository</a>
+            <p class="eyebrow">Constitutional Premise</p>
+            <a href="../the-right-to-local-intelligence/">The Right to Local Intelligence</a>
+          </aside>
+
+          <div class="article-body mesh-review-body">
+            <section class="mesh-review-opening">
+              <p>Fieldlight Mesh began with a constitutional requirement.</p>
+              <p>If intelligence is going to move between people, machines, vehicles, local models, and hosted systems, the network should not quietly make the most powerful remote system the authority over everything else.</p>
+              <p>Authority should begin with the human.</p>
+              <p>Identity should begin locally.</p>
+              <p>Memory should remain under local custody.</p>
+              <p>External capability should receive a bounded grant, perform a specific task, and return a result with a record of what happened.</p>
+              <p>That is the architecture.</p>
+              <p>The implementation is now real enough to evaluate.</p>
+              <p>Fieldlight Mesh is no longer only a collection of route schemas, symbolic roles, and infrastructure plans. The repository contains a runnable Python package, a TCP message layer, local node state, peer discovery, a peer-facing macOS application, cryptographically signed public objects, a mobile-edge event runtime, and a preflight audit layer for delegated tools.</p>
+              <p>It also has real limitations.</p>
+              <p>It is not yet a production mesh.</p>
+              <p>It does not yet provide encrypted transport.</p>
+              <p>It has not yet closed its most important cross-machine acceptance test.</p>
+              <p>Some of its strongest ideas exist as working local primitives but not yet as one continuous, enforced system.</p>
+              <blockquote>This is the current line between what Fieldlight Mesh proves and what it still has to earn.</blockquote>
+            </section>
+
+            <section>
+              <p class="mesh-review-section-label">Definition</p>
+              <h2>What Fieldlight Mesh Is Actually Building</h2>
+              <p>Fieldlight Mesh is a local-first communication and delegation layer for Fieldlight nodes.</p>
+              <p>A node may be:</p>
+              <ul>
+                <li>a person-controlled computer;</li>
+                <li>a peer's computer;</li>
+                <li>a mobile or vehicle-based edge node;</li>
+                <li>a neighborhood relay;</li>
+                <li>a regional anchor;</li>
+                <li>or a trusted bridge to hosted capability.</li>
+              </ul>
+              <p>The network is designed around governed handoffs.</p>
+              <p>A message should not carry content alone. Depending on the action, it may also need to carry identity, consent, authority, provenance, expiration, revocation, routing policy, and an audit requirement.</p>
+              <p>This is why Fieldlight Mesh cannot be evaluated only by asking whether two computers can exchange bytes.</p>
+              <p>They can.</p>
+              <p>The larger question is whether capability can move without authority silently moving with it.</p>
+              <p>That is the system Fieldlight is trying to implement.</p>
+            </section>
+
+            <section class="mesh-review-phase is-works" id="what-works">
+              <div class="mesh-review-phase-heading">
+                <span>01</span>
+                <p>Working now</p>
+                <h2>What Works</h2>
+              </div>
+
+              <section>
+                <h3>1. A Node Can Establish Local State Without Making the Repository Its Memory</h3>
+                <p>The current runtime initializes node state outside the source checkout.</p>
+                <p>A node receives:</p>
+                <ul>
+                  <li>a stable <code>mesh://</code> identity;</li>
+                  <li>local configuration;</li>
+                  <li>route definitions;</li>
+                  <li>a trusted-peer registry;</li>
+                  <li>an inbox;</li>
+                  <li>routing and audit logs;</li>
+                  <li>local identity material;</li>
+                  <li>Town Square storage;</li>
+                  <li>and additional stores for mobile-edge and Kestrel Gate events.</li>
+                </ul>
+                <p>Initialization fails rather than silently overwriting an existing identity.</p>
+                <p>That is a small behavior with constitutional importance.</p>
+                <p>The system treats identity as something that should be deliberately established, not regenerated whenever software is reinstalled.</p>
+                <p>Lemur remains the canonical source-authority node. Astra can run and publish. Supra can observe and queue mobile context. Those roles are related, but they are not interchangeable.</p>
+              </section>
+
+              <section>
+                <h3>2. The SIL Runtime Can Send, Receive, Route, Store, and Acknowledge Messages</h3>
+                <p>The current network layer uses one TCP connection per request with a four-byte length prefix and a UTF-8 YAML payload.</p>
+                <p>The receiver:</p>
+                <ol>
+                  <li>reads the framed message;</li>
+                  <li>validates the destination and route;</li>
+                  <li>checks the applicable trust rule;</li>
+                  <li>dispatches the message;</li>
+                  <li>stores durable content before acknowledging it;</li>
+                  <li>and returns a structured response.</li>
+                </ol>
+                <p>The runtime handles partial reads, rejects empty or truncated frames, deduplicates repeated messages, and detects conflicting reuse of a message identifier.</p>
+                <p>A tested two-node loopback exchange proves that a trusted sender can deliver a message, receive a <code>202 message_received</code> response, and find that message in the receiving node's inbox.</p>
+                <p>This is not the whole mesh.</p>
+                <p>It is a real transport and custody primitive.</p>
+              </section>
+
+              <section>
+                <h3>3. Local Discovery Can Produce a Usable Route</h3>
+                <p>Fieldlight supports LAN presence through <code>_fieldlight._tcp</code> mDNS advertisements.</p>
+                <p>A local advertisement can publish the node's mesh URI, the SIL port, an optional host hint, and an optional libp2p peer identifier.</p>
+                <p>The discovery command can write those observations into a local peer registry. The send command can then resolve a message's destination from that registry instead of requiring the operator to enter an IP address manually.</p>
+                <div class="mesh-review-proof">advertise → discover → registry → send → <code>pong</code></div>
+                <p>The repository also contains a Go libp2p discovery probe. Its observations can be merged into the registry alongside LAN information.</p>
+                <p>That bridge is useful, but still incomplete: the SIL runtime records libp2p multiaddresses; it does not yet dial them.</p>
+              </section>
+
+              <section>
+                <h3>4. Public Objects Can Be Created Locally, Signed, Moved, and Verified</h3>
+                <p>Fieldlight Mesh now supports Ed25519 local identities for signed objects.</p>
+                <p>Town Square uses that layer to create an append-only public wall without making a platform account the source of authorship.</p>
+                <p>A node can create a signed post, derive its object identifier from the signed payload, verify the signature, export a bundle, import a bundle idempotently, reject tampered content, and synchronize the bundle to a trusted peer.</p>
+                <blockquote>Public speech can originate under local identity, move between nodes, and remain verifiable after it leaves the machine where it was written.</blockquote>
+                <p>That is already more than a mockup.</p>
+              </section>
+
+              <section>
+                <h3>5. A Peer Can Use a Mac Application Instead of Operating the Protocol by Hand</h3>
+                <p>The Mesh repository includes a peer-facing macOS application over the same runtime used by the command line.</p>
+                <p>The app exposes node setup, starting and stopping a local node, peer discovery, explicit peer trust, messaging, inbox inspection, local identity, and Town Square actions.</p>
+                <p>An Apple Silicon DMG build path exists. A peer does not need Git, Homebrew, Python, or a repository checkout to use that build.</p>
+                <p>The current package is an alpha. It is ad-hoc signed, not Apple-notarized, and not ready for anonymous public distribution.</p>
+                <p>Still, the existence of a peer surface matters. Sovereignty that requires every participant to become a specialist is not mainstream sovereignty.</p>
+              </section>
+
+              <section>
+                <h3>6. The Supra Mobile Edge Runtime Preserves a Local Event Record</h3>
+                <p>The Supra Mobile Edge Node has moved beyond a hardware diagram.</p>
+                <p>Its Phase 1 runtime includes a SQLite event store, human-authored bookmarks, media-reference ingest with hashes, protected-custody flags, YAML and JSON export, review-gated sync manifests, a local HTTP API, and a lightweight iPad cockpit.</p>
+                <p>The current tests prove that a bookmark can be created, listed, translated into a Mesh message, and exposed through the local API.</p>
+                <p>They also prove that a protected media reference cannot enter a sync manifest without review.</p>
+                <blockquote>Capture does not equal permission to export.</blockquote>
+              </section>
+
+              <section>
+                <h3>7. Kestrel Gate Can Record a Delegated Action Before It Becomes Invisible</h3>
+                <p>Kestrel Gate is the first runtime layer for preflight review of agent and script activity.</p>
+                <p>It can record a proposed action; identify simple risk conditions; flag unknown actors, network access, package changes, protected paths, file mutation, public export, and extraction-like behavior; recommend <code>warn_and_ask</code>; record a human decision; and export the event as a Mesh-compatible message.</p>
+                <p>The classifier is intentionally simple.</p>
+                <p>The value is not that it can perfectly determine intent.</p>
+                <p>The value is that delegated action begins to leave a local, inspectable record before the system normalizes invisible authority.</p>
+              </section>
+
+              <section>
+                <h3>8. The Current Code Passes Its Test Suite</h3>
+                <div class="mesh-review-test-count"><strong>23</strong><span>tests passed</span></div>
+                <p>The latest repository CI also passes on Ubuntu and macOS and builds the Go libp2p probe.</p>
+                <p>The tests cover framing, trust failure behavior, no-clobber initialization, inbox deduplication and conflict detection, two-node message delivery, signed Town Square objects, tamper rejection, Town Square bundle sync, mobile bookmarks, protected media review, the mobile API, Kestrel risk flags and decisions, and Mesh-compatible Kestrel export.</p>
+                <p>Passing tests do not make the Mesh production-ready.</p>
+                <p>They do make its current claims inspectable.</p>
+              </section>
+            </section>
+
+            <section class="mesh-review-phase is-not-yet" id="what-doesnt-yet">
+              <div class="mesh-review-phase-heading">
+                <span>02</span>
+                <p>Open constraints</p>
+                <h2>What Does Not Work Yet</h2>
+              </div>
+
+              <section>
+                <h3>1. Transport Is Not Encrypted</h3>
+                <p>The most important current limitation is also the clearest.</p>
+                <p>SIL messages are sent as plaintext YAML over TCP.</p>
+                <p>Town Square objects are signed, but signatures do not conceal their contents.</p>
+                <div class="mesh-review-warning">Use only on a trusted LAN or inside an encrypted overlay such as Tailscale. Do not expose the current runtime directly to the public internet.</div>
+              </section>
+
+              <section>
+                <h3>2. General Mesh Messages Do Not Yet Have a Complete Cryptographic Identity Layer</h3>
+                <p>Signed Town Square objects are real. General transport identity is not complete.</p>
+                <p>The older GPG route check remains a development stub. The Ed25519 object layer has not yet become a signed envelope for every important message, grant, acknowledgement, and revocation.</p>
+                <p>Key rotation, continuity proofs, revocation records, and owner-signed agent delegation credentials also remain future work.</p>
+                <div class="mesh-review-contrast">
+                  <p><span>Implemented</span>This object verifies.</p>
+                  <p><span>Still to earn</span>This network relationship remains trustworthy over time.</p>
+                </div>
+              </section>
+
+              <section>
+                <h3>3. The Cross-Machine Path Is Not Reliably Closed</h3>
+                <p>The same-host runtime passes.</p>
+                <p>A remote receiver has also passed its own local end-to-end self-test.</p>
+                <p>But a documented sender-to-remote-peer test over Tailscale still times out before the SIL protocol is reached.</p>
+                <p>The evidence points to a raw TCP path or policy issue on the sender route rather than a failure in message framing or the remote handler.</p>
+                <p>That diagnosis is useful.</p>
+                <p>It is not the same as a successful cross-machine acceptance test.</p>
+                <p>Until two independent machines can exchange, store, acknowledge, and reply in both directions—with preserved evidence—the network's most important implementation claim remains open.</p>
+              </section>
+
+              <section>
+                <h3>4. Discovery and Transport Still Sit Beside Each Other</h3>
+                <p>LAN discovery works locally. The libp2p probe works as an independent discovery track. The registry can carry information from both.</p>
+                <p>But libp2p is not yet the Mesh transport, and the SIL runtime does not yet use libp2p multiaddresses as a live fallback.</p>
+                <p>Fieldlight can observe that a peer exists through more than one channel.</p>
+                <p>It cannot yet seamlessly choose and prove the best governed route between those channels.</p>
+              </section>
+
+              <section>
+                <h3>5. The Runtime Is Not Yet a Multi-Hop Mesh</h3>
+                <p>The current implementation is primarily direct node-to-node TCP.</p>
+                <p>It does not yet provide:</p>
+                <ul>
+                  <li>automatic multi-hop routing;</li>
+                  <li>store-and-forward relays;</li>
+                  <li>offline queue reconciliation;</li>
+                  <li>relay selection;</li>
+                  <li>conflict resolution across replicated histories;</li>
+                  <li>revocation propagation;</li>
+                  <li>or regional handoff behavior.</li>
+                </ul>
+                <p>The architecture describes household nodes, mobile nodes, neighborhood utilities, regional anchors, and trusted bridges.</p>
+                <p>The current runtime proves direct handoffs.</p>
+                <p>It does not yet prove the whole topology.</p>
+              </section>
+
+              <section>
+                <h3>6. Town Square Is a Signed Primitive, Not Yet a Public Institution</h3>
+                <p>Town Square can sign, verify, export, import, and synchronize posts.</p>
+                <p>It does not yet have moderation records, tombstones, public identity endpoints, a public HTTP reader, automatic replication, or a mature social trust model.</p>
+                <p>Append-only storage is a strong beginning.</p>
+                <p>Public space requires more than a feed.</p>
+              </section>
+
+              <section>
+                <h3>7. The Mac App Is Not Ready for Broad Distribution</h3>
+                <p>The current app targets Apple Silicon.</p>
+                <p>It is not Developer ID signed, hardened, notarized, or stapled.</p>
+                <p>The repository contains a two-Mac acceptance runbook, but the durable public evidence does not yet show that the full install, enrollment, bidirectional message, inbox, and Town Square flow has been completed by two ordinary peer operators.</p>
+                <p>The app exists.</p>
+                <p>The distribution and field-validation layer remains unfinished.</p>
+              </section>
+
+              <section>
+                <h3>8. The Mobile Node Has Not Yet Earned Its Hardware Claims</h3>
+                <p>The Supra runtime is implemented.</p>
+                <p>The full vehicle loop is not yet demonstrated in the field.</p>
+                <p>The Raspberry Pi, storage, router, dashcam, OBD-II, microphone, local interface, custody rules, and home sync still need to operate together during and after an actual drive.</p>
+                <p>Until then, the mobile runtime is a strong local implementation with a hardware acceptance test still ahead of it.</p>
+              </section>
+
+              <section>
+                <h3>9. Kestrel Gate Records Decisions but Does Not Yet Enforce the Whole System</h3>
+                <p>Kestrel Gate can classify and record a preflight request.</p>
+                <p>It is not yet an operating-system-wide policy engine.</p>
+                <p>It does not yet sit automatically in front of every agent, terminal, repository mutation, network call, sync, and publication action.</p>
+                <p>The Trusted Bridge protocol has a grant schema and examples. Runtime enforcement remains Phase 1 work.</p>
+                <p>The record exists.</p>
+                <p>The gate is not yet everywhere the architecture says it should be.</p>
+              </section>
+            </section>
+
+            <section class="mesh-review-phase is-next" id="what-comes-next">
+              <div class="mesh-review-phase-heading">
+                <span>03</span>
+                <p>Execution order</p>
+                <h2>What Comes Next</h2>
+              </div>
+              <p>The next stage should not be measured by how many new concepts the repository can name.</p>
+              <p>It should be measured by how many existing claims can be closed with evidence.</p>
+
+              <ol class="mesh-review-roadmap">
+                <li>
+                  <span>01 / Highest priority</span>
+                  <h3>Close the Two-Machine Acceptance Test</h3>
+                  <p>Use two independent machines on a controlled network. Prove raw TCP reachability and message delivery in both directions, storage before acknowledgement, peer trust behavior, signed Town Square bundle sync, restart persistence, and retained audit evidence.</p>
+                  <p>Record the exact software versions, network conditions, commands, responses, inbox state, and failure modes.</p>
+                  <strong>One completed field test will clarify more than another month of architecture writing.</strong>
+                </li>
+                <li>
+                  <span>02</span>
+                  <h3>Replace Trusted-Network Assumptions With Protocol Security</h3>
+                  <p>Add encrypted transport, signed message envelopes, verified node identity, key continuity, rotation, revocation, and replay protection.</p>
+                  <p>The goal is not merely secrecy. It is making the authority path cryptographically inspectable.</p>
+                </li>
+                <li>
+                  <span>03</span>
+                  <h3>Turn Discovery Metadata Into a Real Transport Choice</h3>
+                  <p>Converge LAN, registry, Tailscale, and libp2p observations into an explicit routing decision. A node should be able to state which peer it resolved, through which channel, why that channel was trusted, what fallback was available, and what authority and audit state traveled with the handoff.</p>
+                </li>
+                <li>
+                  <span>04</span>
+                  <h3>Run the First Ordinary-Peer Mac Trial</h3>
+                  <p>Package the app. Install it on two Macs operated by two people. Observe where the system still assumes developer knowledge.</p>
+                  <p>The test is complete when both participants understand what identity they created, whom they trusted, what moved, and where the record lives. Then sign and notarize the distribution path.</p>
+                </li>
+                <li>
+                  <span>05</span>
+                  <h3>Complete the Supra Drive Bookmark Loop</h3>
+                  <p>Create a human bookmark; bind it to time, route, vehicle context, and a media reference; preserve it locally; review the proposed sync; send only approved metadata to a trusted home node; retain the original under local custody.</p>
+                  <p>That loop would prove the Mobile Edge Node as a witness rather than a surveillance endpoint.</p>
+                </li>
+                <li>
+                  <span>06</span>
+                  <h3>Put Kestrel Gate and Trusted Bridge Grants in the Actual Execution Path</h3>
+                  <p>Use a real delegated task: inspect a repository, draft a change, run tests, commit, publish, and return an audit record.</p>
+                  <p>The local node should issue a signed grant. Kestrel Gate should evaluate it. The hosted system should receive only the permitted context and tools. The result and audit trace should return to the local record.</p>
+                </li>
+              </ol>
+            </section>
+
+            <section class="mesh-review-closing">
+              <p class="mesh-review-section-label">The Standard for the Next Phase</p>
+              <h2>A stronger chain of evidence.</h2>
+              <p>Fieldlight Mesh should resist two temptations.</p>
+              <p>The first is pretending that working local components already constitute a finished network.</p>
+              <p>The second is dismissing working local components because the network is not finished.</p>
+              <p>Both erase useful truth.</p>
+              <p>The current implementation proves that local identity, durable custody, governed messages, signed public objects, mobile event records, and delegated-action audits can exist in one coherent technical direction.</p>
+              <p>The current implementation does not yet prove that the direction survives hostile networks, ordinary users, multiple hops, changing keys, broken routes, public scale, or long periods of time.</p>
+              <p>That is what comes next.</p>
+              <p>Not a larger promise.</p>
+              <p>A stronger chain of evidence.</p>
+              <blockquote>Fieldlight Mesh will be real when intelligence can move through the network without forcing the human to surrender authorship, memory, consent, or authority in exchange for capability.</blockquote>
+              <p>The repository is no longer at zero.</p>
+              <p>Now it has to cross the distance between a working node and dependable infrastructure.</p>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
