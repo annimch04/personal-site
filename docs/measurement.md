@@ -117,6 +117,13 @@ Run the sitemap generator whenever a public HTML page is added, moved, or remove
 
 The sitemap and robots file were first added as part of the Fieldlight identity and search-discovery pass on July 30, 2026.
 
+### Submission record
+
+- Fieldlight identity and search-discovery commit: `eae5ce8`
+- `https://fieldlight.com/sitemap.xml` submitted in Search Console on July 30, 2026
+- Search Console accepted the submission and will periodically process it for changes.
+- Immediately after the new deployment, the sitemap table temporarily reported `Couldn't fetch`. Independent live checks returned HTTP `200`, `Content-Type: application/xml`, a valid TLS certificate, and the same successful response to Googlebot. Recheck the Search Console status after its initial processing window rather than resubmitting duplicate sitemap entries.
+
 ## Google Analytics
 
 Google Analytics is not installed. Fieldlight does not presently need its cookie-based visitor and event model, additional consent complexity, or advertising ecosystem integrations.
