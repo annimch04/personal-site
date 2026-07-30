@@ -7,7 +7,7 @@ This document is the operating record for traffic and search measurement on `fie
 | Service | Purpose | Status |
 | --- | --- | --- |
 | Cloudflare Web Analytics | Privacy-preserving, aggregate website traffic and performance | Active since July 30, 2026 |
-| Google Search Console | Google Search queries, impressions, clicks, indexing, and referrals | Verification in progress |
+| Google Search Console | Google Search queries, impressions, clicks, indexing, and referrals | Active and verified since July 30, 2026 |
 | Google Analytics | Individualized product and marketing analytics | Not installed |
 
 Cloudflare Web Analytics and Google Search Console are separate systems. Search Console is not Google Analytics and does not add a general-purpose visitor tracker to the site.
@@ -57,11 +57,11 @@ Every new HTML page must include this immediately before `</body>`:
 <!-- End Cloudflare Web Analytics -->
 ```
 
-To confirm complete coverage, compare the two counts below. They must match:
+To confirm complete coverage, compare the two counts below. They must match. The Google ownership-verification file is intentionally excluded because its contents must remain exactly as Google issued them:
 
 ```sh
-rg --files -g '*.html' | wc -l
-rg -l 'a8ece4976a604339bac4dbb72a6c5856' -g '*.html' | wc -l
+rg --files -g '*.html' -g '!google*.html' | wc -l
+rg -l 'a8ece4976a604339bac4dbb72a6c5856' -g '*.html' -g '!google*.html' | wc -l
 ```
 
 ## Google Search Console
@@ -75,9 +75,10 @@ Search Console explains how Fieldlight appears in Google Search. It complements 
 - Property: `https://fieldlight.com/`
 - Property type: URL-prefix
 - Verification method: Google-provided HTML file published at the root of the site
+- Verification file: `google6e31d5a7bc763d46.html`
+- Ownership confirmed by Google on July 30, 2026
+- Verification-file commit: `bc567a2`
 - The verification file must remain in the repository after verification. Removing it can cause ownership verification to lapse.
-
-Once verification is complete, record the verification filename and confirming commit here.
 
 ### What it can answer
 
@@ -105,4 +106,3 @@ Review measurement weekly rather than continuously:
 4. Review Search Console clicks, impressions, and queries.
 5. Note pages gaining search visibility and pages with high impressions but low click-through.
 6. Treat trends as evidence for editorial and infrastructure decisions, not as a proxy for the worth of the work.
-
