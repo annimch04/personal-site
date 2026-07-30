@@ -2,6 +2,18 @@
 
 This document is the operating record for traffic and search measurement on `fieldlight.com`.
 
+## Canonical identity
+
+The site's identity hierarchy is:
+
+- **Fieldlight** is the website and umbrella body of work.
+- **Fieldlight Institute** is its research institution.
+- **Anni McHenry** is its founder, builder, and author.
+
+The homepage declares this hierarchy in visible language and in `WebSite`, `Organization`, and `Person` JSON-LD. The Institute page repeats the matching organization record. The site name is Fieldlight because Google supports one site name at the domain level; the Institute remains a named organization and section within that site.
+
+The Fieldlight Institute GitHub organization, Institute repositories, personal-site repository, public-writing repository, and Fieldlight Mesh repository point back to their canonical `fieldlight.com` public surfaces.
+
 ## Current services
 
 | Service | Purpose | Status |
@@ -89,6 +101,21 @@ Search Console explains how Fieldlight appears in Google Search. It complements 
 - Whether Google detects indexing or site-experience problems
 
 Search Console reports activity within Google Search. It is not a complete traffic counter and will not report readers arriving directly, from social networks, from GitHub, or from other search engines.
+
+### Search discovery files
+
+- `sitemap.xml` is the canonical inventory of public site pages submitted to Search Console.
+- `robots.txt` permits crawling and points search engines to the sitemap.
+- `scripts/generate-sitemap.sh` rebuilds the sitemap from the site's HTML reading surfaces.
+- Google verification files are excluded from the sitemap.
+
+Run the sitemap generator whenever a public HTML page is added, moved, or removed:
+
+```sh
+./scripts/generate-sitemap.sh
+```
+
+The sitemap and robots file were first added as part of the Fieldlight identity and search-discovery pass on July 30, 2026.
 
 ## Google Analytics
 
