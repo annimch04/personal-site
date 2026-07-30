@@ -1617,6 +1617,13 @@ h3 {
   margin-top: 16px;
 }
 
+.contact-band .analytics-disclosure {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .contact-links {
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -11592,6 +11599,14 @@ h3 {
   max-width: 660px;
   margin: 0;
   line-height: 1.6;
+}
+
+.institute-footer .analytics-disclosure {
+  max-width: 680px;
+  margin-top: 16px;
+  color: rgba(255, 248, 235, 0.5);
+  font-size: 12px;
+  line-height: 1.55;
 }
 
 .institute-footer-links {
