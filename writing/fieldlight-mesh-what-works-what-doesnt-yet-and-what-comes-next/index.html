@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="/assets/favicon-48.png" sizes="48x48">
+    <link rel="icon" type="image/svg+xml" href="/assets/fieldlight-mark.svg">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
     <title>Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next</title>
     <meta name="description" content="A candid implementation review of the local-first network beneath Fieldlight's intelligence infrastructure.">
+    <meta name="author" content="Anni McHenry">
+    <link rel="author" href="https://fieldlight.com/#anni-mchenry">
+    <meta property="article:author" content="https://fieldlight.com/#anni-mchenry">
     <link rel="canonical" href="https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/">
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Fieldlight">
@@ -22,13 +25,43 @@
     <meta name="twitter:title" content="Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next">
     <meta name="twitter:description" content="A candid implementation review of the local-first network beneath Fieldlight's intelligence infrastructure.">
     <meta name="twitter:image" content="https://fieldlight.com/assets/articles/fieldlight-mesh-implementation/social-preview.png?v=1">
-    <link rel="stylesheet" href="../../styles.css?v=19">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "@id": "https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/#article",
+        "headline": "Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next",
+        "description": "Fieldlight Mesh has working components. It does not yet have a complete operational network.",
+        "url": "https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "https://fieldlight.com/#anni-mchenry",
+          "name": "Anni McHenry",
+          "url": "https://fieldlight.com/#anni-mchenry"
+        },
+        "copyrightHolder": {
+          "@id": "https://fieldlight.com/#anni-mchenry"
+        },
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://fieldlight.com/#website",
+          "name": "Fieldlight",
+          "url": "https://fieldlight.com/"
+        },
+        "image": "https://fieldlight.com/assets/articles/fieldlight-mesh-implementation/social-preview.png?v=1"
+      }
+    </script>
+    <link rel="stylesheet" href="../../styles.css?v=31">
   </head>
   <body>
     <header class="site-header mesh-review-site-header">
-      <a class="brand" href="../../" aria-label="Fieldlight home">
-        <span class="brand-mark">F</span>
-        <span>Fieldlight</span>
+      <a class="brand" href="../../" aria-label="Fieldlight home, founded by Anni McHenry">
+        <span class="brand-name">Fieldlight</span>
+        <span class="brand-founder">Founded by Anni McHenry</span>
       </a>
       <nav class="nav" aria-label="Article navigation">
         <a href="../../institute/">Institute</a>
@@ -50,6 +83,7 @@
               <span>What doesn't yet.</span>
               <span>What comes next.</span>
             </h1>
+            <p class="article-author-byline">By <a rel="author" href="../../#anni-mchenry">Anni McHenry</a></p>
             <p class="article-deck">An implementation review of the local-first network beneath Fieldlight's intelligence infrastructure.</p>
           </div>
           <div class="mesh-review-hero-signal" aria-label="Current implementation signal">

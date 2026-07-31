@@ -914,21 +914,51 @@ a:hover {
 }
 
 .brand {
-  gap: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
   font-weight: 800;
   color: var(--ink);
+  line-height: 1;
   text-decoration: none;
 }
 
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid var(--ink);
-  color: var(--ink);
-  font-size: 12px;
-  letter-spacing: 0;
+.brand-name {
+  font-size: 18px;
+  letter-spacing: -0.025em;
+}
+
+.brand-founder {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.brand:hover .brand-founder {
+  color: var(--field);
+}
+
+.article-author-byline {
+  margin: 12px 0 0;
+  color: inherit;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  line-height: 1.35;
+  opacity: 0.76;
+  text-transform: uppercase;
+}
+
+.article-author-byline a {
+  color: inherit;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .nav {
