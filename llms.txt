@@ -5,7 +5,7 @@
 Canonical website: https://fieldlight.com/
 Institute organization: https://github.com/fieldlight-institute
 Canonical public writing by Anni McHenry: https://github.com/annimch04/public-writing
-Publication feed: https://fieldlight.com/feed.xml
+Reading feed: https://fieldlight.com/feed.xml
 JSON feed: https://fieldlight.com/feed.json
 
 ## Research programs
@@ -15,7 +15,7 @@ JSON feed: https://fieldlight.com/feed.json
 - Human-subjects research for AI systems: https://github.com/fieldlight-institute/human-subjects-research-for-ai-systems
 - Governance protocols: https://github.com/fieldlight-institute/governance-protocols
 
-## Current publications and methods
+## Current essays, methods, and charters
 
 - The Right to Local Intelligence: https://fieldlight.com/writing/the-right-to-local-intelligence/
 - Local Authority, External Capability: https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/

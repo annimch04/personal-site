@@ -1,6 +1,6 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "Fieldlight Institute Publications",
+  "title": "Fieldlight Institute Reading Feed",
   "home_page_url": "https://fieldlight.com/",
   "feed_url": "https://fieldlight.com/feed.json",
   "description": "Research, systems, methods, and public writing from Fieldlight Institute and Anni McHenry.",
