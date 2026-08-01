@@ -21,7 +21,7 @@ JSON feed: https://fieldlight.com/feed.json
 
 ## Complete public writing
 
-The complete public catalog contains 44 authored pieces organized by subject: https://fieldlight.com/writing/
+The complete public catalog contains 42 authored pieces organized by subject: https://fieldlight.com/writing/
 
 ## Institute publications, methods, and charters
 
