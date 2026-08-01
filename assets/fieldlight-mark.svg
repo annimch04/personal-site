@@ -1,16 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">Fieldlight</title>
-  <desc id="description">A violet light rising over a gold horizon on a deep blue field.</desc>
+  <desc id="description">A warm gold light rising over a horizon on a deep blue field.</desc>
   <defs>
     <radialGradient id="glow" cx="50%" cy="46%" r="48%">
-      <stop offset="0" stop-color="#f7f0ff" stop-opacity=".92"/>
-      <stop offset=".34" stop-color="#8064df" stop-opacity=".68"/>
-      <stop offset="1" stop-color="#8064df" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fff8ea" stop-opacity=".96"/>
+      <stop offset=".34" stop-color="#e2b54c" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#e2b54c" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="512" height="512" rx="112" fill="#102231"/>
+  <rect x="11" y="11" width="490" height="490" rx="103" fill="none" stroke="#e2b54c" stroke-opacity=".42" stroke-width="6"/>
   <circle cx="256" cy="226" r="152" fill="url(#glow)"/>
-  <circle cx="256" cy="226" r="62" fill="#8064df"/>
+  <circle cx="256" cy="226" r="62" fill="#e2b54c"/>
   <circle cx="256" cy="226" r="28" fill="#fff8ea"/>
   <path d="M88 346H424" fill="none" stroke="#e2b54c" stroke-width="16" stroke-linecap="round"/>
   <path d="M144 388H368" fill="none" stroke="#fff8ea" stroke-opacity=".38" stroke-width="8" stroke-linecap="round"/>
