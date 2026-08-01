@@ -916,15 +916,16 @@ a:hover {
 .brand {
   align-items: center;
   justify-content: center;
-  font-weight: 800;
+  font-weight: 400;
   color: var(--ink);
   line-height: 1;
   text-decoration: none;
 }
 
 .brand-name {
-  font-size: 18px;
-  letter-spacing: -0.025em;
+  font-family: Didot, "Bodoni 72", "Bodoni MT", "Times New Roman", serif;
+  font-size: 22px;
+  letter-spacing: 0.005em;
 }
 
 .article-author-byline {

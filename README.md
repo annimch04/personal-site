@@ -1,17 +1,23 @@
-# Anni McHenry Personal Site
+# Fieldlight Institute / fieldlight.com
 
-Static portfolio site for Fieldlight, selected writing, and professional background.
+Source for [fieldlight.com](https://fieldlight.com), the public website and publication surface of Fieldlight Institute.
 
-Open `index.html` in a browser to view locally. The site uses:
+Fieldlight Institute develops public research, working systems, and institutional methods for human-owned AI infrastructure. The Institute is founded and led by writer and systems builder Anni McHenry.
 
-- `index.html` for content and structure
-- `styles.css` for layout and visual design
-- `assets/fieldlight-map.svg` for the Fieldlight system visual
+## Public architecture
 
-The blog remains the chronological archive. This site is the curated map.
+- `index.html` is the institutional front door.
+- `writing/` contains public reading surfaces for work authored by Anni McHenry.
+- `institute/participant-charter/` publishes the Participant Charter.
+- `story-worlds/` contains explicitly authored creative work and story-worlds.
+- `feed.xml` and `feed.json` expose current publications.
+- `llms.txt` provides a machine-readable institutional and publication index.
+- `sitemap.xml` lists indexable HTML pages.
+
+Canonical Markdown for Anni McHenry's public writing remains in [`annimch04/public-writing`](https://github.com/annimch04/public-writing). Fieldlight Institute is the publisher of selected reading surfaces; it does not replace the author-owned source record.
 
 ## Measurement
 
 Fieldlight uses Cloudflare Web Analytics for privacy-preserving aggregate site traffic and Google Search Console for Google Search visibility. Google Analytics is not installed.
 
-See [`docs/measurement.md`](docs/measurement.md) for the current setup, maintenance instructions, and the questions each service can answer.
+See [`docs/measurement.md`](docs/measurement.md) for configuration and maintenance details.

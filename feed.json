@@ -1,0 +1,49 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Fieldlight Institute Publications",
+  "home_page_url": "https://fieldlight.com/",
+  "feed_url": "https://fieldlight.com/feed.json",
+  "description": "Research, systems, methods, and public writing from Fieldlight Institute and Anni McHenry.",
+  "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
+  "items": [
+    {
+      "id": "https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/",
+      "url": "https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/",
+      "title": "Local Authority, External Capability",
+      "summary": "Why local AI does not mean anti-cloud—and how external capability can remain governed by human-owned authority.",
+      "date_published": "2026-07-28T14:54:10-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
+    },
+    {
+      "id": "https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/",
+      "url": "https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/",
+      "title": "Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next",
+      "summary": "A candid implementation review of the local-first network beneath Fieldlight's intelligence infrastructure.",
+      "date_published": "2026-07-28T14:17:01-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
+    },
+    {
+      "id": "https://fieldlight.com/institute/participant-charter/",
+      "url": "https://fieldlight.com/institute/participant-charter/",
+      "title": "Participant Charter",
+      "summary": "Nineteen baseline rights that govern all human-AI research.",
+      "date_published": "2026-07-28T18:44:48-05:00"
+    },
+    {
+      "id": "https://fieldlight.com/writing/institutional-transition-documentation-methodology/",
+      "url": "https://fieldlight.com/writing/institutional-transition-documentation-methodology/",
+      "title": "Institutional Transition Documentation Methodology",
+      "summary": "A method for documenting places while their identity, use, ownership, or public meaning is changing.",
+      "date_published": "2026-07-27T14:40:33-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
+    },
+    {
+      "id": "https://fieldlight.com/writing/the-right-to-local-intelligence/",
+      "url": "https://fieldlight.com/writing/the-right-to-local-intelligence/",
+      "title": "The Right to Local Intelligence",
+      "summary": "Neighborhood intelligence utilities and the civic infrastructure of an automated society.",
+      "date_published": "2026-07-23T17:31:03-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
+    }
+  ]
+}

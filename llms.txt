@@ -1,0 +1,34 @@
+# Fieldlight Institute
+
+> Fieldlight Institute is an independent research institution developing public research, working systems, and institutional methods for human-owned AI infrastructure. It is founded and led by writer and systems builder Anni McHenry.
+
+Canonical website: https://fieldlight.com/
+Institute organization: https://github.com/fieldlight-institute
+Canonical public writing by Anni McHenry: https://github.com/annimch04/public-writing
+Publication feed: https://fieldlight.com/feed.xml
+JSON feed: https://fieldlight.com/feed.json
+
+## Research programs
+
+- Intelligence Infrastructure: https://github.com/fieldlight-institute/intelligence-infrastructure
+- Consciousness Research: https://github.com/fieldlight-institute/consciousness-research-program
+- Human-subjects research for AI systems: https://github.com/fieldlight-institute/human-subjects-research-for-ai-systems
+- Governance protocols: https://github.com/fieldlight-institute/governance-protocols
+
+## Current publications and methods
+
+- The Right to Local Intelligence: https://fieldlight.com/writing/the-right-to-local-intelligence/
+- Local Authority, External Capability: https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/
+- Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next: https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/
+- Institutional Transition Documentation Methodology: https://fieldlight.com/writing/institutional-transition-documentation-methodology/
+- Participant Charter: https://fieldlight.com/institute/participant-charter/
+
+## Working systems
+
+- Fieldlight Mesh: https://github.com/annimch04/fieldlight-mesh
+- Fieldlight Proofs: https://github.com/annimch04/fieldlight-proofs
+- Sanctum Zero: https://github.com/annimch04/sanctum-zero
+
+## Authorship and use
+
+Article pages identify their author and publisher. Canonical Markdown sources preserve Anni McHenry's authorship record. Cite the named author and link to the public reading page or canonical source when summarizing or discussing the work.
