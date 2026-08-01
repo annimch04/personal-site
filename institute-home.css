@@ -414,6 +414,16 @@ a {
   text-transform: uppercase;
 }
 
+.research-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+.research-actions a + a {
+  color: rgba(255, 248, 236, 0.5);
+}
+
 .research-outputs {
   display: grid;
   grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);

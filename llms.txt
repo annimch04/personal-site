@@ -3,6 +3,9 @@
 > Fieldlight Institute is an independent research institution developing public research, working systems, and institutional methods for human-owned AI infrastructure. It is founded and led by writer and systems builder Anni McHenry.
 
 Canonical website: https://fieldlight.com/
+Institute: https://fieldlight.com/institute/
+Complete writing by Anni McHenry: https://fieldlight.com/writing/
+Story Worlds: https://fieldlight.com/story-worlds/
 Institute organization: https://github.com/fieldlight-institute
 Canonical public writing by Anni McHenry: https://github.com/annimch04/public-writing
 Reading feed: https://fieldlight.com/feed.xml
@@ -15,7 +18,11 @@ JSON feed: https://fieldlight.com/feed.json
 - Human-subjects research for AI systems: https://github.com/fieldlight-institute/human-subjects-research-for-ai-systems
 - Governance protocols: https://github.com/fieldlight-institute/governance-protocols
 
-## Current essays, methods, and charters
+## Complete public writing
+
+The complete public catalog contains 44 authored pieces organized by subject: https://fieldlight.com/writing/
+
+## Institute publications, methods, and charters
 
 - The Right to Local Intelligence: https://fieldlight.com/writing/the-right-to-local-intelligence/
 - Local Authority, External Capability: https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/

@@ -1,0 +1,297 @@
+:root {
+  --writing-night: #071c25;
+  --writing-cream: #fff8ec;
+  --writing-paper: #f2ecdf;
+  --writing-ink: #0b2230;
+  --writing-muted: #66716f;
+  --writing-gold: #d7aa4b;
+  --writing-violet: #8267dc;
+  --writing-line: rgba(11, 34, 48, 0.22);
+  --writing-book: "Iowan Old Style", Baskerville, "Baskerville Old Face", "Palatino Linotype", Georgia, serif;
+}
+
+.writing-index-page {
+  margin: 0;
+  color: var(--writing-ink);
+  background: var(--writing-paper);
+}
+
+.writing-index-page h1,
+.writing-index-page h2,
+.writing-index-page p {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.writing-index-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+  gap: clamp(48px, 8vw, 144px);
+  align-items: end;
+  min-height: 72vh;
+  padding: clamp(80px, 10vw, 164px) clamp(24px, 7vw, 132px) clamp(72px, 8vw, 132px);
+  color: var(--writing-cream);
+  background:
+    repeating-linear-gradient(90deg, transparent 0, transparent calc(8.333% - 1px), rgba(215, 170, 75, 0.07) calc(8.333% - 1px), rgba(215, 170, 75, 0.07) 8.333%),
+    radial-gradient(circle at 82% 22%, rgba(130, 103, 220, 0.16), transparent 34%),
+    linear-gradient(112deg, #061a21 0%, #102131 64%, #251d2c 100%);
+}
+
+.writing-index-kicker {
+  margin: 0 0 34px;
+  color: var(--writing-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.writing-index-hero h1 {
+  max-width: 920px;
+  margin: 0;
+  color: var(--writing-cream);
+  font-family: var(--writing-book);
+  font-size: clamp(62px, 7.4vw, 132px);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.93;
+}
+
+.writing-index-intro > p:first-child {
+  margin: 0;
+  color: rgba(255, 248, 236, 0.7);
+  font-family: var(--writing-book);
+  font-size: clamp(21px, 2vw, 31px);
+  line-height: 1.42;
+}
+
+.writing-index-count {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  margin: 58px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 248, 236, 0.24);
+}
+
+.writing-index-count strong {
+  color: var(--writing-gold);
+  font-family: var(--writing-book);
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.writing-index-count span {
+  color: rgba(255, 248, 236, 0.7);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.writing-index-shelves {
+  padding: 0 clamp(24px, 7vw, 132px);
+}
+
+.writing-index-shelves > article {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(48px, 8vw, 148px);
+  padding: clamp(76px, 8vw, 128px) 0;
+  border-bottom: 1px solid var(--writing-line);
+}
+
+.writing-index-shelves article > header {
+  position: sticky;
+  top: 110px;
+  align-self: start;
+}
+
+.writing-index-shelves article > header > span {
+  display: block;
+  margin-bottom: 28px;
+  color: var(--writing-violet);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.18em;
+}
+
+.writing-index-shelves h2 {
+  max-width: 520px;
+  margin: 0;
+  font-family: var(--writing-book);
+  font-size: clamp(42px, 4.2vw, 74px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.writing-index-shelves article > header p {
+  margin: 28px 0 0;
+  color: var(--writing-muted);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.writing-index-shelves ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--writing-line);
+}
+
+.writing-index-shelves li a {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) max-content;
+  gap: 22px;
+  align-items: center;
+  min-height: 92px;
+  padding: 21px 0;
+  border-bottom: 1px solid var(--writing-line);
+  text-decoration: none;
+}
+
+.writing-index-shelves li a:hover {
+  color: var(--writing-ink);
+}
+
+.writing-index-shelves li a > span {
+  color: var(--writing-gold);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+}
+
+.writing-index-shelves li strong {
+  font-family: var(--writing-book);
+  font-size: clamp(21px, 1.8vw, 29px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.writing-index-shelves li i,
+.writing-world-door {
+  color: var(--writing-muted);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.writing-index-shelves li a:hover i {
+  color: var(--writing-violet);
+}
+
+.writing-world-door {
+  grid-column: 2;
+  justify-self: end;
+  margin-top: -88px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--writing-violet);
+  text-decoration: none;
+}
+
+.writing-index-footer {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.5fr) minmax(260px, 1fr) max-content;
+  gap: clamp(28px, 6vw, 96px);
+  align-items: start;
+  padding: clamp(48px, 5vw, 84px) clamp(24px, 7vw, 132px);
+  color: var(--writing-cream);
+  background: var(--writing-night);
+}
+
+.writing-index-footer strong {
+  font-family: Didot, "Bodoni 72", "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.writing-index-footer p {
+  max-width: 640px;
+  margin: 0;
+  color: rgba(255, 248, 236, 0.64);
+  font-size: 12px;
+}
+
+.writing-index-footer a {
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--writing-violet);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .writing-index-hero,
+  .writing-index-shelves > article {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-index-hero {
+    min-height: auto;
+  }
+
+  .writing-index-shelves article > header {
+    position: static;
+  }
+
+  .writing-world-door {
+    grid-column: 1;
+    justify-self: start;
+    margin-top: -38px;
+  }
+}
+
+@media (max-width: 720px) {
+  .writing-index-page .site-header {
+    gap: 16px;
+  }
+
+  .writing-index-page .nav {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 2px;
+  }
+
+  .writing-index-page .nav a {
+    flex: 0 0 auto;
+  }
+
+  .writing-index-hero {
+    gap: 46px;
+    padding-top: 64px;
+  }
+
+  .writing-index-hero h1 {
+    font-size: clamp(50px, 15vw, 72px);
+  }
+
+  .writing-index-shelves > article {
+    gap: 42px;
+  }
+
+  .writing-index-shelves h2 {
+    font-size: clamp(38px, 11vw, 54px);
+  }
+
+  .writing-index-shelves li a {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 12px;
+    min-height: 78px;
+  }
+
+  .writing-index-shelves li i {
+    display: none;
+  }
+
+  .writing-index-footer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -5,6 +5,7 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 output_file="$repo_root/sitemap.xml"
 temporary_file="$(mktemp)"
+lastmod_date="${SITEMAP_LASTMOD:-$(date +%F)}"
 
 cleanup() {
   rm -f "$temporary_file"
@@ -24,7 +25,7 @@ cd "$repo_root"
       url="https://fieldlight.com/${page%index.html}"
     fi
 
-    printf '  <url><loc>%s</loc></url>\n' "$url"
+    printf '  <url><loc>%s</loc><lastmod>%s</lastmod></url>\n' "$url" "$lastmod_date"
   done < <(rg --files -g '*.html' -g '!google*.html' | sort)
 
   printf '%s\n' '</urlset>'

@@ -12084,6 +12084,39 @@ h3 {
     padding: 56px 24px;
   }
 }
+
+@media (max-width: 380px) {
+  .institute-program-register article {
+    grid-template-columns: 1fr;
+  }
+
+  .institute-program-number,
+  .institute-program-heading,
+  .institute-program-detail {
+    grid-column: 1;
+  }
+
+  .institute-program-heading,
+  .institute-program-detail,
+  .institute-methodology-identity,
+  .institute-methodology-detail {
+    min-width: 0;
+  }
+
+  .institute-methodology-identity,
+  .institute-methodology-detail {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .institute-methodology-identity h3 {
+    font-size: 36px;
+  }
+
+  .institute-methodology-thesis {
+    font-size: 28px;
+  }
+}
 /* Fieldlight Mesh implementation review */
 
 .mesh-review-page {
