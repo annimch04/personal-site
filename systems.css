@@ -1,0 +1,290 @@
+:root {
+  --systems-night: #071c25;
+  --systems-navy: #102433;
+  --systems-cream: #fff8ec;
+  --systems-paper: #f2ecdf;
+  --systems-ink: #0b2230;
+  --systems-muted: #65706f;
+  --systems-gold: #d7aa4b;
+  --systems-violet: #8267dc;
+  --systems-coral: #eb5b4d;
+  --systems-line-dark: rgba(255, 248, 236, 0.2);
+  --systems-line-light: rgba(11, 34, 48, 0.22);
+  --systems-book: "Iowan Old Style", Baskerville, "Baskerville Old Face", "Palatino Linotype", Georgia, serif;
+}
+
+.systems-index-page {
+  margin: 0;
+  color: var(--systems-ink);
+  background: var(--systems-paper);
+}
+
+.systems-index-page h1,
+.systems-index-page h2,
+.systems-index-page p {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+.systems-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+  gap: clamp(48px, 8vw, 144px);
+  align-items: end;
+  min-height: 72vh;
+  padding: clamp(82px, 10vw, 164px) clamp(24px, 7vw, 132px) clamp(72px, 8vw, 132px);
+  color: var(--systems-cream);
+  background:
+    repeating-linear-gradient(90deg, transparent 0, transparent calc(8.333% - 1px), rgba(215, 170, 75, 0.07) calc(8.333% - 1px), rgba(215, 170, 75, 0.07) 8.333%),
+    radial-gradient(circle at 84% 18%, rgba(130, 103, 220, 0.17), transparent 32%),
+    linear-gradient(112deg, #061a21 0%, #102131 62%, #251d2c 100%);
+}
+
+.systems-kicker {
+  margin: 0 0 34px;
+  color: var(--systems-gold);
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.systems-hero h1 {
+  max-width: 920px;
+  margin: 0;
+  color: var(--systems-cream);
+  font-family: var(--systems-book);
+  font-size: clamp(66px, 7.5vw, 132px);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.93;
+}
+
+.systems-hero-deck > p:first-child {
+  margin: 0;
+  color: rgba(255, 248, 236, 0.72);
+  font-family: var(--systems-book);
+  font-size: clamp(21px, 2vw, 31px);
+  line-height: 1.42;
+}
+
+.systems-count {
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+  margin: 58px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid var(--systems-line-dark);
+}
+
+.systems-count strong {
+  color: var(--systems-gold);
+  font-family: var(--systems-book);
+  font-size: 52px;
+  font-weight: 400;
+}
+
+.systems-count span {
+  color: rgba(255, 248, 236, 0.68);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.systems-register {
+  padding: 0 clamp(24px, 7vw, 132px);
+}
+
+.system-record {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(52px, 9vw, 160px);
+  padding: clamp(80px, 9vw, 144px) 0;
+  border-bottom: 1px solid var(--systems-line-light);
+}
+
+.system-record > header {
+  position: sticky;
+  top: 138px;
+  align-self: start;
+}
+
+.system-record header p {
+  margin: 0 0 30px;
+  color: var(--systems-muted);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.system-record header p span {
+  margin-right: 14px;
+  color: var(--systems-violet);
+}
+
+.system-record h2 {
+  margin: 0;
+  font-family: var(--systems-book);
+  font-size: clamp(48px, 5vw, 84px);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+}
+
+.system-record-body {
+  padding-top: 2px;
+}
+
+.system-record-thesis {
+  max-width: 900px;
+  margin: 0;
+  color: var(--systems-ink);
+  font-family: var(--systems-book);
+  font-size: clamp(30px, 3vw, 50px);
+  line-height: 1.2;
+}
+
+.system-record-body > p:not(.system-record-thesis) {
+  max-width: 760px;
+  margin: 34px 0 0;
+  color: var(--systems-muted);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.system-record-body ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 42px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--systems-line-light);
+  list-style: none;
+}
+
+.system-record-body li {
+  padding: 17px 0;
+  color: var(--systems-muted);
+  border-bottom: 1px solid var(--systems-line-light);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.system-record-body li:nth-child(odd) {
+  padding-right: 20px;
+  border-right: 1px solid var(--systems-line-light);
+}
+
+.system-record-body li:nth-child(even) {
+  padding-left: 20px;
+}
+
+.system-record-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 30px;
+  margin-top: 42px;
+}
+
+.system-record-actions a {
+  padding-bottom: 5px;
+  color: var(--systems-ink);
+  border-bottom: 2px solid var(--systems-violet);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.system-record-actions a + a {
+  color: var(--systems-muted);
+  border-bottom-width: 1px;
+}
+
+.systems-footer {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.5fr) minmax(260px, 1fr) max-content;
+  gap: clamp(28px, 6vw, 96px);
+  align-items: start;
+  padding: clamp(48px, 5vw, 84px) clamp(24px, 7vw, 132px);
+  color: var(--systems-cream);
+  background: var(--systems-night);
+}
+
+.systems-footer strong {
+  font-family: Didot, "Bodoni 72", "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.systems-footer p {
+  max-width: 640px;
+  margin: 0;
+  color: rgba(255, 248, 236, 0.64);
+  font-size: 12px;
+}
+
+.systems-footer a {
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--systems-violet);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .systems-hero,
+  .system-record {
+    grid-template-columns: 1fr;
+  }
+
+  .systems-hero {
+    min-height: auto;
+  }
+
+  .system-record > header {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .systems-hero {
+    gap: 46px;
+    padding-top: 64px;
+  }
+
+  .systems-hero h1 {
+    font-size: clamp(52px, 16vw, 74px);
+  }
+
+  .system-record {
+    gap: 44px;
+  }
+
+  .system-record h2 {
+    font-size: clamp(44px, 13vw, 64px);
+  }
+
+  .system-record-thesis {
+    font-size: 31px;
+  }
+
+  .system-record-body ul,
+  .systems-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .system-record-body li:nth-child(odd) {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .system-record-body li:nth-child(even) {
+    padding-left: 0;
+  }
+}

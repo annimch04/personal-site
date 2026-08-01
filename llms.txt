@@ -4,6 +4,7 @@
 
 Canonical website: https://fieldlight.com/
 Institute: https://fieldlight.com/institute/
+Systems: https://fieldlight.com/systems/
 Complete writing by Anni McHenry: https://fieldlight.com/writing/
 Story Worlds: https://fieldlight.com/story-worlds/
 Institute organization: https://github.com/fieldlight-institute
@@ -31,6 +32,8 @@ The complete public catalog contains 44 authored pieces organized by subject: ht
 - Participant Charter: https://fieldlight.com/institute/participant-charter/
 
 ## Working systems
+
+Public systems catalog: https://fieldlight.com/systems/
 
 - Fieldlight Mesh: https://github.com/annimch04/fieldlight-mesh
 - Fieldlight Proofs: https://github.com/annimch04/fieldlight-proofs

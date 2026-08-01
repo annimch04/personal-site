@@ -11,6 +11,7 @@ Fieldlight Institute develops public research, working systems, and institutiona
 - `writing/*/index.html` contains the individual Fieldlight reading surfaces.
 - `institute/index.html` is the full six-part Fieldlight Institute surface.
 - `institute/participant-charter/` publishes the Participant Charter.
+- `systems/index.html` is the public register of working Fieldlight systems.
 - `story-worlds/` contains explicitly authored creative work and story-worlds.
 - `feed.xml` and `feed.json` expose current publications.
 - `llms.txt` provides a machine-readable institutional and publication index.

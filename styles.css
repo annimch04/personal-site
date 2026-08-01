@@ -905,6 +905,34 @@ a:hover {
   backdrop-filter: blur(12px);
 }
 
+/* The institutional masthead is one object across every section. */
+.global-site-header {
+  min-height: 78px;
+  padding: 15px clamp(24px, 4.8vw, 88px);
+}
+
+.global-site-header .brand-name {
+  font-size: clamp(23px, 2vw, 29px);
+}
+
+.global-site-header .nav {
+  gap: clamp(18px, 2.5vw, 42px);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.global-site-header .nav a {
+  padding: 8px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.global-site-header .nav a:hover,
+.global-site-header .nav a:focus-visible,
+.global-site-header .nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom-color: #8267dc;
+}
+
 .brand,
 .nav,
 .hero-actions,
@@ -951,6 +979,112 @@ a:hover {
   gap: 24px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.global-primary-nav {
+  overflow-x: auto;
+  justify-content: flex-end;
+  scrollbar-width: none;
+}
+
+.global-primary-nav::-webkit-scrollbar,
+.section-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.global-primary-nav a,
+.section-nav a {
+  flex: 0 0 auto;
+}
+
+.global-primary-nav a[aria-current="page"] {
+  color: var(--ink);
+  text-decoration-color: #8267dc;
+}
+
+.section-nav {
+  position: sticky;
+  z-index: 9;
+  top: 78px;
+  display: flex;
+  gap: clamp(18px, 2.4vw, 38px);
+  align-items: center;
+  min-height: 48px;
+  overflow-x: auto;
+  padding: 9px clamp(20px, 5vw, 72px);
+  color: #5d6870;
+  background: rgba(247, 243, 234, 0.97);
+  border-bottom: 1px solid rgba(11, 34, 48, 0.18);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  scrollbar-width: none;
+  text-transform: uppercase;
+}
+
+.section-nav a {
+  padding: 5px 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible,
+.section-nav a[aria-current="page"] {
+  color: var(--ink);
+  border-bottom: 1px solid #8267dc;
+}
+
+.article-breadcrumb {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 24px;
+  align-items: center;
+  min-height: 52px;
+  padding: 10px clamp(20px, 5vw, 72px);
+  color: #5d6870;
+  background: #f2ecdf;
+  border-bottom: 1px solid rgba(11, 34, 48, 0.2);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-breadcrumb-path {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  min-width: 0;
+}
+
+.article-breadcrumb-path a,
+.article-source-link {
+  text-decoration: none;
+}
+
+.article-breadcrumb-path span[aria-current="page"] {
+  overflow: hidden;
+  color: var(--ink);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.article-breadcrumb-separator {
+  color: rgba(11, 34, 48, 0.35);
+}
+
+.article-source-link {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #8267dc;
+  white-space: nowrap;
+}
+
+.institute-page section[id],
+.writing-index-shelves article[id],
+.story-worlds-page [id],
+.systems-index-page [id] {
+  scroll-margin-top: 132px;
 }
 
 .nav-label-mobile {
@@ -2175,6 +2309,49 @@ h3 {
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 12px;
+  }
+
+  .global-primary-nav {
+    justify-content: flex-start;
+  }
+
+  .global-site-header {
+    display: block;
+    min-height: 0;
+    padding: 19px 20px 15px;
+  }
+
+  .global-site-header .brand {
+    justify-content: flex-start;
+    margin-bottom: 18px;
+  }
+
+  .global-site-header .brand-name {
+    font-size: 25px;
+  }
+
+  .global-site-header .nav {
+    gap: 22px;
+    padding-bottom: 4px;
+    font-size: 12px;
+  }
+
+  .section-nav {
+    position: sticky;
+    top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .article-breadcrumb {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .article-source-link {
+    justify-self: start;
   }
 
   .institute-site-header .nav {
@@ -10766,6 +10943,12 @@ h3 {
   }
 }
 
+@media (max-width: 360px) {
+  .local-intelligence-springfield-close strong {
+    font-size: 49px;
+  }
+}
+
 /* Fieldlight Institute */
 .institute-entry {
   display: grid;
@@ -11464,6 +11647,10 @@ h3 {
   background:
     radial-gradient(circle at 90% 12%, rgba(231, 82, 67, 0.17), transparent 32%),
     linear-gradient(125deg, var(--institute-night), #172332 62%, #2a1e27);
+}
+
+.institute-publication-register > * {
+  min-width: 0;
 }
 
 .institute-publication-no {

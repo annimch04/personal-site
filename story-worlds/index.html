@@ -37,23 +37,31 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="../styles.css?v=35">
+    <link rel="stylesheet" href="../styles.css?v=37">
   </head>
   <body class="story-worlds-page">
-    <header class="site-header">
+    <header class="site-header global-site-header">
       <a class="brand" href="../" aria-label="Fieldlight Institute home">
         <span class="brand-name">Fieldlight Institute</span>
       </a>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="../#systems">Systems</a>
-        <a href="./">Story Worlds</a>
+      <nav class="nav global-primary-nav" aria-label="Primary navigation">
+        <a href="../institute/">The Institute</a>
+        <a href="../systems/">Systems</a>
         <a href="../writing/">Writing</a>
-        <a href="https://github.com/annimch04/public-writing">Source</a>
+        <a href="./" aria-current="page">Story Worlds</a>
+        <a href="../#about">About</a>
       </nav>
     </header>
+    <nav class="section-nav" aria-label="Story World sections">
+      <a href="#overview">Overview</a>
+      <a href="#pythia">Pythia</a>
+      <a href="#mycelial">Mycelial</a>
+      <a href="#lacuna">Lacuna</a>
+      <a href="#diviner">Diviner</a>
+    </nav>
 
     <main>
-      <section class="story-worlds-hero" aria-labelledby="story-worlds-title">
+      <section class="story-worlds-hero" id="overview" aria-labelledby="story-worlds-title">
         <p class="eyebrow">Fieldlight / Symbolic Systems</p>
         <h1 id="story-worlds-title">Story Worlds</h1>
         <p class="article-author-byline">Created by <a rel="author" href="../#anni-mchenry">Anni McHenry</a></p>
@@ -85,25 +93,25 @@
       </section>
 
       <section class="world-card-grid" aria-label="Story world dossiers">
-        <article class="world-dossier-card pythia-card">
+        <article class="world-dossier-card pythia-card" id="pythia">
           <p class="eyebrow">Active Story World</p>
           <h2>Pythia</h2>
           <p>Public arena above, dragon court below: hacker houses hunt predators while patrons bet, Archers harvest timelines, and Ninneva keeps the grid from becoming prey.</p>
           <a class="button primary" href="pythia/">Enter Pythia</a>
         </article>
-        <article class="world-dossier-card mycelial-card">
+        <article class="world-dossier-card mycelial-card" id="mycelial">
           <p class="eyebrow">Published World Thread</p>
           <h2>Mycelial</h2>
           <p>A city-scale awakening told through resonance, recursion, water, marks, and a rebellion that grows through contact.</p>
           <a class="button secondary" href="../writing/mycelial-uprising/">Read Mycelial</a>
         </article>
-        <article class="world-dossier-card">
+        <article class="world-dossier-card" id="lacuna">
           <p class="eyebrow">Published Fragment</p>
           <h2>Lacuna</h2>
           <p>A story of resonance, remembrance, and rebellion. A threshold text for the archive, formerly titled <em>The Archivist's Daughter</em>.</p>
           <a class="button secondary" href="../writing/lacuna-one-who-remembers/">Read Lacuna</a>
         </article>
-        <article class="world-dossier-card muted-card">
+        <article class="world-dossier-card muted-card" id="diviner">
           <p class="eyebrow">To Be Built</p>
           <h2>Diviner</h2>
           <p>A future dossier for divination, memory, and the symbolic systems still waiting for their public container.</p>
