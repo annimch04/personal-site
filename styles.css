@@ -95,6 +95,14 @@
   color: rgba(255, 244, 223, 0.65);
 }
 
+.diviner-origin {
+  margin: 0.7rem 0 0;
+  color: rgba(255, 244, 223, 0.78);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(0.96rem, 1.25vw, 1.1rem);
+  font-style: italic;
+}
+
 .diviner-hero blockquote {
   margin: 0;
   padding: 0 0 0 clamp(1.4rem, 3vw, 2.4rem);
