@@ -11,18 +11,14 @@ cleanup() {
 }
 trap cleanup EXIT
 
-# This crop is the right-hand field diagram from the original, lossless
-# Participant Charter share card. Keep the icon derived from the artwork;
-# do not redraw the rings, violet axis, bracket, grid, or registration marks.
-sips -c 494 451 --cropOffset 67 749 \
+# Extract the exact field environment from the original Participant Charter
+# artwork. The native compositor crops and repairs source pixels; it does not
+# redraw the rings, axis, terminals, bracket, grid, or registration marks.
+swift "$script_dir/generate-fieldlight-favicon.swift" \
   "$source_card" \
-  --out "$task_temp_dir/field-motif.png" >/dev/null
+  "$task_temp_dir/fieldlight-mark-source.png"
 
-sips -p 494 494 --padColor 071923 \
-  "$task_temp_dir/field-motif.png" \
-  --out "$task_temp_dir/field-motif-square.png" >/dev/null
-
-sips -z 512 512 "$task_temp_dir/field-motif-square.png" \
+sips -z 512 512 "$task_temp_dir/fieldlight-mark-source.png" \
   --out "$site_root/assets/fieldlight-mark.png" >/dev/null
 sips -z 180 180 "$site_root/assets/fieldlight-mark.png" \
   --out "$site_root/assets/apple-touch-icon.png" >/dev/null
