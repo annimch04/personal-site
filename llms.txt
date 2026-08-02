@@ -23,6 +23,14 @@ JSON feed: https://fieldlight.com/feed.json
 
 The complete public catalog contains 42 authored pieces organized by subject: https://fieldlight.com/writing/
 
+## Story worlds
+
+- Diviner | First Pages: https://fieldlight.com/story-worlds/diviner/
+- Pythia: https://fieldlight.com/story-worlds/pythia/
+- The Pythia Games: https://fieldlight.com/writing/the-pythia-games/
+- Mycelial Uprising: https://fieldlight.com/writing/mycelial-uprising/
+- Lacuna | One Who Remembers: https://fieldlight.com/writing/lacuna-one-who-remembers/
+
 ## Institute publications, methods, and charters
 
 - The Right to Local Intelligence: https://fieldlight.com/writing/the-right-to-local-intelligence/

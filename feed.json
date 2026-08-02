@@ -7,6 +7,14 @@
   "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
   "items": [
     {
+      "id": "https://fieldlight.com/story-worlds/diviner/",
+      "url": "https://fieldlight.com/story-worlds/diviner/",
+      "title": "Diviner | First Pages",
+      "summary": "The first public pages of Diviner: relational signal, asymmetrical activation, and machines that answer the body.",
+      "date_published": "2026-08-01T15:00:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
+    },
+    {
       "id": "https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/",
       "url": "https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/",
       "title": "Local Authority, External Capability",
