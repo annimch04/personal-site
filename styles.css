@@ -283,6 +283,10 @@
   color: #d7a64a;
 }
 
+.world-dossier-card.diviner-card h2 {
+  color: #fff8ea;
+}
+
 .world-dossier-card.diviner-card .button.secondary {
   color: #fff8ea;
   border-color: rgba(255, 248, 234, 0.45);
