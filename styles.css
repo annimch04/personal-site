@@ -15091,3 +15091,639 @@ h3 {
     height: 27%;
   }
 }
+
+/* Scholar Who Forgot — recovered archive reading surface */
+.scholar-page {
+  --scholar-night: #071b28;
+  --scholar-deep: #04121c;
+  --scholar-paper: #f2ebdc;
+  --scholar-ink: #102332;
+  --scholar-copper: #a9653d;
+  --scholar-blue: #6f8794;
+  background: var(--scholar-deep);
+  color: var(--scholar-paper);
+}
+
+.scholar-page .article-breadcrumb {
+  background: #ece4d4;
+}
+
+.scholar-work {
+  overflow: hidden;
+}
+
+.scholar-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(32rem, 1.18fr);
+  gap: clamp(3rem, 7vw, 8rem);
+  align-items: center;
+  min-height: min(760px, calc(100vh - 130px));
+  padding: clamp(4rem, 7vw, 7rem) max(6vw, calc((100vw - 1220px) / 2));
+  background:
+    linear-gradient(90deg, rgba(106, 135, 148, 0.06) 1px, transparent 1px),
+    linear-gradient(rgba(106, 135, 148, 0.055) 1px, transparent 1px),
+    radial-gradient(circle at 84% 16%, rgba(169, 101, 61, 0.13), transparent 27rem),
+    linear-gradient(125deg, #061a27, #071725 62%, #0a1b27);
+  background-size: 92px 92px, 92px 92px, auto, auto;
+}
+
+.scholar-title-block .eyebrow,
+.scholar-section-number,
+.scholar-record,
+.scholar-marginalia,
+.scholar-index,
+.scholar-trace-notice {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.scholar-title-block .eyebrow,
+.scholar-section-number {
+  color: #c58a58;
+}
+
+.scholar-title-block h1 {
+  max-width: 7ch;
+  margin: 1.6rem 0 1.4rem;
+  color: var(--scholar-paper);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(5rem, 9vw, 10.5rem);
+  font-weight: 400;
+  letter-spacing: -0.065em;
+  line-height: 0.77;
+}
+
+.scholar-title-block .article-author-byline {
+  color: rgba(242, 235, 220, 0.58);
+}
+
+.scholar-title-block .article-author-byline a {
+  color: rgba(242, 235, 220, 0.88);
+}
+
+.scholar-title-block blockquote {
+  max-width: 29rem;
+  margin: clamp(2.5rem, 5vw, 4.5rem) 0 0;
+  padding: 0 0 0 1.5rem;
+  border-left: 1px solid var(--scholar-copper);
+}
+
+.scholar-title-block blockquote p {
+  margin: 0;
+  color: rgba(242, 235, 220, 0.78);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(1.55rem, 2.6vw, 2.75rem);
+  line-height: 1.15;
+}
+
+.scholar-record {
+  position: relative;
+  align-self: center;
+  border: 1px solid rgba(111, 135, 148, 0.38);
+  background: rgba(4, 18, 28, 0.54);
+  box-shadow: 0 38px 90px rgba(0, 0, 0, 0.22);
+}
+
+.scholar-record-heading,
+.scholar-record-row {
+  display: grid;
+  grid-template-columns: 0.42fr 1.2fr 1.25fr 0.72fr;
+  gap: 1rem;
+  align-items: center;
+  min-height: 4.2rem;
+  padding: 0.8rem 1.2rem;
+  border-bottom: 1px solid rgba(111, 135, 148, 0.24);
+}
+
+.scholar-record-heading {
+  min-height: 3rem;
+  color: rgba(242, 235, 220, 0.42);
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.scholar-record-heading span:last-child {
+  grid-column: 2 / -1;
+  text-align: right;
+}
+
+.scholar-record-row {
+  color: rgba(242, 235, 220, 0.6);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scholar-record-row b {
+  color: rgba(242, 235, 220, 0.42);
+}
+
+.scholar-record-row em {
+  color: rgba(242, 235, 220, 0.38);
+  font-style: normal;
+  text-align: right;
+}
+
+.scholar-record-missing {
+  position: relative;
+  color: #d69a68;
+  background:
+    linear-gradient(90deg, transparent 0 14%, rgba(3, 12, 19, 0.96) 14% 88%, transparent 88%),
+    rgba(169, 101, 61, 0.08);
+}
+
+.scholar-record-missing::after {
+  position: absolute;
+  right: 12%;
+  bottom: -1px;
+  left: 15%;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(169, 101, 61, 0.72), transparent);
+}
+
+.scholar-water-trace {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 7.5rem;
+  padding: 1.4rem 1.2rem 0;
+  overflow: hidden;
+}
+
+.scholar-water-trace i {
+  display: block;
+  width: 12%;
+  height: var(--trace-height, 20%);
+  border-top: 1px solid rgba(111, 135, 148, 0.6);
+  border-radius: 50% 50% 0 0;
+  transform: skewY(-8deg);
+}
+
+.scholar-water-trace i:nth-child(1) { --trace-height: 18%; }
+.scholar-water-trace i:nth-child(2) { --trace-height: 30%; }
+.scholar-water-trace i:nth-child(3) { --trace-height: 43%; }
+.scholar-water-trace i:nth-child(4) { --trace-height: 74%; border-color: rgba(169, 101, 61, 0.72); }
+.scholar-water-trace i:nth-child(5) { --trace-height: 49%; }
+.scholar-water-trace i:nth-child(6) { --trace-height: 29%; }
+.scholar-water-trace i:nth-child(7) { --trace-height: 17%; }
+
+.scholar-record-note {
+  margin: 0;
+  padding: 0 1.2rem 1.2rem;
+  color: rgba(242, 235, 220, 0.44);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.scholar-marginalia {
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr 0.7fr;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: baseline;
+  padding: 1.35rem max(6vw, calc((100vw - 1220px) / 2));
+  border-top: 1px solid rgba(169, 101, 61, 0.34);
+  border-bottom: 1px solid rgba(169, 101, 61, 0.34);
+  background: #0d2230;
+  color: rgba(242, 235, 220, 0.64);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.scholar-marginalia span {
+  color: #c58a58;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.scholar-marginalia p {
+  margin: 0;
+}
+
+.scholar-marginalia a {
+  color: var(--scholar-paper);
+  text-decoration-color: rgba(169, 101, 61, 0.7);
+}
+
+.scholar-recovery-note {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(3rem, 8vw, 8rem);
+  padding: clamp(5rem, 9vw, 9rem) max(6vw, calc((100vw - 1120px) / 2));
+  background: var(--scholar-paper);
+  color: var(--scholar-ink);
+}
+
+.scholar-recovery-note h2 {
+  max-width: 14ch;
+  margin: 1.2rem 0 0;
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(3rem, 6vw, 6.2rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.94;
+}
+
+.scholar-recovery-note > div:last-child {
+  padding-top: 0.4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  line-height: 1.7;
+}
+
+.scholar-recovery-note > div:last-child p:first-child,
+.scholar-recovery-note > div:last-child p:nth-child(2) {
+  margin: 0 0 0.5rem;
+  color: #62727b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.scholar-recovery-note > div:last-child p:nth-child(3) {
+  margin-top: 3rem;
+}
+
+.scholar-reading-shell {
+  display: grid;
+  grid-template-columns: 16rem minmax(0, 48rem);
+  gap: clamp(3rem, 8vw, 8rem);
+  justify-content: center;
+  padding: clamp(5rem, 9vw, 9rem) max(1.5rem, 6vw);
+  background:
+    linear-gradient(90deg, rgba(111, 135, 148, 0.05) 1px, transparent 1px),
+    var(--scholar-night);
+  background-size: 92px 100%;
+}
+
+.scholar-index {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+  display: grid;
+  gap: 0;
+}
+
+.scholar-index .eyebrow {
+  margin-bottom: 1.5rem;
+  color: #c58a58;
+}
+
+.scholar-index a {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(111, 135, 148, 0.25);
+  color: rgba(242, 235, 220, 0.52);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.scholar-index a:hover,
+.scholar-index a:focus-visible {
+  color: var(--scholar-paper);
+}
+
+.scholar-reading-body {
+  min-width: 0;
+}
+
+.scholar-reading-body > section {
+  scroll-margin-top: 8rem;
+  padding: 0 0 clamp(5rem, 9vw, 8rem);
+}
+
+.scholar-reading-body > section + section {
+  padding-top: clamp(5rem, 9vw, 8rem);
+  border-top: 1px solid rgba(111, 135, 148, 0.27);
+}
+
+.scholar-section-number {
+  margin: 0 0 2rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.scholar-reading-body h2 {
+  max-width: 15ch;
+  margin: 0 0 2.5rem;
+  color: var(--scholar-paper);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+}
+
+.scholar-reading-body > section > p:not(.scholar-section-number),
+.scholar-reading-body blockquote p {
+  max-width: 42rem;
+  color: rgba(242, 235, 220, 0.76);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.72;
+}
+
+.scholar-reading-body .scholar-emphasis {
+  margin: 3rem 0;
+  color: var(--scholar-paper) !important;
+  font-size: clamp(1.8rem, 3vw, 2.8rem) !important;
+  line-height: 1.18 !important;
+}
+
+.scholar-reading-body blockquote {
+  margin: 3.5rem 0;
+  padding: 1.5rem 0 1.5rem 2rem;
+  border-left: 1px solid var(--scholar-copper);
+}
+
+.scholar-reading-body blockquote p {
+  margin: 0;
+  color: var(--scholar-paper);
+  font-size: clamp(1.55rem, 3vw, 2.5rem);
+  line-height: 1.25;
+}
+
+.scholar-question {
+  max-width: 40rem;
+  padding: clamp(2rem, 5vw, 4rem) !important;
+  border: 1px solid rgba(169, 101, 61, 0.55) !important;
+  background: rgba(4, 18, 28, 0.58);
+}
+
+.scholar-findings {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.scholar-findings li {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: baseline;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(111, 135, 148, 0.27);
+}
+
+.scholar-findings span,
+.scholar-theme-grid span {
+  color: #c58a58;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.scholar-findings p {
+  margin: 0;
+  color: rgba(242, 235, 220, 0.78);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.5;
+}
+
+.scholar-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgba(111, 135, 148, 0.27);
+  border-left: 1px solid rgba(111, 135, 148, 0.27);
+}
+
+.scholar-theme-grid article {
+  min-height: 15rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border-right: 1px solid rgba(111, 135, 148, 0.27);
+  border-bottom: 1px solid rgba(111, 135, 148, 0.27);
+}
+
+.scholar-theme-grid h3 {
+  margin: 3rem 0 1rem;
+  color: var(--scholar-paper);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.scholar-theme-grid p {
+  margin: 0;
+  color: rgba(242, 235, 220, 0.62);
+  line-height: 1.5;
+}
+
+.scholar-reading-body .scholar-ending {
+  margin-top: 2rem;
+  padding: clamp(3rem, 7vw, 6rem);
+  border: 1px solid rgba(169, 101, 61, 0.55);
+  background:
+    radial-gradient(circle at 100% 0, rgba(169, 101, 61, 0.17), transparent 18rem),
+    rgba(4, 18, 28, 0.74);
+}
+
+.scholar-ending h2 {
+  max-width: none;
+  margin: 4rem 0 0;
+  color: #d39968;
+}
+
+.scholar-trace-notice {
+  display: grid;
+  grid-template-columns: 0.35fr 1.4fr auto;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+  padding: clamp(2.5rem, 5vw, 4.5rem) max(6vw, calc((100vw - 1120px) / 2));
+  border-top: 1px solid rgba(169, 101, 61, 0.42);
+  background: #030e15;
+  color: rgba(242, 235, 220, 0.5);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.scholar-trace-notice p {
+  margin: 0;
+}
+
+.scholar-trace-notice strong {
+  color: #c58a58;
+  letter-spacing: 0.13em;
+}
+
+.scholar-trace-notice a {
+  color: var(--scholar-paper);
+  text-decoration-color: rgba(169, 101, 61, 0.72);
+}
+
+.world-dossier-card.scholar-card {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(2rem, 7vw, 7rem);
+  color: #f2ebdc;
+  background:
+    linear-gradient(90deg, rgba(111, 135, 148, 0.08) 1px, transparent 1px),
+    linear-gradient(145deg, #071b28, #0a1823);
+  background-size: 92px 100%, auto;
+}
+
+.world-dossier-card.scholar-card .eyebrow {
+  color: #c58a58;
+}
+
+.world-dossier-card.scholar-card h2 {
+  max-width: 9ch;
+  color: #f2ebdc;
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 0.86;
+}
+
+.world-dossier-card.scholar-card > div:last-child {
+  align-self: end;
+}
+
+.world-dossier-card.scholar-card .button.secondary {
+  color: #f2ebdc;
+  border-color: rgba(242, 235, 220, 0.38);
+  background: rgba(242, 235, 220, 0.05);
+}
+
+@media (max-width: 900px) {
+  .scholar-hero,
+  .scholar-recovery-note,
+  .scholar-reading-shell,
+  .world-dossier-card.scholar-card {
+    grid-template-columns: 1fr;
+  }
+
+  .scholar-record {
+    width: min(100%, 42rem);
+  }
+
+  .scholar-reading-shell {
+    justify-content: stretch;
+  }
+
+  .scholar-index {
+    position: static;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .scholar-index .eyebrow {
+    grid-column: 1 / -1;
+  }
+
+  .scholar-index a {
+    padding-right: 0.5rem;
+    font-size: 0.58rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .scholar-hero {
+    gap: 4rem;
+    min-height: 0;
+    padding: 4.5rem 20px;
+  }
+
+  .scholar-title-block h1 {
+    font-size: clamp(4.6rem, 23vw, 6rem);
+  }
+
+  .scholar-record-heading,
+  .scholar-record-row {
+    grid-template-columns: 2.8rem 1fr 0.78fr;
+    gap: 0.55rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .scholar-record-row span:nth-of-type(2),
+  .scholar-record-heading span:first-child {
+    display: none;
+  }
+
+  .scholar-record-heading span:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .scholar-record-row {
+    font-size: 0.56rem;
+  }
+
+  .scholar-water-trace {
+    height: 5rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .scholar-marginalia {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+    padding: 1.4rem 20px;
+  }
+
+  .scholar-recovery-note {
+    gap: 2.5rem;
+    padding: 4.5rem 20px;
+  }
+
+  .scholar-recovery-note h2 {
+    font-size: 3.5rem;
+  }
+
+  .scholar-reading-shell {
+    gap: 4rem;
+    padding: 4.5rem 20px;
+  }
+
+  .scholar-index {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .scholar-index .eyebrow {
+    display: none;
+  }
+
+  .scholar-index a {
+    flex: 0 0 auto;
+    padding: 0.9rem 1.1rem 0.9rem 0;
+    border-top: 0;
+    border-bottom: 1px solid rgba(111, 135, 148, 0.25);
+  }
+
+  .scholar-reading-body h2 {
+    font-size: 3.3rem;
+  }
+
+  .scholar-theme-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .scholar-theme-grid article {
+    min-height: 0;
+  }
+
+  .scholar-reading-body .scholar-ending {
+    padding: 2rem;
+  }
+
+  .scholar-trace-notice {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 20px;
+  }
+}
