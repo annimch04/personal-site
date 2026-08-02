@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title description">
   <title id="title">Fieldlight</title>
-  <desc id="description">Concentric field rings crossed by an illuminated vertical axis on a deep blue field.</desc>
+  <desc id="description">Subtle concentric field rings crossed by a violet illuminated axis on a deep blue field.</desc>
   <defs>
     <linearGradient id="axis" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fff8ea"/>
-      <stop offset=".5" stop-color="#e2b54c"/>
-      <stop offset="1" stop-color="#fff8ea"/>
+      <stop offset="0" stop-color="#b59aff"/>
+      <stop offset=".5" stop-color="#8d67e8"/>
+      <stop offset="1" stop-color="#b59aff"/>
     </linearGradient>
     <filter id="glow" x="-100%" y="-30%" width="300%" height="160%">
       <feGaussianBlur stdDeviation="12" result="blur"/>
@@ -15,22 +15,22 @@
       </feMerge>
     </filter>
     <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#fff8ea" stop-opacity=".42"/>
-      <stop offset="1" stop-color="#e2b54c" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8d67e8" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#8d67e8" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="512" height="512" rx="112" fill="#102231"/>
   <rect x="11" y="11" width="490" height="490" rx="103" fill="none" stroke="#e2b54c" stroke-opacity=".42" stroke-width="6"/>
   <circle cx="256" cy="256" r="184" fill="url(#centerGlow)"/>
-  <g fill="none" stroke="#fff8ea">
-    <circle cx="256" cy="256" r="172" stroke-opacity=".24" stroke-width="5"/>
-    <circle cx="256" cy="256" r="132" stroke-opacity=".34" stroke-width="5"/>
-    <circle cx="256" cy="256" r="92" stroke-opacity=".46" stroke-width="5"/>
-    <circle cx="256" cy="256" r="52" stroke-opacity=".62" stroke-width="5"/>
+  <g fill="none" stroke="#aeb7c2">
+    <circle cx="256" cy="256" r="172" stroke-opacity=".28" stroke-width="4"/>
+    <circle cx="256" cy="256" r="136" stroke-opacity=".25" stroke-width="4"/>
+    <circle cx="256" cy="256" r="100" stroke-opacity=".23" stroke-width="4"/>
+    <circle cx="256" cy="256" r="64" stroke-opacity=".21" stroke-width="4"/>
+    <circle cx="256" cy="256" r="30" stroke-opacity=".19" stroke-width="4"/>
   </g>
-  <path d="M256 76V436" fill="none" stroke="#e2b54c" stroke-opacity=".42" stroke-width="22" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M256 76V436" fill="none" stroke="#8d67e8" stroke-opacity=".5" stroke-width="22" stroke-linecap="round" filter="url(#glow)"/>
   <path d="M256 76V436" fill="none" stroke="url(#axis)" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="256" cy="76" r="14" fill="#102231" stroke="#fff8ea" stroke-width="7"/>
-  <circle cx="256" cy="436" r="14" fill="#102231" stroke="#fff8ea" stroke-width="7"/>
-  <circle cx="256" cy="256" r="13" fill="#fff8ea"/>
+  <circle cx="256" cy="76" r="14" fill="#102231" stroke="#a98cff" stroke-width="7"/>
+  <circle cx="256" cy="436" r="14" fill="#102231" stroke="#a98cff" stroke-width="7"/>
 </svg>
