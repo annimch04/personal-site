@@ -46,7 +46,7 @@
 
 .constructed-hero {
   display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   min-height: min(780px, calc(100vh - 128px));
   color: var(--ci-cream);
   background:
@@ -61,7 +61,7 @@
   flex-direction: column;
   justify-content: flex-end;
   min-width: 0;
-  padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 5vw, 6rem);
+  padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 4vw, 5rem);
   border-right: 1px solid var(--ci-line);
 }
 
@@ -74,7 +74,8 @@
   margin-bottom: 1.8rem;
   color: var(--ci-cream);
   font-family: Didot, "Bodoni 72", Georgia, serif;
-  font-size: clamp(4.1rem, 8.2vw, 9.4rem);
+  max-width: 100%;
+  font-size: clamp(4rem, 5.8vw, 7rem);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.83;
@@ -151,8 +152,10 @@
 }
 
 .constructed-section-marker p {
-  max-width: 12ch;
+  max-width: 14rem;
   color: #657077;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .constructed-premise-copy h2,
@@ -167,6 +170,14 @@
   line-height: 0.98;
   overflow-wrap: normal;
   word-break: normal;
+}
+
+.constructed-premise-copy h2 {
+  margin-bottom: clamp(2rem, 3vw, 3rem);
+}
+
+.constructed-premise-copy p + p {
+  margin-top: clamp(1.5rem, 2.5vw, 2.25rem);
 }
 
 .constructed-premise-copy p {
@@ -214,7 +225,10 @@
 }
 
 .constructed-origin h2 {
+  margin-bottom: clamp(1.75rem, 3vw, 2.75rem);
   color: var(--ci-cream);
+  font-size: clamp(2.8rem, 4vw, 4.7rem);
+  line-height: 1;
 }
 
 .constructed-origin-copy > p:not(.constructed-kicker) {
@@ -259,6 +273,10 @@
 
 .constructed-mural {
   min-height: 42rem;
+}
+
+.constructed-mural img {
+  object-position: 68% center;
 }
 
 .constructed-views {
@@ -307,6 +325,10 @@
   border-color: rgba(127, 137, 140, 0.28);
 }
 
+.constructed-record-heading {
+  min-width: 0;
+}
+
 .constructed-record-heading > span {
   display: block;
   margin-bottom: clamp(6rem, 12vw, 12rem);
@@ -320,12 +342,13 @@
 }
 
 .constructed-record-heading h3 {
+  max-width: 100%;
   margin-bottom: 0;
   font-family: Didot, "Bodoni 72", Georgia, serif;
-  font-size: clamp(2.4rem, 4.7vw, 5.2rem);
+  font-size: clamp(2.35rem, 3.4vw, 3.6rem);
   font-weight: 400;
   letter-spacing: -0.04em;
-  line-height: 0.92;
+  line-height: 0.98;
   overflow-wrap: normal;
   word-break: normal;
 }
@@ -417,6 +440,7 @@
 
 .constructed-open-record h2 {
   max-width: 16ch;
+  margin-bottom: clamp(2rem, 3vw, 3rem);
   color: var(--ci-cream);
 }
 
