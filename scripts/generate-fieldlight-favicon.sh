@@ -3,22 +3,11 @@ set -euo pipefail
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 site_root="$(cd "$script_dir/.." && pwd)"
-source_card="$site_root/assets/institute/participant-charter-social.png"
-task_temp_dir="$(mktemp -d)"
+source_art="$site_root/assets/fieldlight-origin-master.png"
 
-cleanup() {
-  rm -rf "$task_temp_dir"
-}
-trap cleanup EXIT
-
-# Extract the exact field environment from the original Participant Charter
-# artwork. The native compositor crops and repairs source pixels; it does not
-# redraw the rings, axis, terminals, bracket, grid, or registration marks.
-swift "$script_dir/generate-fieldlight-favicon.swift" \
-  "$source_card" \
-  "$task_temp_dir/fieldlight-mark-source.png"
-
-sips -z 512 512 "$task_temp_dir/fieldlight-mark-source.png" \
+# Derive every public icon from the same high-resolution Fieldlight mark: a
+# luminous nucleus expanding simultaneously at cellular and cosmic scale.
+sips -z 512 512 "$source_art" \
   --out "$site_root/assets/fieldlight-mark.png" >/dev/null
 sips -z 180 180 "$site_root/assets/fieldlight-mark.png" \
   --out "$site_root/assets/apple-touch-icon.png" >/dev/null
