@@ -1,0 +1,579 @@
+.constructed-page {
+  --ci-night: #061720;
+  --ci-night-2: #102131;
+  --ci-ink: #102131;
+  --ci-paper: #f4efe4;
+  --ci-cream: #fff4df;
+  --ci-muted: #aab2b1;
+  --ci-gold: #cf9c3c;
+  --ci-violet: #9a73e8;
+  --ci-line: rgba(255, 244, 223, 0.2);
+  color: var(--ci-ink);
+  background: var(--ci-paper);
+}
+
+.constructed-page .site-header,
+.constructed-page .article-breadcrumb {
+  background: #f7f3ea;
+}
+
+.constructed-work h1,
+.constructed-work h2,
+.constructed-work h3,
+.constructed-work p,
+.constructed-work figure,
+.constructed-work blockquote,
+.constructed-work dl {
+  margin-top: 0;
+}
+
+.constructed-kicker,
+.constructed-section-marker,
+.constructed-record-heading > span,
+.constructed-record-heading p,
+.constructed-pattern dt,
+.constructed-grammar dt,
+.constructed-open-record a,
+.constructed-cover figcaption,
+.constructed-origin figcaption {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.constructed-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  min-height: min(780px, calc(100vh - 128px));
+  color: var(--ci-cream);
+  background:
+    linear-gradient(rgba(255, 244, 223, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 244, 223, 0.055) 1px, transparent 1px),
+    linear-gradient(125deg, #04171f 0%, #0b2d36 50%, #171c2c 100%);
+  background-size: 82px 82px, 82px 82px, auto;
+}
+
+.constructed-title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+  padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 5vw, 6rem);
+  border-right: 1px solid var(--ci-line);
+}
+
+.constructed-kicker {
+  margin-bottom: 1.6rem;
+  color: var(--ci-gold);
+}
+
+.constructed-title-block h1 {
+  margin-bottom: 1.8rem;
+  color: var(--ci-cream);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(4.1rem, 8.2vw, 9.4rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.83;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.constructed-page .article-author-byline {
+  margin-bottom: 2.3rem;
+  color: rgba(255, 244, 223, 0.58);
+}
+
+.constructed-page .article-author-byline a {
+  color: inherit;
+}
+
+.constructed-deck {
+  max-width: 10ch;
+  margin-bottom: 0;
+  color: rgba(255, 244, 223, 0.82);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(1.8rem, 3.3vw, 3.8rem);
+  line-height: 1.03;
+}
+
+.constructed-cover {
+  position: relative;
+  min-height: 37rem;
+  overflow: hidden;
+  margin-bottom: 0;
+  background: var(--ci-night);
+}
+
+.constructed-cover::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, rgba(6, 23, 32, 0.38), transparent 38%), linear-gradient(0deg, rgba(6, 23, 32, 0.72), transparent 28%);
+  pointer-events: none;
+}
+
+.constructed-cover img {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.constructed-cover figcaption {
+  position: absolute;
+  z-index: 2;
+  right: clamp(1.25rem, 3vw, 3rem);
+  bottom: clamp(1.25rem, 3vw, 2.5rem);
+  left: clamp(1.25rem, 3vw, 3rem);
+  margin: 0;
+  color: rgba(255, 244, 223, 0.68);
+  text-transform: none;
+}
+
+.constructed-premise {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.3fr) minmax(0, 1.15fr) minmax(18rem, 0.75fr);
+  gap: clamp(2rem, 5vw, 6rem);
+  padding: clamp(5rem, 9vw, 9rem) clamp(1.5rem, 7vw, 8rem);
+  border-top: 1px solid rgba(16, 33, 49, 0.22);
+  border-bottom: 1px solid rgba(16, 33, 49, 0.22);
+}
+
+.constructed-section-marker span {
+  display: block;
+  margin-bottom: 0.85rem;
+  color: var(--ci-violet);
+  font-size: 1.35rem;
+}
+
+.constructed-section-marker p {
+  max-width: 12ch;
+  color: #657077;
+}
+
+.constructed-premise-copy h2,
+.constructed-origin h2,
+.constructed-records > header h2,
+.constructed-open-record h2 {
+  color: var(--ci-ink);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(2.6rem, 5vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.constructed-premise-copy p {
+  max-width: 42rem;
+  color: #3d4b53;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 1.7vw, 1.55rem);
+  line-height: 1.6;
+}
+
+.constructed-grammar {
+  align-self: start;
+  border-top: 1px solid rgba(16, 33, 49, 0.28);
+}
+
+.constructed-grammar div {
+  padding: 1.15rem 0;
+  border-bottom: 1px solid rgba(16, 33, 49, 0.2);
+}
+
+.constructed-grammar dt {
+  margin-bottom: 0.4rem;
+  color: var(--ci-violet);
+}
+
+.constructed-grammar dd {
+  margin: 0;
+  color: #536068;
+  line-height: 1.45;
+}
+
+.constructed-origin {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(20rem, 0.75fr) minmax(24rem, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: stretch;
+  padding: clamp(4rem, 8vw, 8rem) clamp(1.5rem, 5vw, 5.5rem);
+  color: var(--ci-cream);
+  background: var(--ci-night);
+}
+
+.constructed-origin-copy {
+  align-self: center;
+  padding: clamp(1rem, 3vw, 3rem);
+}
+
+.constructed-origin h2 {
+  color: var(--ci-cream);
+}
+
+.constructed-origin-copy > p:not(.constructed-kicker) {
+  color: rgba(255, 244, 223, 0.76);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.1rem, 1.55vw, 1.4rem);
+  line-height: 1.55;
+}
+
+.constructed-origin-note {
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--ci-line);
+  color: rgba(255, 244, 223, 0.52) !important;
+  font-size: 1rem !important;
+}
+
+.constructed-origin figure {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  border: 1px solid var(--ci-line);
+}
+
+.constructed-origin figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.constructed-origin figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 1rem;
+  color: rgba(255, 244, 223, 0.72);
+  background: linear-gradient(0deg, rgba(6, 23, 32, 0.92), rgba(6, 23, 32, 0));
+  text-transform: none;
+}
+
+.constructed-mural {
+  min-height: 42rem;
+}
+
+.constructed-views {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 3rem);
+}
+
+.constructed-views figure {
+  min-height: 19rem;
+}
+
+.constructed-records {
+  padding: clamp(5rem, 9vw, 9rem) clamp(1.5rem, 7vw, 8rem);
+  background: #e9e1d2;
+}
+
+.constructed-records > header {
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  gap: 3rem;
+  align-items: end;
+  margin-bottom: clamp(3rem, 6vw, 6rem);
+}
+
+.constructed-records > header h2 {
+  max-width: 15ch;
+  margin-bottom: 0;
+}
+
+.constructed-record {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.45fr) minmax(20rem, 0.9fr) minmax(20rem, 0.75fr);
+  column-gap: clamp(2rem, 5vw, 6rem);
+  margin-top: 1.5rem;
+  border: 1px solid rgba(16, 33, 49, 0.22);
+}
+
+.constructed-record > * {
+  padding: clamp(2rem, 4vw, 4rem);
+}
+
+.constructed-record-heading,
+.constructed-record-body {
+  border-right: 1px solid currentColor;
+  border-color: rgba(127, 137, 140, 0.28);
+}
+
+.constructed-record-heading > span {
+  display: block;
+  margin-bottom: clamp(6rem, 12vw, 12rem);
+  color: var(--ci-gold);
+  font-size: 1.3rem;
+}
+
+.constructed-record-heading p {
+  margin-bottom: 0.65rem;
+  color: var(--ci-gold);
+}
+
+.constructed-record-heading h3 {
+  margin-bottom: 0;
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(2.4rem, 4.7vw, 5.2rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.constructed-record-heading cite {
+  font-style: normal;
+}
+
+.constructed-record-body p,
+.constructed-record-body li {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.03rem, 1.35vw, 1.25rem);
+  line-height: 1.55;
+}
+
+.constructed-record-body ul {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+}
+
+.constructed-record-body li span {
+  color: var(--ci-gold);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.constructed-record-lead {
+  font-size: clamp(1.35rem, 2vw, 1.8rem) !important;
+}
+
+.constructed-pattern {
+  align-self: start;
+}
+
+.constructed-pattern div {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(127, 137, 140, 0.28);
+}
+
+.constructed-pattern dt {
+  margin-bottom: 0.4rem;
+  color: var(--ci-gold);
+}
+
+.constructed-pattern dd {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.constructed-record blockquote {
+  grid-column: 2 / -1;
+  margin: 0;
+  border-top: 1px solid rgba(127, 137, 140, 0.28);
+  font-family: Didot, "Bodoni 72", Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.constructed-record-dark {
+  color: rgba(255, 244, 223, 0.78);
+  background: var(--ci-night-2);
+}
+
+.constructed-record-dark h3,
+.constructed-record-dark blockquote {
+  color: var(--ci-cream);
+}
+
+.constructed-record-light {
+  color: #33434c;
+  background: var(--ci-paper);
+}
+
+.constructed-record-light h3,
+.constructed-record-light blockquote {
+  color: var(--ci-ink);
+}
+
+.constructed-open-record {
+  padding: clamp(5rem, 10vw, 10rem) clamp(1.5rem, 10vw, 12rem);
+  color: var(--ci-cream);
+  background:
+    radial-gradient(circle at 82% 38%, rgba(154, 115, 232, 0.22), transparent 30rem),
+    var(--ci-night);
+}
+
+.constructed-open-record h2 {
+  max-width: 16ch;
+  color: var(--ci-cream);
+}
+
+.constructed-open-record > p:not(.constructed-kicker) {
+  color: rgba(255, 244, 223, 0.65);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+}
+
+.constructed-open-record div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2.5rem;
+  margin-top: 3rem;
+}
+
+.constructed-open-record a {
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--ci-violet);
+  color: var(--ci-cream);
+  text-decoration: none;
+}
+
+@media (max-width: 1050px) {
+  .constructed-hero,
+  .constructed-origin {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .constructed-title-block {
+    padding: 4rem 2rem;
+  }
+
+  .constructed-origin-copy {
+    grid-column: 1 / -1;
+  }
+
+  .constructed-origin-copy {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .constructed-origin-copy .constructed-kicker {
+    grid-row: span 3;
+  }
+
+  .constructed-premise {
+    grid-template-columns: minmax(8rem, 0.25fr) minmax(0, 1fr);
+  }
+
+  .constructed-grammar {
+    grid-column: 2;
+  }
+
+  .constructed-record {
+    grid-template-columns: minmax(12rem, 0.45fr) minmax(0, 1fr);
+  }
+
+  .constructed-pattern {
+    grid-column: 2;
+    border-top: 1px solid rgba(127, 137, 140, 0.28);
+  }
+
+  .constructed-record blockquote {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 760px) {
+  .constructed-hero,
+  .constructed-premise,
+  .constructed-origin,
+  .constructed-records > header,
+  .constructed-record {
+    grid-template-columns: 1fr;
+  }
+
+  .constructed-hero {
+    min-height: 0;
+  }
+
+  .constructed-title-block {
+    min-height: 33rem;
+    padding: 5rem 1.35rem 3rem;
+    border-right: 0;
+    border-bottom: 1px solid var(--ci-line);
+  }
+
+  .constructed-title-block h1 {
+    font-size: clamp(4rem, 21vw, 7rem);
+  }
+
+  .constructed-cover {
+    min-height: 31rem;
+  }
+
+  .constructed-premise,
+  .constructed-records {
+    padding-right: 1.35rem;
+    padding-left: 1.35rem;
+  }
+
+  .constructed-section-marker p {
+    max-width: none;
+  }
+
+  .constructed-grammar {
+    grid-column: 1;
+  }
+
+  .constructed-origin {
+    padding-right: 1.1rem;
+    padding-left: 1.1rem;
+  }
+
+  .constructed-origin-copy {
+    display: block;
+    grid-column: auto;
+    padding: 1rem 0;
+  }
+
+  .constructed-mural {
+    min-height: 38rem;
+  }
+
+  .constructed-views {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .constructed-records > header {
+    gap: 0;
+  }
+
+  .constructed-record > * {
+    padding: 1.5rem;
+  }
+
+  .constructed-record-heading,
+  .constructed-record-body {
+    border-right: 0;
+    border-bottom: 1px solid rgba(127, 137, 140, 0.28);
+  }
+
+  .constructed-record-heading > span {
+    margin-bottom: 4rem;
+  }
+
+  .constructed-pattern,
+  .constructed-record blockquote {
+    grid-column: 1;
+  }
+
+  .constructed-open-record {
+    padding-right: 1.35rem;
+    padding-left: 1.35rem;
+  }
+}
