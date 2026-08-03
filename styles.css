@@ -15857,3 +15857,80 @@ h3 {
     font-size: 3.5rem;
   }
 }
+
+/* Scholar visual provenance — source signal beside the figure recovered from it */
+.scholar-provenance-plate {
+  grid-template-columns: minmax(16rem, 0.62fr) minmax(0, 1.38fr);
+  gap: clamp(2.5rem, 6vw, 6rem);
+}
+
+.scholar-provenance-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(0.85rem, 2vw, 1.5rem);
+  align-items: start;
+  min-width: 0;
+}
+
+.scholar-provenance-item {
+  min-width: 0;
+}
+
+.scholar-provenance-item .scholar-source-image {
+  display: grid;
+  aspect-ratio: 0.78;
+  place-items: center;
+}
+
+.scholar-provenance-item .scholar-source-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.scholar-provenance-item > p {
+  margin: 0.9rem 0 0;
+  color: #69777d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.scholar-source-plate .scholar-source-disclosure {
+  color: #69777d;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 760px) {
+  .scholar-provenance-plate {
+    grid-template-columns: 1fr;
+    gap: 3.25rem;
+  }
+
+  .scholar-provenance-item .scholar-source-image {
+    width: 100%;
+  }
+
+  .scholar-provenance-item .scholar-source-image > span {
+    top: 1rem;
+    left: -0.45rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .scholar-provenance-images {
+    gap: 0.55rem;
+  }
+
+  .scholar-provenance-item .scholar-source-image {
+    padding: 0.45rem;
+  }
+
+  .scholar-provenance-item > p {
+    font-size: 0.52rem;
+  }
+}
