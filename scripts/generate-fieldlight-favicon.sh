@@ -4,10 +4,14 @@ set -euo pipefail
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 site_root="$(cd "$script_dir/.." && pwd)"
 source_art="$site_root/assets/fieldlight-origin-master.png"
+transparent_art="$(mktemp -t fieldlight-origin-transparent.XXXXXX.png)"
+trap 'rm -f "$transparent_art"' EXIT
 
-# Derive every public icon from the same high-resolution Fieldlight mark: a
-# luminous nucleus expanding simultaneously at cellular and cosmic scale.
-sips -z 512 512 "$source_art" \
+# Lift the exact explosion from its original dark field, then derive every
+# public icon from the same transparent high-resolution mark.
+python3 "$script_dir/render-transparent-fieldlight-mark.py" \
+  "$source_art" "$transparent_art"
+sips -z 512 512 "$transparent_art" \
   --out "$site_root/assets/fieldlight-mark.png" >/dev/null
 sips -z 180 180 "$site_root/assets/fieldlight-mark.png" \
   --out "$site_root/assets/apple-touch-icon.png" >/dev/null
