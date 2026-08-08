@@ -68,10 +68,14 @@
 .alt-record-hero {
   display: grid;
   grid-template-columns: minmax(24rem, 0.92fr) minmax(28rem, 1.08fr);
-  gap: clamp(4rem, 6.5vw, 8rem);
+  grid-template-areas:
+    "title introduction"
+    "context context";
+  column-gap: clamp(4rem, 6.5vw, 8rem);
+  row-gap: clamp(2.5rem, 3.5vw, 4rem);
   align-items: start;
   min-height: 0;
-  padding: clamp(6.5rem, 7vw, 8rem) clamp(1.5rem, 7vw, 8.5rem) clamp(6rem, 7vw, 8rem);
+  padding: clamp(5.5rem, 6.5vw, 7rem) clamp(1.5rem, 7vw, 8.5rem) clamp(3.5rem, 4.5vw, 5rem);
   background:
     radial-gradient(circle at 16% 84%, rgba(211, 153, 98, 0.16), transparent 25rem),
     radial-gradient(circle at 84% 20%, rgba(165, 131, 238, 0.13), transparent 30rem),
@@ -79,9 +83,27 @@
 }
 
 .alt-record-title-block,
-.alt-record-introduction {
+.alt-record-introduction,
+.alt-record-context {
   position: relative;
   z-index: 1;
+}
+
+.alt-record-title-block {
+  grid-area: title;
+}
+
+.alt-record-introduction {
+  grid-area: introduction;
+}
+
+.alt-record-context {
+  grid-area: context;
+  display: grid;
+  grid-template-columns: minmax(24rem, 0.92fr) minmax(28rem, 1.08fr);
+  gap: clamp(4rem, 6.5vw, 8rem);
+  padding-top: clamp(1.75rem, 2.5vw, 2.5rem);
+  border-top: 1px solid var(--alt-line);
 }
 
 .alt-record-title-block h1 {
@@ -123,13 +145,21 @@
   padding: 0;
 }
 
-.alt-record-introduction p {
-  max-width: 42rem;
-  margin: 1.5rem 0 0;
+.alt-record-context p {
+  max-width: 38rem;
+  margin: 0;
   color: var(--alt-soft);
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   font-size: clamp(1rem, 1.3vw, 1.25rem);
-  line-height: 1.7;
+  line-height: 1.65;
+}
+
+.alt-record-context p:last-child {
+  max-width: 34rem;
+  color: var(--alt-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 1.8vw, 1.85rem);
+  line-height: 1.4;
 }
 
 .alt-record-introduction .alt-record-deck {
@@ -538,7 +568,16 @@
   }
 
   .alt-record-hero {
+    grid-template-areas:
+      "title"
+      "introduction"
+      "context";
     min-height: auto;
+  }
+
+  .alt-record-context {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .alt-record-title-block h1 span {
