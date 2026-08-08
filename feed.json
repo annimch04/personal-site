@@ -7,6 +7,14 @@
   "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
   "items": [
     {
+      "id": "https://fieldlight.com/writing/alt-a-record-of-return/",
+      "url": "https://fieldlight.com/writing/alt-a-record-of-return/",
+      "title": "alt: a record of return",
+      "summary": "An interactive record of recurrence, recognition, and 202 favorite songs carried across twelve years.",
+      "date_published": "2026-08-07T19:45:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
+    },
+    {
       "id": "https://fieldlight.com/story-worlds/diviner/",
       "url": "https://fieldlight.com/story-worlds/diviner/",
       "title": "Diviner | First Pages",

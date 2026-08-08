@@ -21,7 +21,9 @@ JSON feed: https://fieldlight.com/feed.json
 
 ## Complete public writing
 
-The complete public catalog contains 42 authored pieces organized by subject: https://fieldlight.com/writing/
+The complete public catalog contains 43 authored pieces organized by subject: https://fieldlight.com/writing/
+
+- alt: a record of return — interactive listening record and privacy-bounded dataset: https://fieldlight.com/writing/alt-a-record-of-return/
 
 ## Story worlds
 
