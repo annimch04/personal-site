@@ -67,11 +67,11 @@
 
 .alt-record-hero {
   display: grid;
-  grid-template-columns: minmax(20rem, 0.8fr) minmax(28rem, 1.2fr);
-  gap: clamp(3rem, 8vw, 10rem);
-  align-items: end;
-  min-height: min(720px, calc(100vh - 130px));
-  padding: clamp(5rem, 10vw, 9rem) clamp(1.5rem, 7vw, 8.5rem) clamp(4rem, 8vw, 7rem);
+  grid-template-columns: minmax(24rem, 0.92fr) minmax(28rem, 1.08fr);
+  gap: clamp(4rem, 6.5vw, 8rem);
+  align-items: start;
+  min-height: 0;
+  padding: clamp(6.5rem, 7vw, 8rem) clamp(1.5rem, 7vw, 8.5rem) clamp(6rem, 7vw, 8rem);
   background:
     radial-gradient(circle at 16% 84%, rgba(211, 153, 98, 0.16), transparent 25rem),
     radial-gradient(circle at 84% 20%, rgba(165, 131, 238, 0.13), transparent 30rem),
@@ -93,7 +93,7 @@
 .alt-record-title-block h1 span {
   color: var(--alt-cream);
   font-family: Didot, "Bodoni 72", "Bodoni MT", Georgia, serif;
-  font-size: clamp(9rem, 20vw, 23rem);
+  font-size: clamp(9rem, 17vw, 20rem);
   font-weight: 400;
   letter-spacing: -0.095em;
   line-height: 0.66;
@@ -119,12 +119,12 @@
 }
 
 .alt-record-introduction {
-  max-width: 52rem;
-  padding: 0 0 1rem;
+  max-width: 50rem;
+  padding: 0;
 }
 
 .alt-record-introduction p {
-  max-width: 44rem;
+  max-width: 42rem;
   margin: 1.5rem 0 0;
   color: var(--alt-soft);
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
@@ -136,8 +136,8 @@
   margin: 0 0 2.5rem;
   color: var(--alt-cream);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4.4vw, 4.8rem);
-  line-height: 1.08;
+  font-size: clamp(2rem, 3.8vw, 4.15rem);
+  line-height: 1.06;
 }
 
 .alt-record-visual {
