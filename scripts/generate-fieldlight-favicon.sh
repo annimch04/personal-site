@@ -19,3 +19,13 @@ sips -z 48 48 "$site_root/assets/fieldlight-mark.png" \
   --out "$site_root/assets/favicon-48.png" >/dev/null
 sips -s format ico "$site_root/assets/favicon-48.png" \
   --out "$site_root/favicon.ico" >/dev/null
+
+# Keep the conventional root files for browser fallbacks, while publishing the
+# same burst under stable, distinctive URLs that cannot collide with earlier
+# Fieldlight favicon designs held in browser and search caches.
+cp "$site_root/assets/favicon-48.png" \
+  "$site_root/assets/fieldlight-burst-48.png"
+cp "$site_root/assets/apple-touch-icon.png" \
+  "$site_root/assets/fieldlight-burst-touch.png"
+cp "$site_root/favicon.ico" \
+  "$site_root/assets/fieldlight-burst.ico"
