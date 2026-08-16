@@ -7,6 +7,14 @@
   "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
   "items": [
     {
+      "id": "https://fieldlight.com/writing/fieldlight-archive-method/",
+      "url": "https://fieldlight.com/writing/fieldlight-archive-method/",
+      "title": "The Fieldlight Archive Method",
+      "summary": "A repeatable human–AI method for stewarding a living personal corpus while protecting evidence, privacy, authorship, and uncertainty.",
+      "date_published": "2026-08-15T21:00:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
+    },
+    {
       "id": "https://fieldlight.com/writing/alt-a-record-of-return/",
       "url": "https://fieldlight.com/writing/alt-a-record-of-return/",
       "title": "alt: a record of return",

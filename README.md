@@ -7,7 +7,7 @@ Fieldlight Institute develops public research, working systems, and institutiona
 ## Public architecture
 
 - `index.html` is the institutional front door.
-- `writing/index.html` is the complete catalog of 42 authored pieces by Anni McHenry.
+- `writing/index.html` is the complete catalog of 44 authored pieces by Anni McHenry.
 - `writing/*/index.html` contains the individual Fieldlight reading surfaces.
 - `institute/index.html` is the full six-part Fieldlight Institute surface.
 - `institute/participant-charter/` publishes the Participant Charter.
