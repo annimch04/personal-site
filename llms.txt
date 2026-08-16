@@ -21,7 +21,7 @@ JSON feed: https://fieldlight.com/feed.json
 
 ## Complete public writing
 
-The complete public catalog contains 43 authored pieces organized by subject: https://fieldlight.com/writing/
+The complete public catalog contains 44 authored pieces organized by subject: https://fieldlight.com/writing/
 
 - alt: a record of return — interactive listening record and privacy-bounded dataset: https://fieldlight.com/writing/alt-a-record-of-return/
 
@@ -39,6 +39,7 @@ The complete public catalog contains 43 authored pieces organized by subject: ht
 - Local Authority, External Capability: https://fieldlight.com/writing/local-authority-external-capability-why-local-ai-doesnt-mean-anti-cloud/
 - Fieldlight Mesh: What Works, What Doesn't Yet, and What Comes Next: https://fieldlight.com/writing/fieldlight-mesh-what-works-what-doesnt-yet-and-what-comes-next/
 - Institutional Transition Documentation Methodology: https://fieldlight.com/writing/institutional-transition-documentation-methodology/
+- The Fieldlight Archive Method: https://fieldlight.com/writing/fieldlight-archive-method/
 - Participant Charter: https://fieldlight.com/institute/participant-charter/
 
 ## Working systems

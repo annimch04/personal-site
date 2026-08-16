@@ -12154,6 +12154,16 @@ h3 {
     linear-gradient(125deg, var(--institute-night), #142937 66%, #20362f);
 }
 
+.institute-methodology-register + .institute-methodology-register {
+  margin-top: 28px;
+}
+
+.institute-methodology-register-archive {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(130, 103, 220, 0.2), transparent 31%),
+    linear-gradient(125deg, var(--institute-night), #142937 66%, #29233d);
+}
+
 .institute-methodology-identity,
 .institute-methodology-detail {
   padding: clamp(42px, 5vw, 78px);
