@@ -172,7 +172,7 @@
 
 .archive-constitution,
 .archive-flow {
-  padding: clamp(64px, 8vw, 118px) clamp(24px, 7vw, 136px);
+  padding: clamp(50px, 6vw, 84px) clamp(24px, 7vw, 136px);
 }
 
 .archive-constitution {
@@ -186,7 +186,7 @@
   grid-template-columns: minmax(180px, 0.35fr) minmax(0, 1.65fr);
   gap: clamp(30px, 6vw, 100px);
   align-items: start;
-  margin-bottom: clamp(44px, 6vw, 84px);
+  margin-bottom: clamp(34px, 4vw, 56px);
 }
 
 .archive-constitution h2,
@@ -195,7 +195,7 @@
   margin: 0;
   color: inherit;
   font-family: var(--archive-book);
-  font-size: clamp(38px, 5vw, 72px);
+  font-size: clamp(36px, 4.4vw, 64px);
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.045em;
@@ -209,35 +209,35 @@
 }
 
 .archive-boundaries div {
-  min-height: 210px;
-  padding: clamp(22px, 3vw, 36px);
+  min-height: 168px;
+  padding: clamp(20px, 2.3vw, 30px);
   border-right: 1px solid rgba(255, 248, 236, 0.2);
   border-bottom: 1px solid rgba(255, 248, 236, 0.2);
 }
 
 .archive-boundaries span {
   display: block;
-  margin-bottom: 48px;
+  margin-bottom: 25px;
   color: var(--archive-gold);
   font-family: var(--archive-book);
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .archive-boundaries strong {
   display: block;
   color: var(--archive-cream);
   font-family: var(--archive-book);
-  font-size: clamp(22px, 2vw, 31px);
+  font-size: clamp(20px, 1.65vw, 27px);
   font-weight: 400;
   line-height: 1.08;
 }
 
 .archive-boundaries em {
   display: block;
-  margin: 9px 0;
+  margin: 6px 0;
   color: var(--archive-violet);
   font-family: var(--archive-book);
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
 }
 
@@ -263,15 +263,15 @@
 }
 
 .archive-stage-rail li {
-  min-height: 150px;
-  padding: 18px 12px;
+  min-height: 116px;
+  padding: 16px 12px;
   border-right: 1px solid var(--archive-line);
   border-bottom: 1px solid var(--archive-line);
 }
 
 .archive-stage-rail span {
   display: block;
-  margin-bottom: 38px;
+  margin-bottom: 24px;
   color: var(--archive-violet);
   font-size: 10px;
   font-weight: 900;
@@ -280,7 +280,7 @@
 
 .archive-stage-rail strong {
   font-family: var(--archive-book);
-  font-size: clamp(16px, 1.25vw, 22px);
+  font-size: clamp(15px, 1.15vw, 20px);
   font-weight: 400;
   line-height: 1.08;
 }
@@ -575,11 +575,24 @@
 
 @media (max-width: 1100px) {
   .archive-boundaries {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .archive-boundaries div {
+    grid-column: span 2;
+  }
+
+  .archive-boundaries div:nth-child(4),
+  .archive-boundaries div:nth-child(5) {
+    grid-column: span 3;
   }
 
   .archive-stage-rail {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .archive-stage-rail li {
+    min-height: 104px;
   }
 }
 
@@ -610,20 +623,72 @@
     gap: 22px;
   }
 
+  .archive-constitution,
+  .archive-flow {
+    padding: 46px 24px;
+  }
+
+  .archive-constitution header,
+  .archive-flow header {
+    margin-bottom: 32px;
+  }
+
+  .archive-constitution h2,
+  .archive-flow h2 {
+    font-size: clamp(35px, 10vw, 48px);
+    line-height: 1.04;
+  }
+
   .archive-boundaries {
     grid-template-columns: 1fr;
   }
 
-  .archive-boundaries div {
+  .archive-boundaries div,
+  .archive-boundaries div:nth-child(4),
+  .archive-boundaries div:nth-child(5) {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: 36px max-content 22px minmax(0, 1fr);
+    gap: 9px;
+    align-items: baseline;
     min-height: 0;
+    padding: 18px 20px;
   }
 
   .archive-boundaries span {
-    margin-bottom: 24px;
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+  }
+
+  .archive-boundaries strong {
+    display: inline;
+    font-size: clamp(18px, 5.6vw, 22px);
+  }
+
+  .archive-boundaries em {
+    display: inline;
+    margin: 0;
+    font-size: 19px;
   }
 
   .archive-stage-rail {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .archive-stage-rail li {
+    min-height: 88px;
+    padding: 14px;
+  }
+
+  .archive-stage-rail span {
+    margin-bottom: 15px;
+  }
+
+  .archive-stage-rail strong {
+    font-size: 18px;
   }
 
   .archive-method-shell {
@@ -664,24 +729,28 @@
 }
 
 @media (max-width: 420px) {
-  .archive-stage-rail {
-    grid-template-columns: 1fr;
+  .archive-constitution,
+  .archive-flow {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .archive-boundaries div {
+    grid-template-columns: 28px max-content 18px minmax(0, 1fr);
+    gap: 7px;
+    padding: 16px 14px;
+  }
+
+  .archive-boundaries strong {
+    font-size: 18px;
   }
 
   .archive-stage-rail li {
-    min-height: 0;
+    min-height: 84px;
+    padding: 13px 12px;
   }
 
-  .archive-stage-rail span {
-    margin-bottom: 18px;
-  }
-
-  .archive-stage-card {
-    grid-template-columns: 1fr;
-  }
-
-  .archive-stage-number {
-    justify-content: flex-start;
-    padding: 14px 20px;
+  .archive-stage-rail strong {
+    font-size: 17px;
   }
 }
