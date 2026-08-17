@@ -9,6 +9,7 @@ Fieldlight Institute develops public research, working systems, and institutiona
 - `index.html` is the institutional front door.
 - `writing/index.html` is the complete catalog of 44 authored pieces by Anni McHenry.
 - `writing/*/index.html` contains the individual Fieldlight reading surfaces.
+- `continuity/` maps all 44 reading surfaces into five trajectories, records an explicit public baseline, and provides device-local reader state.
 - `institute/index.html` is the full six-part Fieldlight Institute surface.
 - `institute/participant-charter/` publishes the Participant Charter.
 - `systems/index.html` is the public register of working Fieldlight systems.
@@ -16,6 +17,8 @@ Fieldlight Institute develops public research, working systems, and institutiona
 - `feed.xml` and `feed.json` expose current publications.
 - `llms.txt` provides a machine-readable institutional and publication index.
 - `sitemap.xml` lists indexable HTML pages.
+
+Reader Continuity distinguishes publications from public source context. Private notebook material is never exposed by the continuity layer; only creator-authorized public source records may appear there.
 
 Canonical Markdown for Anni McHenry's public writing remains in [`annimch04/public-writing`](https://github.com/annimch04/public-writing). Fieldlight Institute is the publisher of selected reading surfaces; it does not replace the author-owned source record.
 

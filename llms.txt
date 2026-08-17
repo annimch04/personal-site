@@ -6,6 +6,7 @@ Canonical website: https://fieldlight.com/
 Institute: https://fieldlight.com/institute/
 Systems: https://fieldlight.com/systems/
 Complete writing by Anni McHenry: https://fieldlight.com/writing/
+Reader Continuity — five trajectories through the public corpus: https://fieldlight.com/continuity/
 Story Worlds: https://fieldlight.com/story-worlds/
 Institute organization: https://github.com/fieldlight-institute
 Canonical public writing by Anni McHenry: https://github.com/annimch04/public-writing
@@ -22,6 +23,8 @@ JSON feed: https://fieldlight.com/feed.json
 ## Complete public writing
 
 The complete public catalog contains 44 authored pieces organized by subject: https://fieldlight.com/writing/
+
+Reader Continuity assigns every public reading surface a stable continuity identifier and at least one conceptual trajectory. Its public source contexts are distinct from publications; private notebook lineage is not exposed: https://fieldlight.com/continuity/
 
 - alt: a record of return — interactive listening record and privacy-bounded dataset: https://fieldlight.com/writing/alt-a-record-of-return/
 
