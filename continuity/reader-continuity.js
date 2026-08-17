@@ -226,15 +226,28 @@
   function renderContexts(data) {
     const register = document.getElementById("context-register");
     if (!register) return;
+    const publications = new Map(data.publications.map((item) => [item.id, item]));
     data.contexts.forEach((item) => {
-      const link = el("a", "context-record");
-      link.href = item.url;
-      link.innerHTML = "<span class=\"context-id\"></span><div><p class=\"context-status\"></p><h3></h3><p class=\"context-relation\"></p></div><i aria-hidden=\"true\">↗</i>";
-      link.querySelector(".context-id").textContent = item.id;
-      link.querySelector(".context-status").textContent = item.status;
-      link.querySelector("h3").textContent = item.title;
-      link.querySelector(".context-relation").textContent = item.relation;
-      register.appendChild(link);
+      const article = el("article", "context-record");
+      article.innerHTML = "<span class=\"context-id\"></span><div><p class=\"context-status\"></p><h3></h3></div><div><p class=\"context-relation\"></p><div class=\"context-results\"><span>Entered public work</span></div></div>";
+      article.querySelector(".context-id").textContent = item.id;
+      article.querySelector(".context-status").textContent = item.status;
+      article.querySelector("h3").textContent = item.title;
+      article.querySelector(".context-relation").textContent = item.relation;
+      if (item.url) {
+        const sourceLink = el("a", "context-source-link", "Inspect public source ↗");
+        sourceLink.href = item.url;
+        article.children[1].appendChild(sourceLink);
+      }
+      const results = article.querySelector(".context-results");
+      (item.related || []).forEach((id) => {
+        const publication = publications.get(id);
+        if (!publication) return;
+        const link = el("a", "", publication.title);
+        link.href = publication.url;
+        results.appendChild(link);
+      });
+      register.appendChild(article);
     });
   }
 

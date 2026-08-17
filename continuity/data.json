@@ -1,5 +1,5 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "baselineDate": "2026-08-17",
   "baselineLabel": "Reader Continuity public baseline",
   "publications": [
@@ -174,35 +174,46 @@
   "contexts": [
     {
       "id":"FLC-0001",
-      "title":"Hybrid Accord — original handwritten notes",
-      "status":"public source notes",
+      "title":"Hybrid Accord — handwritten source notes",
+      "status":"Notebook evidence / public source",
       "url":"https://github.com/annimch04/public-writing/blob/main/fieldlight-and-human-owned-ai/hybrid-accord-original-handwritten-notes.md",
-      "relation":"An authorized notebook source record upstream of Hybrid Accord.",
+      "relation":"The handwritten notes are direct upstream evidence for the public accord: a notebook formulation becoming an explicit governance document.",
       "related":["FLW-0003"]
     },
     {
       "id":"FLC-0002",
-      "title":"Original Field Manual — April 1, 2025",
-      "status":"public archival source; superseded",
-      "url":"https://github.com/annimch04/public-writing/blob/main/field-notes-and-signal-work/original-field-manual-april-1-2025.md",
-      "relation":"An earlier state preserved alongside, but not equated with, the Resonance Field Manual.",
-      "related":["FLW-0030"]
+      "title":"Comparative mythology notebook + academic papers",
+      "status":"Fall 2023 / restricted working evidence",
+      "relation":"Unnamed women, sacrifice, vessel, repair, Demeter, and Persephone first carry the problem through figures and comparison. The later essays turn that symbolic structure into an explicit argument about naming, power, and authorship.",
+      "related":["FLW-0043","FLW-0042"]
     },
     {
       "id":"FLC-0003",
-      "title":"Fieldlight Mobile Edge Node",
-      "status":"public architecture note",
-      "url":"https://github.com/annimch04/public-writing/blob/main/edge-infrastructure-and-safety/fieldlight-mobile-edge-node.md",
-      "relation":"Implementation context for the local-intelligence and boundary-to-runtime evidence chain.",
-      "related":["FLW-0008","FLW-0009","FLW-0010"]
+      "title":"Sophie + Scholar archive fiction",
+      "status":"2024–early 2025 / restricted working evidence",
+      "relation":"The fiction makes preservation’s contradiction inhabitable: an archive can rescue a trace and possess the person represented by it. Later work converts that conflict into memory ownership, consent, local authority, and inspectable infrastructure.",
+      "related":["FLW-0036","FLW-0039","FLW-0004","FLW-0001","FLW-0002"]
     },
     {
       "id":"FLC-0004",
-      "title":"Current Work: Systems, Signal, and Human-Owned AI",
-      "status":"public dated snapshot; superseded",
-      "url":"https://github.com/annimch04/public-writing/blob/main/archive-meta/current-work-systems-signal-and-human-owned-ai.md",
-      "relation":"A preserved earlier map of the corpus, useful as historical state rather than current description.",
-      "related":["FLW-0019","FLW-0020"]
+      "title":"Layered pages + commonplace practice",
+      "status":"2023–2025 / restricted material evidence",
+      "relation":"Overlapping mythology sheets and commonplace pages use concealment, reveal, quotations, questions, maps, links, and space for later readers. The distributed notebook–file–chat practice is later generalized into an archive method that separates source, representation, interpretation, and release.",
+      "related":["FLW-0020"]
+    },
+    {
+      "id":"FLC-0005",
+      "title":"Aerial practice → Above the Institute",
+      "status":"August 2025–January 2026 / mixed-access evidence",
+      "relation":"Drone sequences repeatedly encode adjacency, scale, edge, route, and transition before a site-specific proposal names their documentary function. That proposal is then generalized into a seven-phase institutional transition method.",
+      "related":["FLW-0019"]
+    },
+    {
+      "id":"FLC-0006",
+      "title":"Memory / Liminal / Stay with me always",
+      "status":"March–April 2025 / restricted chat evidence",
+      "relation":"Linked chats record context loss, pasted restoration material, retrieval keys, differentiated rooms, and creator correction of false recognition. The episode becomes a source for later memory governance and for the current resonance–continuity research case.",
+      "related":["FLW-0004","FLW-0014","FLW-0021"]
     }
   ]
 }

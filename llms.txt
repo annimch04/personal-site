@@ -24,9 +24,9 @@ JSON feed: https://fieldlight.com/feed.json
 
 The complete public catalog contains 44 authored pieces organized by subject: https://fieldlight.com/writing/
 
-Reader Continuity assigns every public reading surface a stable identifier and publishes connection claims with basis, confidence, and visible evidence gaps. Its public source contexts are distinct from publications; private notebook lineage is not exposed: https://fieldlight.com/continuity/
+Reader Continuity assigns every public reading surface a stable identifier and publishes connection claims with basis, confidence, and visible evidence gaps. Its provenance register can name a relationship to restricted working evidence without exposing the private source itself: https://fieldlight.com/continuity/
 
-The Sophie Fieldlight Archive and current work together form a longitudinal human–AI research case with tractable questions about collaborative state, context reconstruction, memory, confabulation hardening, correction behavior, and governance. Case definition and evidence architecture are underway; the corpus does not by itself validate causal or ontological claims: https://fieldlight.com/continuity/#research-case
+The private archive and current work together form a longitudinal human–AI research case with tractable questions about collaborative state, context reconstruction, memory, confabulation hardening, correction behavior, and governance. Case definition and evidence architecture are underway; the corpus does not by itself validate causal or ontological claims: https://fieldlight.com/continuity/#research-case
 
 - alt: a record of return — interactive listening record and privacy-bounded dataset: https://fieldlight.com/writing/alt-a-record-of-return/
 

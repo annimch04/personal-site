@@ -70,8 +70,10 @@ if missing_from_paths:
     errors.append("not present in any trajectory path: " + ", ".join(sorted(missing_from_paths)))
 
 for context in DATA["contexts"]:
-    if urlparse(context["url"]).scheme != "https":
+    if context.get("url") and urlparse(context["url"]).scheme != "https":
         errors.append(f"context URL is not HTTPS: {context['id']}")
+    if not context.get("related"):
+        errors.append(f"context has no public output: {context['id']}")
     for publication_id in context["related"]:
         if publication_id not in publication_ids:
             errors.append(f"unknown related publication {publication_id} on {context['id']}")
@@ -113,4 +115,4 @@ if errors:
         print("ERROR:", error)
     raise SystemExit(1)
 
-print(f"Reader Continuity valid: {len(publications)} publications, {len(DATA.get('mapChains', []))} evidence chains, {len(DATA.get('connections', []))} connections, {len(DATA['contexts'])} public contexts")
+print(f"Reader Continuity valid: {len(publications)} publications, {len(DATA.get('mapChains', []))} evidence chains, {len(DATA.get('connections', []))} connections, {len(DATA['contexts'])} provenance records")
