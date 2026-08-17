@@ -2,7 +2,7 @@
   "use strict";
 
   const storageKey = "fieldlight-reader-continuity-v1";
-  const dataUrl = "/continuity/data.json";
+  const dataUrl = "/continuity/data.json?v=2";
 
   function getState() {
     try {
@@ -36,7 +36,7 @@
     if (document.querySelector('link[href*="reader-continuity.css"]')) return;
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "/continuity/reader-continuity.css?v=1";
+    link.href = "/continuity/reader-continuity.css?v=2";
     document.head.appendChild(link);
   }
 
@@ -47,18 +47,17 @@
     state.visits[publication.id] = new Date().toISOString();
     setState(state);
 
-    const thread = data.threads.find((item) => item.id === publication.primaryThread);
-    const index = thread.path.indexOf(publication.id);
     const map = publicationMap(data);
-    const previous = index > 0 ? map.get(thread.path[index - 1]) : null;
-    const next = index > -1 && index < thread.path.length - 1 ? map.get(thread.path[index + 1]) : null;
+    const related = (data.connections || []).filter((item) => item.from === publication.id || item.to === publication.id);
 
     const rail = el("aside", "reader-continuity-rail");
     rail.setAttribute("aria-label", "Reader continuity");
     const heading = el("div", "reader-continuity-rail-heading");
     heading.append(el("p", "reader-continuity-eyebrow", "Reader continuity"));
-    const title = el("h2", "", thread.title);
-    const question = el("p", "reader-continuity-question", thread.question);
+    const title = el("h2", "", "Where this work connects.");
+    const question = el("p", "reader-continuity-question", related.length
+      ? publication.title + " participates in " + related.length + " evidence-backed connection" + (related.length === 1 ? "." : "s.")
+      : "This work is registered in the public corpus; a direct evidence connection has not yet been published.");
     heading.append(title, question);
 
     const actions = el("div", "reader-continuity-actions");
@@ -81,28 +80,109 @@
     });
     actions.appendChild(markButton);
 
-    if (previous) {
+    related.slice(0, 3).forEach((connection) => {
+      const otherId = connection.from === publication.id ? connection.to : connection.from;
+      const other = map.get(otherId);
       const link = el("a", "reader-continuity-direction");
-      link.href = previous.url;
-      link.innerHTML = "<span>Previous in thread</span><strong></strong>";
-      link.querySelector("strong").textContent = previous.title;
+      link.href = other.url;
+      link.innerHTML = "<span></span><strong></strong><p></p>";
+      link.querySelector("span").textContent = connection.id + " / " + connection.relation;
+      link.querySelector("strong").textContent = other.title;
+      link.querySelector("p").textContent = connection.claim;
       actions.appendChild(link);
-    }
-    if (next) {
-      const link = el("a", "reader-continuity-direction");
-      link.href = next.url;
-      link.innerHTML = "<span>Next in thread</span><strong></strong>";
-      link.querySelector("strong").textContent = next.title;
-      actions.appendChild(link);
-    }
-    const mapLink = el("a", "reader-continuity-map-link", "See the full trajectory →");
-    mapLink.href = "/continuity/#" + thread.id;
+    });
+    const mapLink = el("a", "reader-continuity-map-link", "Open the connection map →");
+    mapLink.href = "/continuity/#map";
     actions.appendChild(mapLink);
     rail.append(heading, actions);
 
     const footer = document.querySelector("footer");
     if (footer) footer.before(rail);
     else document.body.appendChild(rail);
+  }
+
+  function renderConnectionMap(data) {
+    const container = document.getElementById("connection-map");
+    if (!container) return;
+    const map = publicationMap(data);
+    container.textContent = "";
+
+    const stageHeader = el("div", "connection-stage-header");
+    stageHeader.appendChild(el("span", "connection-stage-spacer", "Evidence chain"));
+    data.mapStages.forEach((stage) => {
+      const stageNode = el("div", "connection-stage");
+      stageNode.innerHTML = "<span></span><strong></strong><p></p>";
+      stageNode.querySelector("span").textContent = stage.number;
+      stageNode.querySelector("strong").textContent = stage.title;
+      stageNode.querySelector("p").textContent = stage.description;
+      stageHeader.appendChild(stageNode);
+    });
+    container.appendChild(stageHeader);
+
+    data.mapChains.forEach((chain) => {
+      const article = el("article", "connection-chain");
+      article.id = chain.id;
+      const chainHeader = el("header", "connection-chain-heading");
+      chainHeader.innerHTML = "<span></span><h3></h3><p></p><i></i>";
+      chainHeader.querySelector("span").textContent = chain.number;
+      chainHeader.querySelector("h3").textContent = chain.title;
+      chainHeader.querySelector("p").textContent = chain.claim;
+      chainHeader.querySelector("i").textContent = chain.status;
+      article.appendChild(chainHeader);
+
+      chain.cells.forEach((cell, cellIndex) => {
+        const stage = data.mapStages.find((item) => item.id === cell.stage);
+        const cellNode = el("div", "connection-cell" + (cell.works.length ? "" : " is-gap"));
+        cellNode.dataset.stage = stage.title;
+        cellNode.innerHTML = "<span class=\"connection-mobile-stage\"></span><div class=\"connection-cell-works\"></div><p class=\"connection-cell-note\"></p>";
+        cellNode.querySelector(".connection-mobile-stage").textContent = stage.number + " / " + stage.title;
+        const works = cellNode.querySelector(".connection-cell-works");
+        if (cell.works.length) {
+          cell.works.forEach((publicationId) => {
+            const item = map.get(publicationId);
+            const link = el("a", "connection-work");
+            link.href = item.url;
+            link.innerHTML = "<span></span><strong></strong>";
+            link.querySelector("span").textContent = item.id;
+            link.querySelector("strong").textContent = item.title;
+            works.appendChild(link);
+          });
+        } else {
+          works.appendChild(el("strong", "connection-gap", "Open evidence requirement"));
+        }
+        cellNode.querySelector(".connection-cell-note").textContent = cell.note;
+        if (cellIndex < chain.cells.length - 1) cellNode.setAttribute("data-continues", "true");
+        article.appendChild(cellNode);
+      });
+      container.appendChild(article);
+    });
+  }
+
+  function renderConnectionEvidence(data) {
+    const container = document.getElementById("connection-evidence");
+    if (!container) return;
+    const map = publicationMap(data);
+    const heading = el("header", "connection-evidence-heading");
+    heading.innerHTML = "<p>Connection ledger</p><h3>Why these lines are drawn.</h3><span></span>";
+    heading.querySelector("span").textContent = data.connections.length + " claims / basis + confidence shown";
+    container.appendChild(heading);
+
+    data.connections.forEach((connection) => {
+      const from = map.get(connection.from);
+      const to = map.get(connection.to);
+      const article = el("article", "connection-claim");
+      article.innerHTML = "<div class=\"connection-claim-meta\"><span></span><i></i></div><h4><a class=\"from\"></a><em></em><a class=\"to\"></a></h4><p class=\"connection-claim-text\"></p><p class=\"connection-claim-basis\"></p>";
+      article.querySelector(".connection-claim-meta span").textContent = connection.id;
+      article.querySelector(".connection-claim-meta i").textContent = connection.confidence + " confidence";
+      article.querySelector("a.from").href = from.url;
+      article.querySelector("a.from").textContent = from.title;
+      article.querySelector("em").textContent = connection.relation;
+      article.querySelector("a.to").href = to.url;
+      article.querySelector("a.to").textContent = to.title;
+      article.querySelector(".connection-claim-text").textContent = connection.claim;
+      article.querySelector(".connection-claim-basis").textContent = "Basis: " + connection.basis;
+      container.appendChild(article);
+    });
   }
 
   function renderReaderState(data) {
@@ -183,6 +263,8 @@
     .then((data) => {
       if (document.body.classList.contains("continuity-page")) {
         renderReaderState(data);
+        renderConnectionMap(data);
+        renderConnectionEvidence(data);
         renderContexts(data);
         renderPublicationRegister(data);
         return;

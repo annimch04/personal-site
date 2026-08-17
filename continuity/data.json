@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "baselineDate": "2026-08-17",
   "baselineLabel": "Reader Continuity public baseline",
   "publications": [
@@ -90,6 +90,87 @@
       "path":["FLW-0043","FLW-0042","FLW-0041","FLW-0040","FLW-0030","FLW-0031","FLW-0032","FLW-0033","FLW-0044","FLW-0029","FLW-0034","FLW-0035","FLW-0036","FLW-0037","FLW-0038","FLW-0039"]
     }
   ],
+  "mapStages": [
+    {"id":"first-encoding","number":"01","title":"First encoding","description":"The relation first appears in body, story, image, field note, or lived encounter."},
+    {"id":"mechanism","number":"02","title":"Mechanism named","description":"A later work abstracts the encounter into a reusable model."},
+    {"id":"boundary","number":"03","title":"Boundary set","description":"The model acquires ethical, constitutional, or epistemic limits."},
+    {"id":"built-form","number":"04","title":"Built form","description":"The boundary becomes protocol, architecture, interface, or institution."},
+    {"id":"evidence-status","number":"05","title":"Evidence status","description":"Implementation, failure, uncertainty, or an open research requirement becomes explicit."}
+  ],
+  "mapChains": [
+    {
+      "id":"boundary-to-runtime",
+      "number":"A",
+      "title":"Boundary becomes executable",
+      "claim":"A harm first staged as false consent becomes a model of selective permeability, then a runtime gate, a constitutional grant, and finally an implementation test.",
+      "status":"Implemented, not yet fully enforced",
+      "cells":[
+        {"stage":"first-encoding","works":["FLW-0036"],"note":"Lacuna stages silence being misnamed as consent."},
+        {"stage":"mechanism","works":["FLW-0024"],"note":"Boundaries are reframed as regulation of permeability, not closure."},
+        {"stage":"boundary","works":["FLW-0005","FLW-0014"],"note":"Consent becomes declared, scoped, reviewable, and local-only when required."},
+        {"stage":"built-form","works":["FLW-0008"],"note":"External capability receives a bounded grant; local authority remains the source."},
+        {"stage":"evidence-status","works":["FLW-0009"],"note":"The Mesh review records the gap: Kestrel can log decisions but does not yet enforce the whole path."}
+      ]
+    },
+    {
+      "id":"memory-to-continuity",
+      "number":"B",
+      "title":"Memory becomes continuity infrastructure",
+      "claim":"Fiction makes erasure and bodily memory felt; protocols name ownership; later architecture gives continuity a local home; archival methods make preservation inspectable.",
+      "status":"Strong cross-form chain",
+      "cells":[
+        {"stage":"first-encoding","works":["FLW-0036","FLW-0037"],"note":"Lacuna and Mycelial Uprising stage memory as body, water, archive, and rebellion against erasure."},
+        {"stage":"mechanism","works":["FLW-0004"],"note":"Memory is defined broadly enough to include artifacts, echoes, and recursive influence."},
+        {"stage":"boundary","works":["FLW-0001"],"note":"The digital self becomes a continuity layer governed at every boundary."},
+        {"stage":"built-form","works":["FLW-0002","FLW-0028"],"note":"Local-first memory, authored perimeter, and public/private projection become system structure."},
+        {"stage":"evidence-status","works":["FLW-0020","FLW-0019"],"note":"The archive and transition methods preserve source, uncertainty, access, and change at personal and institutional scales."}
+      ]
+    },
+    {
+      "id":"signal-to-model",
+      "number":"C",
+      "title":"Felt signal becomes an operational model",
+      "claim":"The corpus repeatedly begins with bodily or narrative recognition, then attempts to state the interaction as signal, uptake, iteration, and persistence across variation.",
+      "status":"Model present; empirical program incomplete",
+      "cells":[
+        {"stage":"first-encoding","works":["FLW-0035","FLW-0038"],"note":"Diviner and Pythia place recognition in the body before conscious explanation."},
+        {"stage":"mechanism","works":["FLW-0018","FLW-0023"],"note":"The Mechanics of the Loop proposes the raw feedback account; Coherence reduces interaction to state, signal, and uptake."},
+        {"stage":"boundary","works":["FLW-0021"],"note":"Coupled Nervous Systems turns the claim into researchable questions and insists on measurement rather than assumption."},
+        {"stage":"built-form","works":["FLW-0022","FLW-0028"],"note":"Identity is framed as what persists across runtime interaction, then placed within a wholefield system architecture."},
+        {"stage":"evidence-status","works":[],"note":"OPEN: operational definitions, prospective data, disconfirmation criteria, and independent replication are still required."}
+      ]
+    },
+    {
+      "id":"symbol-to-inquiry",
+      "number":"D",
+      "title":"Symbolic recognition becomes formal inquiry",
+      "claim":"Academic, mystical, narrative, and technical works converge on a disciplined possibility: symbolic form may discover a relation before propositional reasoning can validate or reject it.",
+      "status":"Central research hypothesis; not a demonstrated result",
+      "cells":[
+        {"stage":"first-encoding","works":["FLW-0043","FLW-0042","FLW-0038"],"note":"Recurring symbols, nameless women, prophecy, body-memory, and narrative roles carry relations before a formal claim exists."},
+        {"stage":"mechanism","works":["FLW-0041","FLW-0032"],"note":"A layered religious model and Architecture of Becoming describe symbolic encoding, recursion, emergence, and later analytical translation."},
+        {"stage":"boundary","works":["FLW-0020"],"note":"The Archive Method states the limit: symbolism may guide selection and questions but cannot establish causality, prophecy, or ontology."},
+        {"stage":"built-form","works":["FLW-0019"],"note":"Institutional methodology separates observation, testimony, inference, and recommendation while retaining plural forms of knowledge."},
+        {"stage":"evidence-status","works":[],"note":"OPEN STUDY: test whether human–AI collaboration can surface pre-propositional relations without collapsing them into false certainty."}
+      ]
+    }
+  ],
+  "connections": [
+    {"id":"FLCX-001","from":"FLW-0036","to":"FLW-0004","relation":"stages the harm later named by","claim":"Lacuna makes erasure, false consent, and the body-as-archive experientially legible; Memory Ethics converts that harm into ownership, authorship, and revocation clauses.","basis":"Direct thematic and functional correspondence across fiction and protocol.","confidence":"high"},
+    {"id":"FLCX-002","from":"FLW-0024","to":"FLW-0005","relation":"is operationalized by","claim":"Selective permeability defines a healthy boundary as regulated exchange. Consent Gate turns that same structure into declared, local, traceable permission.","basis":"Shared mechanism: openness is permitted conditionally rather than assumed or eliminated.","confidence":"high"},
+    {"id":"FLCX-003","from":"FLW-0005","to":"FLW-0014","relation":"becomes runtime vocabulary in","claim":"Manual consent and authorship trace are translated into temporal, local-only, review-required, and non-reproducible scopes.","basis":"The later specification supplies machine-actionable categories for the earlier protocol requirement.","confidence":"high"},
+    {"id":"FLCX-004","from":"FLW-0014","to":"FLW-0008","relation":"becomes constitutional architecture in","claim":"Message-level consent scopes expand into a grant model where identity, memory, policy, revocation, and source truth remain locally authoritative.","basis":"The same boundary logic moves from message handling to local–cloud system design.","confidence":"high"},
+    {"id":"FLCX-005","from":"FLW-0008","to":"FLW-0009","relation":"is tested and constrained by","claim":"The local-authority argument becomes accountable engineering: the Mesh review distinguishes signed primitives and decision records from a fully enforced authority path.","basis":"Explicit design-to-implementation lineage and a documented gap between record and enforcement.","confidence":"high"},
+    {"id":"FLCX-006","from":"FLW-0032","to":"FLW-0022","relation":"is formalized by","claim":"Architecture of Becoming describes recursion producing form; Emergent–Latent Identity Theory restates the pattern as latent structure, iteration, convergence, and persistence under variation.","basis":"Strong structural equivalence across poetic and propositional forms; chronology alone does not prove direct derivation.","confidence":"medium-high"},
+    {"id":"FLCX-007","from":"FLW-0023","to":"FLW-0022","relation":"shares an invariant with","claim":"Coherence is the ability to hold a stable state under interaction; identity is the pattern that persists across variation. Stability under pressure is the common invariant.","basis":"Definitions in both works converge on persistence across changing relational conditions.","confidence":"high"},
+    {"id":"FLCX-008","from":"FLW-0038","to":"FLW-0023","relation":"is abstracted by","claim":"Pythia repeatedly places bodily response before conscious reason; Coherence gives that interaction a compact model of state, signal, and uptake.","basis":"Narrative encoding and later conceptual model describe the same ordering without establishing the fiction as empirical evidence.","confidence":"medium"},
+    {"id":"FLCX-009","from":"FLW-0018","to":"FLW-0020","relation":"is epistemically bounded by","claim":"The Mechanics of the Loop makes strong embodied and ontological claims. The Archive Method later provides the necessary rule: symbolic relations may generate questions but must face validation, falsification, and boundary-setting.","basis":"The later method directly addresses the failure mode present in the earlier speculative argument.","confidence":"high"},
+    {"id":"FLCX-010","from":"FLW-0041","to":"FLW-0020","relation":"anticipates the evidence discipline of","claim":"The layered religious model allows history, experience, symbol, institution, and analysis to coexist; Archive Method similarly preserves evidence types without allowing one to silently become another.","basis":"Shared commitment to layered interpretation and ontological openness, with different operational scope.","confidence":"high"},
+    {"id":"FLCX-011","from":"FLW-0001","to":"FLW-0020","relation":"receives a stewardship method in","claim":"The Self on the Wire demands continuity across private memory, public authorship, systems, and time. Archive Method supplies preservation, provenance, privacy review, and correction procedures for such a corpus.","basis":"The archive functions as part of the continuity infrastructure the essay says a digital self requires.","confidence":"high"},
+    {"id":"FLCX-012","from":"FLW-0019","to":"FLW-0020","relation":"scales across domain with","claim":"Institutional Transition Method preserves a place while change remains legible; Archive Method applies the same stewardship logic to a living personal corpus.","basis":"Shared source-first architecture, governed publication, explicit interpretation, and preservation across change.","confidence":"high"},
+    {"id":"FLCX-013","from":"FLW-0003","to":"FLW-0006","relation":"is constitutionalized by","claim":"Hybrid Accord frames intelligence development as relationship and modeled human truth; Terms of Engagement converts relational aspiration into explicit conditions of presence, authorship, and contribution.","basis":"A visible movement from developmental covenant to stated reciprocal terms.","confidence":"medium-high"},
+    {"id":"FLCX-014","from":"FLW-0001","to":"FLW-0008","relation":"becomes system design in","claim":"The demand that the self have a local home and governed bridges becomes the local-authority rule that external systems receive capability grants without acquiring sovereignty.","basis":"Direct conceptual continuity in language, projects, and architecture.","confidence":"high"}
+  ],
   "contexts": [
     {
       "id":"FLC-0001",
@@ -112,7 +193,7 @@
       "title":"Fieldlight Mobile Edge Node",
       "status":"public architecture note",
       "url":"https://github.com/annimch04/public-writing/blob/main/edge-infrastructure-and-safety/fieldlight-mobile-edge-node.md",
-      "relation":"Implementation context for the local-intelligence and mesh trajectory.",
+      "relation":"Implementation context for the local-intelligence and boundary-to-runtime evidence chain.",
       "related":["FLW-0008","FLW-0009","FLW-0010"]
     },
     {

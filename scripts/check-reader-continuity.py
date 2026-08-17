@@ -12,6 +12,7 @@ publications = DATA["publications"]
 threads = DATA["threads"]
 publication_ids = {item["id"] for item in publications}
 thread_ids = {item["id"] for item in threads}
+stage_ids = {item["id"] for item in DATA.get("mapStages", [])}
 
 
 class LinkParser(HTMLParser):
@@ -75,6 +76,30 @@ for context in DATA["contexts"]:
         if publication_id not in publication_ids:
             errors.append(f"unknown related publication {publication_id} on {context['id']}")
 
+connection_ids = set()
+if len(DATA.get("connections", [])) != 14:
+    errors.append(f"expected 14 connection claims, found {len(DATA.get('connections', []))}")
+for connection in DATA.get("connections", []):
+    if connection["id"] in connection_ids:
+        errors.append(f"duplicate connection ID: {connection['id']}")
+    connection_ids.add(connection["id"])
+    for endpoint in (connection["from"], connection["to"]):
+        if endpoint not in publication_ids:
+            errors.append(f"unknown endpoint {endpoint} on {connection['id']}")
+    if connection.get("confidence") not in {"medium", "medium-high", "high"}:
+        errors.append(f"invalid confidence on {connection['id']}")
+
+if len(DATA.get("mapChains", [])) != 4:
+    errors.append(f"expected 4 map chains, found {len(DATA.get('mapChains', []))}")
+for chain in DATA.get("mapChains", []):
+    cell_stages = {cell["stage"] for cell in chain["cells"]}
+    if cell_stages != stage_ids:
+        errors.append(f"map chain {chain['id']} does not cover all stages")
+    for cell in chain["cells"]:
+        for publication_id in cell["works"]:
+            if publication_id not in publication_ids:
+                errors.append(f"unknown map work {publication_id} in {chain['id']}")
+
 for page in [ROOT / "continuity/index.html", ROOT / "writing/index.html", ROOT / "index.html"]:
     parser = LinkParser()
     parser.feed(page.read_text())
@@ -88,4 +113,4 @@ if errors:
         print("ERROR:", error)
     raise SystemExit(1)
 
-print(f"Reader Continuity valid: {len(publications)} publications, {len(threads)} trajectories, {len(DATA['contexts'])} public contexts")
+print(f"Reader Continuity valid: {len(publications)} publications, {len(DATA.get('mapChains', []))} evidence chains, {len(DATA.get('connections', []))} connections, {len(DATA['contexts'])} public contexts")
