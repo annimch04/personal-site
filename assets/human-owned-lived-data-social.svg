@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Human-Owned Infrastructure for Lived Data</title>
+  <desc id="desc">Fieldlight state review: the core held, the absolutes did not.</desc>
+  <defs>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#21404c" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071f2c"/>
+      <stop offset="0.7" stop-color="#0a2733"/>
+      <stop offset="1" stop-color="#153b43"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#wash)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.72"/>
+  <circle cx="1060" cy="90" r="260" fill="#8267dc" opacity="0.09"/>
+  <circle cx="102" cy="630" r="290" fill="#2f6f5e" opacity="0.17"/>
+  <rect x="72" y="62" width="96" height="8" fill="#2f6f5e"/>
+  <rect x="168" y="62" width="54" height="8" fill="#dfa935"/>
+  <rect x="222" y="62" width="74" height="8" fill="#8267dc"/>
+  <text x="72" y="118" fill="#dfa935" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="4">FIELDLIGHT / STATE REVIEW 2026</text>
+  <text x="72" y="225" fill="#fff8eb" font-family="Georgia, 'Times New Roman', serif" font-size="68">Human-Owned Infrastructure</text>
+  <text x="72" y="307" fill="#fff8eb" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-style="italic">for Lived Data</text>
+  <text x="74" y="370" fill="#a9bbb9" font-family="Arial, Helvetica, sans-serif" font-size="27">The core held. The absolutes did not.</text>
+  <line x1="72" y1="418" x2="1128" y2="418" stroke="#56707a" stroke-width="1"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="2">
+    <rect x="72" y="465" width="167" height="54" fill="none" stroke="#2f6f5e" stroke-width="2"/>
+    <text x="104" y="499" fill="#dfece7">HELD</text>
+    <rect x="255" y="465" width="190" height="54" fill="none" stroke="#8267dc" stroke-width="2"/>
+    <text x="282" y="499" fill="#e2dafa">REFINED</text>
+    <rect x="461" y="465" width="247" height="54" fill="none" stroke="#dfa935" stroke-width="2"/>
+    <text x="486" y="499" fill="#f3d996">OPERATIONAL</text>
+    <rect x="724" y="465" width="177" height="54" fill="none" stroke="#e85f50" stroke-width="2"/>
+    <text x="752" y="499" fill="#f4c1ba">PARTIAL</text>
+    <rect x="917" y="465" width="169" height="54" fill="none" stroke="#8ca0a8" stroke-width="2"/>
+    <text x="958" y="499" fill="#ced9dd">OPEN</text>
+  </g>
+  <text x="72" y="584" fill="#9eb0b7" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">FIELDLIGHT INSTITUTE</text>
+  <text x="1128" y="584" fill="#9eb0b7" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end">fieldlight.com</text>
+</svg>

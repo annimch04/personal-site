@@ -79,8 +79,8 @@ for context in DATA["contexts"]:
             errors.append(f"unknown related publication {publication_id} on {context['id']}")
 
 connection_ids = set()
-if len(DATA.get("connections", [])) != 14:
-    errors.append(f"expected 14 connection claims, found {len(DATA.get('connections', []))}")
+if len(DATA.get("connections", [])) != 17:
+    errors.append(f"expected 17 connection claims, found {len(DATA.get('connections', []))}")
 for connection in DATA.get("connections", []):
     if connection["id"] in connection_ids:
         errors.append(f"duplicate connection ID: {connection['id']}")
