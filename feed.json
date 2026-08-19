@@ -7,6 +7,22 @@
   "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
   "items": [
     {
+      "id": "https://fieldlight.com/institute/research/cardiac-field-social-interaction/",
+      "url": "https://fieldlight.com/institute/research/cardiac-field-social-interaction/",
+      "title": "Cardiac Field and Social Interaction",
+      "summary": "A registered five-claim evidence ladder separating established cardiac physiology from open and unsupported claims about magnetic fields and social interaction.",
+      "date_published": "2026-08-19T16:00:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#anni-mchenry"}]
+    },
+    {
+      "id": "https://fieldlight.com/writing/one-export-is-not-an-archive/",
+      "url": "https://fieldlight.com/writing/one-export-is-not-an-archive/",
+      "title": "One Export Is Not an Archive",
+      "summary": "A Fieldlight Archive Method implementation note showing why multiple dated export states must be preserved and unioned before longitudinal analysis.",
+      "date_published": "2026-08-19T15:30:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#anni-mchenry"}]
+    },
+    {
       "id": "https://fieldlight.com/writing/fieldlight-archive-method/",
       "url": "https://fieldlight.com/writing/fieldlight-archive-method/",
       "title": "The Fieldlight Archive Method",

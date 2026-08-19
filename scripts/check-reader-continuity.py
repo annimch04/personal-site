@@ -37,8 +37,8 @@ def local_target(page, reference):
         target = target / "index.html"
     return target.resolve()
 
-if len(publications) != 44:
-    errors.append(f"expected 44 publications, found {len(publications)}")
+if len(publications) != 46:
+    errors.append(f"expected 46 publications, found {len(publications)}")
 if len(publication_ids) != len(publications):
     errors.append("publication IDs are not unique")
 if len({item["url"] for item in publications}) != len(publications):
@@ -79,8 +79,8 @@ for context in DATA["contexts"]:
             errors.append(f"unknown related publication {publication_id} on {context['id']}")
 
 connection_ids = set()
-if len(DATA.get("connections", [])) != 17:
-    errors.append(f"expected 17 connection claims, found {len(DATA.get('connections', []))}")
+if len(DATA.get("connections", [])) != 21:
+    errors.append(f"expected 21 connection claims, found {len(DATA.get('connections', []))}")
 for connection in DATA.get("connections", []):
     if connection["id"] in connection_ids:
         errors.append(f"duplicate connection ID: {connection['id']}")
@@ -91,8 +91,8 @@ for connection in DATA.get("connections", []):
     if connection.get("confidence") not in {"medium", "medium-high", "high"}:
         errors.append(f"invalid confidence on {connection['id']}")
 
-if len(DATA.get("mapChains", [])) != 4:
-    errors.append(f"expected 4 map chains, found {len(DATA.get('mapChains', []))}")
+if len(DATA.get("mapChains", [])) != 5:
+    errors.append(f"expected 5 map chains, found {len(DATA.get('mapChains', []))}")
 for chain in DATA.get("mapChains", []):
     cell_stages = {cell["stage"] for cell in chain["cells"]}
     if cell_stages != stage_ids:

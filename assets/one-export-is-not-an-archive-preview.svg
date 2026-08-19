@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">One Export Is Not an Archive</title><desc id="desc">Fieldlight Archive Method Implementation Note 01.</desc>
+  <defs><pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse"><path d="M72 0H0V72" fill="none" stroke="#ded4c2" stroke-width="1"/></pattern><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5efe2"/><stop offset="1" stop-color="#e9dfcc"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#wash)"/><rect width="1200" height="630" fill="url(#grid)" opacity="0.72"/><circle cx="1100" cy="60" r="250" fill="#8065db" opacity="0.09"/><circle cx="40" cy="660" r="300" fill="#2f6f5e" opacity="0.12"/>
+  <rect x="72" y="62" width="96" height="8" fill="#2f6f5e"/><rect x="168" y="62" width="54" height="8" fill="#d8a434"/><rect x="222" y="62" width="74" height="8" fill="#8065db"/>
+  <text x="72" y="118" fill="#2f6f5e" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="3.5">ARCHIVE METHOD / IMPLEMENTATION NOTE 01</text>
+  <text x="72" y="240" fill="#071f2c" font-family="Georgia, 'Times New Roman', serif" font-size="78">One Export Is Not</text><text x="72" y="330" fill="#071f2c" font-family="Georgia, 'Times New Roman', serif" font-size="78">an Archive</text>
+  <line x1="72" y1="385" x2="1128" y2="385" stroke="#b8ad9c" stroke-width="1"/>
+  <text x="72" y="469" fill="#071f2c" font-family="Georgia, 'Times New Roman', serif" font-size="54">608</text><text x="203" y="469" fill="#8065db" font-family="Georgia, 'Times New Roman', serif" font-size="48">≠</text><text x="277" y="469" fill="#071f2c" font-family="Georgia, 'Times New Roman', serif" font-size="54">654</text>
+  <text x="72" y="510" fill="#52636a" font-family="Arial, Helvetica, sans-serif" font-size="21">newest export</text><text x="277" y="510" fill="#52636a" font-family="Arial, Helvetica, sans-serif" font-size="21">three-state union</text>
+  <text x="1128" y="469" fill="#d8a434" font-family="Georgia, 'Times New Roman', serif" font-size="54" text-anchor="end">46 retained</text><text x="1128" y="510" fill="#52636a" font-family="Arial, Helvetica, sans-serif" font-size="21" text-anchor="end">only by earlier source states</text>
+  <text x="72" y="584" fill="#607078" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="2">FIELDLIGHT INSTITUTE</text><text x="1128" y="584" fill="#607078" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end">fieldlight.com</text>
+</svg>
