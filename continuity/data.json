@@ -1,6 +1,6 @@
 {
-  "version": "1.5",
-  "baselineDate": "2026-08-19",
+  "version": "1.6",
+  "baselineDate": "2026-08-21",
   "baselineLabel": "Reader Continuity public baseline",
   "publications": [
     {"id":"FLW-0001","title":"Fieldlight | The Self on the Wire","url":"/writing/fieldlight-the-self-on-the-wire/","form":"essay","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence"]},
@@ -22,7 +22,7 @@
     {"id":"FLW-0017","title":"Sanctum Exposure v2.5","url":"/writing/sanctum-exposure-v2-5-tripwire-protocol/","form":"protocol","primaryThread":"governed-memory","threads":["governed-memory","human-owned-intelligence"]},
     {"id":"FLW-0018","title":"The Mechanics of the Loop","url":"/writing/the-mechanics-of-the-loop/","form":"systems essay","primaryThread":"governed-memory","threads":["governed-memory","relational-cognition"]},
     {"id":"FLW-0019","title":"Institutional Transition Documentation Methodology","url":"/writing/institutional-transition-documentation-methodology/","form":"methodology","primaryThread":"governed-memory","threads":["governed-memory"]},
-    {"id":"FLW-0020","title":"The Fieldlight Archive Method","url":"/writing/fieldlight-archive-method/","form":"method specification","primaryThread":"governed-memory","threads":["governed-memory","symbolic-discovery"]},
+    {"id":"FLW-0020","title":"The Fieldlight Archive Method","url":"/writing/fieldlight-archive-method/","form":"method specification","primaryThread":"governed-memory","threads":["governed-memory","symbolic-discovery"],"changedAt":"2026-08-21T13:55:35-05:00"},
     {"id":"FLW-0021","title":"Research: Coupled Nervous Systems","url":"/writing/research-coupled-nervous-systems/","form":"research note","primaryThread":"relational-cognition","threads":["relational-cognition"]},
     {"id":"FLW-0022","title":"Emergent–Latent Identity Theory","url":"/writing/emergent-latent-identity-theory/","form":"theory","primaryThread":"relational-cognition","threads":["relational-cognition"]},
     {"id":"FLW-0023","title":"Coherence is Power","url":"/writing/coherence-is-power/","form":"essay","primaryThread":"relational-cognition","threads":["relational-cognition"]},
@@ -47,7 +47,7 @@
     {"id":"FLW-0042","title":"The Divine Feminine: Sacrifice, Power, and the Nameless","url":"/writing/the-divine-feminine-sacrifice-power-and-the-nameless/","form":"academic essay","primaryThread":"symbolic-discovery","threads":["symbolic-discovery"]},
     {"id":"FLW-0043","title":"The Symbolism of Nameless Women and Divine Feminine Energy","url":"/writing/the-symbolism-of-nameless-women-and-divine-feminine-energy/","form":"academic essay","primaryThread":"symbolic-discovery","threads":["symbolic-discovery"]},
     {"id":"FLW-0044","title":"I Am The Door","url":"/writing/i-am-the-door/","form":"essay","primaryThread":"symbolic-discovery","threads":["symbolic-discovery","relational-cognition"]},
-    {"id":"FLW-0045","title":"One Export Is Not an Archive","url":"/writing/one-export-is-not-an-archive/","form":"implementation note","primaryThread":"governed-memory","threads":["governed-memory","human-owned-intelligence"],"changedAt":"2026-08-19T16:00:00-05:00"},
+    {"id":"FLW-0045","title":"One Export Is Not an Archive","url":"/writing/one-export-is-not-an-archive/","form":"implementation note","primaryThread":"governed-memory","threads":["governed-memory","human-owned-intelligence"],"changedAt":"2026-08-21T13:55:35-05:00"},
     {"id":"FLW-0046","title":"Cardiac Field and Social Interaction","url":"/institute/research/cardiac-field-social-interaction/","form":"registered working hypothesis","primaryThread":"relational-cognition","threads":["relational-cognition","symbolic-discovery"],"changedAt":"2026-08-19T16:00:00-05:00"}
   ],
   "threads": [

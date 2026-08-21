@@ -18,16 +18,18 @@
       "id": "https://fieldlight.com/writing/one-export-is-not-an-archive/",
       "url": "https://fieldlight.com/writing/one-export-is-not-an-archive/",
       "title": "One Export Is Not an Archive",
-      "summary": "A Fieldlight Archive Method implementation note showing why multiple dated export states must be preserved and unioned before longitudinal analysis.",
+      "summary": "A Fieldlight Archive Method implementation note showing why multiple export states—and preservation surfaces beyond exports—must be reconciled before longitudinal analysis.",
       "date_published": "2026-08-19T15:30:00-05:00",
+      "date_modified": "2026-08-21T13:55:35-05:00",
       "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#anni-mchenry"}]
     },
     {
       "id": "https://fieldlight.com/writing/fieldlight-archive-method/",
       "url": "https://fieldlight.com/writing/fieldlight-archive-method/",
       "title": "The Fieldlight Archive Method",
-      "summary": "A repeatable human–AI method for stewarding a living personal corpus while protecting evidence, privacy, authorship, and uncertainty.",
+      "summary": "A repeatable human–AI method for stewarding a living personal corpus, amended with the rule that no single preservation surface should be presumed complete.",
       "date_published": "2026-08-15T21:00:00-05:00",
+      "date_modified": "2026-08-21T13:55:35-05:00",
       "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#about"}]
     },
     {
