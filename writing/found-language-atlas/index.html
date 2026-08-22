@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/fieldlight-burst-48.png">
+  <link rel="shortcut icon" href="/assets/fieldlight-burst.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/fieldlight-burst-touch.png">
+  <title>Found Language Atlas | Fieldlight Institute</title>
+  <meta name="description" content="A living atlas of 29 photographed encounters with public language—and the symbolic threads they form across city, memory, objects, and creative work.">
+  <link rel="canonical" href="https://fieldlight.com/writing/found-language-atlas/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Fieldlight Institute">
+  <meta property="og:url" content="https://fieldlight.com/writing/found-language-atlas/">
+  <meta property="og:title" content="Found Language Atlas">
+  <meta property="og:description" content="Twenty-nine photographed encounters. Three opening threads. A living record of what public language touches.">
+  <meta property="og:image" content="https://fieldlight.com/assets/found-language-atlas-social.jpg?v=1">
+  <meta property="og:image:secure_url" content="https://fieldlight.com/assets/found-language-atlas-social.jpg?v=1">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Found Language Atlas collage joined by a red thread.">
+  <meta property="article:published_time" content="2026-08-21T21:30:00-05:00">
+  <meta property="article:author" content="Anni McHenry">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Found Language Atlas">
+  <meta name="twitter:description" content="Twenty-nine photographed encounters. Three opening threads. A living record of what public language touches.">
+  <meta name="twitter:image" content="https://fieldlight.com/assets/found-language-atlas-social.jpg?v=1">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "headline": "Found Language Atlas",
+      "description": "A living atlas of photographed encounters with public language and the symbolic threads they form.",
+      "url": "https://fieldlight.com/writing/found-language-atlas/",
+      "datePublished": "2026-08-21",
+      "author": {"@type": "Person", "name": "Anni McHenry", "url": "https://fieldlight.com/#anni-mchenry"},
+      "publisher": {"@type": "Organization", "name": "Fieldlight Institute", "url": "https://fieldlight.com/"},
+      "image": "https://fieldlight.com/assets/found-language-atlas-social.jpg?v=1"
+    }
+  </script>
+  <style>
+    :root {
+      --ink: #102a35;
+      --deep: #071f28;
+      --paper: #f4eddf;
+      --paper-2: #e9dfce;
+      --gold: #d4a53a;
+      --violet: #7d5ce7;
+      --coral: #e25f4f;
+      --sage: #6c806c;
+      --line: rgba(16, 42, 53, .19);
+      --muted: #5d686a;
+      --serif: Iowan Old Style, Baskerville, Georgia, serif;
+      --sans: Avenir Next, Avenir, Helvetica Neue, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--sans);
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    .atlas-nav {
+      min-height: 4.8rem;
+      padding: 1rem clamp(1.1rem, 3vw, 3rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      background: #fffdf8;
+      border-bottom: 1px solid var(--line);
+    }
+    .atlas-wordmark { font: 400 clamp(1.45rem, 2.2vw, 2.1rem)/1 var(--serif); text-decoration: none; white-space: nowrap; }
+    .atlas-nav-links { display: flex; align-items: center; gap: clamp(.75rem, 2vw, 1.8rem); }
+    .atlas-nav-links a { font-size: .74rem; font-weight: 650; letter-spacing: .04em; text-decoration: none; }
+    .atlas-nav-links a[aria-current="page"] { color: #a8242e; }
+    .hero {
+      min-height: 100svh;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(16,42,53,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16,42,53,.04) 1px, transparent 1px),
+        #efe5d3;
+      background-size: 4.5rem 4.5rem;
+      padding: clamp(1.25rem, 3vw, 3rem);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 34% 47%, rgba(255,255,255,.72), transparent 37rem);
+      z-index: -1;
+      pointer-events: none;
+    }
+    .kicker, .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-size: .73rem;
+      font-weight: 700;
+    }
+    .kicker { color: #a8242e; position: absolute; top: 0; left: 0; z-index: 9; }
+    .hero-stage { width: 100%; max-width: 96rem; min-height: calc(100svh - clamp(2.5rem,6vw,6rem)); margin: auto; position: relative; }
+    .hero-main { position: absolute; z-index: 8; left: 4%; top: 24%; width: min(61rem,69%); }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      margin: 0;
+    }
+    h1 span { display: block; }
+    .title-found { font: 700 clamp(.7rem,.9vw,.9rem)/1 var(--sans); letter-spacing: .42em; text-transform: uppercase; color: #b8202b; margin: 0 0 .9rem .45rem; }
+    .title-language { font-size: clamp(4.5rem,9.6vw,10.6rem); line-height: .72; letter-spacing: -.072em; white-space: nowrap; text-shadow: 0 1px 0 rgba(255,255,255,.9); }
+    .title-atlas { width: max-content; margin: .12em 0 0 29%; color: #b8202b; font-size: clamp(4rem,8vw,8.7rem); font-style: italic; line-height: .72; letter-spacing: -.06em; transform: rotate(-2.5deg); transform-origin: left center; }
+    .hero-deck {
+      font-family: var(--serif);
+      font-size: clamp(1.35rem,2.35vw,2.5rem);
+      line-height: 1.12;
+      max-width: 27ch;
+      margin: clamp(1.5rem,3vw,3rem) 0 0 34%;
+      color: var(--ink);
+    }
+    .hero-deck em { color: #b8202b; font-weight: 400; }
+    .hero-photo { position: absolute; z-index: 3; margin: 0; background: #fbf5e8; padding: .55rem .55rem 1.7rem; box-shadow: 0 18px 45px rgba(50,31,22,.19); }
+    .hero-photo img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.88) contrast(.98); }
+    .hero-photo figcaption { position: absolute; left: .7rem; bottom: .35rem; color: #9e2430; font: 700 .58rem/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+    .photo-notebook { left: 0; bottom: 1%; width: 20%; height: 37%; transform: rotate(-4deg); }
+    .photo-mural { right: 1%; top: 3%; width: 29%; height: 48%; transform: rotate(2.5deg); }
+    .photo-fortune { right: 25%; bottom: 2%; width: 23%; height: 29%; transform: rotate(-2deg); }
+    .photo-seaworthy { left: 43%; top: 2%; width: 22%; height: 22%; transform: rotate(-3deg); }
+    .photo-ariel { right: 4%; bottom: 6%; width: 18%; height: 25%; transform: rotate(4deg); }
+    .red-thread { position: absolute; inset: 0; z-index: 6; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+    .red-thread path { fill: none; stroke: #c51f2d; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 2px 1px rgba(74,15,20,.18)); }
+    .red-thread circle { fill: #efe5d3; stroke: #c51f2d; stroke-width: 5; }
+    .hero-count { position: absolute; z-index: 8; right: 27%; top: 56%; display: flex; gap: .8rem; align-items: center; transform: rotate(-4deg); color: #8f1f29; }
+    .hero-count strong { font: italic 400 clamp(2.5rem,4.6vw,5rem)/1 var(--serif); }
+    .hero-count span { max-width: 12ch; font: 700 .64rem/1.25 var(--sans); letter-spacing: .12em; text-transform: uppercase; }
+    main { overflow: hidden; }
+    .thread-map {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(4.5rem, 8vw, 8rem) clamp(1.25rem, 5vw, 5rem) clamp(5rem, 9vw, 9rem);
+      background: #f7efdf;
+    }
+    .thread-map::before {
+      content: "";
+      position: absolute;
+      left: -8%;
+      right: -8%;
+      top: 57%;
+      height: 9rem;
+      border-top: 4px solid #c51f2d;
+      border-radius: 50%;
+      transform: rotate(-2deg);
+      opacity: .92;
+    }
+    .thread-map-inner { position: relative; z-index: 1; max-width: 92rem; margin: auto; }
+    .thread-map-head { display: grid; grid-template-columns: minmax(18rem,.8fr) minmax(24rem,1.2fr); gap: clamp(2rem,6vw,6rem); align-items: end; }
+    .thread-map h2, .finding h2, .protocol h2 {
+      font-family: var(--serif);
+      font-size: clamp(2.7rem, 5.7vw, 6.2rem);
+      font-weight: 400;
+      line-height: .94;
+      letter-spacing: -.035em;
+      margin: .3rem 0 1.5rem;
+    }
+    .thread-map-lede { max-width: 35ch; margin: 0 0 1.5rem; font: 400 clamp(1.35rem,2.2vw,2.05rem)/1.42 var(--serif); }
+    .thread-map-lede em { color: #b8202b; }
+    .thread-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: clamp(1rem,2vw,2rem); margin-top: clamp(3rem,6vw,6rem); }
+    .thread-card { position: relative; min-height: 23rem; padding: clamp(1.5rem,2.4vw,2.5rem); background: rgba(255,251,242,.93); border: 1px solid rgba(16,42,53,.19); box-shadow: 0 20px 55px rgba(50,31,22,.08); }
+    .thread-card::before { content: ""; position: absolute; top: -1rem; left: 2rem; width: 1.1rem; height: 1.1rem; border: 4px solid #c51f2d; border-radius: 50%; background: #f7efdf; }
+    .thread-no { color: #a8242e; font: 700 .65rem/1 var(--sans); letter-spacing: .18em; text-transform: uppercase; }
+    .thread-card h3 { max-width: 9ch; margin: 3.2rem 0 1.5rem; font: 400 clamp(2rem,3.4vw,3.6rem)/.95 var(--serif); letter-spacing: -.035em; }
+    .thread-card p { max-width: 35ch; margin: 0; font: 400 clamp(1rem,1.35vw,1.18rem)/1.55 var(--serif); }
+    .thread-ids { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 2rem; }
+    .thread-ids span { border: 1px solid rgba(168,36,46,.35); color: #8f1f29; padding: .32rem .5rem; font: 700 .62rem/1 var(--sans); letter-spacing: .08em; }
+    .junctions { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); margin-top: clamp(2rem,4vw,4rem); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #f7efdf; }
+    .junction { padding: 1.15rem; border-left: 1px solid var(--line); }
+    .junction:first-child { border-left: 0; }
+    .junction b { display: block; color: #a8242e; font: 700 .64rem/1 var(--sans); letter-spacing: .12em; margin-bottom: .65rem; }
+    .junction span { font: 400 1.02rem/1.3 var(--serif); }
+    .semantic {
+      background: var(--violet);
+      color: white;
+      padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 5vw, 5rem);
+    }
+    .semantic-inner { max-width: 92rem; margin: auto; display: grid; grid-template-columns: 1fr auto 1fr; gap: 3rem; align-items: center; }
+    .word { font-family: var(--serif); font-size: clamp(2.6rem, 6vw, 6.5rem); line-height: .95; }
+    .word small { display: block; font-family: var(--sans); font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.66); margin-bottom: 1rem; }
+    .collision { color: var(--gold); font: 700 .76rem var(--sans); letter-spacing: .22em; text-transform: uppercase; }
+    .semantic-note { max-width: 92rem; margin: 3rem auto 0; border-top: 1px solid rgba(255,255,255,.3); padding-top: 1.4rem; max-width: 70rem; font-size: 1.05rem; }
+    .atlas-head { max-width: 92rem; margin: auto; padding: clamp(5rem,8vw,8rem) clamp(1.25rem,5vw,5rem) 2rem; }
+    .atlas-head h2 { font-family: var(--serif); font-size: clamp(3rem,6vw,7rem); font-weight: 400; letter-spacing: -.04em; margin: 0; }
+    .filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 2rem; }
+    button {
+      border: 1px solid var(--ink);
+      background: transparent;
+      color: var(--ink);
+      padding: .7rem 1rem;
+      border-radius: 999px;
+      font: 600 .76rem var(--sans);
+      letter-spacing: .05em;
+      cursor: pointer;
+    }
+    button:hover, button.active { color: var(--paper); background: var(--ink); }
+    .entries { max-width: 92rem; margin: 0 auto; padding: 0 clamp(1.25rem,5vw,5rem) 8rem; }
+    .entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(19rem, .9fr);
+      min-height: 39rem;
+      border-top: 1px solid var(--line);
+      padding: clamp(2rem, 5vw, 5rem) 0;
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: center;
+    }
+    .entry:nth-child(even) .art { order: 2; }
+    .entry[hidden] { display: none; }
+    .art {
+      margin: 0;
+      background: var(--deep);
+      padding: clamp(.6rem,1vw,1rem);
+      box-shadow: 0 22px 60px rgba(16,42,53,.12);
+    }
+    .art img { display: block; width: 100%; height: clamp(23rem, 48vw, 40rem); object-fit: contain; background: #061920; }
+    .entry-id { color: var(--violet); font-size: .76rem; font-weight: 700; letter-spacing: .15em; }
+    .quote { font-family: var(--serif); font-size: clamp(2.15rem, 4.1vw, 4.8rem); font-weight: 400; line-height: 1; letter-spacing: -.03em; margin: 1rem 0 2rem; }
+    .quote.long { font-size: clamp(1.7rem, 3vw, 3.25rem); line-height: 1.08; }
+    .tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.7rem; }
+    .tag { border: 1px solid var(--line); padding: .28rem .55rem; font-size: .66rem; text-transform: uppercase; letter-spacing: .08em; }
+    .meta { display: grid; grid-template-columns: 6.5rem 1fr; gap: .55rem 1rem; font-size: .85rem; }
+    .meta dt { color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: .68rem; padding-top: .18rem; }
+    .meta dd { margin: 0; }
+    .connection { border-left: 3px solid var(--gold); padding-left: 1rem; margin-top: 1.8rem; font-family: var(--serif); font-size: 1.15rem; }
+    .interpretive-layer { margin-top: 1.8rem; padding: 1.25rem 1.4rem 1.35rem; border-left: 3px solid #c51f2d; background: rgba(197,31,45,.055); }
+    .interpretive-layer::before { content: "Interpretive layer"; display: block; margin-bottom: .7rem; color: #a8242e; font: 700 .64rem/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; }
+    .interpretive-layer .thread-ref { display: block; margin-bottom: .8rem; color: #8f1f29; font: italic 400 .9rem/1.2 var(--serif); }
+    .interpretive-layer p { margin: 0; font: 400 clamp(1.02rem,1.35vw,1.18rem)/1.55 var(--serif); }
+    .source-note { color: var(--muted); font-size: .82rem; margin-top: 1.1rem; }
+    .source-link { display: inline-block; margin-top: 1.3rem; font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; text-decoration-thickness: 1px; text-underline-offset: .3em; }
+    .motif-packet { grid-column: 1 / -1; margin-top: -1rem; padding: clamp(1.5rem,3vw,3rem); background: var(--paper-2); border: 1px solid var(--line); }
+    .motif-packet blockquote { margin: 1rem 0 2rem; max-width: 38ch; font: 400 clamp(1.45rem,2.5vw,2.35rem)/1.25 var(--serif); }
+    .motif-packet .packet-note { max-width: 75ch; color: var(--muted); }
+    .motif-gallery { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: .55rem; margin-top: 2rem; }
+    .motif-gallery figure { margin: 0; min-width: 0; }
+    .motif-gallery img { width: 100%; aspect-ratio: 3 / 4; display: block; object-fit: cover; background: var(--deep); }
+    .motif-gallery figcaption { padding-top: .5rem; font-size: .64rem; letter-spacing: .05em; color: var(--muted); }
+    .motif-encounter { display: grid; grid-template-columns: minmax(12rem,.42fr) minmax(20rem,.58fr); gap: clamp(1.5rem,4vw,4rem); align-items: center; margin-top: 3rem; padding-top: 3rem; border-top: 1px solid var(--line); }
+    .motif-encounter img { width: 100%; max-height: 34rem; display: block; object-fit: contain; background: var(--deep); }
+    .motif-encounter h4 { margin: .65rem 0 1rem; font: 400 clamp(1.8rem,3vw,3rem)/1.05 var(--serif); }
+    .motif-encounter p { max-width: 58ch; }
+    .finding { background: var(--deep); color: #f8f0df; padding: clamp(5rem,9vw,9rem) clamp(1.25rem,5vw,5rem); }
+    .finding-inner { max-width: 92rem; margin: auto; }
+    .finding h2 { max-width: 12ch; }
+    .finding-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); margin-top: 4rem; border: 1px solid rgba(255,255,255,.2); }
+    .finding-card { padding: 1.5rem; min-height: 15rem; border-right: 1px solid rgba(255,255,255,.2); border-bottom: 1px solid rgba(255,255,255,.2); }
+    .finding-card:nth-child(3n) { border-right: 0; }
+    .finding-card:nth-last-child(-n+3) { border-bottom: 0; }
+    .finding-card b { color: var(--gold); font: 400 2rem var(--serif); }
+    .finding-card h3 { font: 400 1.35rem var(--serif); margin: 2rem 0 1rem; }
+    .finding-card p { color: rgba(255,255,255,.65); font-size: .82rem; }
+    .matrix-wrap { max-width: 92rem; margin: auto; padding: clamp(5rem,9vw,9rem) clamp(1.25rem,5vw,5rem); }
+    .matrix-wrap h2 { font: 400 clamp(2.7rem,5vw,5rem) var(--serif); margin: 0 0 2.5rem; }
+    .matrix { display: grid; grid-template-columns: .7fr 1fr 1.2fr; border: 1px solid var(--line); }
+    .cell { min-height: 8rem; padding: 1.2rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .cell:nth-child(3n) { border-right: 0; }
+    .cell:nth-last-child(-n+3) { border-bottom: 0; }
+    .cell.head { min-height: auto; background: var(--paper-2); text-transform: uppercase; font-size: .68rem; letter-spacing: .1em; }
+    .cell strong { font-family: var(--serif); font-size: 1.4rem; font-weight: 400; }
+    .protocol { background: var(--paper-2); padding: clamp(5rem,9vw,9rem) clamp(1.25rem,5vw,5rem); }
+    .protocol-inner { max-width: 92rem; margin: auto; display: grid; grid-template-columns: .8fr 1.2fr; gap: 5rem; }
+    .steps { counter-reset: steps; border-top: 1px solid var(--line); }
+    .step { counter-increment: steps; display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; border-bottom: 1px solid var(--line); padding: 1rem 0; }
+    .step::before { content: counter(steps, decimal-leading-zero); color: var(--violet); font-weight: 700; font-size: .76rem; letter-spacing: .08em; }
+    .closing { background: var(--gold); color: var(--ink); padding: 6rem 1.25rem; text-align: center; }
+    .closing blockquote { margin: 0 auto; max-width: 24ch; font: 400 clamp(2.1rem,5vw,5.2rem)/1.02 var(--serif); }
+    .closing p { margin: 2rem auto 0; max-width: 48rem; }
+    footer { background: var(--deep); color: rgba(255,255,255,.55); padding: 2rem clamp(1.25rem,5vw,5rem); font-size: .72rem; display: flex; justify-content: space-between; gap: 2rem; }
+    @media (max-width: 900px) {
+      .hero { min-height: auto; }
+      .hero-stage { min-height: 54rem; }
+      .hero-main { left: 2%; top: 23%; width: 74%; }
+      .title-language { font-size: clamp(4.5rem,14vw,7.5rem); }
+      .title-atlas { font-size: clamp(4rem,12vw,6.5rem); margin-left: 27%; }
+      .hero-deck { max-width: 24ch; margin-left: 28%; }
+      .photo-notebook { width: 24%; height: 34%; }
+      .photo-mural { width: 33%; height: 43%; }
+      .photo-fortune { right: 24%; width: 28%; }
+      .photo-seaworthy { left: 40%; width: 26%; }
+      .photo-ariel { width: 20%; }
+      .hero-count { right: 28%; top: 55%; }
+      .thread-map-head, .protocol-inner { grid-template-columns: 1fr; }
+      .thread-grid { grid-template-columns: 1fr; }
+      .thread-card { min-height: 0; }
+      .junctions { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .junction:nth-child(odd) { border-left: 0; }
+      .junction:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .semantic-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+      .collision { width: min-content; }
+      .entry { grid-template-columns: 1fr; min-height: 0; }
+      .entry:nth-child(even) .art { order: 0; }
+      .art img { height: min(70vh, 36rem); }
+      .motif-gallery { grid-template-columns: repeat(3,minmax(0,1fr)); }
+      .motif-encounter { grid-template-columns: 1fr; }
+      .finding-grid { grid-template-columns: 1fr 1fr; }
+      .finding-card:nth-child(3n) { border-right: 1px solid rgba(255,255,255,.2); }
+      .finding-card:nth-child(2n) { border-right: 0; }
+      .finding-card:nth-last-child(-n+3) { border-bottom: 1px solid rgba(255,255,255,.2); }
+      .finding-card:nth-last-child(-n+2) { border-bottom: 0; }
+      .matrix { grid-template-columns: 1fr; }
+      .cell { border-right: 0; min-height: auto; }
+      .cell:nth-last-child(-n+3) { border-bottom: 1px solid var(--line); }
+      .cell:last-child { border-bottom: 0; }
+      .cell.head:not(:first-child) { display: none; }
+    }
+    @media (max-width: 560px) {
+      .atlas-nav { min-height: 4.2rem; gap: .8rem; }
+      .atlas-wordmark { font-size: 1.24rem; }
+      .atlas-nav-links { gap: .7rem; }
+      .atlas-nav-links a { font-size: .62rem; letter-spacing: 0; }
+      .atlas-nav-links a:first-child { display: none; }
+      .hero { padding: 1rem; }
+      .hero-stage { min-height: 66rem; }
+      .kicker { left: .15rem; }
+      .hero-main { left: 0; top: 6%; width: 100%; }
+      .title-found { margin-left: .2rem; }
+      .title-language { font-size: clamp(3.5rem,17vw,5.2rem); letter-spacing: -.065em; }
+      .title-atlas { font-size: clamp(3.4rem,16vw,4.9rem); margin-left: 23%; }
+      .hero-deck { margin: 1.5rem 0 0; max-width: 23ch; font-size: 1.2rem; }
+      .photo-mural { right: -2%; top: 35%; width: 60%; height: 28%; transform: rotate(2.5deg); }
+      .photo-notebook { left: -2%; top: 49%; bottom: auto; width: 43%; height: 29%; }
+      .photo-fortune { right: 0; top: 67%; bottom: auto; width: 52%; height: 23%; }
+      .photo-seaworthy { left: 0; top: 81%; width: 48%; height: 17%; }
+      .photo-ariel { right: 4%; top: 88%; bottom: auto; width: 29%; height: 11%; }
+      .hero-count { left: 42%; right: auto; top: 57%; }
+      .red-thread path { stroke-width: 8; }
+      .red-thread circle { stroke-width: 8; }
+      .junctions { grid-template-columns: 1fr; }
+      .junction, .junction:nth-child(odd) { border-left: 0; border-top: 1px solid var(--line); }
+      .junction:first-child { border-top: 0; }
+      .finding-grid { grid-template-columns: 1fr; }
+      .motif-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .finding-card, .finding-card:nth-child(2n), .finding-card:nth-child(3n) { min-height: 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.2); }
+      .finding-card:last-child { border-bottom: 0; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="atlas-nav" aria-label="Fieldlight navigation">
+    <a class="atlas-wordmark" href="../../">Fieldlight Institute</a>
+    <div class="atlas-nav-links"><a href="../../institute/">Institute</a><a href="../" aria-current="page">Writing</a><a href="../../continuity/">Continuity</a></div>
+  </nav>
+  <header class="hero">
+    <div class="hero-stage">
+      <div class="kicker">A living fieldwork atlas · ongoing</div>
+      <figure class="hero-photo photo-notebook"><img src="assets/SFA-FLA-0002-ugly-pen.jpg" alt="Red commonplace notebook"><figcaption>0002 · commonplace</figcaption></figure>
+      <figure class="hero-photo photo-mural"><img src="assets/SFA-FLA-0003-speak.jpg" alt="Mural carrying Audre Lorde's words"><figcaption>0003 · witness</figcaption></figure>
+      <figure class="hero-photo photo-fortune"><img src="assets/SFA-FLA-0001-fortune.jpg" alt="Fortune held in a hand"><figcaption>0001 · growth</figcaption></figure>
+      <figure class="hero-photo photo-seaworthy"><img src="assets/SFA-FLA-0004-seaworthy.jpg" alt="Seaworthy painted on a wall"><figcaption>0004 · passage</figcaption></figure>
+      <figure class="hero-photo photo-ariel"><img src="assets/SFA-FLA-0005-ariel.jpg" alt="Ariel written into a sidewalk"><figcaption>0005 · return</figcaption></figure>
+      <svg class="red-thread" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M55 690 C170 605 235 602 302 646 S490 758 650 650 S860 535 1038 650 C1158 720 1168 500 1070 414 C956 313 1018 178 886 126 C752 73 646 211 510 152 C390 99 300 181 216 118"/>
+        <circle cx="145" cy="637" r="9"/><circle cx="655" cy="647" r="9"/><circle cx="1037" cy="650" r="9"/><circle cx="1047" cy="285" r="9"/><circle cx="633" cy="145" r="9"/>
+      </svg>
+      <div class="hero-main">
+        <h1><span class="title-found">Found</span><span class="title-language">Language</span><span class="title-atlas">Atlas</span></h1>
+        <p class="hero-deck">Public language enters a private symbolic field. The red thread records <em>what it touches.</em></p>
+      </div>
+      <div class="hero-count"><strong>29</strong><span>encounters and counting</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="thread-map">
+      <div class="thread-map-inner">
+        <div class="thread-map-head">
+          <div><div class="eyebrow">The opening constellation</div><h2>Not a sequence. A circuit.</h2></div>
+          <p class="thread-map-lede">A photographed phrase is only the visible knot. Each encounter joins a symbolic system already moving through notebooks, fiction, field writing, photographs, and later formal work. The page follows <em>relations, not isolated signs.</em></p>
+        </div>
+        <div class="thread-grid">
+          <article class="thread-card">
+            <div class="thread-no">Thread 01 · carried voice</div>
+            <h3>The commonplace current</h3>
+            <p>Growth begins as a mark left by use. A notebook gives it a vessel; a public wall gives it scale. Across the three encounters, language moves through hands, teachers, friends, women, and city surfaces so that a voice can outlive the moment that first held it.</p>
+            <div class="thread-ids"><span>0001 · GROWTH</span><span>0002 · VESSEL</span><span>0003 · WITNESS</span></div>
+          </article>
+          <article class="thread-card">
+            <div class="thread-no">Thread 02 · remembered depth</div>
+            <h3>Return by water</h3>
+            <p>Whale and mermaid belong to the same undercurrent: scale, voice, passage, and a self native to depths that others experience as distance. Their recurrence during westward movement turns return into retrieval—the adult life making contact with a younger source.</p>
+            <div class="thread-ids"><span>0004 · PASSAGE</span><span>0005 · RETURN</span></div>
+          </article>
+          <article class="thread-card">
+            <div class="thread-no">Thread 03 · lived agency</div>
+            <h3>Action changes the field</h3>
+            <p>Resistance, refusal, relocation, and encounter form one practical theory: attention selects a signal, movement changes the possible, and relationship makes endurance social. The city becomes inhabitable through actions taken and people met—not through certainty arriving first.</p>
+            <div class="thread-ids"><span>0006 · RESIST</span><span>0007 · ACT</span><span>0008 · REMAIN</span></div>
+          </article>
+        </div>
+        <div class="junctions" aria-label="Cross-thread junctions">
+          <div class="junction"><b>0001 ↔ 0007</b><span>Growth becomes practice.</span></div>
+          <div class="junction"><b>0003 ↔ 0006</b><span>Witness becomes resistance.</span></div>
+          <div class="junction"><b>0005 ↔ 0007</b><span>Return becomes movement.</span></div>
+          <div class="junction"><b>0008 ↔ CIRCUIT</b><span>Relationship keeps action possible.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="semantic">
+      <div class="semantic-inner">
+        <div class="word"><small>2026 · commercial promise</small>endless opportunities for growth</div>
+        <div class="collision">meets</div>
+        <div class="word"><small>2025 · urban preservation</small>OLD GROWTH</div>
+      </div>
+      <p class="semantic-note">The first useful collision: the same word carries personal expansion in one source and age, ecology, survival, and preservation in another. The atlas records the relation precisely because the meanings do not collapse into one.</p>
+    </section>
+
+    <section class="atlas-head">
+      <div class="eyebrow">First collection · ongoing</div>
+      <h2>The first twenty-nine</h2>
+      <div class="filters" aria-label="Filter atlas entries">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="advice">Advice & prophecy</button>
+        <button data-filter="identity">Names & identity</button>
+        <button data-filter="resistance">Power & refusal</button>
+        <button data-filter="city">City & place</button>
+        <button data-filter="commerce">Commercial poetics</button>
+      </div>
+    </section>
+
+    <section class="entries">
+      <article class="entry" data-cluster="advice">
+        <figure class="art"><a href="assets/SFA-FLA-0001-fortune.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0001-fortune.jpg" alt="Fortune-cookie slip about growth and success"></a></figure>
+        <div><div class="entry-id">0001</div><h3 class="quote">“Your life will be filled with endless opportunities for growth and success.”</h3><div class="tags"><span class="tag">fortune slip</span><span class="tag">growth</span><span class="tag">action</span><span class="tag">resonance</span></div><dl class="meta"><dt>Captured</dt><dd>21 Aug 2026 · 12:52:44 CDT</dd><dt>Place</dt><dd>Ozark, Missouri</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Threads</dt><dd>Commonplace current · action changes the field</dd></dl><div class="interpretive-layer"><span class="thread-ref">Junction · growth becomes practice</span><p>The fortune enters a grammar that predates it. In the commonplace work, growth is already measured by use: pages handled, marked, overfilled, and extended. Here that material idea crosses into relationship, embodiment, and the body of work. “Success” is the commercial promise; growth is the deeper recurrence—the proposition that becoming leaves evidence because it is practiced.</p></div></div>
+      </article>
+
+      <article class="entry" data-cluster="advice">
+        <figure class="art"><a href="assets/SFA-FLA-0002-ugly-pen.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0002-ugly-pen.jpg" alt="Red notebook with Life is too short to carry an Ugly Pen sticker"></a></figure>
+        <div><div class="entry-id">0002</div><h3 class="quote">“Life is too short to carry an Ugly Pen!”</h3><div class="tags"><span class="tag">commonplace</span><span class="tag">friendship</span><span class="tag">teacher lineage</span><span class="tag">chosen tools</span></div><dl class="meta"><dt>Photographed</dt><dd>Storage-unit accession · embedded 11 Aug 2026</dd><dt>Object</dt><dd>Tomoe River notebook inside a handmade Turkish leather cover</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Thread</dt><dd>The commonplace current</dd></dl><div class="interpretive-layer"><span class="thread-ref">Thread 01 · the vessel</span><p>The notebook is a compact map of transmission. Paper from one tradition, leather from another, a practice passed through a teacher, and an object carrying the trace of friendship all meet inside one working vessel. Beauty is not decoration added to the writing life; it is part of the infrastructure that invites attention to remain.</p></div></div>
+      </article>
+
+      <article class="entry" data-cluster="resistance">
+        <figure class="art"><a href="assets/SFA-FLA-0003-speak.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0003-speak.jpg" alt="Audre Lorde quotation painted as a mural"></a></figure>
+        <div><div class="entry-id">0003</div><h3 class="quote long">“And when we speak … So it is better to speak remembering we were never meant to survive.”</h3><div class="tags"><span class="tag">feminine voice</span><span class="tag">witness</span><span class="tag">historical erasure</span><span class="tag">public speech</span></div><dl class="meta"><dt>Captured</dt><dd>5 Sep 2025 · 15:11:24 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Threads</dt><dd>Commonplace current · action changes the field</dd></dl><div class="interpretive-layer"><span class="thread-ref">Junction · witness becomes resistance</span><p>The city becomes a public commonplace book. A woman’s language, vulnerable to the same historical forces that erase women’s lives, is carried by a wall and met by a body already searching for what history loses. Witness is reciprocal here: the camera preserves the voice, and the voice returns the look.</p></div><p class="source-note">The displayed transcription uses an ellipsis for omitted visible lines; the photograph carries the complete source.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity">
+        <figure class="art"><a href="assets/SFA-FLA-0004-seaworthy.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0004-seaworthy.jpg" alt="The word seaworthy encountered in public space"></a></figure>
+        <div><div class="entry-id">0004</div><h3 class="quote">“seaworthy”</h3><div class="tags"><span class="tag">whales</span><span class="tag">passage</span><span class="tag">shared water</span><span class="tag">Moby-Dick</span></div><dl class="meta"><dt>Captured</dt><dd>5 Sep 2025 · 15:52:40 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Thread</dt><dd>Return by water</dd></dl><div class="interpretive-layer"><span class="thread-ref">Thread 02 · vessel meets element</span><p>“Seaworthy” brings two persistent corpus forms into contact: the vessel that carries and the water that transforms. Whale encounters enlarge the scale of that relation beyond the human, where passage is not mastery of an element but participation in it. The word asks less whether a body can survive the sea than what it recognizes when water becomes its medium.</p></div></div>
+      </article>
+
+      <article class="entry" data-cluster="identity city">
+        <figure class="art"><a href="assets/SFA-FLA-0005-ariel.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0005-ariel.jpg" alt="The word ARIEL marked on a sidewalk"></a></figure>
+        <div><div class="entry-id">0005 · corrected</div><h3 class="quote">“ARIEL”</h3><div class="tags"><span class="tag">Little Mermaid</span><span class="tag">voice</span><span class="tag">depth</span><span class="tag">child-self return</span></div><dl class="meta"><dt>Captured</dt><dd>16 Sep 2025 · 17:07:04 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Thread</dt><dd>Return by water</dd></dl><div class="interpretive-layer"><span class="thread-ref">Thread 02 · voice returns from depth</span><p>Ariel gives the water thread a voice. Across the larger work, bodies often recognize a pattern before language can explain it; childhood play becomes one early rehearsal for that form of knowing. When mermaid and whale return during movement west, nostalgia becomes retrieval: the adult trajectory bends toward a self whose native element was never the shore.</p></div></div>
+      </article>
+
+      <article class="entry" data-cluster="resistance">
+        <figure class="art"><a href="assets/SFA-FLA-0006-depose-fascists.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0006-depose-fascists.jpg" alt="Depose fascists message on a street surface"></a></figure>
+        <div><div class="entry-id">0006</div><h3 class="quote">“Depose fascists.”</h3><div class="tags"><span class="tag">rebellion</span><span class="tag">resistance</span><span class="tag">attention</span><span class="tag">public command</span></div><dl class="meta"><dt>Captured</dt><dd>16 Sep 2025 · 19:42:04 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Thread</dt><dd>Action changes the field</dd></dl><div class="interpretive-layer"><span class="thread-ref">Thread 03 · attention becomes participation</span><p>The archive treats attention as an active allocation. To photograph an imperative is to decide which public language receives continuity. Beside the mural in 0003, witness changes state: it moves from receiving a voice to carrying resistance. The camera becomes a small relay station for civic will.</p></div></div>
+      </article>
+
+      <article class="entry" data-cluster="resistance advice">
+        <figure class="art"><a href="assets/SFA-FLA-0007-waste-my-life.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0007-waste-my-life.jpg" alt="I WILL NOT WASTE MY LIFE stenciled on a sidewalk"></a></figure>
+        <div><div class="entry-id">0007</div><h3 class="quote">“I WILL NOT WASTE MY LIFE”</h3><div class="tags"><span class="tag">relocation</span><span class="tag">loss</span><span class="tag">action</span><span class="tag">future claim</span></div><dl class="meta"><dt>Captured</dt><dd>18 Sep 2025 · 12:15:05 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Thread</dt><dd>Action changes the field</dd></dl><div class="interpretive-layer"><span class="thread-ref">Junction · growth becomes movement</span><p>The sidewalk vow compresses a method later stated formally across the work: change environments, direct attention, initiate action. It answers the fortune in 0001 by refusing growth as passive promise. Under conditions of loss, the sentence makes continued motion the smallest available unit of authorship.</p></div></div>
+      </article>
+
+      <article class="entry" data-cluster="resistance city">
+        <figure class="art"><a href="assets/SFA-FLA-0008-hate-no-home.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0008-hate-no-home.jpg" alt="HATE HAS NO HOME HERE poster in a window"></a></figure>
+        <div><div class="entry-id">0008</div><h3 class="quote">“HATE HAS NO HOME HERE.”</h3><div class="tags"><span class="tag">Grand Coffee</span><span class="tag">third place</span><span class="tag">unexpected refuge</span><span class="tag">San Francisco resolve</span></div><dl class="meta"><dt>Captured</dt><dd>18 Sep 2025 · 16:55:15 PDT</dd><dt>Place</dt><dd>Grand Coffee · Mission, San Francisco</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Thread</dt><dd>Action changes the field</dd></dl><div class="interpretive-layer"><span class="thread-ref">Thread 03 · relationship becomes infrastructure</span><p>Home arrives here as relation before property. A café counter becomes temporary working ground; recognition between two recent arrivals makes a difficult city more inhabitable. The encounter closes the opening circuit by changing the meaning of agency: connection is not a reward for endurance but one of the mediums through which endurance becomes possible.</p></div></div>
+      </article>
+
+      <article class="entry" data-cluster="city">
+        <figure class="art"><a href="assets/SFA-FLA-0009-old-growth.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0009-old-growth.jpg" alt="OLD GROWTH text encountered in the city"></a></figure>
+        <div><div class="entry-id">0009</div><h3 class="quote">“OLD GROWTH”</h3><div class="tags"><span class="tag">urban label</span><span class="tag">preservation</span><span class="tag">semantic collision</span></div><dl class="meta"><dt>Captured</dt><dd>20 Sep 2025 · 14:37:18 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact transcription; selection motive unknown</dd></dl><p class="connection">Unlike the fortune's personal-success grammar, growth here carries age, ecology, endurance, and a claim about what deserves to survive. Their collision gives the shared word a larger field.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="city resistance">
+        <figure class="art"><a href="assets/SFA-FLA-0010-tech-destroys-sf.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0010-tech-destroys-sf.jpg" alt="TECH DESTROYS SF street inscription"></a></figure>
+        <div><div class="entry-id">0010</div><h3 class="quote">“TECH DESTROYS SF”</h3><div class="tags"><span class="tag">street inscription</span><span class="tag">urban warning</span><span class="tag">accusation</span></div><dl class="meta"><dt>Captured</dt><dd>20 Sep 2025 · 15:29:59 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact transcription; authorship and motive unknown</dd></dl><p class="connection">Placed beside “OLD GROWTH,” the city becomes a contested organism: what counts as growth, what survives it, and who gets to name destruction.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="advice commerce">
+        <figure class="art"><a href="assets/SFA-FLA-0011-remarkable-fortune.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0011-remarkable-fortune.jpg" alt="Fortune reading Keep believing in yourself; your life will be remarkable"></a></figure>
+        <div><div class="entry-id">0011</div><h3 class="quote">“Keep believing in yourself; your life will be remarkable.”</h3><div class="tags"><span class="tag">fortune slip</span><span class="tag">self-belief</span><span class="tag">commercial prophecy</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 3 Aug 2026 · 18:29:09; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact transcription; creator-supplied candidate</dd></dl><p class="connection">The second fortune makes self-belief the condition of a remarkable life, where the growth fortune offered abundance.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="resistance">
+        <figure class="art"><a href="assets/SFA-FLA-0012-power-of-love.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0012-power-of-love.jpg" alt="News screenshot of a flag about the power of love and love of power"></a></figure>
+        <div><div class="entry-id">0012</div><h3 class="quote long">“When the power of love beats the love of power, the world knows peace.”</h3><div class="tags"><span class="tag">protest flag</span><span class="tag">news screenshot</span><span class="tag">power</span></div><dl class="meta"><dt>Date</dt><dd>No reliable creation date in received JPEG</dd><dt>Surface</dt><dd>Flag preserved through a news screenshot</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Unknown</dt><dd>Earlier screenshot provenance and flag authorship</dd></dl><p class="connection">Power changes meaning through word order: domination is answered by love imagined as the stronger force.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="resistance identity">
+        <figure class="art"><a href="assets/SFA-FLA-0013-jesus-liberal.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0013-jesus-liberal.jpg" alt="Key tag reading Jesus was a liberal hippie socialist beside a reader card"></a></figure>
+        <div><div class="entry-id">0013</div><h3 class="quote long">“JESUS WAS A LIBERAL HIPPIE SOCIALIST”</h3><div class="tags"><span class="tag">key tag</span><span class="tag">religion</span><span class="tag">politics</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 9 Jun 2026 · 10:42:38; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Surface</dt><dd>Carried object</dd></dl><p class="connection">A vernacular religious argument arrives as a tiny carried object, compressing doctrine, politics, and counterculture into one sentence.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="commerce advice">
+        <figure class="art"><a href="assets/SFA-FLA-0014-made-to-feel.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0014-made-to-feel.jpg" alt="Shopping bag printed MADE TO FEEL"></a></figure>
+        <div><div class="entry-id">0014</div><h3 class="quote">“MADE TO FEEL”</h3><div class="tags"><span class="tag">retail bag</span><span class="tag">emotion</span><span class="tag">double meaning</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 26 Mar 2026 · 14:34:22; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact transcription; selection motive open</dd></dl><p class="connection">The words can describe manufacture, purpose, susceptibility, or emotional capacity without changing at all.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity commerce">
+        <figure class="art"><a href="assets/SFA-FLA-0015-salty-bracelet.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0015-salty-bracelet.jpg" alt="Retail bracelet spelling SALTY"></a></figure>
+        <div><div class="entry-id">0015</div><h3 class="quote">“SALTY”</h3><div class="tags"><span class="tag">bracelet</span><span class="tag">found self-name</span><span class="tag">public identity</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 20 Feb 2026 · 15:19:50; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact transcription</dd></dl><p class="connection">A generic product label intersects directly with the creator's established public name. Recognition turns the ordinary object into a found self-name.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="commerce identity">
+        <figure class="art"><a href="assets/SFA-FLA-0016-guilty-love.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0016-guilty-love.jpg" alt="Gucci Guilty Love Edition perfume bottle"></a></figure>
+        <div><div class="entry-id">0016</div><h3 class="quote">“GUILTY / LOVE EDITION”</h3><div class="tags"><span class="tag">perfume</span><span class="tag">guilt</span><span class="tag">love</span><span class="tag">edition</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 6 Feb 2026 · 10:54:57; offset unavailable</dd><dt>Surface</dt><dd>GUCCI GUILTY · LOVE EDITION · POUR FEMME</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Context</dt><dd>Specifically selected by creator as “Guilty Love Edition”</dd></dl><p class="connection">Product naming binds guilt, love, edition, and gender into one object—emotion made collectible and versioned.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="city identity">
+        <figure class="art"><a href="assets/SFA-FLA-0017-probably-texas.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0017-probably-texas.jpg" alt="Mural reading She's Probably in Texas"></a></figure>
+        <div><div class="entry-id">0017</div><h3 class="quote">“She's Probably in Texas”</h3><div class="tags"><span class="tag">exterior mural</span><span class="tag">absence</span><span class="tag">speculation</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 16 Dec 2025 · 13:37:28; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact central transcription; surrounding text unresolved</dd></dl><p class="connection">Absence becomes narration. The sentence locates someone through uncertainty rather than evidence.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity commerce">
+        <figure class="art"><a href="assets/SFA-FLA-0018-ruckus.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0018-ruckus.jpg" alt="Race car livery reading RUCKUS RACING"></a></figure>
+        <div><div class="entry-id">0018</div><h3 class="quote">“RUCKUS / RACING”</h3><div class="tags"><span class="tag">race car</span><span class="tag">Sonoma Raceway</span><span class="tag">kinetic identity</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 18 Oct 2025 · 11:40:37; offset unavailable</dd><dt>Place</dt><dd>Sonoma Raceway, Sonoma, California · creator supplied</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Context</dt><dd>Creator relates “lion” to “roar” across entries 0018–0019</dd></dl><p class="connection">RUCKUS supplies the noise; LIONS supplies the creature. “Roar” is the creator's relational bridge, not visible text.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity city">
+        <figure class="art"><a href="assets/SFA-FLA-0019-galileo-lions.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0019-galileo-lions.jpg" alt="Aerial night photograph of GALILEO LIONS athletic field"></a></figure>
+        <div><div class="entry-id">0019</div><h3 class="quote">“GALILEO / LIONS”</h3><div class="tags"><span class="tag">drone</span><span class="tag">institution</span><span class="tag">lion</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 1 Oct 2025 · 20:48:10; offset unavailable</dd><dt>Place</dt><dd>San Francisco plausible; drone-register reconciliation pending</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Context</dt><dd>Creator: “Lion, like roarr.”</dd></dl><p class="connection">The field makes an institutional name legible only at altitude. Its lion becomes part mascot, part city-scale mark.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="city identity">
+        <figure class="art"><a href="assets/SFA-FLA-0020-ghirardelli.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0020-ghirardelli.jpg" alt="Aerial night photograph of the illuminated Ghirardelli sign"></a></figure>
+        <div><div class="entry-id">0020</div><h3 class="quote">“Ghirardelli”</h3><div class="tags"><span class="tag">drone</span><span class="tag">town square</span><span class="tag">coyote night</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 1 Oct 2025 · 20:24:57; offset unavailable</dd><dt>Place</dt><dd>Ghirardelli Square, San Francisco · creator supplied</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Context</dt><dd>Creator saw her first San Francisco coyote the night of this drone photograph</dd></dl><p class="connection">The sign gives the place-name; the remembered coyote gives the lived perimeter of the event. No single preservation surface holds the whole encounter.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="city identity">
+        <figure class="art"><a href="assets/SFA-FLA-0021-mother-collaboration.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0021-mother-collaboration.jpg" alt="Mission window reading the Good Ship Dodo and Mother of Collaboration"></a></figure>
+        <div><div class="entry-id">0021</div><h3 class="quote long">“the Good Ship Dodo / Mother of Collaboration”</h3><div class="tags"><span class="tag">Mission window</span><span class="tag">vessel</span><span class="tag">collaboration</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 23 Sep 2025 · 16:55:49; offset unavailable</dd><dt>Place</dt><dd>Mission, San Francisco · creator supplied</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact paired-window transcription</dd></dl><p class="connection">The window pairs a vessel and a role. “Mother of Collaboration” later rhymes with Fieldlight's questions of human–AI collaboration and gives the encounter an expanding afterlife.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity commerce">
+        <figure class="art"><a href="assets/SFA-FLA-0022-saltys-club.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0022-saltys-club.jpg" alt="Sweatshirt graphic reading Salty's Club Members Only"></a></figure>
+        <div><div class="entry-id">0022</div><h3 class="quote">“Salty's Club / MEMBERS ONLY”</h3><div class="tags"><span class="tag">sweatshirt</span><span class="tag">found self-name</span><span class="tag">belonging</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 20 Sep 2025 · 15:11:56; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Central visible language; creator-name relation observable</dd></dl><p class="connection">SALTY returns, now not as a solitary name but as a club with an explicit inside and outside.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="resistance city">
+        <figure class="art"><a href="assets/SFA-FLA-0023-stop-genocide.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0023-stop-genocide.jpg" alt="Mission sidewalk inscription reading Stop the Genocide"></a></figure>
+        <div><div class="entry-id">0023</div><h3 class="quote">“STOP THE GENOCIDE”</h3><div class="tags"><span class="tag">Mission sidewalk</span><span class="tag">ethical demand</span><span class="tag">political speech</span></div><dl class="meta"><dt>Captured</dt><dd>20 Sep 2025 · 15:31:56 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Unknown</dt><dd>Author, addressee, and specific conflict</dd></dl><p class="connection">The language names a category of mass violence and directs the passerby toward refusal. Its unspecified context leaves the imperative open across conflicts.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity city">
+        <figure class="art"><a href="assets/SFA-FLA-0024-reader.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0024-reader.jpg" alt="Mission sidewalk chalk word Reader above a face"></a></figure>
+        <div><div class="entry-id">0024</div><h3 class="quote">“READER”</h3><div class="tags"><span class="tag">Mission sidewalk</span><span class="tag">named public role</span><span class="tag">chalk face</span></div><dl class="meta"><dt>Captured</dt><dd>20 Sep 2025 · 15:36:50 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Visible word and face; maker unknown</dd></dl><p class="connection">The atlas repeatedly addresses a passerby; here that passerby is explicitly named as a reader. Later reader-continuity work gives the encounter a new afterlife.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="advice city">
+        <figure class="art"><a href="assets/SFA-FLA-0025-winnow-painted.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0025-winnow-painted.jpg" alt="Painted public surface carrying the word WINNOW"></a></figure>
+        <div><div class="entry-id">0025 · WINNOW I</div><h3 class="quote">“WINNOW”</h3><div class="tags"><span class="tag">painted surface</span><span class="tag">sift</span><span class="tag">select</span></div><dl class="meta"><dt>Captured</dt><dd>5 Sep 2025 · 15:03:49 PDT</dd><dt>Place</dt><dd>San Francisco, California</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Voice</dt><dd>Action verb without explicit subject</dd></dl><p class="connection">To winnow is to separate, sift, or select—an operation that later becomes central to archive work.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="advice commerce">
+        <figure class="art"><a href="assets/SFA-FLA-0026-missionwinnow.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0026-missionwinnow.jpg" alt="Race-car rear wing carrying the word MISSIONWINNOW"></a></figure>
+        <div><div class="entry-id">0026 · WINNOW II</div><h3 class="quote">“MISSIONWINNOW”</h3><div class="tags"><span class="tag">mediated image</span><span class="tag">race car</span><span class="tag">recurrence</span></div><dl class="meta"><dt>Date</dt><dd>No reliable creation date in received JPEG</dd><dt>Surface</dt><dd>Rear-wing lettering in a mediated race-car image</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Relation</dt><dd>Second independent occurrence of WINNOW</dd></dl><p class="connection">The compound joins mission to winnow: purpose to selection. Together with 0025, it creates an object neither image supplies alone.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity advice">
+        <figure class="art"><a href="assets/SFA-FLA-0027-4ever.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0027-4ever.jpg" alt="Graffiti wall carrying the text 4EVER"></a></figure>
+        <div><div class="entry-id">0027</div><h3 class="quote">“4EVER”</h3><div class="tags"><span class="tag">graffiti</span><span class="tag">duration</span><span class="tag">devotion</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 28 Aug 2025 · 20:15:24; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Relation</dt><dd>Duration read through devotion</dd></dl><p class="connection">The visible word states duration; devotion gives “forever” material form as a practice rather than a measurement.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="commerce identity">
+        <figure class="art"><a href="assets/SFA-FLA-0028-instinct-intelligence.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0028-instinct-intelligence.jpg" alt="Advertising kiosk reading Human Instinct now meets Intelligence AI"></a></figure>
+        <div><div class="entry-id">0028</div><h3 class="quote long">“Human / Instinct now meets Intelligence / AI”</h3><div class="tags"><span class="tag">advertising kiosk</span><span class="tag">human–AI</span><span class="tag">commercial claim</span></div><dl class="meta"><dt>Captured</dt><dd>Embedded 13 Jun 2025 · 17:48:27; offset unavailable</dd><dt>Place</dt><dd>Not yet verified</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Evidence</dt><dd>Exact central transcription</dd></dl><p class="connection">The advertisement explicitly stages a live Fieldlight problem: embodied human judgment meeting machine intelligence. Finding it in the world folds public language back into the work.</p></div>
+      </article>
+
+      <article class="entry" data-cluster="identity city">
+        <figure class="art"><a href="assets/SFA-FLA-0029-strawberry-love.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0029-strawberry-love.jpg" alt="Mission sidewalk stencil showing WOW beside a strawberry pictogram"></a></figure>
+        <div><div class="entry-id">0029</div><h3 class="quote">“Strawberry Love”</h3><div class="tags"><span class="tag">WOW + pictogram</span><span class="tag">creator title</span><span class="tag">recurring motif</span></div><dl class="meta"><dt>Captured</dt><dd>10 Sep 2025 · 13:16:38 PDT</dd><dt>Place</dt><dd>Mission, San Francisco</dd><dt>Record</dt><dd>Preserved source photograph</dd><dt>Context</dt><dd>Longitudinal motif packet</dd></dl><p class="connection">The creator's title completes a word–image unit. Across the archive, strawberries recur as a durable language of remembered abundance, pleasure, nourishment, and return.</p></div>
+        <aside class="motif-packet">
+          <div class="eyebrow">Interpretive layer · motif packet</div>
+          <blockquote>A small red fruit carries a long return.</blockquote>
+          <p class="packet-note">Across more than a decade, strawberry imagery moves through plant, clothing, writing table, love form, domestic ritual, and pleasure. The recurrence turns the Mission sidewalk pictogram into a point of return rather than an isolated encounter.</p>
+          <div class="motif-gallery">
+            <figure><a href="assets/SFA-FLA-0029-context-03-plant-2012.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0029-context-03-plant-2012.jpg" alt="Strawberry plant photographed in 2012"></a><figcaption>2012 · plant</figcaption></figure>
+            <figure><a href="assets/SFA-FLA-0029-context-06-strawberry-shirt.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0029-context-06-strawberry-shirt.jpg" alt="Strawberry-pattern shirt"></a><figcaption>2025 · worn motif</figcaption></figure>
+            <figure><a href="assets/SFA-FLA-0029-context-05-notebook-strawberries.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0029-context-05-notebook-strawberries.jpg" alt="Strawberries beside notebook and pen"></a><figcaption>2025 · writing context</figcaption></figure>
+            <figure><a href="assets/SFA-FLA-0029-context-02-heart-carton.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0029-context-02-heart-carton.jpg" alt="Strawberries in heart-shaped packaging"></a><figcaption>2026 · love form</figcaption></figure>
+            <figure><a href="assets/SFA-FLA-0029-context-04-breakfast.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0029-context-04-breakfast.jpg" alt="Breakfast bowl topped with strawberries"></a><figcaption>2026 · daily ritual</figcaption></figure>
+            <figure><a href="assets/SFA-FLA-0029-context-01-dessert.jpg"><img loading="lazy" decoding="async" src="assets/SFA-FLA-0029-context-01-dessert.jpg" alt="Strawberry dessert"></a><figcaption>2026 · pleasure</figcaption></figure>
+          </div>
+        </aside>
+      </article>
+    </section>
+
+    <section class="finding"><div class="finding-inner"><div class="eyebrow">What the atlas already shows</div><h2>Attention has a grammar.</h2><div class="finding-grid">
+      <div class="finding-card"><b>01</b><h3>Language acts</h3><p>Most entries advise, command, refuse, warn, name, or vow. They attempt to alter the reader, not merely decorate a surface.</p></div>
+      <div class="finding-card"><b>02</b><h3>Surface authorizes</h3><p>A corporate slip, private notebook, mural, window, and altered sidewalk give words different kinds of permission and risk.</p></div>
+      <div class="finding-card"><b>03</b><h3>Photography transports</h3><p>The original address moves from passerby-time into archive-time. The most secure fact created by selection is attention.</p></div>
+      <div class="finding-card"><b>04</b><h3>An encounter can exceed one source</h3><p>Ghirardelli is visible in the drone image; the first-SF-coyote memory lives in creator context. Together they define the event without pretending either record was complete.</p></div>
+      <div class="finding-card"><b>05</b><h3>Difference makes recurrence useful</h3><p>“Growth” matters because its two appearances conflict productively. SALTY matters because a market label intersects an already-established public name.</p></div>
+      <div class="finding-card"><b>06</b><h3>Unknown remains a field</h3><p>Analytic fluency does not replace creator memory. A blank motive is more accurate—and more useful—than an invented one.</p></div>
+      <div class="finding-card"><b>07</b><h3>Selection authority is evidence</h3><p>The analyst held Strawberry Love; the creator restored it. The correction exposed a category failure and improved the atlas's unit from text alone to word, image, and creator naming.</p></div>
+      <div class="finding-card"><b>08</b><h3>Recurrence can create a new object</h3><p>WINNOW and MISSIONWINNOW make a pair whose archival meaning depends on two independent surfaces. Their return creates a third object: the relation itself.</p></div>
+      <div class="finding-card"><b>09</b><h3>Creator context can unlock a motif</h3><p>The analyst saw a strawberry pictogram. The creator knew its autobiographical life. The files did not contain the decisive relation; review supplied it.</p></div>
+    </div></div></section>
+
+    <section class="matrix-wrap"><div class="eyebrow">Relational engine</div><h2>Voice × surface</h2><div class="matrix">
+      <div class="cell head">Surface family</div><div class="cell head">Typical authority</div><div class="cell head">Speech acts in the collection</div>
+      <div class="cell"><strong>Commercial ephemera</strong></div><div class="cell">Brand, convention, chance mechanism</div><div class="cell">Advise · promise · predict</div>
+      <div class="cell"><strong>Private object</strong></div><div class="cell">Owner, brand, accumulated biography</div><div class="cell">Permit · joke · identify</div>
+      <div class="cell"><strong>Commissioned display</strong></div><div class="cell">Poet, artist, property holder, civic audience</div><div class="cell">Testify · remember · refuse</div>
+      <div class="cell"><strong>Altered city surface</strong></div><div class="cell">Unknown maker addressing strangers</div><div class="cell">Name · command · vow · accuse · warn</div>
+      <div class="cell"><strong>Product and packaging</strong></div><div class="cell">Brand language carried into private life</div><div class="cell">Name · entice · version · permit · contradict</div>
+      <div class="cell"><strong>Aerial place-name</strong></div><div class="cell">Institution or landmark made readable at city scale</div><div class="cell">Locate · identify · orient · remember</div>
+      <div class="cell"><strong>Mediated screenshot</strong></div><div class="cell">Original speaker reframed by platform or news caption</div><div class="cell">Quote · amplify · contextualize · flatten</div>
+      <div class="cell"><strong>Word–image unit</strong></div><div class="cell">Maker, pictogram, public placement, and creator naming</div><div class="cell">Delight · recognize · associate · remember</div>
+    </div></section>
+
+    <section class="protocol"><div class="protocol-inner"><div><div class="eyebrow">Repeatable trail</div><h2>How the atlas grows</h2><p>Every entry remains subordinate to its source. Context can be added later; uncertainty is preserved rather than paved over.</p></div><div class="steps">
+      <div class="step">Locate or preserve the source before interpreting it.</div>
+      <div class="step">Assign an atlas ID without renumbering the source.</div>
+      <div class="step">Transcribe spelling, punctuation, capitalization, and line breaks as seen.</div>
+      <div class="step">Separate encounter, capture, and archive dates.</div>
+      <div class="step">Record general place; suppress private coordinates.</div>
+      <div class="step">Name surface and apparent voice, with uncertainty.</div>
+      <div class="step">Invite creator context; never manufacture it.</div>
+      <div class="step">Connect echoes as relations, not automatic derivations.</div>
+      <div class="step">Keep evidence, interpretation, and causal claims separate.</div>
+      <div class="step">Leave unknowns blank, stable, and visible.</div>
+    </div></div></section>
+
+    <section class="closing"><blockquote>What kinds of language become worth carrying forward?</blockquote><p>And how does their force change when they move from the world, into the photograph, into the archive, and eventually into the work?</p></section>
+  </main>
+  <footer><span>Found Language Atlas · Anni McHenry · Fieldlight Institute</span><span>Source first · interpretation second · unknowns retained</span></footer>
+  <script>
+    const buttons = document.querySelectorAll('[data-filter]');
+    const entries = document.querySelectorAll('.entry');
+    buttons.forEach(button => button.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      button.classList.add('active');
+      const filter = button.dataset.filter;
+      entries.forEach(entry => entry.hidden = filter !== 'all' && !entry.dataset.cluster.split(' ').includes(filter));
+    }));
+  </script>
+  <!-- Cloudflare Web Analytics -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "a8ece4976a604339bac4dbb72a6c5856"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+</body>
+</html>

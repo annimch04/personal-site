@@ -7,6 +7,14 @@
   "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
   "items": [
     {
+      "id": "https://fieldlight.com/writing/found-language-atlas/",
+      "url": "https://fieldlight.com/writing/found-language-atlas/",
+      "title": "Found Language Atlas",
+      "summary": "A living fieldwork atlas of 29 photographed encounters with public language and the symbolic threads they form across city, memory, objects, and creative work.",
+      "date_published": "2026-08-21T21:30:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#anni-mchenry"}]
+    },
+    {
       "id": "https://fieldlight.com/institute/research/cardiac-field-social-interaction/",
       "url": "https://fieldlight.com/institute/research/cardiac-field-social-interaction/",
       "title": "Cardiac Field and Social Interaction",
