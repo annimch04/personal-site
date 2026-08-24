@@ -7,6 +7,14 @@
   "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
   "items": [
     {
+      "id": "https://fieldlight.com/institute/research/signal-becoming/",
+      "url": "https://fieldlight.com/institute/research/signal-becoming/",
+      "title": "Theory of Signal Becoming",
+      "summary": "A working theory of how felt or symbolic recognition becomes stable authored form through recursive interaction—and the substrate that preserves continuity, correction, and origin while it changes.",
+      "date_published": "2026-08-23T20:30:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#anni-mchenry"}]
+    },
+    {
       "id": "https://fieldlight.com/writing/found-language-atlas/",
       "url": "https://fieldlight.com/writing/found-language-atlas/",
       "title": "Found Language Atlas",

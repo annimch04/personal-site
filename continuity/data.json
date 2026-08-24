@@ -1,5 +1,5 @@
 {
-  "version": "1.6",
+  "version": "1.7",
   "baselineDate": "2026-08-21",
   "baselineLabel": "Reader Continuity public baseline",
   "publications": [
@@ -48,7 +48,8 @@
     {"id":"FLW-0043","title":"The Symbolism of Nameless Women and Divine Feminine Energy","url":"/writing/the-symbolism-of-nameless-women-and-divine-feminine-energy/","form":"academic essay","primaryThread":"symbolic-discovery","threads":["symbolic-discovery"]},
     {"id":"FLW-0044","title":"I Am The Door","url":"/writing/i-am-the-door/","form":"essay","primaryThread":"symbolic-discovery","threads":["symbolic-discovery","relational-cognition"]},
     {"id":"FLW-0045","title":"One Export Is Not an Archive","url":"/writing/one-export-is-not-an-archive/","form":"implementation note","primaryThread":"governed-memory","threads":["governed-memory","human-owned-intelligence"],"changedAt":"2026-08-21T13:55:35-05:00"},
-    {"id":"FLW-0046","title":"Cardiac Field and Social Interaction","url":"/institute/research/cardiac-field-social-interaction/","form":"registered working hypothesis","primaryThread":"relational-cognition","threads":["relational-cognition","symbolic-discovery"],"changedAt":"2026-08-19T16:00:00-05:00"}
+    {"id":"FLW-0046","title":"Cardiac Field and Social Interaction","url":"/institute/research/cardiac-field-social-interaction/","form":"registered working hypothesis","primaryThread":"relational-cognition","threads":["relational-cognition","symbolic-discovery"],"changedAt":"2026-08-19T16:00:00-05:00"},
+    {"id":"FLW-0047","title":"Theory of Signal Becoming","url":"/institute/research/signal-becoming/","form":"working theory + research model","primaryThread":"relational-cognition","threads":["relational-cognition","symbolic-discovery","governed-memory"],"changedAt":"2026-08-23T20:30:00-05:00"}
   ],
   "threads": [
     {
@@ -73,7 +74,7 @@
       "title":"Governed memory and accountable systems",
       "question":"How can a system change without erasing who changed it, what it knew, or why?",
       "description":"Governance, routing, institutional transition, feedback loops, and archival method as inspectable infrastructure.",
-      "path":["FLW-0016","FLW-0015","FLW-0014","FLW-0017","FLW-0018","FLW-0019","FLW-0020","FLW-0045"]
+      "path":["FLW-0016","FLW-0015","FLW-0014","FLW-0017","FLW-0018","FLW-0019","FLW-0020","FLW-0045","FLW-0047"]
     },
     {
       "id":"relational-cognition",
@@ -81,7 +82,7 @@
       "title":"Relational cognition and identity",
       "question":"What becomes visible when the unit of analysis is a relation rather than an isolated mind?",
       "description":"Permeability, coupled systems, coherence, latent identity, interior construction, and architectures of being.",
-      "path":["FLW-0024","FLW-0021","FLW-0046","FLW-0023","FLW-0022","FLW-0025","FLW-0027","FLW-0028"]
+      "path":["FLW-0024","FLW-0021","FLW-0046","FLW-0023","FLW-0022","FLW-0047","FLW-0025","FLW-0027","FLW-0028"]
     },
     {
       "id":"symbolic-discovery",
@@ -89,7 +90,7 @@
       "title":"Symbol, story, and pre-propositional discovery",
       "question":"Can image, ritual, narrative, and symbol discover relations before formal language can state them?",
       "description":"Academic inquiry, field practice, fiction, naming, and archive work as neighboring instruments of discovery.",
-      "path":["FLW-0043","FLW-0042","FLW-0041","FLW-0040","FLW-0030","FLW-0031","FLW-0032","FLW-0033","FLW-0044","FLW-0029","FLW-0034","FLW-0035","FLW-0036","FLW-0037","FLW-0038","FLW-0039"]
+      "path":["FLW-0043","FLW-0042","FLW-0041","FLW-0040","FLW-0030","FLW-0031","FLW-0032","FLW-0047","FLW-0033","FLW-0044","FLW-0029","FLW-0034","FLW-0035","FLW-0036","FLW-0037","FLW-0038","FLW-0039"]
     }
   ],
   "mapStages": [
@@ -136,7 +137,7 @@
       "status":"Model present; empirical program incomplete",
       "cells":[
         {"stage":"first-encoding","works":["FLW-0035","FLW-0038"],"note":"Diviner and Pythia place recognition in the body before conscious explanation."},
-        {"stage":"mechanism","works":["FLW-0018","FLW-0023"],"note":"The Mechanics of the Loop proposes the raw feedback account; Coherence reduces interaction to state, signal, and uptake."},
+        {"stage":"mechanism","works":["FLW-0018","FLW-0023","FLW-0047"],"note":"The Mechanics of the Loop proposes the raw feedback account; Coherence reduces interaction to state, signal, and uptake; Signal Becoming names the full transformation from first encoding through consequence."},
         {"stage":"boundary","works":["FLW-0021"],"note":"Coupled Nervous Systems turns the claim into researchable questions and insists on measurement rather than assumption."},
         {"stage":"built-form","works":["FLW-0022","FLW-0028"],"note":"Identity is framed as what persists across runtime interaction, then placed within a wholefield system architecture."},
         {"stage":"evidence-status","works":["FLW-0046"],"note":"The registered hypothesis separates established measurement premises from the open incremental-value test and the unsupported direct-mediation claim."}
@@ -147,13 +148,13 @@
       "number":"D",
       "title":"Symbolic recognition becomes formal inquiry",
       "claim":"Academic, mystical, narrative, and technical works converge on a disciplined possibility: symbolic form may discover a relation before propositional reasoning can validate or reject it.",
-      "status":"Central research hypothesis; not a demonstrated result",
+      "status":"Study model registered; result not yet demonstrated",
       "cells":[
         {"stage":"first-encoding","works":["FLW-0043","FLW-0042","FLW-0038"],"note":"Recurring symbols, nameless women, prophecy, body-memory, and narrative roles carry relations before a formal claim exists."},
         {"stage":"mechanism","works":["FLW-0041","FLW-0032"],"note":"A layered religious model and Architecture of Becoming describe symbolic encoding, recursion, emergence, and later analytical translation."},
         {"stage":"boundary","works":["FLW-0020"],"note":"The Archive Method states the limit: symbolism may guide selection and questions but cannot establish causality, prophecy, or ontology."},
         {"stage":"built-form","works":["FLW-0019"],"note":"Institutional methodology separates observation, testimony, inference, and recommendation while retaining plural forms of knowledge."},
-        {"stage":"evidence-status","works":[],"note":"OPEN STUDY: test whether human–AI collaboration can surface pre-propositional relations without collapsing them into false certainty."}
+        {"stage":"evidence-status","works":["FLW-0047"],"note":"Signal Becoming registers the signal lineage, comparison set, failure modes, and working thresholds required for the open study. Testing remains to be performed."}
       ]
     },
     {
@@ -192,7 +193,12 @@
     {"id":"FLCX-018","from":"FLW-0020","to":"FLW-0045","relation":"is tested by","claim":"The Archive Method's source-versus-representation boundary becomes a measurable reconstruction procedure across three dated export states.","basis":"The implementation note applies the method's preserve, inventory, derive, connect, and evidence-boundary rules to one longitudinal corpus.","confidence":"high"},
     {"id":"FLCX-019","from":"FLW-0045","to":"FLW-0020","relation":"provides implementation evidence for","claim":"The 654-conversation union demonstrates why preservation must precede analysis and why the newest representation cannot be presumed complete.","basis":"Exact structural counts compare the newest source state with the multi-state union while withholding private content.","confidence":"high"},
     {"id":"FLCX-020","from":"FLW-0021","to":"FLW-0046","relation":"is refined and bounded by","claim":"The broad coupled-nervous-systems intuition becomes five separately testable claims, including an explicit unsupported status for direct magnetic-field mediation.","basis":"The 2026 review preserves the original note while the registered specification defines evidence statuses, controls, and progression criteria.","confidence":"high"},
-    {"id":"FLCX-021","from":"FLW-0046","to":"FLW-0021","relation":"records the next evidentiary state of","claim":"The Institute specification retains measurable interpersonal physiology as a valid starting point while separating it from claims about conscious detection, magnetic incremental value, and direct mediation.","basis":"Direct versioned relationship between an early public research note and its later registered operationalization.","confidence":"high"}
+    {"id":"FLCX-021","from":"FLW-0046","to":"FLW-0021","relation":"records the next evidentiary state of","claim":"The Institute specification retains measurable interpersonal physiology as a valid starting point while separating it from claims about conscious detection, magnetic incremental value, and direct mediation.","basis":"Direct versioned relationship between an early public research note and its later registered operationalization.","confidence":"high"},
+    {"id":"FLCX-022","from":"FLW-0032","to":"FLW-0047","relation":"is made operational by","claim":"Architecture of Becoming describes resonance and recursion as an emergent experience; Signal Becoming converts that earlier articulation into seven transformations, five working thresholds, and a study unit.","basis":"Direct structural continuity between the public primer and the recovered 2025 theory trace, now mediated into a formal research model.","confidence":"high"},
+    {"id":"FLCX-023","from":"FLW-0022","to":"FLW-0047","relation":"supplies a convergence model to","claim":"Emergent–Latent Identity Theory defines iteration, convergence, and persistence under variation; Signal Becoming places those operations inside a traceable transformation from first encoding to consequence.","basis":"The later public formulation explicitly uses persistence, iteration, convergence, and stable form while extending the sequence to symbolic and collaborative source states.","confidence":"high"},
+    {"id":"FLCX-024","from":"FLW-0020","to":"FLW-0047","relation":"makes longitudinally inspectable","claim":"The Archive Method preserves versions, branches, corrections, provenance, and release states; Signal Becoming uses those retained differences to distinguish transformation from repetition and retrospective reconstruction.","basis":"The theory names the archive as its observational instrument and defines signal lineage through preserved successive states.","confidence":"high"},
+    {"id":"FLCX-025","from":"FLW-0001","to":"FLW-0047","relation":"provides a memory substrate for","claim":"The Self on the Wire gives continuity a local, identity-preserving home; Signal Becoming generalizes that requirement into a substrate for carrying context, correction, and authorship while a signal changes.","basis":"Both works define memory as continuity across time and systems rather than a static content store.","confidence":"high"},
+    {"id":"FLCX-026","from":"FLW-0038","to":"FLW-0047","relation":"is one symbolic encoding examined by","claim":"Pythia places recognition before explanation and turns memory, routing, permission, desire, and consequence into world architecture; Signal Becoming asks how such symbolic form can precede and participate in later propositional and built forms.","basis":"The relationship is functional and cross-form: fiction carries the relation first, while the theory supplies a comparative research model without treating fiction as empirical proof.","confidence":"medium-high"}
   ],
   "contexts": [
     {
@@ -237,6 +243,13 @@
       "status":"March–April 2025 / restricted chat evidence",
       "relation":"Linked chats record context loss, pasted restoration material, retrieval keys, differentiated rooms, and creator correction of false recognition. The episode becomes a source for later memory governance and for the current resonance–continuity research case.",
       "related":["FLW-0004","FLW-0014","FLW-0021"]
+    },
+    {
+      "id":"FLC-0007",
+      "title":"Theory of Signal Becoming + Signal Substrate",
+      "status":"March–August 2025 / restricted recovered notes",
+      "relation":"Recovered Obsidian notes preserve the under-theory, the memory fold, and a substrate vocabulary. The mediated public theory separates transformation process from enabling conditions and turns the archive itself into a longitudinal research instrument.",
+      "related":["FLW-0032","FLW-0030","FLW-0047","FLW-0022","FLW-0020","FLW-0001"]
     }
   ]
 }
