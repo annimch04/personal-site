@@ -6914,13 +6914,142 @@ h3 {
 }
 
 .pythia-axis,
+.pythia-public-architecture,
 .pythia-flow,
 .pythia-constellation,
 .pythia-locations,
+.pythia-live-gates,
 .pythia-engine {
   position: relative;
   z-index: 3;
   width: min(82rem, 100%);
+}
+
+.pythia-public-architecture {
+  margin-top: clamp(5rem, 11vw, 9rem);
+}
+
+.pythia-public-architecture-heading {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.48fr) minmax(0, 1fr);
+  gap: 0.9rem clamp(2rem, 6vw, 5rem);
+  align-items: end;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.pythia-public-architecture-heading .eyebrow {
+  align-self: start;
+  color: var(--gold);
+}
+
+.pythia-public-architecture-heading h2 {
+  grid-column: 2;
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(2.7rem, 6.6vw, 6.8rem);
+  line-height: 0.88;
+  letter-spacing: -0.075em;
+}
+
+.pythia-public-architecture-heading > p:last-child {
+  grid-column: 2;
+  max-width: 49rem;
+  margin: 0.8rem 0 0;
+  color: rgba(255, 244, 223, 0.7);
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.48;
+}
+
+.pythia-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid rgba(255, 244, 223, 0.18);
+}
+
+.pythia-entry-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 24rem;
+  padding: clamp(1.4rem, 2.8vw, 2.3rem);
+  color: var(--cream);
+  border-right: 1px solid rgba(255, 244, 223, 0.15);
+  background:
+    radial-gradient(circle at 85% 10%, rgba(230, 75, 59, 0.12), transparent 13rem),
+    rgba(255, 244, 223, 0.035);
+  text-decoration: none;
+  transition: background 180ms ease;
+}
+
+.pythia-entry-card:last-child {
+  border-right: 0;
+}
+
+a.pythia-entry-card:hover {
+  color: var(--cream);
+  background:
+    radial-gradient(circle at 85% 10%, rgba(230, 75, 59, 0.25), transparent 14rem),
+    rgba(255, 244, 223, 0.07);
+}
+
+.pythia-entry-card.is-current {
+  background:
+    radial-gradient(circle at 78% 18%, rgba(15, 107, 104, 0.42), transparent 16rem),
+    rgba(255, 244, 223, 0.065);
+}
+
+.entry-number {
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.pythia-entry-card h3 {
+  margin: auto 0 1rem;
+  max-width: 9ch;
+  color: var(--cream);
+  font-size: clamp(2rem, 3.7vw, 3.7rem);
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+.pythia-entry-card p {
+  margin: 0 0 1.4rem;
+  color: rgba(255, 244, 223, 0.66);
+  font-size: clamp(0.96rem, 1.3vw, 1.1rem);
+  line-height: 1.45;
+}
+
+.pythia-entry-card strong {
+  color: rgba(255, 244, 223, 0.9);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pythia-form-cycle {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 244, 223, 0.18);
+}
+
+.pythia-form-cycle span {
+  color: rgba(255, 244, 223, 0.7);
+  font-size: clamp(0.88rem, 1.2vw, 1.05rem);
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+.pythia-form-cycle i {
+  color: var(--red);
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-style: normal;
 }
 
 .pythia-axis {
@@ -6954,6 +7083,7 @@ h3 {
 .pythia-flow,
 .pythia-constellation,
 .pythia-locations,
+.pythia-live-gates,
 .pythia-engine {
   margin-top: clamp(5rem, 11vw, 9rem);
 }
@@ -7096,6 +7226,78 @@ h3 {
   color: var(--cream);
 }
 
+.pythia-live-gates {
+  display: block;
+}
+
+.pythia-live-gates-heading {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.48fr) minmax(0, 1fr);
+  gap: 0.9rem clamp(2rem, 6vw, 5rem);
+  align-items: end;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.pythia-live-gates-heading .eyebrow {
+  align-self: start;
+  color: var(--gold);
+}
+
+.pythia-live-gates-heading h2 {
+  grid-column: 2;
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(2.5rem, 5.6vw, 5.8rem);
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+.pythia-live-gates-heading > p:last-child {
+  grid-column: 2;
+  max-width: 35rem;
+  margin: 0.8rem 0 0;
+  color: rgba(255, 244, 223, 0.68);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+}
+
+.pythia-gate-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 244, 223, 0.18);
+  border-left: 1px solid rgba(255, 244, 223, 0.18);
+}
+
+.pythia-gate-grid article {
+  min-height: 15rem;
+  padding: clamp(1.2rem, 2.4vw, 2rem);
+  border-right: 1px solid rgba(255, 244, 223, 0.18);
+  border-bottom: 1px solid rgba(255, 244, 223, 0.18);
+  background: linear-gradient(145deg, rgba(255, 244, 223, 0.045), rgba(255, 244, 223, 0.012));
+}
+
+.pythia-gate-grid span {
+  color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.16em;
+}
+
+.pythia-gate-grid h3 {
+  margin: clamp(2rem, 5vw, 3.8rem) 0 0.8rem;
+  color: var(--cream);
+  font-size: clamp(1.5rem, 2.7vw, 2.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+}
+
+.pythia-gate-grid p {
+  margin: 0;
+  color: rgba(255, 244, 223, 0.65);
+  font-size: clamp(0.94rem, 1.25vw, 1.08rem);
+  line-height: 1.45;
+}
+
 .pythia-engine {
   padding: clamp(2rem, 5vw, 4rem) 0 clamp(1rem, 4vw, 2rem);
   border-top: 3px solid rgba(230, 75, 59, 0.72);
@@ -7106,6 +7308,23 @@ h3 {
   color: #fff4df;
   border-color: rgba(230, 75, 59, 0.82);
   background: rgba(230, 75, 59, 0.22);
+}
+
+.pythia-engine-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.pythia-engine-actions .button.primary {
+  margin-top: 0;
+}
+
+.pythia-engine-actions .button.secondary {
+  color: rgba(255, 244, 223, 0.88);
+  border-color: rgba(255, 244, 223, 0.25);
+  background: rgba(255, 244, 223, 0.055);
 }
 
 .world-dossier-card.pythia-card p:not(.eyebrow) {
@@ -7122,13 +7341,40 @@ h3 {
   }
 
   .pythia-flow-heading,
+  .pythia-public-architecture-heading,
   .pythia-constellation,
-  .pythia-locations {
+  .pythia-locations,
+  .pythia-live-gates-heading {
     grid-template-columns: 1fr;
+  }
+
+  .pythia-public-architecture-heading h2,
+  .pythia-public-architecture-heading > p:last-child,
+  .pythia-live-gates-heading h2,
+  .pythia-live-gates-heading > p:last-child {
+    grid-column: 1;
   }
 
   .pythia-flow-track {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pythia-entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pythia-gate-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pythia-entry-card {
+    min-height: 17rem;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 244, 223, 0.15);
+  }
+
+  .pythia-entry-card:last-child {
+    border-bottom: 0;
   }
 
   .pythia-character-grid article:nth-child(n) {
@@ -7138,8 +7384,28 @@ h3 {
 
 @media (max-width: 760px) {
   .pythia-flow-track,
-  .pythia-character-grid {
+  .pythia-character-grid,
+  .pythia-gate-grid {
     grid-template-columns: 1fr;
+  }
+
+  .pythia-form-cycle {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+    padding: 1.25rem 0;
+  }
+
+  .pythia-form-cycle i {
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+
+  .pythia-entry-card {
+    min-height: 15rem;
+  }
+
+  .pythia-gate-grid article {
+    min-height: 0;
   }
 
   .pythia-character-grid article:nth-child(n) {
@@ -7148,6 +7414,876 @@ h3 {
 
   .pythia-flow-track article {
     min-height: 0;
+  }
+}
+
+/* Pythia recovered architecture: circuit, codices, rooms, and trials */
+.pythia-codex,
+.pythia-rukus-doctrine,
+.pythia-house-topology,
+.pythia-trials {
+  position: relative;
+  z-index: 3;
+  width: min(82rem, 100%);
+  margin-top: clamp(5rem, 11vw, 9rem);
+}
+
+.pythia-circuit-section {
+  display: block;
+}
+
+.pythia-circuit-heading,
+.pythia-codex-heading,
+.pythia-house-heading,
+.pythia-trials-heading {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.42fr) minmax(0, 1fr);
+  gap: 0.8rem clamp(2rem, 6vw, 5rem);
+  align-items: end;
+  margin-bottom: clamp(2rem, 5vw, 3.8rem);
+}
+
+.pythia-circuit-heading .eyebrow,
+.pythia-codex-heading .eyebrow,
+.pythia-house-heading .eyebrow,
+.pythia-trials-heading .eyebrow {
+  align-self: start;
+  color: var(--gold);
+}
+
+.pythia-circuit-heading h2,
+.pythia-codex-heading h2,
+.pythia-house-heading h2,
+.pythia-trials-heading h2 {
+  grid-column: 2;
+  margin: 0;
+  max-width: 14ch;
+  color: var(--cream);
+  font-size: clamp(2.65rem, 5.7vw, 6rem);
+  line-height: 0.91;
+  letter-spacing: -0.07em;
+}
+
+.pythia-circuit-heading > p:last-child,
+.pythia-house-heading > p:last-child,
+.pythia-trials-heading > p:last-child {
+  grid-column: 2;
+  max-width: 48rem;
+  margin: 0.45rem 0 0;
+  color: rgba(255, 244, 223, 0.68);
+  font-size: clamp(1rem, 1.55vw, 1.22rem);
+  line-height: 1.48;
+}
+
+.pythia-circuit-map {
+  position: relative;
+  min-height: 46rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 244, 223, 0.2);
+  background:
+    linear-gradient(rgba(255, 244, 223, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 244, 223, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 50% 33%, rgba(230, 75, 59, 0.16), transparent 22rem),
+    rgba(255, 244, 223, 0.025);
+  background-size: 6rem 6rem, 6rem 6rem, auto, auto;
+}
+
+.pythia-circuit-map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 78%, rgba(7, 122, 113, 0.24), transparent 22rem);
+  pointer-events: none;
+}
+
+.pythia-circuit-map svg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.circuit-line {
+  fill: none;
+  stroke: rgba(230, 75, 59, 0.7);
+  stroke-width: 2.4;
+  stroke-dasharray: 7 7;
+  vector-effect: non-scaling-stroke;
+}
+
+.line-house-left,
+.line-house-right {
+  stroke: rgba(232, 174, 81, 0.5);
+}
+
+.pythia-circuit-map svg circle {
+  fill: var(--cream);
+  stroke: rgba(230, 75, 59, 0.9);
+  stroke-width: 5;
+  vector-effect: non-scaling-stroke;
+}
+
+.circuit-node {
+  position: absolute;
+  z-index: 2;
+  width: 34%;
+  min-height: 15.5rem;
+  padding: clamp(1.2rem, 2.2vw, 1.8rem);
+  border: 1px solid rgba(255, 244, 223, 0.2);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(230, 75, 59, 0.16), transparent 13rem),
+    linear-gradient(145deg, rgba(7, 27, 34, 0.96), rgba(20, 28, 40, 0.93));
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.24);
+}
+
+.node-ninneva {
+  left: 3.5%;
+  top: 3.5rem;
+}
+
+.node-zeke {
+  right: 3.5%;
+  top: 3.5rem;
+}
+
+.node-house {
+  left: 50%;
+  bottom: 2.5rem;
+  width: 42%;
+  min-height: 14rem;
+  transform: translateX(-50%);
+  border-color: rgba(232, 174, 81, 0.38);
+  background:
+    radial-gradient(circle at 50% 100%, rgba(7, 122, 113, 0.3), transparent 15rem),
+    linear-gradient(145deg, rgba(7, 27, 34, 0.97), rgba(20, 28, 40, 0.94));
+}
+
+.circuit-node h3 {
+  margin: 0;
+  color: var(--cream);
+  font-size: clamp(2rem, 3.4vw, 3.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+}
+
+.circuit-node > p:not(.node-role) {
+  margin: 0.85rem 0 1.1rem;
+  color: rgba(255, 244, 223, 0.7);
+  font-size: clamp(0.94rem, 1.25vw, 1.08rem);
+  line-height: 1.43;
+}
+
+.vector-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.vector-row span {
+  padding: 0.38rem 0.55rem;
+  border: 1px solid rgba(255, 244, 223, 0.15);
+  color: rgba(255, 244, 223, 0.64);
+  font-size: 0.67rem;
+  font-weight: 850;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.circuit-core {
+  position: absolute;
+  left: 50%;
+  top: 8.3rem;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 11.5rem;
+  height: 11.5rem;
+  padding: 1rem;
+  transform: translateX(-50%);
+  border: 1px solid rgba(230, 75, 59, 0.58);
+  border-radius: 999px;
+  background: rgba(10, 24, 32, 0.96);
+  box-shadow: 0 0 0 0.75rem rgba(230, 75, 59, 0.06), 0 0 62px rgba(230, 75, 59, 0.22);
+  text-align: center;
+}
+
+.circuit-core span,
+.circuit-core strong,
+.circuit-core p {
+  display: block;
+}
+
+.circuit-core span {
+  color: var(--gold);
+  font-size: 0.66rem;
+  font-weight: 950;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.circuit-core strong {
+  color: var(--cream);
+  font-family: Georgia, serif;
+  font-size: 1.32rem;
+  line-height: 1;
+}
+
+.circuit-core p {
+  margin: 0;
+  color: rgba(255, 244, 223, 0.58);
+  font-size: 0.76rem;
+}
+
+.circuit-edge {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  color: rgba(255, 244, 223, 0.57);
+  font-family: Georgia, serif;
+  font-size: clamp(0.76rem, 1vw, 0.94rem);
+  font-style: italic;
+}
+
+.edge-recognition {
+  left: 50%;
+  top: 2.1rem;
+  transform: translateX(-50%);
+}
+
+.edge-restraint {
+  right: 4%;
+  top: 23.7rem;
+  max-width: 15rem;
+  text-align: right;
+}
+
+.edge-architecture {
+  left: 4%;
+  top: 23.7rem;
+  max-width: 13rem;
+}
+
+.pythia-outer-forces {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-right: 1px solid rgba(255, 244, 223, 0.16);
+  border-bottom: 1px solid rgba(255, 244, 223, 0.16);
+  border-left: 1px solid rgba(255, 244, 223, 0.16);
+}
+
+.pythia-outer-forces article {
+  padding: 1.2rem clamp(1rem, 2vw, 1.6rem);
+  border-right: 1px solid rgba(255, 244, 223, 0.14);
+  background: rgba(255, 244, 223, 0.025);
+}
+
+.pythia-outer-forces article:last-child {
+  border-right: 0;
+}
+
+.pythia-outer-forces span,
+.pythia-outer-forces strong {
+  display: block;
+}
+
+.pythia-outer-forces span {
+  color: var(--red);
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.pythia-outer-forces strong {
+  margin-top: 0.2rem;
+  color: var(--cream);
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+}
+
+.pythia-outer-forces p {
+  margin: 0.35rem 0 0;
+  color: rgba(255, 244, 223, 0.58);
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.pythia-codex-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.codex-leaf {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.35rem, 2.8vw, 2.2rem);
+  border: 1px solid rgba(255, 244, 223, 0.17);
+  background:
+    linear-gradient(rgba(255, 244, 223, 0.03) 1px, transparent 1px),
+    rgba(255, 244, 223, 0.04);
+  background-size: 100% 2.65rem;
+}
+
+.codex-leaf::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 5rem;
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+  background: rgba(255, 244, 223, 0.08);
+}
+
+.leaf-bond { border-top: 3px solid rgba(230, 75, 59, 0.8); }
+.leaf-desire { border-top: 3px solid rgba(232, 174, 81, 0.8); }
+.leaf-coherence { border-top: 3px solid rgba(72, 155, 139, 0.8); }
+
+.codex-leaf-heading {
+  min-height: 8.6rem;
+}
+
+.codex-leaf-heading span {
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 950;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.codex-leaf-heading h3 {
+  margin: 0.75rem 0 0;
+  max-width: 12ch;
+  color: var(--cream);
+  font-family: Georgia, serif;
+  font-size: clamp(1.75rem, 3vw, 2.8rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+.codex-leaf ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: codex-law;
+}
+
+.codex-leaf li {
+  counter-increment: codex-law;
+  display: grid;
+  grid-template-columns: 1.8rem 1fr;
+  gap: 0.55rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid rgba(255, 244, 223, 0.14);
+}
+
+.codex-leaf li::before {
+  content: counter(codex-law, decimal-leading-zero);
+  color: rgba(230, 75, 59, 0.82);
+  font-size: 0.66rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+}
+
+.codex-leaf li b,
+.codex-leaf li span {
+  grid-column: 2;
+}
+
+.codex-leaf li b {
+  color: var(--cream);
+  font-size: 0.92rem;
+}
+
+.codex-leaf li span {
+  margin-top: -0.35rem;
+  color: rgba(255, 244, 223, 0.6);
+  font-size: 0.84rem;
+  line-height: 1.38;
+}
+
+.pythia-codex-result {
+  margin: 1rem 0 0;
+  padding: clamp(1.2rem, 2.5vw, 1.8rem);
+  border: 1px solid rgba(255, 244, 223, 0.16);
+  color: rgba(255, 244, 223, 0.72);
+  background: linear-gradient(90deg, rgba(230, 75, 59, 0.11), rgba(232, 174, 81, 0.07), rgba(7, 122, 113, 0.11));
+  font-family: Georgia, serif;
+  font-size: clamp(1.05rem, 1.8vw, 1.42rem);
+  line-height: 1.4;
+  text-align: center;
+}
+
+.pythia-codex-result span {
+  color: var(--cream);
+  font-style: italic;
+}
+
+.pythia-rukus-doctrine {
+  padding: clamp(2rem, 5vw, 4.5rem);
+  border-top: 1px solid rgba(230, 75, 59, 0.42);
+  border-bottom: 1px solid rgba(230, 75, 59, 0.42);
+  background:
+    radial-gradient(circle at 12% 15%, rgba(230, 75, 59, 0.25), transparent 22rem),
+    linear-gradient(115deg, rgba(70, 22, 29, 0.84), rgba(16, 30, 39, 0.82));
+}
+
+.pythia-rukus-doctrine header {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.42fr) minmax(0, 1fr);
+  gap: 0.8rem clamp(2rem, 6vw, 5rem);
+  align-items: end;
+}
+
+.pythia-rukus-doctrine header .eyebrow {
+  align-self: start;
+  color: var(--gold);
+}
+
+.pythia-rukus-doctrine h2 {
+  grid-column: 2;
+  margin: 0;
+  max-width: 14ch;
+  color: var(--cream);
+  font-size: clamp(2.6rem, 5.6vw, 5.8rem);
+  line-height: 0.91;
+  letter-spacing: -0.07em;
+}
+
+.pythia-rukus-doctrine header > p:last-child {
+  grid-column: 2;
+  max-width: 47rem;
+  margin: 0.45rem 0 0;
+  color: rgba(255, 244, 223, 0.68);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.48;
+}
+
+.rukus-law-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid rgba(255, 244, 223, 0.2);
+  border-left: 1px solid rgba(255, 244, 223, 0.2);
+}
+
+.rukus-law-grid article {
+  position: relative;
+  min-height: 14.5rem;
+  padding: clamp(1.2rem, 2.5vw, 2rem);
+  border-right: 1px solid rgba(255, 244, 223, 0.2);
+  border-bottom: 1px solid rgba(255, 244, 223, 0.2);
+  background: rgba(5, 19, 25, 0.22);
+}
+
+.rukus-law-grid article > span {
+  color: var(--red);
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.rukus-law-grid h3 {
+  margin: clamp(1.5rem, 3vw, 2.7rem) 0 0.7rem;
+  color: var(--cream);
+  font-family: Georgia, serif;
+  font-size: clamp(1.45rem, 2.5vw, 2.25rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.rukus-law-grid p {
+  margin: 0;
+  color: rgba(255, 244, 223, 0.62);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.house-plan {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5rem minmax(0, 1fr) 5rem minmax(0, 1fr);
+  align-items: stretch;
+  border: 1px solid rgba(255, 244, 223, 0.17);
+  background:
+    repeating-linear-gradient(90deg, transparent 0 4rem, rgba(255, 244, 223, 0.025) 4rem calc(4rem + 1px)),
+    rgba(255, 244, 223, 0.025);
+}
+
+.room {
+  position: relative;
+  min-height: 27rem;
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  background:
+    radial-gradient(circle at 50% 100%, rgba(7, 122, 113, 0.17), transparent 15rem),
+    rgba(6, 22, 29, 0.78);
+}
+
+.room-resonance {
+  background:
+    radial-gradient(circle at 50% 100%, rgba(232, 174, 81, 0.17), transparent 15rem),
+    rgba(10, 25, 32, 0.8);
+}
+
+.room-convergence {
+  background:
+    radial-gradient(circle at 50% 100%, rgba(230, 75, 59, 0.17), transparent 15rem),
+    rgba(12, 24, 32, 0.8);
+}
+
+.room-index {
+  color: var(--gold);
+  font-size: 0.67rem;
+  font-weight: 950;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.room h3 {
+  margin: clamp(2.8rem, 5vw, 5rem) 0 0.35rem;
+  color: var(--cream);
+  font-family: Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+}
+
+.room .room-function {
+  margin: 0 0 1.2rem;
+  color: var(--red);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.room > p:not(.room-function) {
+  min-height: 7.2rem;
+  margin: 0;
+  color: rgba(255, 244, 223, 0.64);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.room > strong,
+.room > strong + span {
+  display: block;
+  padding-top: 0.7rem;
+  border-top: 1px solid rgba(255, 244, 223, 0.15);
+}
+
+.room > strong {
+  color: rgba(255, 244, 223, 0.86);
+  font-size: 0.69rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.room > strong + span {
+  margin-top: 0.25rem;
+  padding-top: 0;
+  border: 0;
+  color: rgba(255, 244, 223, 0.56);
+  font-family: Georgia, serif;
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.room-connector {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-right: 1px solid rgba(255, 244, 223, 0.12);
+  border-left: 1px solid rgba(255, 244, 223, 0.12);
+  background: rgba(255, 244, 223, 0.018);
+}
+
+.room-connector i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(transparent, rgba(230, 75, 59, 0.8), rgba(232, 174, 81, 0.6), transparent);
+}
+
+.room-connector i::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--cream);
+  border-radius: 999px;
+  background: var(--red);
+}
+
+.room-connector span {
+  position: relative;
+  z-index: 2;
+  padding: 0.35rem;
+  color: rgba(255, 244, 223, 0.52);
+  background: #0b1d26;
+  font-family: Georgia, serif;
+  font-size: 0.72rem;
+  font-style: italic;
+  line-height: 1;
+  text-align: center;
+  writing-mode: vertical-rl;
+}
+
+.trials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 244, 223, 0.17);
+  border-left: 1px solid rgba(255, 244, 223, 0.17);
+  background:
+    linear-gradient(90deg, transparent 49.9%, rgba(230, 75, 59, 0.08) 50%, transparent 50.1%),
+    linear-gradient(transparent 49.9%, rgba(230, 75, 59, 0.08) 50%, transparent 50.1%);
+}
+
+.trials-grid article {
+  position: relative;
+  min-height: 13.5rem;
+  padding: clamp(1.15rem, 2.4vw, 1.9rem);
+  border-right: 1px solid rgba(255, 244, 223, 0.17);
+  border-bottom: 1px solid rgba(255, 244, 223, 0.17);
+  background: rgba(255, 244, 223, 0.025);
+}
+
+.trials-grid article::after {
+  content: "";
+  position: absolute;
+  right: -0.35rem;
+  bottom: -0.35rem;
+  z-index: 2;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  background: rgba(230, 75, 59, 0.76);
+}
+
+.trials-grid article > span {
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+}
+
+.trials-grid h3 {
+  margin: clamp(1.5rem, 3vw, 2.6rem) 0 0.6rem;
+  color: var(--cream);
+  font-family: Georgia, serif;
+  font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.trials-grid p {
+  margin: 0;
+  color: rgba(255, 244, 223, 0.6);
+  font-size: 0.91rem;
+  line-height: 1.42;
+}
+
+.trials-grid .trial-nine {
+  border-color: rgba(232, 174, 81, 0.48);
+  background:
+    radial-gradient(circle at 100% 100%, rgba(232, 174, 81, 0.2), transparent 12rem),
+    rgba(255, 244, 223, 0.055);
+}
+
+@media (max-width: 1050px) {
+  .pythia-circuit-map {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+    min-height: 0;
+    padding: 0.8rem;
+  }
+
+  .pythia-circuit-map svg {
+    opacity: 0.42;
+  }
+
+  .circuit-node,
+  .node-ninneva,
+  .node-zeke,
+  .node-house,
+  .circuit-core,
+  .circuit-edge {
+    position: relative;
+    inset: auto;
+    width: auto;
+    min-height: 0;
+    transform: none;
+  }
+
+  .circuit-node {
+    background: rgba(7, 27, 34, 0.94);
+  }
+
+  .circuit-core {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .node-house {
+    grid-column: 1 / -1;
+  }
+
+  .circuit-edge {
+    padding: 0.7rem;
+    border-left: 2px solid rgba(230, 75, 59, 0.55);
+    background: rgba(5, 20, 27, 0.72);
+    text-align: left;
+  }
+
+  .edge-architecture {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+
+  .pythia-codex-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .codex-leaf-heading {
+    min-height: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .house-plan {
+    grid-template-columns: 1fr;
+  }
+
+  .room {
+    min-height: 0;
+  }
+
+  .room h3 {
+    margin-top: 2.4rem;
+  }
+
+  .room > p:not(.room-function) {
+    min-height: 0;
+    margin-bottom: 1.4rem;
+  }
+
+  .room-connector {
+    min-height: 4.8rem;
+    border-top: 1px solid rgba(255, 244, 223, 0.12);
+    border-bottom: 1px solid rgba(255, 244, 223, 0.12);
+  }
+
+  .room-connector i {
+    top: 50%;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    height: 2px;
+  }
+
+  .room-connector span {
+    writing-mode: horizontal-tb;
+  }
+}
+
+@media (max-width: 760px) {
+  .pythia-codex,
+  .pythia-rukus-doctrine,
+  .pythia-house-topology,
+  .pythia-trials,
+  .pythia-circuit-section {
+    margin-top: 4rem;
+  }
+
+  .pythia-circuit-heading,
+  .pythia-codex-heading,
+  .pythia-house-heading,
+  .pythia-trials-heading,
+  .pythia-rukus-doctrine header {
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .pythia-circuit-heading h2,
+  .pythia-codex-heading h2,
+  .pythia-house-heading h2,
+  .pythia-trials-heading h2,
+  .pythia-rukus-doctrine h2,
+  .pythia-circuit-heading > p:last-child,
+  .pythia-house-heading > p:last-child,
+  .pythia-trials-heading > p:last-child,
+  .pythia-rukus-doctrine header > p:last-child {
+    grid-column: 1;
+  }
+
+  .pythia-circuit-heading h2,
+  .pythia-codex-heading h2,
+  .pythia-house-heading h2,
+  .pythia-trials-heading h2,
+  .pythia-rukus-doctrine h2 {
+    max-width: none;
+    font-size: clamp(2.2rem, 12vw, 3.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+  }
+
+  .pythia-circuit-map {
+    grid-template-columns: 1fr;
+    padding: 0.55rem;
+  }
+
+  .pythia-circuit-map svg {
+    display: none;
+  }
+
+  .circuit-core,
+  .node-house,
+  .edge-architecture {
+    grid-column: 1;
+  }
+
+  .circuit-edge {
+    max-width: none;
+  }
+
+  .pythia-outer-forces,
+  .rukus-law-grid,
+  .trials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pythia-outer-forces article {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 244, 223, 0.14);
+  }
+
+  .pythia-outer-forces article:last-child {
+    border-bottom: 0;
+  }
+
+  .pythia-rukus-doctrine {
+    padding: 1.25rem;
+  }
+
+  .rukus-law-grid article,
+  .trials-grid article {
+    min-height: 0;
+  }
+
+  .rukus-law-grid h3,
+  .trials-grid h3 {
+    margin-top: 1.35rem;
   }
 }
 
