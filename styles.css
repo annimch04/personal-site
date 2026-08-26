@@ -1129,6 +1129,9 @@
   font-size: clamp(30px, 3vw, 44px);
   line-height: 0.98;
   letter-spacing: -0.04em;
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
 }
 
 .negative-permission-rails dl,
