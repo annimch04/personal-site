@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Participant Charter</title>
+  <desc id="desc">A participant is not raw material. Working Charter 0.4. Twenty baseline rights for human-AI research.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071923"/><stop offset=".7" stop-color="#0d2230"/><stop offset="1" stop-color="#201d31"/></linearGradient>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse"><path d="M120 0H0V120" fill="none" stroke="#7657d6" stroke-opacity=".13"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1000" cy="110" r="210" fill="none" stroke="#7657d6" stroke-opacity=".28"/>
+  <circle cx="1000" cy="110" r="290" fill="none" stroke="#d9a53d" stroke-opacity=".12"/>
+  <text x="70" y="72" fill="#d9a53d" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">FIELDLIGHT INSTITUTE · WORKING CHARTER 0.4</text>
+  <text x="70" y="207" fill="#fff8eb" font-family="Georgia, serif" font-size="98" font-weight="700">Participant</text>
+  <text x="70" y="308" fill="#fff8eb" font-family="Georgia, serif" font-size="98" font-weight="700">Charter</text>
+  <text x="70" y="404" fill="#ede8ff" font-family="Georgia, serif" font-size="38">A participant is not raw material.</text>
+  <line x1="70" y1="452" x2="840" y2="452" stroke="#7657d6" stroke-width="3"/>
+  <text x="70" y="508" fill="#bfc1bd" font-family="Arial, sans-serif" font-size="25">Twenty baseline rights for human-AI research.</text>
+  <text x="70" y="574" fill="#7657d6" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">PROPOSED BY FIELDLIGHT INSTITUTE</text>
+  <rect x="900" y="240" width="220" height="260" fill="#071923" fill-opacity=".72" stroke="#fff8eb" stroke-opacity=".28"/>
+  <text x="930" y="285" fill="#d9a53d" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3">RIGHTS</text>
+  <text x="916" y="424" fill="#fff8eb" font-family="Georgia, serif" font-size="160" font-weight="700">20</text>
+  <text x="930" y="472" fill="#bfc1bd" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2">PARTICIPANTS</text>
+</svg>

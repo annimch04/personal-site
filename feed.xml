@@ -7,6 +7,14 @@
     <language>en-us</language>
     <atom:link href="https://fieldlight.com/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>The Right Not To Be Processed</title>
+      <link>https://fieldlight.com/institute/the-right-not-to-be-processed/</link>
+      <guid isPermaLink="true">https://fieldlight.com/institute/the-right-not-to-be-processed/</guid>
+      <pubDate>Wed, 26 Aug 2026 20:00:00 GMT</pubDate>
+      <author>anni@fieldlight.com (Anni McHenry)</author>
+      <description>Why custody, computation, and consent must be separate states—and why negative permission must be represented as an affirmative, enforceable instruction.</description>
+    </item>
+    <item>
       <title>Theory of Signal Becoming</title>
       <link>https://fieldlight.com/institute/research/signal-becoming/</link>
       <guid isPermaLink="true">https://fieldlight.com/institute/research/signal-becoming/</guid>
@@ -83,7 +91,7 @@
       <link>https://fieldlight.com/institute/participant-charter/</link>
       <guid isPermaLink="true">https://fieldlight.com/institute/participant-charter/</guid>
       <pubDate>Tue, 28 Jul 2026 23:44:48 GMT</pubDate>
-      <description>Nineteen baseline rights that govern all human-AI research.</description>
+      <description>Twenty baseline rights that govern all human-AI research.</description>
     </item>
     <item>
       <title>Institutional Transition Documentation Methodology</title>

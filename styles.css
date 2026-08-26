@@ -898,6 +898,636 @@
   background: var(--charter-paper);
 }
 
+.participant-charter-featured-right {
+  padding: clamp(30px, 4vw, 52px) !important;
+  border: 1px solid rgba(118, 87, 214, 0.28) !important;
+  background: linear-gradient(135deg, rgba(237, 232, 255, 0.58), rgba(255, 248, 235, 0.72));
+}
+
+.participant-charter-featured-right blockquote {
+  margin: 28px 0;
+  border-left-color: var(--charter-violet) !important;
+}
+
+.participant-charter-companion-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--charter-violet) !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.institute-operating-artifact-secondary {
+  margin-top: 22px;
+  border-top: 1px solid rgba(7, 25, 35, 0.18);
+}
+
+/* The Right Not To Be Processed */
+.negative-permission-page {
+  --np-night: #061923;
+  --np-navy: #0c2230;
+  --np-paper: #f3ecdf;
+  --np-cream: #fff8eb;
+  --np-coral: #ef554c;
+  --np-cyan: #5fcddd;
+  --np-gold: #d9a53d;
+  --np-violet: #7657d6;
+  color: var(--np-navy);
+  background: var(--np-paper);
+}
+
+.negative-permission-reading {
+  overflow: hidden;
+  background: var(--np-paper);
+}
+
+.negative-permission-reading .eyebrow {
+  margin: 0 0 18px;
+  color: var(--np-coral);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.negative-permission-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+  gap: clamp(44px, 7vw, 110px);
+  align-items: end;
+  min-height: 700px;
+  padding: clamp(70px, 8vw, 124px) clamp(28px, 7vw, 128px) clamp(64px, 7vw, 108px);
+  color: var(--np-cream);
+  background:
+    linear-gradient(90deg, rgba(95, 205, 221, 0.08) 1px, transparent 1px) 0 0 / 10% 100%,
+    linear-gradient(rgba(95, 205, 221, 0.08) 1px, transparent 1px) 0 0 / 100% 25%,
+    radial-gradient(circle at 88% 20%, rgba(118, 87, 214, 0.28), transparent 31%),
+    linear-gradient(125deg, var(--np-night), var(--np-navy) 64%, #231b2d);
+}
+
+.negative-permission-kicker,
+.negative-permission-thesis > span {
+  color: var(--np-cyan);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+}
+
+.negative-permission-title h1 {
+  margin: 34px 0 0;
+  color: var(--np-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(70px, 9.1vw, 142px);
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.07em;
+}
+
+.negative-permission-title h1 em {
+  color: var(--np-coral);
+  font-weight: 400;
+}
+
+.negative-permission-thesis {
+  padding: clamp(30px, 4vw, 56px);
+  border: 1px solid rgba(255, 248, 235, 0.24);
+  background: rgba(6, 25, 35, 0.48);
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.24);
+}
+
+.negative-permission-thesis blockquote {
+  margin: 34px 0 24px;
+  color: var(--np-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(31px, 3.5vw, 52px);
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.negative-permission-thesis > p {
+  max-width: 540px;
+  margin: 0;
+  color: rgba(255, 248, 235, 0.64);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.negative-permission-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 42px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 248, 235, 0.18);
+  color: var(--np-gold);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.negative-permission-gap,
+.negative-permission-null,
+.negative-permission-implementation {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(42px, 8vw, 132px);
+  align-items: start;
+  padding: clamp(64px, 8vw, 116px) clamp(28px, 7vw, 128px);
+}
+
+.negative-permission-gap h2,
+.negative-permission-null h2,
+.negative-permission-state-model h2,
+.negative-permission-operations h2,
+.negative-permission-requirements h2,
+.negative-permission-implementation h2,
+.negative-permission-lineage h2 {
+  margin: 0;
+  color: var(--np-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 5vw, 74px);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.negative-permission-gap h2 em,
+.negative-permission-null h2 em {
+  color: var(--np-coral);
+  font-weight: 400;
+}
+
+.negative-permission-gap > div:last-child p,
+.negative-permission-implementation > div:last-child p {
+  margin: 0 0 22px;
+  color: #42545d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 2.4vw, 32px);
+  line-height: 1.42;
+}
+
+.negative-permission-state-model {
+  padding: clamp(64px, 8vw, 112px) clamp(28px, 7vw, 128px);
+  color: var(--np-cream);
+  background:
+    linear-gradient(90deg, rgba(95, 205, 221, 0.08) 1px, transparent 1px) 0 0 / 10% 100%,
+    var(--np-navy);
+}
+
+.negative-permission-state-model h2 {
+  max-width: 880px;
+  color: var(--np-cream);
+}
+
+.negative-permission-rails {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: clamp(44px, 6vw, 78px);
+  border: 1px solid rgba(255, 248, 235, 0.22);
+}
+
+.negative-permission-rails article {
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  padding: clamp(24px, 3vw, 42px);
+  border-right: 1px solid rgba(255, 248, 235, 0.18);
+}
+
+.negative-permission-rails article:last-child {
+  border-right: 0;
+}
+
+.negative-permission-rails article.is-preserve-only {
+  color: var(--np-night);
+  background: var(--np-coral);
+}
+
+.negative-permission-rails article > span {
+  min-height: 32px;
+  color: var(--np-gold);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.negative-permission-rails .is-preserve-only > span {
+  color: var(--np-night);
+}
+
+.negative-permission-rails h3 {
+  min-height: 104px;
+  margin: 24px 0 18px;
+  color: inherit;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3vw, 44px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.negative-permission-rails dl,
+.negative-permission-rails dl div {
+  margin: 0;
+}
+
+.negative-permission-rails dl div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid currentColor;
+}
+
+.negative-permission-rails dt,
+.negative-permission-rails dd {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.negative-permission-rails p {
+  margin: auto 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+.negative-permission-transition {
+  margin: 26px 0 0;
+  color: rgba(255, 248, 235, 0.62);
+  font-size: 14px;
+}
+
+.negative-permission-null {
+  align-items: center;
+  background: #e8e0d3;
+}
+
+.negative-permission-null-code {
+  border: 1px solid rgba(12, 34, 48, 0.22);
+  background: var(--np-paper);
+}
+
+.negative-permission-null-code > div {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  gap: 10px 24px;
+  padding: clamp(24px, 3vw, 38px);
+}
+
+.negative-permission-null-code > div + div {
+  border-top: 1px solid rgba(12, 34, 48, 0.22);
+}
+
+.negative-permission-null-code span {
+  color: #67747a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+}
+
+.negative-permission-null-code strong {
+  color: #8b8d8a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: clamp(27px, 3vw, 42px);
+  font-weight: 500;
+}
+
+.negative-permission-null-code small {
+  grid-column: 2;
+  color: #67747a;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.negative-permission-null-code .is-denied strong {
+  color: var(--np-coral);
+  font-weight: 850;
+}
+
+.negative-permission-null > div:last-child > p:last-child {
+  color: #43535b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.negative-permission-operations {
+  padding: clamp(64px, 8vw, 112px) clamp(28px, 7vw, 128px);
+  background: var(--np-paper);
+}
+
+.negative-permission-operations header {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 22px clamp(42px, 8vw, 132px);
+  align-items: end;
+}
+
+.negative-permission-operations header .eyebrow {
+  grid-column: 1 / -1;
+}
+
+.negative-permission-operations header > p:last-child {
+  margin: 0;
+  color: #43535b;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.negative-permission-operation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: clamp(42px, 6vw, 72px);
+  border-top: 1px solid rgba(12, 34, 48, 0.24);
+  border-left: 1px solid rgba(12, 34, 48, 0.24);
+}
+
+.negative-permission-operation-grid span {
+  padding: clamp(18px, 2.6vw, 34px) 20px;
+  border-right: 1px solid rgba(12, 34, 48, 0.24);
+  border-bottom: 1px solid rgba(12, 34, 48, 0.24);
+  color: var(--np-navy);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 2.2vw, 32px);
+}
+
+.negative-permission-operation-grid span::before {
+  content: "×";
+  margin-right: 12px;
+  color: var(--np-coral);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 900;
+}
+
+.negative-permission-custody-note {
+  max-width: 1040px;
+  margin: 34px 0 0 auto;
+  padding-left: 24px;
+  border-left: 4px solid var(--np-cyan);
+  color: #43535b;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.negative-permission-requirements {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(46px, 8vw, 130px);
+  padding: clamp(64px, 8vw, 112px) clamp(28px, 7vw, 128px);
+  color: var(--np-cream);
+  background: #2c1b23;
+}
+
+.negative-permission-requirements h2 {
+  color: var(--np-cream);
+}
+
+.negative-permission-requirements-title > p:last-child {
+  max-width: 520px;
+  color: rgba(255, 248, 235, 0.64);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.negative-permission-requirements ol {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(255, 248, 235, 0.2);
+  list-style: none;
+}
+
+.negative-permission-requirements li {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 248, 235, 0.2);
+  color: rgba(255, 248, 235, 0.76);
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.negative-permission-requirements li span {
+  color: var(--np-coral);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.negative-permission-implementation {
+  color: var(--np-cream);
+  background: var(--np-cyan);
+}
+
+.negative-permission-implementation .eyebrow {
+  color: var(--np-night);
+}
+
+.negative-permission-implementation h2,
+.negative-permission-implementation > div:last-child p {
+  color: var(--np-night);
+}
+
+.negative-permission-consequence {
+  padding: clamp(70px, 9vw, 132px) clamp(28px, 7vw, 128px);
+  text-align: center;
+  color: var(--np-cream);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(239, 85, 76, 0.25), transparent 38%),
+    var(--np-night);
+}
+
+.negative-permission-consequence blockquote {
+  margin: 0;
+  color: var(--np-cream);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 7.5vw, 112px);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+}
+
+.negative-permission-consequence > p:last-child {
+  margin: 28px 0 0;
+  color: var(--np-coral);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(24px, 3vw, 44px);
+  font-style: italic;
+}
+
+.negative-permission-lineage {
+  padding: clamp(64px, 8vw, 112px) clamp(28px, 7vw, 128px);
+  background: var(--np-paper);
+}
+
+.negative-permission-lineage > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 48px;
+  border-top: 1px solid rgba(12, 34, 48, 0.22);
+  border-left: 1px solid rgba(12, 34, 48, 0.22);
+}
+
+.negative-permission-lineage a {
+  min-height: 220px;
+  padding: clamp(24px, 3vw, 38px);
+  border-right: 1px solid rgba(12, 34, 48, 0.22);
+  border-bottom: 1px solid rgba(12, 34, 48, 0.22);
+  color: var(--np-navy);
+  text-decoration: none;
+}
+
+.negative-permission-lineage a:hover {
+  background: rgba(95, 205, 221, 0.12);
+}
+
+.negative-permission-lineage a span {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--np-coral);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.negative-permission-lineage a strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(26px, 3vw, 40px);
+  line-height: 1.04;
+}
+
+.negative-permission-lineage a p {
+  margin: 18px 0 0;
+  color: #526169;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.negative-permission-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 34px clamp(28px, 7vw, 128px);
+  color: rgba(255, 248, 235, 0.68);
+  background: var(--np-night);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.negative-permission-footer a {
+  color: var(--np-cyan);
+}
+
+@media (max-width: 900px) {
+  .negative-permission-hero,
+  .negative-permission-gap,
+  .negative-permission-null,
+  .negative-permission-operations header,
+  .negative-permission-requirements,
+  .negative-permission-implementation {
+    grid-template-columns: 1fr;
+  }
+
+  .negative-permission-hero {
+    min-height: 0;
+  }
+
+  .negative-permission-rails,
+  .negative-permission-operation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .negative-permission-rails article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .negative-permission-rails article:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(255, 248, 235, 0.18);
+  }
+
+  .negative-permission-operations header .eyebrow {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .negative-permission-hero {
+    gap: 44px;
+    padding: 58px 20px 44px;
+  }
+
+  .negative-permission-title h1 {
+    font-size: clamp(58px, 20vw, 88px);
+  }
+
+  .negative-permission-thesis {
+    padding: 24px;
+  }
+
+  .negative-permission-gap,
+  .negative-permission-null,
+  .negative-permission-state-model,
+  .negative-permission-operations,
+  .negative-permission-requirements,
+  .negative-permission-implementation,
+  .negative-permission-consequence,
+  .negative-permission-lineage {
+    padding: 54px 20px;
+  }
+
+  .negative-permission-rails {
+    grid-template-columns: 1fr;
+  }
+
+  .negative-permission-rails article {
+    min-height: 300px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 248, 235, 0.18);
+  }
+
+  .negative-permission-rails article:last-child {
+    border-bottom: 0;
+  }
+
+  .negative-permission-rails h3 {
+    min-height: 0;
+  }
+
+  .negative-permission-operation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .negative-permission-operation-grid span {
+    padding: 18px 12px;
+    font-size: 19px;
+  }
+
+  .negative-permission-null-code > div {
+    grid-template-columns: 1fr;
+  }
+
+  .negative-permission-null-code small {
+    grid-column: auto;
+  }
+
+  .negative-permission-lineage > div {
+    grid-template-columns: 1fr;
+  }
+
+  .negative-permission-footer {
+    flex-direction: column;
+  }
+}
+
 .participant-charter-reading {
   background:
     radial-gradient(circle at 88% 12%, rgba(118, 87, 214, 0.09), transparent 25%),

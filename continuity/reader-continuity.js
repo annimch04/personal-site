@@ -2,7 +2,7 @@
   "use strict";
 
   const storageKey = "fieldlight-reader-continuity-v1";
-  const dataUrl = "/continuity/data.json?v=2";
+  const dataUrl = "/continuity/data.json?v=3";
 
   function getState() {
     try {

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The Right Not To Be Processed</title>
+  <desc id="desc">Consent to preserve is not consent to process. Fieldlight Institute.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071923"/><stop offset="0.58" stop-color="#0d2230"/><stop offset="1" stop-color="#211b31"/></linearGradient>
+    <pattern id="grid" width="120" height="120" patternUnits="userSpaceOnUse"><path d="M120 0H0V120" fill="none" stroke="#8fd7e5" stroke-opacity=".09"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <path d="M742 0v630" stroke="#ef554c" stroke-width="3"/>
+  <text x="64" y="70" fill="#62cedd" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">FIELDLIGHT INSTITUTE · PARTICIPANT CHARTER 0.4</text>
+  <text x="64" y="176" fill="#fff8eb" font-family="Georgia, serif" font-size="80" font-weight="700">The Right</text>
+  <text x="64" y="268" fill="#fff8eb" font-family="Georgia, serif" font-size="80" font-weight="700">Not To Be</text>
+  <text x="64" y="370" fill="#ef554c" font-family="Georgia, serif" font-size="96" font-style="italic">Processed</text>
+  <text x="64" y="464" fill="#c5c2ba" font-family="Arial, sans-serif" font-size="30">Consent to preserve is not</text>
+  <text x="64" y="505" fill="#fff8eb" font-family="Arial, sans-serif" font-size="30" font-weight="700">consent to process.</text>
+  <text x="64" y="578" fill="#d9a53d" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">ANNI MCHENRY · AUGUST 2026</text>
+  <rect x="790" y="98" width="340" height="434" rx="2" fill="#091823" stroke="#fff8eb" stroke-opacity=".28"/>
+  <text x="824" y="148" fill="#9da3a8" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="3">AUTHORIZATION STATE</text>
+  <g font-family="Arial, sans-serif">
+    <text x="824" y="220" fill="#d9a53d" font-size="15" font-weight="700" letter-spacing="2">CUSTODY</text><text x="1088" y="220" fill="#fff8eb" font-size="18" font-weight="700" text-anchor="end">YES</text>
+    <line x1="824" y1="244" x2="1096" y2="244" stroke="#fff8eb" stroke-opacity=".18"/>
+    <text x="824" y="304" fill="#d9a53d" font-size="15" font-weight="700" letter-spacing="2">PROCESS</text><text x="1088" y="304" fill="#ef554c" font-size="18" font-weight="700" text-anchor="end">NO</text>
+    <line x1="824" y1="328" x2="1096" y2="328" stroke="#fff8eb" stroke-opacity=".18"/>
+    <text x="824" y="388" fill="#d9a53d" font-size="15" font-weight="700" letter-spacing="2">STATE</text><text x="1088" y="388" fill="#62cedd" font-size="18" font-weight="700" text-anchor="end">DENIED</text>
+    <line x1="824" y1="412" x2="1096" y2="412" stroke="#fff8eb" stroke-opacity=".18"/>
+    <text x="824" y="468" fill="#fff8eb" font-family="Georgia, serif" font-size="24">Keep it intact.</text>
+    <text x="824" y="500" fill="#ef554c" font-family="Georgia, serif" font-size="24" font-style="italic">Do not use it.</text>
+  </g>
+</svg>
