@@ -219,7 +219,9 @@
   .sb-meta { display: block; }.sb-meta span { display: block; margin-top: 8px; }.sb-meta span + span::before { content: none; }
   .sb-hero-model { padding: 25px 18px; }
   .sb-signal-line { margin-top: 50px; }
-  .sb-hero-model ol { font-size: 8px; }.sb-hero-model ol li { overflow-wrap: anywhere; }.sb-hero-model p { margin-top: 48px; }
+  .sb-hero-model ol { font-size: 6.25px; letter-spacing: 0; }
+  .sb-hero-model ol li { min-width: 0; white-space: nowrap; overflow-wrap: normal; word-break: normal; }
+  .sb-hero-model p { margin-top: 48px; }
   .sb-section-heading, .sb-process-heading, .sb-substrate-heading, .sb-failures header, .sb-research-heading, .sb-lineage-heading, .sb-source-note { grid-template-columns: 1fr; }
   .sb-process-heading > p:last-child, .sb-lineage-heading > p:last-child { grid-column: auto; }
   .sb-distinction-grid { grid-template-columns: 1fr; }.sb-distinction-grid article { min-height: 0; }.sb-distinction-grid h3 { margin-top: 46px; }.sb-distinction-mark { padding: 8px 0; transform: rotate(90deg); }
