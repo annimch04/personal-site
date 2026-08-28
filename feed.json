@@ -7,6 +7,14 @@
   "authors": [{"name": "Fieldlight Institute", "url": "https://fieldlight.com/"}],
   "items": [
     {
+      "id": "https://fieldlight.com/writing/small-stories-for-the-child-in-all-of-us/",
+      "url": "https://fieldlight.com/writing/small-stories-for-the-child-in-all-of-us/",
+      "title": "Small Stories for the Child in All of Us",
+      "summary": "Two brief stories about quiet knowing, wild belonging, and the ways a living world speaks before anyone explains it.",
+      "date_published": "2026-08-28T12:00:00-05:00",
+      "authors": [{"name": "Anni McHenry", "url": "https://fieldlight.com/#anni-mchenry"}]
+    },
+    {
       "id": "https://fieldlight.com/institute/research/signal-becoming/",
       "url": "https://fieldlight.com/institute/research/signal-becoming/",
       "title": "Theory of Signal Becoming",

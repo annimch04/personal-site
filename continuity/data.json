@@ -1,6 +1,6 @@
 {
-  "version": "1.8",
-  "baselineDate": "2026-08-26",
+  "version": "1.9",
+  "baselineDate": "2026-08-28",
   "baselineLabel": "Reader Continuity public baseline",
   "publications": [
     {"id":"FLW-0001","title":"Fieldlight | The Self on the Wire","url":"/writing/fieldlight-the-self-on-the-wire/","form":"essay","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence"]},
@@ -51,7 +51,8 @@
     {"id":"FLW-0046","title":"Cardiac Field and Social Interaction","url":"/institute/research/cardiac-field-social-interaction/","form":"registered working hypothesis","primaryThread":"relational-cognition","threads":["relational-cognition","symbolic-discovery"],"changedAt":"2026-08-19T16:00:00-05:00"},
     {"id":"FLW-0047","title":"Theory of Signal Becoming","url":"/institute/research/signal-becoming/","form":"working theory + research model","primaryThread":"relational-cognition","threads":["relational-cognition","symbolic-discovery","governed-memory"],"changedAt":"2026-08-23T20:30:00-05:00"},
     {"id":"FLW-0048","title":"Participant Charter","url":"/institute/participant-charter/","form":"working charter","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence","governed-memory"],"changedAt":"2026-08-26T12:00:00-05:00"},
-    {"id":"FLW-0049","title":"The Right Not To Be Processed","url":"/institute/the-right-not-to-be-processed/","form":"constitutional note + state model","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence","governed-memory"],"changedAt":"2026-08-26T12:00:00-05:00"}
+    {"id":"FLW-0049","title":"The Right Not To Be Processed","url":"/institute/the-right-not-to-be-processed/","form":"constitutional note + state model","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence","governed-memory"],"changedAt":"2026-08-26T12:00:00-05:00"},
+    {"id":"FLW-0050","title":"Small Stories for the Child in All of Us","url":"/writing/small-stories-for-the-child-in-all-of-us/","form":"open story collection","primaryThread":"symbolic-discovery","threads":["symbolic-discovery"],"changedAt":"2026-08-28T12:00:00-05:00"}
   ],
   "threads": [
     {
@@ -92,7 +93,7 @@
       "title":"Symbol, story, and pre-propositional discovery",
       "question":"Can image, ritual, narrative, and symbol discover relations before formal language can state them?",
       "description":"Academic inquiry, field practice, fiction, naming, and archive work as neighboring instruments of discovery.",
-      "path":["FLW-0043","FLW-0042","FLW-0041","FLW-0040","FLW-0030","FLW-0031","FLW-0032","FLW-0047","FLW-0033","FLW-0044","FLW-0029","FLW-0034","FLW-0035","FLW-0036","FLW-0037","FLW-0038","FLW-0039"]
+      "path":["FLW-0043","FLW-0042","FLW-0041","FLW-0040","FLW-0030","FLW-0031","FLW-0032","FLW-0047","FLW-0033","FLW-0044","FLW-0029","FLW-0034","FLW-0035","FLW-0036","FLW-0037","FLW-0038","FLW-0039","FLW-0050"]
     }
   ],
   "mapStages": [
@@ -257,6 +258,13 @@
       "status":"March–August 2025 / restricted recovered notes",
       "relation":"Recovered Obsidian notes preserve the under-theory, the memory fold, and a substrate vocabulary. The mediated public theory separates transformation process from enabling conditions and turns the archive itself into a longitudinal research instrument.",
       "related":["FLW-0032","FLW-0030","FLW-0047","FLW-0022","FLW-0020","FLW-0001"]
+    },
+    {
+      "id":"FLC-0008",
+      "title":"Recovered One Bark source note",
+      "status":"December 2025 / restricted recovered Obsidian note",
+      "relation":"A deleted-file revision preserved the complete picture-book structure after the note disappeared from the reconciled vault. Its recovery supplied the second entry that made the Small Stories collection legible as an ongoing public form.",
+      "related":["FLW-0050"]
     }
   ]
 }

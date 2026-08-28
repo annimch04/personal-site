@@ -6905,6 +6905,362 @@ h3 {
   background: rgba(255, 248, 234, 0.08);
 }
 
+/* Small Stories for the Child in All of Us */
+.small-stories-page {
+  --story-ink: #17313a;
+  --story-paper: #f7eedb;
+  --story-red: #c7463c;
+  --story-green: #426f56;
+  --story-gold: #d7a13b;
+  color: var(--story-ink);
+  background:
+    linear-gradient(rgba(23, 49, 58, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 49, 58, 0.055) 1px, transparent 1px),
+    var(--story-paper);
+  background-size: 5rem 5rem;
+}
+
+.small-stories-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+  gap: clamp(2rem, 6vw, 7rem);
+  align-items: end;
+  min-height: 34rem;
+  padding: clamp(3.5rem, 7vw, 7rem) clamp(1.4rem, 6vw, 7rem);
+  color: #fff9eb;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(215, 161, 59, 0.52) 0 5.5rem, transparent 5.65rem),
+    radial-gradient(circle at 9% 94%, rgba(88, 128, 88, 0.52), transparent 24rem),
+    linear-gradient(128deg, #193e43 0%, #1a303b 57%, #482d35 100%);
+}
+
+.small-stories-title-block .eyebrow {
+  color: #f2c96f;
+}
+
+.small-stories-title-block h1 {
+  margin: 0;
+  max-width: 9ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(5.6rem, 15vw, 12.5rem);
+  font-weight: 500;
+  line-height: 0.67;
+  letter-spacing: -0.09em;
+}
+
+.small-stories-title-block h1 span {
+  display: block;
+}
+
+.small-stories-title-block h1 span:last-child {
+  margin-left: clamp(1rem, 7vw, 7rem);
+  color: #f2c96f;
+  font-style: italic;
+}
+
+.small-stories-for {
+  margin: clamp(2rem, 4vw, 3.5rem) 0 0 clamp(1rem, 7vw, 7rem);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.45rem, 3vw, 2.8rem);
+  font-style: italic;
+  color: rgba(255, 249, 235, 0.78);
+}
+
+.small-stories-intro {
+  position: relative;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgba(255, 249, 235, 0.28);
+  background: rgba(7, 22, 28, 0.28);
+  backdrop-filter: blur(14px);
+}
+
+.small-stories-intro::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  width: 5.5rem;
+  height: 0.28rem;
+  transform: rotate(-4deg);
+  background: var(--story-red);
+}
+
+.small-stories-intro > p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  line-height: 1.35;
+}
+
+.small-stories-intro ol {
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.small-stories-intro li {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.8rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid rgba(255, 249, 235, 0.18);
+}
+
+.small-stories-intro li span {
+  color: #f2c96f;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.small-stories-intro li strong {
+  font-size: 0.95rem;
+}
+
+.small-story {
+  display: grid;
+  grid-template-columns: minmax(17rem, 0.85fr) minmax(0, 1.15fr);
+  width: min(1160px, calc(100% - 2rem));
+  margin: clamp(2rem, 5vw, 5rem) auto 0;
+  border: 1px solid rgba(23, 49, 58, 0.18);
+  box-shadow: 0 24px 70px rgba(36, 44, 36, 0.12);
+}
+
+.small-story-cover {
+  position: relative;
+  overflow: hidden;
+  min-height: 38rem;
+  padding: clamp(2rem, 4vw, 4rem);
+  color: #fff8e8;
+  background:
+    radial-gradient(ellipse at 74% 78%, rgba(31, 75, 69, 0.88) 0 9rem, transparent 9.2rem),
+    radial-gradient(ellipse at 8% 92%, rgba(57, 101, 70, 0.8) 0 15rem, transparent 15.2rem),
+    linear-gradient(160deg, #d79b37 0 22%, #b85d38 22% 42%, #46745b 42% 100%);
+}
+
+.small-story-cover::after {
+  content: "";
+  position: absolute;
+  right: -4rem;
+  bottom: -3rem;
+  width: 19rem;
+  height: 19rem;
+  border: 2px solid rgba(255, 248, 232, 0.45);
+  border-radius: 50%;
+  box-shadow: -7rem -4rem 0 -6rem rgba(255, 248, 232, 0.35);
+}
+
+.small-story-number {
+  margin: 0;
+  color: #fff1be;
+  font-size: 0.78rem;
+  font-weight: 950;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.small-story-mark {
+  margin: clamp(4rem, 9vw, 7rem) 0 -1.4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(6rem, 12vw, 10rem);
+  line-height: 0.7;
+  font-style: italic;
+  color: rgba(255, 241, 190, 0.2);
+  transform: rotate(-7deg);
+}
+
+.small-story-cover h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  max-width: 8ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  font-weight: 500;
+  line-height: 0.87;
+  letter-spacing: -0.06em;
+}
+
+.small-story-whisper {
+  position: relative;
+  z-index: 1;
+  margin: 2rem 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: rgba(255, 248, 232, 0.8);
+}
+
+.small-story-text {
+  padding: clamp(2.5rem, 6vw, 6rem);
+  background: rgba(255, 252, 244, 0.9);
+}
+
+.small-story-text p {
+  max-width: 32rem;
+  margin: 0 auto 1.35rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  line-height: 1.62;
+}
+
+.small-story-text .small-story-ending {
+  margin-top: 2.5rem;
+  color: var(--story-green);
+  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
+  line-height: 1.35;
+}
+
+.small-story-bark {
+  margin-top: 1rem;
+}
+
+.small-story-bark .small-story-cover {
+  order: 2;
+  color: #fff8e8;
+  background:
+    radial-gradient(circle at 72% 23%, rgba(242, 201, 111, 0.82) 0 3.8rem, transparent 3.95rem),
+    radial-gradient(ellipse at 12% 88%, rgba(25, 44, 52, 0.78) 0 15rem, transparent 15.2rem),
+    linear-gradient(155deg, #294e55 0 36%, #263545 36% 67%, #53333d 67% 100%);
+}
+
+.small-story-bark .small-story-cover::before {
+  content: "";
+  position: absolute;
+  inset: auto auto 5rem 3.5rem;
+  width: 9rem;
+  height: 9rem;
+  border: 2px solid rgba(255, 248, 232, 0.42);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1.8rem rgba(255, 248, 232, 0.08),
+    0 0 0 3.7rem rgba(255, 248, 232, 0.05);
+}
+
+.small-story-bark .small-story-mark {
+  color: rgba(242, 201, 111, 0.18);
+}
+
+.small-story-bark .small-story-text {
+  order: 1;
+}
+
+.small-story-signal {
+  padding: 0.65rem 0 0.65rem 1.3rem;
+  border-left: 0.25rem solid var(--story-red);
+  color: var(--story-red);
+  font-size: clamp(1.6rem, 3vw, 2.4rem) !important;
+}
+
+.small-stories-coda {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  width: min(1160px, calc(100% - 2rem));
+  margin: clamp(2rem, 5vw, 5rem) auto clamp(3rem, 7vw, 6rem);
+  padding: clamp(2rem, 5vw, 4rem);
+  border-top: 0.3rem solid var(--story-red);
+  background: rgba(255, 252, 244, 0.78);
+}
+
+.small-stories-coda .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: -1rem;
+  color: var(--story-red);
+}
+
+.small-stories-coda h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.small-stories-coda > div > p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.55;
+}
+
+.small-stories-coda .small-stories-archive-note {
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid rgba(23, 49, 58, 0.2);
+  color: #53646a;
+  font-size: 1rem;
+}
+
+.small-stories-archive-note strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--story-green);
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.small-stories-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem clamp(1.4rem, 6vw, 7rem);
+  color: #fff8e8;
+  background: #142630;
+}
+
+.small-stories-footer p {
+  margin: 0;
+}
+
+.small-stories-footer a {
+  color: #f2c96f;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+@media (max-width: 760px) {
+  .small-stories-hero,
+  .small-story,
+  .small-stories-coda {
+    grid-template-columns: 1fr;
+  }
+
+  .small-stories-hero {
+    min-height: 0;
+    padding-top: 4rem;
+  }
+
+  .small-stories-title-block h1 {
+    font-size: clamp(5rem, 25vw, 8.5rem);
+  }
+
+  .small-stories-title-block h1 span:last-child,
+  .small-stories-for {
+    margin-left: 0.7rem;
+  }
+
+  .small-story-cover {
+    min-height: 28rem;
+  }
+
+  .small-story-bark .small-story-cover,
+  .small-story-bark .small-story-text {
+    order: initial;
+  }
+
+  .small-story-mark {
+    margin-top: 3rem;
+  }
+
+  .small-stories-footer {
+    display: grid;
+  }
+}
+
 .muted-card {
   opacity: 0.78;
 }

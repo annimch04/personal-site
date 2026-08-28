@@ -37,8 +37,8 @@ def local_target(page, reference):
         target = target / "index.html"
     return target.resolve()
 
-if len(publications) != 47:
-    errors.append(f"expected 47 publications, found {len(publications)}")
+if len(publications) != 50:
+    errors.append(f"expected 50 publications, found {len(publications)}")
 if len(publication_ids) != len(publications):
     errors.append("publication IDs are not unique")
 if len({item["url"] for item in publications}) != len(publications):
@@ -79,8 +79,8 @@ for context in DATA["contexts"]:
             errors.append(f"unknown related publication {publication_id} on {context['id']}")
 
 connection_ids = set()
-if len(DATA.get("connections", [])) != 26:
-    errors.append(f"expected 26 connection claims, found {len(DATA.get('connections', []))}")
+if len(DATA.get("connections", [])) != 31:
+    errors.append(f"expected 31 connection claims, found {len(DATA.get('connections', []))}")
 for connection in DATA.get("connections", []):
     if connection["id"] in connection_ids:
         errors.append(f"duplicate connection ID: {connection['id']}")

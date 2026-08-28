@@ -22,7 +22,7 @@ JSON feed: https://fieldlight.com/feed.json
 
 ## Complete public writing
 
-The complete public catalog contains 45 authored pieces organized by subject: https://fieldlight.com/writing/
+The complete public catalog contains 47 public writing entries organized by subject: https://fieldlight.com/writing/
 
 Reader Continuity assigns every public reading surface a stable identifier and publishes connection claims with basis, confidence, and visible evidence gaps. Its provenance register can name a relationship to restricted working evidence without exposing the private source itself: https://fieldlight.com/continuity/
 
@@ -33,6 +33,7 @@ The private archive and current work together form a longitudinal human–AI res
 
 ## Story worlds
 
+- Small Stories for the Child in All of Us: https://fieldlight.com/writing/small-stories-for-the-child-in-all-of-us/
 - Diviner | First Pages: https://fieldlight.com/story-worlds/diviner/
 - Pythia: https://fieldlight.com/story-worlds/pythia/
 - The Pythia Games: https://fieldlight.com/writing/the-pythia-games/
