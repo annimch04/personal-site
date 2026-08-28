@@ -265,6 +265,13 @@
       "status":"December 2025 / restricted recovered Obsidian note",
       "relation":"A deleted-file revision preserved the complete picture-book structure after the note disappeared from the reconciled vault. Its recovery supplied the second entry that made the Small Stories collection legible as an ongoing public form.",
       "related":["FLW-0050"]
+    },
+    {
+      "id":"FLC-0009",
+      "title":"Handwritten A Snake Named Jake source story",
+      "status":"October 2023 / restricted family-correspondence source",
+      "relation":"A rhyming animal story embedded in a private handwritten letter was preserved as a distinct source state, then editorially developed into the collection's third public entry without exposing the surrounding correspondence.",
+      "related":["FLW-0050"]
     }
   ]
 }

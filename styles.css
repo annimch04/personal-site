@@ -7152,6 +7152,47 @@ h3 {
   font-size: clamp(1.6rem, 3vw, 2.4rem) !important;
 }
 
+.small-story-snake {
+  margin-top: 1rem;
+}
+
+.small-story-snake .small-story-cover {
+  background:
+    radial-gradient(circle at 78% 18%, rgba(241, 204, 115, 0.82) 0 3.2rem, transparent 3.35rem),
+    radial-gradient(circle at 15% 87%, rgba(199, 70, 60, 0.34) 0 9rem, transparent 9.2rem),
+    linear-gradient(150deg, #315b50 0 31%, #24444a 31% 64%, #392f3b 64% 100%);
+}
+
+.small-story-snake .small-story-cover::before {
+  content: "";
+  position: absolute;
+  right: 2.5rem;
+  bottom: 6rem;
+  width: 10rem;
+  height: 16rem;
+  border: 0.85rem solid rgba(255, 241, 190, 0.34);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 52% 48% 58% 42%;
+  transform: rotate(31deg);
+  box-shadow:
+    -4.4rem -5.4rem 0 -3.7rem rgba(255, 241, 190, 0.46),
+    2.7rem 3.2rem 0 -3.7rem rgba(199, 70, 60, 0.6);
+}
+
+.small-story-snake .small-story-mark {
+  color: rgba(241, 204, 115, 0.18);
+  transform: rotate(5deg);
+}
+
+.small-story-snake .small-story-ending {
+  color: var(--story-red);
+}
+
+.small-story-verse p {
+  margin-bottom: clamp(1.8rem, 4vw, 3rem);
+}
+
 .small-stories-coda {
   display: grid;
   grid-template-columns: minmax(15rem, 0.8fr) minmax(0, 1.2fr);
@@ -7250,6 +7291,12 @@ h3 {
   .small-story-bark .small-story-cover,
   .small-story-bark .small-story-text {
     order: initial;
+  }
+
+  .small-story-snake .small-story-cover::before {
+    right: 0.7rem;
+    bottom: 3.5rem;
+    transform: rotate(24deg) scale(0.82);
   }
 
   .small-story-mark {
