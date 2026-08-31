@@ -8,6 +8,7 @@ Systems: https://fieldlight.com/systems/
 Complete writing by Anni McHenry: https://fieldlight.com/writing/
 Reader Continuity — evidence-backed connection map across the public corpus: https://fieldlight.com/continuity/
 Story Worlds: https://fieldlight.com/story-worlds/
+Work with Fieldlight — research, build, commission, or invite: https://fieldlight.com/engage/
 Institute organization: https://github.com/fieldlight-institute
 Canonical public writing by Anni McHenry: https://github.com/annimch04/public-writing
 Reading feed: https://fieldlight.com/feed.xml
@@ -22,7 +23,7 @@ JSON feed: https://fieldlight.com/feed.json
 
 ## Complete public writing
 
-The complete public catalog contains 47 public writing entries organized by subject: https://fieldlight.com/writing/
+The complete public catalog contains 45 public writing entries organized by subject: https://fieldlight.com/writing/
 
 Reader Continuity assigns every public reading surface a stable identifier and publishes connection claims with basis, confidence, and visible evidence gaps. Its provenance register can name a relationship to restricted working evidence without exposing the private source itself: https://fieldlight.com/continuity/
 
