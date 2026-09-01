@@ -15,11 +15,11 @@
 
 .archive-acquisition-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr);
-  gap: clamp(42px, 7vw, 112px);
-  align-items: end;
-  min-height: 760px;
-  padding: clamp(70px, 8vw, 126px) clamp(28px, 7vw, 128px) clamp(66px, 7vw, 108px);
+  grid-template-columns: minmax(0, 1.04fr) minmax(380px, .96fr);
+  gap: clamp(38px, 5vw, 82px);
+  align-items: center;
+  min-height: 660px;
+  padding: clamp(58px, 6vw, 88px) clamp(28px, 7vw, 128px);
   color: var(--gaa-cream);
   background:
     linear-gradient(90deg, rgba(96, 207, 222, .08) 1px, transparent 1px) 0 0 / 10% 100%,
@@ -40,13 +40,14 @@
 }
 
 .archive-acquisition-hero h1 {
-  margin: 34px 0 28px;
+  margin: 26px 0 24px;
   color: var(--gaa-cream);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(64px, 8.4vw, 132px);
+  font-size: clamp(64px, 7.2vw, 112px);
   font-weight: 700;
   line-height: .82;
   letter-spacing: -.07em;
+  white-space: nowrap;
 }
 
 .archive-acquisition-hero h1 em { color: var(--gaa-coral); font-weight: 400; }
@@ -73,20 +74,20 @@
   color: rgba(255, 248, 235, .62);
 }
 
-.archive-acquisition-hero-instrument > div { padding: 30px; }
+.archive-acquisition-hero-instrument > div { padding: 26px 30px; }
 .archive-acquisition-hero-instrument > div + div { border-top: 1px solid rgba(255, 248, 235, .18); }
 .archive-acquisition-hero-instrument strong { display: block; margin: 14px 0 9px; color: var(--gaa-cream); font-family: Georgia, "Times New Roman", serif; font-size: clamp(28px, 3vw, 44px); line-height: 1.02; }
 .archive-acquisition-hero-instrument small { color: rgba(255, 248, 235, .63); font-size: 15px; line-height: 1.45; }
 .archive-acquisition-hero-instrument footer { display: flex; justify-content: space-between; gap: 20px; padding: 18px 30px; color: var(--gaa-gold); background: rgba(0, 0, 0, .16); font-size: 10px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
 
 .archive-acquisition-boundary {
-  padding: clamp(68px, 8vw, 118px) clamp(28px, 7vw, 128px);
+  padding: clamp(58px, 6vw, 88px) clamp(28px, 7vw, 128px);
   background: var(--gaa-paper);
 }
 
-.archive-acquisition-boundary > header { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); gap: 24px clamp(40px, 8vw, 128px); align-items: end; }
+.archive-acquisition-boundary > header { display: grid; grid-template-columns: minmax(420px, 1.12fr) minmax(0, .88fr); gap: 24px clamp(40px, 6vw, 96px); align-items: center; }
 .archive-acquisition-boundary > header .archive-acquisition-eyebrow { grid-column: 1 / -1; color: var(--gaa-coral); margin: 0; }
-.archive-acquisition-boundary h2 { margin: 0; color: var(--gaa-ink); font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 5.3vw, 78px); line-height: .98; letter-spacing: -.055em; }
+.archive-acquisition-boundary h2 { max-width: 850px; margin: 0; color: var(--gaa-ink); font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 4.8vw, 72px); line-height: .98; letter-spacing: -.055em; }
 .archive-acquisition-boundary > header > p:last-child { margin: 0; color: #42545d; font-family: Georgia, "Times New Roman", serif; font-size: clamp(21px, 2.2vw, 31px); line-height: 1.42; }
 
 .archive-acquisition-rail-map {
@@ -124,7 +125,7 @@
 .archive-acquisition-evidence,
 .archive-acquisition-pilot,
 .archive-acquisition-lineage {
-  padding: clamp(68px, 8vw, 118px) clamp(28px, 7vw, 128px);
+  padding: clamp(58px, 6vw, 88px) clamp(28px, 7vw, 128px);
 }
 
 .archive-acquisition-object h2,
@@ -175,7 +176,7 @@
 .archive-acquisition-product-gap { max-width: 980px; margin: 34px 0 0; color: rgba(255, 248, 235, .65); font-size: 15px; line-height: 1.55; }
 .archive-acquisition-product-gap strong { color: var(--gaa-coral); }
 
-.archive-acquisition-value { padding: clamp(68px, 8vw, 118px) clamp(28px, 7vw, 128px); color: var(--gaa-cream); background: #2b1c25; }
+.archive-acquisition-value { padding: clamp(58px, 6vw, 88px) clamp(28px, 7vw, 128px); color: var(--gaa-cream); background: #2b1c25; }
 .archive-acquisition-value > header { display: grid; grid-template-columns: minmax(300px, 1.05fr) minmax(0, .95fr); gap: clamp(42px, 8vw, 132px); align-items: end; }
 .archive-acquisition-value .archive-acquisition-eyebrow { margin: 0 0 18px; color: var(--gaa-coral); }
 .archive-acquisition-value h2 { color: var(--gaa-cream); }
@@ -200,6 +201,8 @@
 .archive-acquisition-value > footer { display: flex; flex-wrap: wrap; gap: 16px 34px; margin-top: 30px; color: rgba(255, 248, 235, .55); font-size: 12px; }
 
 .archive-acquisition-authority { background: #e6ded1; }
+.archive-acquisition-authority > header { align-items: center; gap: 24px clamp(42px, 6vw, 96px); }
+.archive-acquisition-authority > header .archive-acquisition-eyebrow { grid-column: 1 / -1; margin-bottom: 0; }
 .archive-acquisition-authority > header > p:last-child { margin: 0; color: #4b5b63; font-family: Georgia, "Times New Roman", serif; font-size: clamp(21px, 2.2vw, 31px); line-height: 1.42; }
 .archive-acquisition-permission-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: clamp(44px, 6vw, 78px) 0 0; padding: 0; border: 1px solid rgba(7, 29, 41, .24); list-style: none; }
 .archive-acquisition-permission-grid li { min-height: 126px; padding: 24px; border-right: 1px solid rgba(7, 29, 41, .18); border-bottom: 1px solid rgba(7, 29, 41, .18); font-family: Georgia, "Times New Roman", serif; font-size: 22px; }
@@ -220,7 +223,8 @@
 .archive-acquisition-passage li p { margin: 0; color: rgba(255, 248, 235, .6); font-size: 15px; line-height: 1.5; }
 
 .archive-acquisition-evidence { background: var(--gaa-paper); }
-.archive-acquisition-evidence > header { display: flex; justify-content: space-between; align-items: end; gap: 40px; }
+.archive-acquisition-evidence > header { display: block; }
+.archive-acquisition-evidence h2 { max-width: 900px; }
 .archive-acquisition-evidence > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(44px, 6vw, 78px); }
 .archive-acquisition-evidence article { min-height: 300px; padding: clamp(26px, 4vw, 52px); color: var(--gaa-cream); background: var(--gaa-ink); }
 .archive-acquisition-evidence article:nth-child(2) { transform: translateY(28px); background: #183847; }
@@ -229,21 +233,21 @@
 .archive-acquisition-evidence article strong { display: block; margin: 36px 0 20px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 3.2vw, 46px); line-height: 1; }
 .archive-acquisition-evidence article p { margin: 0; color: rgba(255, 248, 235, .64); line-height: 1.55; }
 .archive-acquisition-evidence article:nth-child(3) p { color: #164550; }
-.archive-acquisition-evidence > p { margin: 90px 0 0; padding-top: 26px; border-top: 1px solid rgba(7, 29, 41, .22); color: #4b5b63; font-size: 16px; }
+.archive-acquisition-evidence > p { margin: 72px 0 0; padding-top: 26px; border-top: 1px solid rgba(7, 29, 41, .22); color: #4b5b63; font-size: 16px; }
 
 .archive-acquisition-pilot { color: var(--gaa-cream); background: #261d2f; }
 .archive-acquisition-pilot h2 { color: var(--gaa-cream); }
 .archive-acquisition-pilot-metrics { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 42px; border-top: 1px solid rgba(255, 248, 235, .2); }
 .archive-acquisition-pilot-metrics span { padding: 20px 12px 0 0; color: rgba(255, 248, 235, .62); font-size: 12px; line-height: 1.4; }
 .archive-acquisition-pilot-metrics strong { display: block; color: var(--gaa-coral); font-family: Georgia, "Times New Roman", serif; font-size: 28px; }
-.archive-acquisition-pilot h3 { margin: 0 0 24px; font-family: Georgia, "Times New Roman", serif; font-size: 30px; }
+.archive-acquisition-pilot h3 { margin: 0 0 24px; color: var(--gaa-cream); font-family: Georgia, "Times New Roman", serif; font-size: 30px; }
 .archive-acquisition-pilot ul { margin: 0; padding: 0; list-style: none; }
 .archive-acquisition-pilot li { padding: 15px 0; border-top: 1px solid rgba(255, 248, 235, .17); color: rgba(255, 248, 235, .7); }
 .archive-acquisition-status { margin: 34px 0 0; padding: 18px; border: 1px solid var(--gaa-coral); color: var(--gaa-coral); font-size: 10px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
 
 .archive-acquisition-lineage { background: #e6ded1; }
-.archive-acquisition-lineage > header { display: grid; grid-template-columns: .6fr 1.4fr; gap: 30px 80px; align-items: end; }
-.archive-acquisition-lineage > header .archive-acquisition-eyebrow { grid-column: 1 / -1; }
+.archive-acquisition-lineage > header { display: block; }
+.archive-acquisition-lineage h2 { max-width: 1120px; }
 .archive-acquisition-lineage > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: clamp(44px, 6vw, 78px); border: 1px solid rgba(7, 29, 41, .2); }
 .archive-acquisition-lineage a { min-height: 220px; padding: 30px; border-right: 1px solid rgba(7, 29, 41, .18); border-bottom: 1px solid rgba(7, 29, 41, .18); color: inherit; text-decoration: none; }
 .archive-acquisition-lineage a:nth-child(2n) { border-right: 0; }
@@ -286,7 +290,7 @@
 
 @media (max-width: 620px) {
   .archive-acquisition-hero { min-height: 0; gap: 44px; padding: 58px 20px 44px; }
-  .archive-acquisition-hero h1 { font-size: clamp(55px, 18vw, 82px); }
+  .archive-acquisition-hero h1 { font-size: clamp(48px, 14.5vw, 64px); line-height: .87; }
   .archive-acquisition-boundary { padding: 54px 20px; }
   .archive-acquisition-object,
   .archive-acquisition-components,
@@ -313,6 +317,18 @@
   .archive-acquisition-permission-grid li,
   .archive-acquisition-passage li,
   .archive-acquisition-lineage a { border-right: 0; border-bottom: 1px solid rgba(7, 29, 41, .18); }
+  .archive-acquisition-rubric article {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: 4px 14px;
+    align-items: center;
+    min-height: 0;
+    padding: 18px 16px;
+  }
+  .archive-acquisition-rubric article span { grid-row: 1 / 3; font-size: 26px; }
+  .archive-acquisition-rubric article strong { margin: 0; font-size: 12px; }
+  .archive-acquisition-rubric article small { font-size: 11px; }
   .archive-acquisition-evidence article:nth-child(2),
   .archive-acquisition-evidence article:nth-child(3) { transform: none; }
   .archive-acquisition-evidence > p { margin-top: 34px; }
