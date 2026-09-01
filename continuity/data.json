@@ -1,6 +1,6 @@
 {
-  "version": "1.9",
-  "baselineDate": "2026-08-28",
+  "version": "2.0",
+  "baselineDate": "2026-09-01",
   "baselineLabel": "Reader Continuity public baseline",
   "publications": [
     {"id":"FLW-0001","title":"Fieldlight | The Self on the Wire","url":"/writing/fieldlight-the-self-on-the-wire/","form":"essay","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence"]},
@@ -52,7 +52,8 @@
     {"id":"FLW-0047","title":"Theory of Signal Becoming","url":"/institute/research/signal-becoming/","form":"working theory + research model","primaryThread":"relational-cognition","threads":["relational-cognition","symbolic-discovery","governed-memory"],"changedAt":"2026-08-23T20:30:00-05:00"},
     {"id":"FLW-0048","title":"Participant Charter","url":"/institute/participant-charter/","form":"working charter","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence","governed-memory"],"changedAt":"2026-08-26T12:00:00-05:00"},
     {"id":"FLW-0049","title":"The Right Not To Be Processed","url":"/institute/the-right-not-to-be-processed/","form":"constitutional note + state model","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence","governed-memory"],"changedAt":"2026-08-26T12:00:00-05:00"},
-    {"id":"FLW-0050","title":"Small Stories for the Child in All of Us","url":"/writing/small-stories-for-the-child-in-all-of-us/","form":"open story collection","primaryThread":"symbolic-discovery","threads":["symbolic-discovery"],"changedAt":"2026-08-28T12:00:00-05:00"}
+    {"id":"FLW-0050","title":"Small Stories for the Child in All of Us","url":"/writing/small-stories-for-the-child-in-all-of-us/","form":"open story collection","primaryThread":"symbolic-discovery","threads":["symbolic-discovery"],"changedAt":"2026-08-28T12:00:00-05:00"},
+    {"id":"FLW-0051","title":"Governed Human–AI Archive Acquisition","url":"/institute/governed-archive-acquisition/","form":"working research method","primaryThread":"human-owned-intelligence","threads":["human-owned-intelligence","governed-memory"],"changedAt":"2026-09-01T12:00:00-05:00"}
   ],
   "threads": [
     {
@@ -61,7 +62,7 @@
       "title":"Human-owned intelligence",
       "question":"What must remain human-owned when intelligence becomes intimate?",
       "description":"Consent, memory, authorship, identity, and the terms under which AI may enter lived human systems.",
-      "path":["FLW-0003","FLW-0006","FLW-0004","FLW-0005","FLW-0002","FLW-0001","FLW-0026","FLW-0027","FLW-0028","FLW-0048","FLW-0049"]
+      "path":["FLW-0003","FLW-0006","FLW-0004","FLW-0005","FLW-0002","FLW-0001","FLW-0026","FLW-0027","FLW-0028","FLW-0048","FLW-0049","FLW-0051"]
     },
     {
       "id":"local-intelligence",
@@ -77,7 +78,7 @@
       "title":"Governed memory and accountable systems",
       "question":"How can a system change without erasing who changed it, what it knew, or why?",
       "description":"Governance, routing, institutional transition, feedback loops, and archival method as inspectable infrastructure.",
-      "path":["FLW-0016","FLW-0015","FLW-0014","FLW-0017","FLW-0018","FLW-0019","FLW-0020","FLW-0045","FLW-0047","FLW-0048","FLW-0049"]
+      "path":["FLW-0016","FLW-0015","FLW-0014","FLW-0017","FLW-0018","FLW-0019","FLW-0020","FLW-0045","FLW-0047","FLW-0048","FLW-0049","FLW-0051"]
     },
     {
       "id":"relational-cognition",
@@ -206,7 +207,10 @@
     {"id":"FLCX-028","from":"FLW-0005","to":"FLW-0049","relation":"supplies an execution precursor to","claim":"Consent Gate rejects assumed consent and records intentional invocation; the later right gives the ungranted side of that boundary a durable, machine-readable state.","basis":"Both works require consent to be explicit and traceable; the later work distinguishes unknown authority from explicit denial.","confidence":"high"},
     {"id":"FLCX-029","from":"FLW-0002","to":"FLW-0049","relation":"is constitutionally refined by","claim":"Human-Owned Infrastructure separates source custody, human authority, external capability, and public projection; the later right specifies that custody may remain authorized while computation is prohibited.","basis":"The same architecture of human-held authority becomes an operation-level constitutional rule.","confidence":"high"},
     {"id":"FLCX-030","from":"FLW-0020","to":"FLW-0049","relation":"receives an enforceable permission boundary in","claim":"The Archive Method separates preservation from interpretation as stages; The Right Not To Be Processed makes permission for those acts independently grantable and requires systems to enforce the difference.","basis":"Direct movement from methodological separation to an authorization and execution model.","confidence":"high"},
-    {"id":"FLCX-031","from":"FLW-0049","to":"FLW-0048","relation":"becomes a baseline participant right in","claim":"The companion note and state model define preservation-only custody and negative permission; Charter 0.4 establishes the protection as Right 20 for human-AI research.","basis":"The documents are explicit constitutional and implementation counterparts published in the same versioned program.","confidence":"high"}
+    {"id":"FLCX-031","from":"FLW-0049","to":"FLW-0048","relation":"becomes a baseline participant right in","claim":"The companion note and state model define preservation-only custody and negative permission; Charter 0.4 establishes the protection as Right 20 for human-AI research.","basis":"The documents are explicit constitutional and implementation counterparts published in the same versioned program.","confidence":"high"},
+    {"id":"FLCX-032","from":"FLW-0048","to":"FLW-0051","relation":"is applied as an acquisition method in","claim":"The Participant Charter's rights become operational boundaries across invitation, compensation, custody, processing, participant access, and closeout.","basis":"The acquisition method explicitly derives authority from Charter 0.4 and assigns rights to each threshold of the proposed pilot.","confidence":"high"},
+    {"id":"FLCX-033","from":"FLW-0049","to":"FLW-0051","relation":"supplies the permission architecture for","claim":"The separation of preservation from processing becomes the method's operation-level grant structure and no-human-read boundary.","basis":"The acquisition method implements negative permission directly and denies transcript access for the life of the protocol.","confidence":"high"},
+    {"id":"FLCX-034","from":"FLW-0045","to":"FLW-0051","relation":"supplies an archive problem for","claim":"The incompleteness of a single platform export motivates separate declaration, hashing, and completeness records for conversational, coding-harness, and workspace source classes.","basis":"Both works reject the newest or most convenient export as a sufficient representation of the longitudinal archive.","confidence":"high"}
   ],
   "contexts": [
     {
