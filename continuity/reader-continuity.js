@@ -96,8 +96,10 @@
     actions.appendChild(mapLink);
     rail.append(heading, actions);
 
-    const footer = document.querySelector("footer");
-    if (footer) footer.before(rail);
+    const main = document.querySelector("main");
+    const pageFooter = document.querySelector("body > footer");
+    if (main) main.after(rail);
+    else if (pageFooter) pageFooter.before(rail);
     else document.body.appendChild(rail);
   }
 
